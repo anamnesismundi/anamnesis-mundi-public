@@ -7964,3 +7964,66 @@ html body .timeline .event
     box-sizing: border-box !important;
   }
 }
+
+/* ============================================================
+   DESKTOP — COMPARATIVE EXPLORERS FOLLOW THE OWNING CARD SIDE
+   Mobile keeps its dedicated single-column alignment.
+   ============================================================ */
+
+@media (min-width: 701px) {
+  html body .timeline
+  .event:nth-of-type(odd):not([data-entity-id="entity-monad"])
+  .comparative-explorer > summary {
+    justify-content: flex-end !important;
+    text-align: right !important;
+  }
+
+  html body .timeline
+  .event:nth-of-type(odd):not([data-entity-id="entity-monad"])
+  .comparative-traditions,
+  html body .timeline
+  .event:nth-of-type(odd):not([data-entity-id="entity-monad"])
+  .comparative-tradition,
+  html body .timeline
+  .event:nth-of-type(odd):not([data-entity-id="entity-monad"])
+  .comparative-tradition-category,
+  html body .timeline
+  .event:nth-of-type(odd):not([data-entity-id="entity-monad"])
+  .comparative-tradition h3,
+  html body .timeline
+  .event:nth-of-type(odd):not([data-entity-id="entity-monad"])
+  .comparative-tradition p,
+  html body .timeline
+  .event:nth-of-type(odd):not([data-entity-id="entity-monad"])
+  .comparative-tradition-sources {
+    text-align: right !important;
+  }
+
+  html body .timeline
+  .event:nth-of-type(even)
+  .comparative-explorer > summary {
+    justify-content: flex-start !important;
+    text-align: left !important;
+  }
+
+  html body .timeline
+  .event:nth-of-type(even)
+  .comparative-traditions,
+  html body .timeline
+  .event:nth-of-type(even)
+  .comparative-tradition,
+  html body .timeline
+  .event:nth-of-type(even)
+  .comparative-tradition-category,
+  html body .timeline
+  .event:nth-of-type(even)
+  .comparative-tradition h3,
+  html body .timeline
+  .event:nth-of-type(even)
+  .comparative-tradition p,
+  html body .timeline
+  .event:nth-of-type(even)
+  .comparative-tradition-sources {
+    text-align: left !important;
+  }
+}
