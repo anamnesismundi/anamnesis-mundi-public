@@ -18,7 +18,6 @@
   --demiurgic: #8e6551;
   --material: #718276;
   --human: #9a795e;
-  --primordial: #a68b5b;
   --reset: #60758b;
   --historical: #797772;
 }
@@ -880,11 +879,6 @@ p {
     var(--human);
 }
 
-.event[data-phase-color="primordial-humanity"] {
-  --phase-color:
-    var(--primordial);
-}
-
 .event[data-phase-color="reset"] {
   --phase-color:
     var(--reset);
@@ -1070,17 +1064,6 @@ p {
       100% 12%,
       50% 100%
     );
-}
-
-.event[data-phase-color="human"]::after,
-.event[data-phase-color="primordial-humanity"]::after {
-  width: 10px;
-  height: 14px;
-
-  border-radius: 50%;
-
-  transform:
-    rotate(45deg);
 }
 
 .event[data-phase-color="reset"]::after {
@@ -5430,11 +5413,6 @@ body.chronology-entered .hero-content {
   --marker-fill: #152824;
 }
 
-.event[data-phase-color="human"],
-.event[data-phase-color="primordial-humanity"] {
-  --marker-fill: #251c17;
-}
-
 .event[data-phase-color="reset"] {
   --marker-fill: #151c24;
 }
@@ -5522,23 +5500,6 @@ body.chronology-entered .hero-content {
 
 .event:nth-of-type(even)[data-phase-color="material"]::after {
   left: -8.5px;
-}
-
-.event[data-phase-color="human"]::after,
-.event[data-phase-color="primordial-humanity"]::after {
-  width: 13px;
-  height: 18px;
-  background: var(--marker-fill);
-}
-
-.event:nth-of-type(odd)[data-phase-color="human"]::after,
-.event:nth-of-type(odd)[data-phase-color="primordial-humanity"]::after {
-  right: -6.5px;
-}
-
-.event:nth-of-type(even)[data-phase-color="human"]::after,
-.event:nth-of-type(even)[data-phase-color="primordial-humanity"]::after {
-  left: -6.5px;
 }
 
 .event[data-phase-color="reset"]::after {
@@ -5638,10 +5599,6 @@ body.chronology-entered .hero-content {
   --internal-divider: rgba(154, 121, 94, 0.23);
 }
 
-.event[data-phase-color="primordial-humanity"] {
-  --internal-divider: rgba(142, 128, 93, 0.23);
-}
-
 .event[data-phase-color="reset"] {
   --internal-divider: rgba(96, 117, 139, 0.24);
 }
@@ -5712,10 +5669,6 @@ body.chronology-entered .hero-content {
 
 .event[data-phase-color="human"] {
   --member-rail: rgba(154, 121, 94, 0.42);
-}
-
-.event[data-phase-color="primordial-humanity"] {
-  --member-rail: rgba(142, 128, 93, 0.42);
 }
 
 .event[data-phase-color="reset"] {
@@ -6253,10 +6206,6 @@ body.chronology-entered .timeline {
   --section-rule: rgba(154, 121, 94, 0.22);
 }
 
-.event[data-phase-color="primordial-humanity"] {
-  --section-rule: rgba(142, 128, 93, 0.22);
-}
-
 .event[data-phase-color="reset"] {
   --section-rule: rgba(96, 117, 139, 0.22);
 }
@@ -6350,105 +6299,9 @@ body.chronology-entered .timeline {
 }
 
 
-/* ============================================================
-   PRIMORDIAL HUMANITY REALM — EARTHEN OCHRE
-   Uniform color only: no geometric background forms.
-   ============================================================ */
 
-.realm-primordial-humanity {
-  background:
-    linear-gradient(
-      to bottom,
-      rgba(69, 78, 65, 0.025) 0%,
-      rgba(76, 67, 48, 0.105) 110px,
-      rgba(58, 50, 36, 0.205) 310px,
-      rgba(41, 37, 29, 0.285) 100%
-    );
-}
-
-.realm-primordial-humanity::before {
-  background:
-    linear-gradient(
-      to bottom,
-      rgba(166, 139, 91, 0.045) 0%,
-      rgba(92, 76, 51, 0.175) 22%,
-      rgba(58, 50, 36, 0.285) 56%,
-      rgba(41, 37, 29, 0.34) 100%
-    );
-  opacity: 1;
-  transform: none;
-  animation: none;
-  will-change: auto;
-}
-
-.realm-primordial-humanity::after {
-  display: none;
-  content: none;
-}
-
-.realm-primordial-humanity .realm-region-name {
-  color: #a68b5b;
-}
-
-.realm-primordial-humanity .realm-region-subtitle,
-.realm-primordial-humanity .realm-region-summary {
-  color: rgba(166, 139, 91, 0.54);
-}
 
 .timeline::before {
-  background:
-    linear-gradient(
-      to bottom,
-      var(--origin) 0,
-      var(--origin) 130px,
-      var(--emanation) 330px,
-      var(--emanation)
-        var(--axis-rupture-fade, 58%),
-      var(--rupture)
-        var(--axis-rupture, 66%),
-      var(--demiurgic)
-        var(--axis-demiurgic, 72%),
-      var(--demiurgic)
-        var(--axis-material-fade, 84%),
-      var(--material)
-        var(--axis-material, 89%),
-      var(--material)
-        var(--axis-primordial-fade, 96%),
-      var(--primordial)
-        var(--axis-primordial, 98%),
-      var(--primordial) 100%
-    );
-}
-
-.event[data-phase-color="primordial-humanity"] {
-  --phase-color: #a68b5b;
-  --marker-fill: #29251d;
-  --internal-divider: rgba(166, 139, 91, 0.24);
-  --explorer-line: rgba(111, 96, 71, 0.38);
-}
-
-.event[data-phase-color="primordial-humanity"]::after {
-  width: 15px;
-  height: 18px;
-  border: 1px solid #a68b5b;
-  border-radius: 50% 50% 46% 46%;
-  background: #29251d;
-  box-shadow: none;
-}
-
-.event:nth-of-type(odd)[data-phase-color="primordial-humanity"]::after {
-  right: -7.5px;
-}
-
-.event:nth-of-type(even)[data-phase-color="primordial-humanity"]::after {
-  left: -7.5px;
-}
-
-.paradise-trees-content {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(28px, 5vw, 72px);
-  padding: clamp(34px, 5vw, 64px) 0;
 }
 
 .paradise-tree-profile {
@@ -6474,21 +6327,7 @@ body.chronology-entered .timeline {
   margin: 0 0 14px;
 }
 
-.paradise-tree-profile p,
-.paradise-trees-note p {
-  margin: 0;
-}
-
-.paradise-trees-note {
-  border-top: 1px solid var(--internal-divider);
-  padding-top: 28px;
-}
-
 @media (max-width: 720px) {
-  .paradise-trees-content {
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
 
   .paradise-tree-profile {
     border-inline-end: 0;
@@ -6502,128 +6341,19 @@ body.chronology-entered .timeline {
 }
 
 
-/* ============================================================
-   PRIMORDIAL HUMANITY — PRESENCE, TRANSITIONS, AND VESSEL MARKER
-   ============================================================ */
+
 
 /* Realm fields share the same transition rule: the incoming
    color appears softly, holds with presence, and fades toward
    the next realm without a hard horizontal boundary. */
-.realm-pleroma,
-.realm-demiurgic-order,
-.realm-material-cosmos,
-.realm-primordial-humanity {
-  isolation: isolate;
-}
-
-.realm-pleroma::before,
-.realm-demiurgic-order::before,
-.realm-material-cosmos::before,
-.realm-primordial-humanity::before {
-  -webkit-mask-image:
-    linear-gradient(
-      to bottom,
-      transparent 0,
-      rgba(0, 0, 0, 0.5) 110px,
-      #000 260px,
-      #000 calc(100% - 240px),
-      rgba(0, 0, 0, 0.62) calc(100% - 100px),
-      transparent 100%
-    );
-  mask-image:
-    linear-gradient(
-      to bottom,
-      transparent 0,
-      rgba(0, 0, 0, 0.5) 110px,
-      #000 260px,
-      #000 calc(100% - 240px),
-      rgba(0, 0, 0, 0.62) calc(100% - 100px),
-      transparent 100%
-    );
-}
 
 /* The active final realm keeps its lower edge fully present
    until a later realm is introduced. */
-.realm-primordial-humanity::before {
-  -webkit-mask-image:
-    linear-gradient(
-      to bottom,
-      transparent 0,
-      rgba(0, 0, 0, 0.58) 90px,
-      #000 230px,
-      #000 100%
-    );
-  mask-image:
-    linear-gradient(
-      to bottom,
-      transparent 0,
-      rgba(0, 0, 0, 0.58) 90px,
-      #000 230px,
-      #000 100%
-    );
-}
 
-.realm-primordial-humanity {
-  background:
-    linear-gradient(
-      to bottom,
-      transparent 0,
-      rgba(92, 75, 47, 0.16) 90px,
-      rgba(76, 61, 38, 0.31) 230px,
-      rgba(58, 48, 33, 0.43) 52%,
-      rgba(41, 37, 29, 0.52) 100%
-    );
-}
 
-.realm-primordial-humanity::before {
-  background:
-    linear-gradient(
-      to bottom,
-      rgba(166, 139, 91, 0.09) 0%,
-      rgba(116, 91, 53, 0.26) 24%,
-      rgba(83, 65, 40, 0.42) 58%,
-      rgba(58, 48, 33, 0.5) 100%
-    );
-}
-
-.realm-primordial-humanity .realm-region-name {
-  color: #b39764;
-}
-
-.realm-primordial-humanity .realm-region-subtitle {
-  color: rgba(179, 151, 100, 0.62);
-}
-
-/* Primordial Humanity marker: a stylized earthen vessel
-   containing the luminous point carried within Adam. */
-.event[data-phase-color="primordial-humanity"]::after {
-  width: 21px;
-  height: 22px;
-  border: 0;
-  border-radius: 0;
-  background-color: transparent;
-  background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7 5.5h10M8 6.5c0 2-1.7 3.4-2 6.2-.35 3.25 1.65 5.8 6 5.8s6.35-2.55 6-5.8c-.3-2.8-2-4.2-2-6.2' fill='%2329251d' stroke='%23a68b5b' stroke-width='1.45' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='12' cy='12.5' r='1.65' fill='%23d6b86f'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  box-shadow: none;
-}
-
-.event:nth-of-type(odd)[data-phase-color="primordial-humanity"]::after {
-  right: -10.5px;
-}
-
-.event:nth-of-type(even)[data-phase-color="primordial-humanity"]::after {
-  left: -10.5px;
-}
 
 /* The two tree readings follow the established vertical rhythm
    of the site instead of narrow parallel columns. */
-.paradise-trees-content {
-  display: block;
-  padding: clamp(28px, 4.5vw, 56px) 0 0;
-}
 
 .paradise-tree-profile,
 .paradise-tree-profile:last-child {
@@ -6657,32 +6387,7 @@ body.chronology-entered .timeline {
   margin-left: auto;
 }
 
-.paradise-trees-note {
-  margin-top: clamp(24px, 4vw, 46px);
-}
-
 @media (max-width: 720px) {
-  .realm-pleroma::before,
-  .realm-demiurgic-order::before,
-  .realm-material-cosmos::before,
-  .realm-primordial-humanity::before {
-    -webkit-mask-image:
-      linear-gradient(
-        to bottom,
-        transparent 0,
-        rgba(0, 0, 0, 0.58) 76px,
-        #000 180px,
-        #000 100%
-      );
-    mask-image:
-      linear-gradient(
-        to bottom,
-        transparent 0,
-        rgba(0, 0, 0, 0.58) 76px,
-        #000 180px,
-        #000 100%
-      );
-  }
 
   .paradise-tree-profile,
   .paradise-tree-profile:last-child {
@@ -6711,35 +6416,7 @@ body.chronology-entered .timeline {
 }
 
 
-/* ============================================================
-   PRIMORDIAL HUMANITY MARKER — LAYERED ENCLOSURE
-   Three incomplete concentric boundaries surround the hidden
-   luminous point. Alternating openings preserve the possibility
-   of awakening without reducing the symbol to a target.
-   ============================================================ */
 
-.event[data-phase-color="primordial-humanity"]::after {
-  width: 22px;
-  height: 22px;
-  border: 0;
-  border-radius: 0;
-  background-color: transparent;
-  background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23a68b5b' stroke-linecap='round'%3E%3Ccircle cx='12' cy='12' r='9' stroke-width='1.25' stroke-dasharray='48 9' transform='rotate(-52 12 12)'/%3E%3Ccircle cx='12' cy='12' r='6.25' stroke-width='1.15' stroke-dasharray='31 8.3' transform='rotate(78 12 12)'/%3E%3Ccircle cx='12' cy='12' r='3.65' stroke-width='1.05' stroke-dasharray='16.5 6.5' transform='rotate(-18 12 12)'/%3E%3C/g%3E%3Ccircle cx='12' cy='12' r='1.35' fill='%23dbc078'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  box-shadow:
-    0 0 14px rgba(219, 192, 120, 0.09);
-}
-
-.event:nth-of-type(odd)[data-phase-color="primordial-humanity"]::after {
-  right: -11px;
-}
-
-.event:nth-of-type(even)[data-phase-color="primordial-humanity"]::after {
-  left: -11px;
-}
 
 
 /* ============================================================
@@ -6749,24 +6426,6 @@ body.chronology-entered .timeline {
 
 /* Remove every inherited marker surface: only the concentric
    line symbol and central luminous point remain visible. */
-.event[data-phase-color="primordial-humanity"]::after {
-  border: 0;
-  outline: 0;
-  border-radius: 0;
-  clip-path: none;
-  -webkit-mask-image: none;
-  mask-image: none;
-  background-color: transparent;
-  box-shadow: none;
-  filter: none;
-  transform: none;
-}
-
-.paradise-trees-content {
-  display: block;
-  margin-top: 22px;
-  padding: 3px 0 0;
-}
 
 .paradise-tree-profile,
 .paradise-tree-profile:last-child {
@@ -6807,27 +6466,7 @@ body.chronology-entered .timeline {
   color: #ddd6c8;
 }
 
-.paradise-tree-profile p,
-.paradise-trees-note p {
-  max-width: none;
-  margin: 0;
-  font-family: inherit;
-  font-size: 13px;
-  line-height: 1.6;
-  font-weight: normal;
-  color: #817d75;
-}
-
-.paradise-trees-note {
-  margin-top: 4px;
-  padding-top: 16px;
-  border-top: 1px solid var(--internal-divider);
-}
-
 @media (max-width: 700px) {
-  .paradise-trees-content {
-    margin-top: 18px;
-  }
 
   .paradise-tree-profile,
   .paradise-tree-profile:last-child {
@@ -6840,10 +6479,6 @@ body.chronology-entered .timeline {
     margin-top: 14px;
     padding-top: 14px;
   }
-
-  .paradise-trees-note {
-    padding-top: 14px;
-  }
 }
 
 
@@ -6851,88 +6486,7 @@ body.chronology-entered .timeline {
    EVE AND LUMINOUS EPINOIA — COMPACT VERTICAL EXPLORER
    ============================================================ */
 
-.eve-epinoia-content {
-  display: block;
-  margin-top: 22px;
-  padding: 3px 0 0;
-}
-
-.eve-epinoia-profile,
-.eve-epinoia-profile:last-child {
-  width: 100%;
-  border-inline-end: 0;
-  border-bottom: 0;
-  padding: 3px 0 16px 16px;
-  border-left: 1px solid var(--member-rail);
-}
-
-.eve-epinoia-profile + .eve-epinoia-profile {
-  margin-top: 16px;
-  padding-top: 16px;
-  border-top: 1px solid var(--internal-divider);
-}
-
-.eve-epinoia-label {
-  display: block;
-  max-width: none;
-  margin: 0 0 6px;
-  font-family: Arial, sans-serif;
-  font-size: 7px;
-  line-height: 1.4;
-  font-weight: normal;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--phase-color);
-  opacity: 0.7;
-}
-
-.eve-epinoia-profile h3 {
-  max-width: none;
-  margin: 0 0 7px;
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 1.25;
-  font-weight: normal;
-  color: #ddd6c8;
-}
-
-.eve-epinoia-profile p,
-.eve-epinoia-note p {
-  max-width: none;
-  margin: 0;
-  font-family: inherit;
-  font-size: 13px;
-  line-height: 1.6;
-  font-weight: normal;
-  color: #817d75;
-}
-
-.eve-epinoia-note {
-  margin-top: 4px;
-  padding-top: 16px;
-  border-top: 1px solid var(--internal-divider);
-}
-
 @media (max-width: 700px) {
-  .eve-epinoia-content {
-    margin-top: 18px;
-  }
-
-  .eve-epinoia-profile,
-  .eve-epinoia-profile:last-child {
-    padding: 3px 0 14px 14px;
-    border-right: 0;
-    border-left: 1px solid var(--member-rail);
-  }
-
-  .eve-epinoia-profile + .eve-epinoia-profile {
-    margin-top: 14px;
-    padding-top: 14px;
-  }
-
-  .eve-epinoia-note {
-    padding-top: 14px;
-  }
 }
 
 
@@ -7012,108 +6566,11 @@ body.chronology-entered .timeline {
    card column rather than the page-centered Monad presentation.
    ============================================================ */
 
-.event[data-event-id="event-adam-material-enclosure"] .comparative-explorer,
-.event[data-event-id="event-adam-archontic-paradise"] .comparative-explorer,
-.event[data-event-id="event-archontic-pursuit-of-eve"] .comparative-explorer {
-  width: 100% !important;
-  margin: 22px 0 0 !important;
-}
-
-.event[data-event-id="event-adam-material-enclosure"] .comparative-explorer > summary,
-.event[data-event-id="event-adam-archontic-paradise"] .comparative-explorer > summary,
-.event[data-event-id="event-archontic-pursuit-of-eve"] .comparative-explorer > summary {
-  width: 100% !important;
-  padding: 16px 0 12px !important;
-}
-
-.event:nth-of-type(even)[data-event-id="event-adam-material-enclosure"] .comparative-explorer > summary,
-.event:nth-of-type(even)[data-event-id="event-adam-archontic-paradise"] .comparative-explorer > summary,
-.event:nth-of-type(even)[data-event-id="event-archontic-pursuit-of-eve"] .comparative-explorer > summary {
-  justify-content: flex-start !important;
-  text-align: left !important;
-}
-
-.event:nth-of-type(odd)[data-event-id="event-adam-material-enclosure"] .comparative-explorer > summary,
-.event:nth-of-type(odd)[data-event-id="event-adam-archontic-paradise"] .comparative-explorer > summary,
-.event:nth-of-type(odd)[data-event-id="event-archontic-pursuit-of-eve"] .comparative-explorer > summary {
-  justify-content: flex-end !important;
-  text-align: right !important;
-}
-
-.event[data-event-id="event-adam-material-enclosure"] .comparative-traditions,
-.event[data-event-id="event-adam-archontic-paradise"] .comparative-traditions,
-.event[data-event-id="event-archontic-pursuit-of-eve"] .comparative-traditions {
-  width: 100% !important;
-  margin: 22px 0 0 !important;
-}
-
-.event:nth-of-type(even)[data-event-id="event-adam-material-enclosure"] .comparative-tradition,
-.event:nth-of-type(even)[data-event-id="event-adam-archontic-paradise"] .comparative-tradition,
-.event:nth-of-type(even)[data-event-id="event-archontic-pursuit-of-eve"] .comparative-tradition {
-  padding: 3px 0 16px 16px !important;
-  border-left: 1px solid var(--member-rail) !important;
-  border-right: 0 !important;
-  text-align: left !important;
-}
-
-.event:nth-of-type(odd)[data-event-id="event-adam-material-enclosure"] .comparative-tradition,
-.event:nth-of-type(odd)[data-event-id="event-adam-archontic-paradise"] .comparative-tradition,
-.event:nth-of-type(odd)[data-event-id="event-archontic-pursuit-of-eve"] .comparative-tradition {
-  padding: 3px 16px 16px 0 !important;
-  border-right: 1px solid var(--member-rail) !important;
-  border-left: 0 !important;
-  text-align: right !important;
-}
-
-.event[data-event-id="event-adam-material-enclosure"] .comparative-tradition-category,
-.event[data-event-id="event-adam-material-enclosure"] .comparative-tradition h3,
-.event[data-event-id="event-adam-material-enclosure"] .comparative-tradition p,
-.event[data-event-id="event-adam-archontic-paradise"] .comparative-tradition-category,
-.event[data-event-id="event-adam-archontic-paradise"] .comparative-tradition h3,
-.event[data-event-id="event-adam-archontic-paradise"] .comparative-tradition p,
-.event[data-event-id="event-archontic-pursuit-of-eve"] .comparative-tradition-category,
-.event[data-event-id="event-archontic-pursuit-of-eve"] .comparative-tradition h3,
-.event[data-event-id="event-archontic-pursuit-of-eve"] .comparative-tradition p {
-  max-width: none !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  text-align: inherit !important;
-}
-
 @media (max-width: 700px) {
-  .event[data-event-id="event-adam-material-enclosure"] .comparative-explorer,
-  .event[data-event-id="event-adam-archontic-paradise"] .comparative-explorer,
-  .event[data-event-id="event-archontic-pursuit-of-eve"] .comparative-explorer {
-    margin-top: 18px !important;
-  }
-
-  .event[data-event-id="event-adam-material-enclosure"] .comparative-explorer > summary,
-  .event[data-event-id="event-adam-archontic-paradise"] .comparative-explorer > summary,
-  .event[data-event-id="event-archontic-pursuit-of-eve"] .comparative-explorer > summary {
-    justify-content: flex-start !important;
-    text-align: left !important;
-  }
-
-  .event[data-event-id="event-adam-material-enclosure"] .comparative-tradition,
-  .event[data-event-id="event-adam-archontic-paradise"] .comparative-tradition,
-  .event[data-event-id="event-archontic-pursuit-of-eve"] .comparative-tradition {
-    padding: 3px 0 14px 14px !important;
-    border-left: 1px solid var(--member-rail) !important;
-    border-right: 0 !important;
-    text-align: left !important;
-  }
 }
 
 
-/* ============================================================
-   ELOIM AND YAVE — COMPACT PROFILE EXPLORER
-   ============================================================ */
 
-.archontic-sons-content {
-  display: block;
-  margin-top: 22px;
-  padding: 3px 0 0;
-}
 
 .archontic-son-profile,
 .archontic-son-profile:last-child {
@@ -7179,23 +6636,6 @@ body.chronology-entered .timeline {
   color: #817d75;
 }
 
-.archontic-son-profile p,
-.archontic-sons-note p {
-  max-width: none;
-  margin: 0;
-  font-family: inherit;
-  font-size: 13px;
-  line-height: 1.6;
-  font-weight: normal;
-  color: #817d75;
-}
-
-.archontic-sons-note {
-  margin-top: 4px;
-  padding-top: 16px;
-  border-top: 1px solid var(--internal-divider);
-}
-
 .event[data-event-id="event-archontic-cain-and-abel"] .comparative-explorer {
   width: 100% !important;
   margin: 22px 0 0 !important;
@@ -7231,9 +6671,6 @@ body.chronology-entered .timeline {
 }
 
 @media (max-width: 700px) {
-  .archontic-sons-content {
-    margin-top: 18px;
-  }
 
   .archontic-son-profile,
   .archontic-son-profile:last-child {
@@ -7248,10 +6685,6 @@ body.chronology-entered .timeline {
   .archontic-son-details div {
     grid-template-columns: 1fr;
     gap: 3px;
-  }
-
-  .archontic-sons-note {
-    padding-top: 14px;
   }
 }
 
@@ -7315,67 +6748,6 @@ body.chronology-entered .timeline {
   it cannot cross the central chronology axis.
 */
 
-.event.primary-event[data-event-id="event-seth-luminous-lineage"]
-.comparative-explorer,
-.event.primary-event[data-event-id="event-spirit-of-life-awakening"]
-.comparative-explorer,
-.event.primary-event[data-event-id="event-seth-luminous-lineage"]
-.comparative-traditions,
-.event.primary-event[data-event-id="event-spirit-of-life-awakening"]
-.comparative-traditions,
-.event.primary-event[data-event-id="event-seth-luminous-lineage"]
-.comparative-tradition,
-.event.primary-event[data-event-id="event-spirit-of-life-awakening"]
-.comparative-tradition {
-  width: 100% !important;
-  max-width: 100% !important;
-  min-width: 0 !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  box-sizing: border-box !important;
-}
-
-.event.primary-event[data-event-id="event-seth-luminous-lineage"]
-.comparative-explorer,
-.event.primary-event[data-event-id="event-spirit-of-life-awakening"]
-.comparative-explorer {
-  margin-top: 22px !important;
-  overflow: hidden;
-}
-
-.event.primary-event[data-event-id="event-seth-luminous-lineage"]
-.comparative-traditions,
-.event.primary-event[data-event-id="event-spirit-of-life-awakening"]
-.comparative-traditions {
-  margin-top: 22px !important;
-}
-
-.event.primary-event[data-event-id="event-seth-luminous-lineage"]
-.comparative-explorer > summary,
-.event.primary-event[data-event-id="event-spirit-of-life-awakening"]
-.comparative-explorer > summary {
-  width: 100% !important;
-  max-width: 100% !important;
-  box-sizing: border-box !important;
-}
-
-.event.primary-event[data-event-id="event-seth-luminous-lineage"]
-.comparative-tradition h3,
-.event.primary-event[data-event-id="event-spirit-of-life-awakening"]
-.comparative-tradition h3,
-.event.primary-event[data-event-id="event-seth-luminous-lineage"]
-.comparative-tradition p,
-.event.primary-event[data-event-id="event-spirit-of-life-awakening"]
-.comparative-tradition p,
-.event.primary-event[data-event-id="event-seth-luminous-lineage"]
-.comparative-tradition-sources,
-.event.primary-event[data-event-id="event-spirit-of-life-awakening"]
-.comparative-tradition-sources {
-  max-width: 100% !important;
-  overflow-wrap: anywhere;
-  word-break: normal;
-}
-
 
 /* ==========================================================
    SETH LOT — LEFT-CARD COMPARATIVE ALIGNMENT
@@ -7388,82 +6760,7 @@ body.chronology-entered .timeline {
   centered across the card or timeline.
 */
 
-.event.primary-event[data-event-id="event-seth-luminous-lineage"]
-.comparative-explorer > summary,
-.event.primary-event[data-event-id="event-spirit-of-life-awakening"]
-.comparative-explorer > summary {
-  justify-content: flex-end !important;
-  text-align: right !important;
-}
-
-.event.primary-event[data-event-id="event-seth-luminous-lineage"]
-.comparative-tradition,
-.event.primary-event[data-event-id="event-spirit-of-life-awakening"]
-.comparative-tradition {
-  padding: 3px 16px 16px 0 !important;
-  border-right: 1px solid var(--member-rail) !important;
-  border-left: 0 !important;
-  text-align: right !important;
-}
-
-.event.primary-event[data-event-id="event-seth-luminous-lineage"]
-.comparative-tradition-category,
-.event.primary-event[data-event-id="event-seth-luminous-lineage"]
-.comparative-tradition h3,
-.event.primary-event[data-event-id="event-seth-luminous-lineage"]
-.comparative-tradition p,
-.event.primary-event[data-event-id="event-seth-luminous-lineage"]
-.comparative-tradition-sources,
-.event.primary-event[data-event-id="event-spirit-of-life-awakening"]
-.comparative-tradition-category,
-.event.primary-event[data-event-id="event-spirit-of-life-awakening"]
-.comparative-tradition h3,
-.event.primary-event[data-event-id="event-spirit-of-life-awakening"]
-.comparative-tradition p,
-.event.primary-event[data-event-id="event-spirit-of-life-awakening"]
-.comparative-tradition-sources {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  text-align: right !important;
-}
-
 @media (max-width: 700px) {
-  .event.primary-event[data-event-id="event-seth-luminous-lineage"]
-  .comparative-explorer > summary,
-  .event.primary-event[data-event-id="event-spirit-of-life-awakening"]
-  .comparative-explorer > summary {
-    justify-content: flex-start !important;
-    text-align: left !important;
-  }
-
-  .event.primary-event[data-event-id="event-seth-luminous-lineage"]
-  .comparative-tradition,
-  .event.primary-event[data-event-id="event-spirit-of-life-awakening"]
-  .comparative-tradition {
-    padding: 3px 0 14px 14px !important;
-    border-left: 1px solid var(--member-rail) !important;
-    border-right: 0 !important;
-    text-align: left !important;
-  }
-
-  .event.primary-event[data-event-id="event-seth-luminous-lineage"]
-  .comparative-tradition-category,
-  .event.primary-event[data-event-id="event-seth-luminous-lineage"]
-  .comparative-tradition h3,
-  .event.primary-event[data-event-id="event-seth-luminous-lineage"]
-  .comparative-tradition p,
-  .event.primary-event[data-event-id="event-seth-luminous-lineage"]
-  .comparative-tradition-sources,
-  .event.primary-event[data-event-id="event-spirit-of-life-awakening"]
-  .comparative-tradition-category,
-  .event.primary-event[data-event-id="event-spirit-of-life-awakening"]
-  .comparative-tradition h3,
-  .event.primary-event[data-event-id="event-spirit-of-life-awakening"]
-  .comparative-tradition p,
-  .event.primary-event[data-event-id="event-spirit-of-life-awakening"]
-  .comparative-tradition-sources {
-    text-align: left !important;
-  }
 }
 
 
@@ -7530,73 +6827,7 @@ body.chronology-entered .timeline {
 
 /* Micro labels: no essential text is smaller than 11px. */
 
-.period,
-.realm-region-subtitle,
-.group-member-period,
-.group-member-aliases,
-.aeon-domain-number,
-.aeon-domain-label,
-.aeon-number,
-.aeon-aliases,
-.aeon-threshold,
-.hero-quote cite,
-.comparative-tradition-category,
-.seven-powers-label,
-.pleroma-threshold-label,
-.pleromatic-process-number,
-.pleromatic-process-role,
-.pleromatic-process-subtitle,
-.psychic-component-number,
-.psychic-components-label,
-.context-profile-label,
-.psychic-construction-section-label,
-.anatomical-region > summary,
-.paradise-tree-label,
-.eve-epinoia-label,
-.archontic-son-label,
-.archontic-son-details dt,
-.thematic-profile-label {
-  font-size: var(--type-micro) !important;
-  line-height: 1.5 !important;
-  letter-spacing: 0.14em !important;
-  opacity: 0.9 !important;
-}
-
-.comparative-tradition-category,
-.seven-powers-label,
-.pleromatic-process-role,
-.psychic-components-label,
-.context-profile-label,
-.paradise-tree-label,
-.eve-epinoia-label,
-.archontic-son-label,
-.thematic-profile-label {
-  font-size: var(--type-label) !important;
-}
-
 /* Secondary prose: raised from 12–13px to a comfortable 15px. */
-
-.group-member p,
-.aeon-member p,
-.comparative-tradition p,
-.pleromatic-process-member p,
-.pleromatic-process-note p,
-.psychic-component p,
-.psychic-components-note p,
-.context-profile-content p,
-.angelic-anatomy-introduction,
-.paradise-tree-profile p,
-.paradise-trees-note p,
-.eve-epinoia-profile p,
-.eve-epinoia-note p,
-.archontic-son-profile p,
-.archontic-sons-note p,
-.thematic-profile p,
-.thematic-profiles-note p {
-  font-size: var(--type-secondary) !important;
-  line-height: 1.7 !important;
-  color: var(--readable-secondary) !important;
-}
 
 /* Compact data values still read clearly. */
 
@@ -7659,9 +6890,7 @@ body.chronology-entered .timeline {
 }
 
 
-/* ==========================================================
-   APPROVED READABILITY + PRIMORDIAL REFINEMENT — 2026-09-05
-   ========================================================== */
+
 
 /* Restore the deliberately prominent chronology invitation. */
 .begin {
@@ -7734,45 +6963,7 @@ body.chronology-entered .timeline {
   border-left-width: 1.15px;
 }
 
-/* Primordial Humanity: static, readable depth centred on the realm. */
-.realm-primordial-humanity {
-  background:
-    radial-gradient(
-      ellipse at 50% 38%,
-      rgba(166, 139, 91, 0.075) 0%,
-      rgba(104, 88, 60, 0.045) 34%,
-      transparent 68%
-    ),
-    linear-gradient(
-      to bottom,
-      transparent 0%,
-      rgba(69, 78, 65, 0.012) 90px,
-      rgba(76, 67, 48, 0.08) 210px,
-      rgba(58, 50, 36, 0.22) 390px,
-      rgba(41, 37, 29, 0.30) 100%
-    );
-}
 
-.realm-primordial-humanity::before {
-  background:
-    radial-gradient(
-      ellipse at 50% 48%,
-      rgba(184, 151, 91, 0.10) 0%,
-      rgba(126, 103, 67, 0.055) 30%,
-      transparent 67%
-    ),
-    linear-gradient(
-      to bottom,
-      rgba(166, 139, 91, 0.055) 0%,
-      rgba(92, 76, 51, 0.19) 22%,
-      rgba(58, 50, 36, 0.30) 56%,
-      rgba(41, 37, 29, 0.35) 100%
-    );
-  opacity: 1;
-  transform: none;
-  animation: none;
-  will-change: auto;
-}
 
 @media (max-width: 700px) {
   .begin {
@@ -7794,11 +6985,7 @@ body.chronology-entered .timeline {
 }
 
 
-/* ============================================================
-   MATERIAL → PRIMORDIAL THRESHOLD — INVISIBLE CROSSFADE
-   Both fields overlap around the chronological node so no
-   geometric container edge is visible to the eye.
-   ============================================================ */
+
 
 .realm-material-cosmos::before {
   inset: -200px -12vw -180px;
@@ -7822,36 +7009,6 @@ body.chronology-entered .timeline {
       rgba(0, 0, 0, 0.55) calc(100% - 200px),
       transparent 100%
     );
-}
-
-.realm-primordial-humanity {
-  overflow: visible;
-  background: none;
-}
-
-.realm-primordial-humanity::before {
-  content: "";
-  position: absolute;
-  z-index: 0;
-  inset: -240px 0 0;
-  pointer-events: none;
-  background:
-    linear-gradient(
-      to bottom,
-      rgba(111, 88, 50, 0) 0,
-      rgba(111, 88, 50, 0.055) 100px,
-      rgba(111, 86, 47, 0.16) 240px,
-      rgba(106, 79, 42, 0.34) 410px,
-      rgba(91, 63, 35, 0.52) 700px,
-      rgba(72, 50, 29, 0.60) 1120px,
-      rgba(58, 42, 28, 0.54) 100%
-    );
-  -webkit-mask-image: none;
-  mask-image: none;
-  opacity: 1;
-  transform: none;
-  animation: none;
-  will-change: auto;
 }
 
 
@@ -8005,11 +7162,6 @@ body.chronology-entered .timeline {
 }
 
 /* Structured entity/member explorers retain their vertical rails. */
-.event .group-members .group-member,
-.event .aeon-members .aeon-member,
-.event .archontic-sons-content .archontic-son-profile {
-  border-left-width: 1.15px;
-}
 
 @media (max-width: 700px) {
   .alternative-names-block {
@@ -8083,51 +7235,9 @@ html body .timeline .event
 }
 
 
-/* ============================================================
-   PRIMORDIAL NARRATIVE EXPLORERS — HORIZONTAL SEPARATORS ONLY
-   Trees of Paradise and Eve/Epinoia are explanatory narratives,
-   not structured entity lists; vertical member rails do not apply.
-   ============================================================ */
 
-html body .timeline .event
-.paradise-trees-content
-> .paradise-tree-profile,
-html body .timeline .event
-.eve-epinoia-content
-> .eve-epinoia-profile {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  border-left: 0 !important;
-  border-right: 0 !important;
-  border-inline-start: 0 !important;
-  border-inline-end: 0 !important;
-}
-
-html body .timeline .event
-.paradise-trees-content
-> .paradise-tree-profile
-+ .paradise-tree-profile,
-html body .timeline .event
-.eve-epinoia-content
-> .eve-epinoia-profile
-+ .eve-epinoia-profile {
-  margin-top: 0 !important;
-  padding-top: 20px !important;
-  border-top: 1.15px solid var(--internal-divider) !important;
-}
 
 @media (max-width: 700px) {
-  html body .timeline .event
-  .paradise-trees-content
-  > .paradise-tree-profile,
-  html body .timeline .event
-  .eve-epinoia-content
-  > .eve-epinoia-profile {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    border-left: 0 !important;
-    border-right: 0 !important;
-  }
 }
 
 
@@ -8196,66 +7306,8 @@ html body .timeline .event
 }
 
 /* Thematic narrative entries use the same label/title/copy rhythm. */
-html body .timeline .event
-.paradise-trees-content,
-html body .timeline .event
-.eve-epinoia-content {
-  margin-top: var(--rhythm-explorer-to-content) !important;
-  padding-top: 0 !important;
-}
-
-html body .timeline .event
-.paradise-trees-content
-> .paradise-tree-profile,
-html body .timeline .event
-.eve-epinoia-content
-> .eve-epinoia-profile {
-  margin: 0 !important;
-  padding-top: 0 !important;
-  padding-bottom: var(--rhythm-entry-divider) !important;
-}
-
-html body .timeline .event
-.paradise-trees-content
-> .paradise-tree-profile
-+ .paradise-tree-profile,
-html body .timeline .event
-.eve-epinoia-content
-> .eve-epinoia-profile
-+ .eve-epinoia-profile {
-  margin-top: 0 !important;
-  padding-top: var(--rhythm-entry-divider) !important;
-}
-
-html body .timeline .event
-.paradise-tree-label,
-html body .timeline .event
-.eve-epinoia-label,
-html body .timeline .event
-.thematic-profile-label {
-  margin-bottom: var(--rhythm-label-to-title) !important;
-}
-
-html body .timeline .event
-.paradise-tree-profile h3,
-html body .timeline .event
-.eve-epinoia-profile h3,
-html body .timeline .event
-.thematic-profile h3 {
-  margin-top: 0 !important;
-  margin-bottom: var(--rhythm-title-to-copy) !important;
-}
 
 /* Horizontal notes remain clearly separated without an oversized void. */
-html body .timeline .event
-.paradise-trees-note,
-html body .timeline .event
-.eve-epinoia-note,
-html body .timeline .event
-.thematic-profiles-note {
-  margin-top: 0 !important;
-  padding-top: var(--rhythm-entry-divider) !important;
-}
 
 @media (max-width: 700px) {
   :root {
@@ -8265,11 +7317,7 @@ html body .timeline .event
 }
 
 
-/* ============================================================
-   PRIMORDIAL HUMANITY — VISIBLE CONTEXT NOTE
-   Realm summaries remain hidden elsewhere; this one explains
-   the material setting required by the chronology.
-   ============================================================ */
+
 
 .realm-region-copy {
   width: min(360px, 38vw);
@@ -8300,10 +7348,6 @@ html body .timeline .event
   color: rgba(147, 166, 153, 0.56);
 }
 
-.realm-primordial-humanity .realm-region-summary {
-  color: rgba(207, 196, 172, 0.64);
-}
-
 @media (max-width: 700px) {
   .realm-region-copy {
     width: min(300px, calc(100vw - 48px));
@@ -8315,12 +7359,7 @@ html body .timeline .event
   }
 }
 
-/* ============================================================
-   PRIMORDIAL HUMANITY — REALM INTRODUCTION CLEARANCE
-   The first chronology card begins below the complete realm
-   introduction. Increasing the card's own top padding keeps the
-   marker and every following card in the normal document flow.
-   ============================================================ */
+
 
 .realm-start-entry {
   padding-top: 235px;
