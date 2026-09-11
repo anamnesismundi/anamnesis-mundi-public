@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "1.0",
+  "lastUpdated": "2026-09-11",
+  "phases": [
+    {
+      "id": "phase-transcendent-origin",
+      "order": 1,
+      "name": "Transcendent Origin",
+      "shortLabel": "Origin",
+      "description": "The primordial level preceding material creation and the ordered cosmos.",
+      "colorKey": "origin"
+    },
+    {
+      "id": "phase-divine-emanation",
+      "order": 2,
+      "name": "Divine Emanation",
+      "shortLabel": "Emanation",
+      "description": "The unfolding of divine realities, powers and emanations from the transcendent source.",
+      "colorKey": "emanation"
+    },
+    {
+      "id": "phase-cosmological-rupture",
+      "order": 3,
+      "name": "Cosmological Rupture",
+      "shortLabel": "Rupture",
+      "description": "A disruption within the higher cosmological order that marks the transition toward the emergence of an ignorant lower ruler and a distinct lower order.",
+      "colorKey": "rupture"
+    },
+    {
+      "id": "phase-demiurgic-order",
+      "order": 4,
+      "name": "Demiurgic Order",
+      "shortLabel": "Demiurgic Order",
+      "description": "The emergence of the Demiurge, archons and the structures associated with the ordering of the lower cosmos.",
+      "colorKey": "demiurgic"
+    },
+    {
+      "id": "phase-material-cosmos",
+      "order": 5,
+      "name": "Material Cosmos",
+      "shortLabel": "Material Cosmos",
+      "description": "The formation and ordering of the material world.",
+      "colorKey": "material"
+    }
+  ]
+}

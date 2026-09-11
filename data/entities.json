@@ -1,0 +1,2286 @@
+{
+  "schemaVersion": "1.0",
+  "lastUpdated": "2026-09-09",
+  "entities": [
+    {
+      "id": "entity-monad",
+      "displayName": "Monad",
+      "entityType": "divine-principle",
+      "phaseId": "phase-transcendent-origin",
+      "display": {
+        "level": "primary",
+        "order": 1
+      },
+      "alternativeNames": [
+        "The One",
+        "The Invisible Spirit",
+        "The Father of Everything",
+        "The Unknown God",
+        "The Uncontainable Light",
+        "Bythos (The Depth - in Valentinian texts)"
+      ],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "primary source for the Monad description",
+          "status": "explicit"
+        },
+        {
+          "sourceId": "source-gospel-of-the-egyptians",
+          "role": "comparative Sethian source for the transcendent divine principle",
+          "status": "comparative-explicit"
+        }
+      ],
+      "summary": "The ultimate, uncaused source of reality. It exists prior to space, time, and matter. It is absolute perfection, pure light, and total silence. It does not exist in a spatial sense, but rather transcends existence itself. It is unnamable, incomprehensible, and cannot be described by human attributes.",
+      "overview": "In the Sethian cosmological framework represented here, the Monad stands beyond the ordered divine realms and beyond every lower cosmological structure. The Apocryphon of John describes the supreme source through apophatic language: invisible, immeasurable, incorruptible, ineffable and beyond comprehension. Rather than existing as one being among others, it is the ultimate transcendent source from which the higher divine order unfolds.",
+      "terminology": {
+        "editorialDisplayName": "Monad",
+        "sourceTerms": [
+          "The One",
+          "Invisible Spirit",
+          "Invisible Virginal Spirit",
+          "Father"
+        ],
+        "comparativeTerms": [
+          {
+            "term": "Great Invisible Spirit",
+            "sourceId": "source-gospel-of-the-egyptians",
+            "status": "comparative-sethian"
+          },
+          {
+            "term": "Bythos",
+            "translation": "The Depth",
+            "tradition": "Valentinian",
+            "status": "comparative-other-tradition"
+          }
+        ],
+        "note": "Monad is retained as the editorial display name used by Anamnesis Mundi. The surviving Sethian sources use titles centered on the Invisible Spirit rather than presenting Monad as a single uniform historical title."
+      },
+      "primaryLens": {
+        "tradition": "Sethian",
+        "source": "Apocryphon of John",
+        "interpretiveFrame": "The supreme principle is radically transcendent, preceding the Pleroma and every spatial, temporal, material and aeonic structure."
+      },
+      "researchNotes": {
+        "ontologicalPriority": "The Monad is represented outside the Pleroma in the visualization because it functions as the transcendent source prior to the ordered divine Fullness.",
+        "apophaticCharacter": "The source relies heavily on negative or apophatic description: the supreme principle exceeds ordinary predicates, measurement, form and comprehension.",
+        "terminologyCaution": "The labels The Unknown God and The Uncontainable Light are useful comparative or interpretive descriptions but should not be treated as equally stable manuscript titles across all witnesses.",
+        "bythosCaution": "Bythos belongs particularly to Valentinian cosmological terminology and is therefore kept in the comparative layer rather than listed as a direct Sethian alternative name.",
+        "crossSourceCaution": "The Gospel of the Egyptians provides closely related Sethian language concerning the Great Invisible Spirit, but terminology from that text should remain source-attributed when it is not independently explicit in the Apocryphon of John."
+      },
+      "comparativeTraditions": [
+        {
+          "category": "PHILOSOPHICAL PARALLEL",
+          "name": "The Platonic / Middle-Platonic One",
+          "description": "Middle-Platonic and later Platonic traditions describe a transcendent first principle above ordinary predicates; in later Platonism, differentiated levels of reality proceed from the One. This provides an important philosophical comparison with the Sethian Invisible Spirit, while the two should not be treated as identical concepts.",
+          "relationType": "PHILOSOPHICAL PARALLEL",
+          "traditionFamily": "Platonic",
+          "sourceIds": [
+            "source-alcinous-handbook-platonism",
+            "source-plotinus-enneads",
+            "source-turner-sethian-platonism"
+          ],
+          "sourceCitations": [
+            "ALCINOUS, THE HANDBOOK OF PLATONISM 10",
+            "PLOTINUS, ENNEADS V.1–2",
+            "JOHN D. TURNER, SETHIAN GNOSTICISM AND THE PLATONIC TRADITION"
+          ],
+          "sourceAttestations": [
+            {
+              "sourceId": "source-alcinous-handbook-platonism",
+              "role": "primary Middle Platonic evidence for the transcendent first God",
+              "status": "comparative-primary-text"
+            },
+            {
+              "sourceId": "source-plotinus-enneads",
+              "role": "primary later Platonic evidence for the One and the procession of differentiated reality",
+              "status": "comparative-primary-text",
+              "notes": "Later than the earliest likely Secret Book of John; used comparatively, not as proof of direct dependence."
+            },
+            {
+              "sourceId": "source-turner-sethian-platonism",
+              "role": "scholarly analysis of Sethian and Platonic traditions",
+              "status": "modern-scholarly-comparison"
+            }
+          ]
+        },
+        {
+          "category": "MYTHIC PARALLEL",
+          "name": "Atum and Heliopolitan Cosmogony",
+          "description": "In the Heliopolitan Egyptian cosmogony, Atum stands at the beginning of the divine genealogy and generates differentiated divine beings from himself. The comparison lies in the movement from primordial unity toward divine multiplicity; Atum remains a cosmogonic deity within Egyptian mythology and is not an equivalent of the radically transcendent Sethian Monad.",
+          "relationType": "MYTHIC PARALLEL",
+          "traditionFamily": "Egyptian",
+          "sourceIds": [
+            "source-pyramid-texts",
+            "source-wilkinson-complete-gods"
+          ],
+          "sourceCitations": [
+            "THE PYRAMID TEXTS, UTTERANCE 527",
+            "RICHARD H. WILKINSON, THE COMPLETE GODS AND GODDESSES OF ANCIENT EGYPT — ATUM"
+          ],
+          "sourceAttestations": [
+            {
+              "sourceId": "source-pyramid-texts",
+              "role": "primary Egyptian attestation of Atum and the generation of Shu and Tefnut",
+              "status": "comparative-primary-text"
+            },
+            {
+              "sourceId": "source-wilkinson-complete-gods",
+              "role": "modern Egyptological context for Atum and Heliopolitan cosmogony",
+              "status": "modern-scholarly-reference"
+            }
+          ]
+        }
+      ],
+      "notes": "Primary transcendent-source node for the Sethian Apocryphon of John branch. The public visualization intentionally places the Monad outside the Pleroma.",
+      "dateAdded": "2026-08-11",
+      "lastReviewed": "2026-08-22"
+    },
+    {
+      "id": "entity-barbelo",
+      "displayName": "Barbelo",
+      "entityType": "divine-principle",
+      "phaseId": "phase-transcendent-origin",
+      "display": {
+        "level": "primary",
+        "order": 2
+      },
+      "alternativeNames": [
+        "Pronoia (Foreknowledge)",
+        "Ennoia (Thought)",
+        "The Mother-Father",
+        "The Triple-Male",
+        "The Womb of Everything",
+        "She of the Three Names"
+      ],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "primary source for Barbelo and the first unfolding of the divine realm",
+          "status": "explicit"
+        },
+        {
+          "sourceId": "source-trimorphic-protennoia",
+          "role": "parallel Sethian source for Barbelo as the First Thought / Protennoia and the articulation of the higher divine realm",
+          "status": "comparative-explicit"
+        },
+        {
+          "sourceId": "source-allogenes",
+          "role": "comparative Sethian source for Barbelo-related higher metaphysical terminology",
+          "status": "comparative-explicit"
+        }
+      ],
+      "summary": "The first Thought and first power associated with the Invisible Spirit, marking the first unfolding of the divine realm. When the Monad looked into its own light, it reflected upon itself. This self-awareness materialized as the supreme feminine divine principle. She is the Universal Womb, the primordial thought (Pronoia), and the co-creator of the spiritual realm. She requests and receives the initial divine attributes from the Monad (Foreknowledge, Incorruptibility, Eternal Life, and Truth).",
+      "overview": "In the Apocryphon of John, Barbelo emerges in immediate relation to the supreme Invisible Spirit. She is presented as the first Thought or Forethought, the image of the Invisible Spirit, the first power and the first to come forth. Barbelo occupies a pivotal position between the radically transcendent source and the further articulation of the divine realm.",
+      "terminology": {
+        "editorialDisplayName": "Barbelo",
+        "sourceTerms": [
+          "Barbelo",
+          "First Thought",
+          "Forethought",
+          "First Power",
+          "Image of the Invisible Spirit",
+          "Mother-Father",
+          "First Human",
+          "Holy Spirit"
+        ]
+      },
+      "primaryLens": {
+        "tradition": "Sethian",
+        "source": "Apocryphon of John",
+        "interpretiveFrame": "Barbelo represents the first articulated divine reality in relation to the transcendent Invisible Spirit and becomes the locus through which the higher divine realm begins to unfold."
+      },
+      "researchNotes": {
+        "textualTransmission": "The description and titulary of Barbelo should be checked across the four surviving Coptic witnesses.",
+        "relationshipCaution": "The relationship between the Invisible Spirit and Barbelo should be represented according to the language of the source."
+      },
+      "notes": "Barbelo is retained as a distinct primary entity because the Apocryphon of John gives this figure a central structural role in the unfolding of the transcendent divine realm.",
+      "dateAdded": "2026-08-11",
+      "lastReviewed": "2026-08-22",
+      "pleromaticProcess": {
+        "explorerTitle": "Explore Barbelo’s Attendant Aeons",
+        "entries": [
+          {
+            "number": "I",
+            "role": "Aeonic Power",
+            "name": "Foreknowledge",
+            "description": "At Barbelo’s request, Foreknowledge comes forth from the Invisible Spirit and stands beside Forethought."
+          },
+          {
+            "number": "II",
+            "role": "Aeonic Power",
+            "name": "Incorruptibility",
+            "description": "Barbelo requests Incorruptibility, which comes forth as a distinct power and joins the unfolding divine fullness."
+          },
+          {
+            "number": "III",
+            "role": "Aeonic Power",
+            "name": "Eternal Life",
+            "description": "Eternal Life comes forth at Barbelo’s request and takes its place within the initial aeonic complex surrounding her."
+          },
+          {
+            "number": "IV",
+            "role": "Aeonic Power",
+            "name": "Truth",
+            "description": "Truth is the fourth power requested by Barbelo and completes this sequence of attendant aeonic realities."
+          }
+        ],
+        "note": {
+          "role": "Textual Note",
+          "name": "The Aeonic Complex Around Barbelo",
+          "description": "The source presents these realities as distinct aeonic powers associated with Barbelo. Their enumeration contributes to the complex described as an androgynous pentad and, in its paired aspect, a decad. Truth here belongs to this initial complex and is not being merged with the later aeon named Truth in Armozel’s triad."
+        }
+      }
+    },
+    {
+      "id": "entity-autogenes",
+      "displayName": "Autogenes",
+      "entityType": "divine-principle",
+      "phaseId": "phase-divine-emanation",
+      "display": {
+        "level": "primary",
+        "order": 3
+      },
+      "alternativeNames": [
+        "The Christ",
+        "The Self-Begotten",
+        "The Only-Begotten",
+        "Monogenes",
+        "The Anointed One"
+      ],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "primary source for Autogenes in the higher divine order",
+          "status": "explicit"
+        },
+        {
+          "sourceId": "source-zostrianos",
+          "role": "parallel Sethian source for Autogenes within the higher aeonic structure",
+          "status": "comparative-explicit"
+        },
+        {
+          "sourceId": "source-allogenes",
+          "role": "parallel Sethian source for Autogenes within the higher metaphysical and aeonic structure",
+          "status": "comparative-explicit"
+        },
+        {
+          "sourceId": "source-gospel-of-judas",
+          "role": "comparative source for self-generated divine terminology",
+          "status": "comparative"
+        }
+      ],
+      "summary": "The self-generated divine Son, emanated from the pure light of the Monad and the holy womb of Barbelo. He is the Worker of creation within the spiritual realm, appointed by the Invisible Spirit to establish and order the realm of light. Anointed by the Invisible Spirit with goodness and perfection, he becomes the spiritual archetype Christos, through whom the structures of the Pleroma are founded. Around him, Mind, Will, and Word articulate divine activity, preparing the emergence of the Four Great Luminaries and the aeonic order associated with them.",
+      "overview": "Autogenes occupies a major position within the higher divine structure described in the Apocryphon of John and stands in close structural relation to the four luminaries.",
+      "terminology": {
+        "editorialDisplayName": "Autogenes",
+        "sourceTerms": [
+          "Autogenes",
+          "Self-Generated",
+          "Christ"
+        ]
+      },
+      "primaryLens": {
+        "tradition": "Sethian",
+        "source": "Apocryphon of John",
+        "interpretiveFrame": "Autogenes functions as a major divine figure within the higher aeonic order."
+      },
+      "researchNotes": {
+        "conceptualCaution": "The title Christ in this context should not automatically be collapsed into later orthodox Christological categories."
+      },
+      "notes": "Autogenes is included in the primary view because it marks a major structural transition within the higher divine order.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-22",
+      "pleromaticProcess": {
+        "explorerTitle": "Explore The Powers Around Autogenes",
+        "entries": [
+          {
+            "number": "I",
+            "role": "Divine Activity",
+            "name": "Mind",
+            "subtitle": "The Fellow Worker",
+            "description": "Autogenes asks that Mind be given to him as a fellow worker, and the Invisible Spirit grants the request."
+          },
+          {
+            "number": "II",
+            "role": "Divine Activity",
+            "name": "Will",
+            "subtitle": "Intention Becoming Act",
+            "description": "Will emerges as divine intention takes effective form, joining Mind in the articulation of creative activity."
+          },
+          {
+            "number": "III",
+            "role": "Divine Activity",
+            "name": "Word",
+            "subtitle": "Divine Activity Expressed",
+            "description": "Word follows Will and becomes the expressive means through which Autogenes brings the spiritual order into articulation."
+          },
+          {
+            "number": "IV",
+            "role": "Attendant Powers",
+            "name": "The Attending Divine Powers",
+            "description": "Eternal Life, Will, Mind, and Foreknowledge attend Autogenes and glorify the Invisible Spirit and Barbelo."
+          }
+        ],
+        "note": {
+          "role": "Chronological Note",
+          "name": "A Preparatory Sequence",
+          "description": "This sequence describes the articulation of divine activity around Autogenes. It should not be treated as a second list of the Twelve Aeons or confused with the Four Great Luminaries that emerge next."
+        }
+      }
+    },
+    {
+      "id": "entity-armozel",
+      "displayName": "Armozel",
+      "entityType": "divine-luminary",
+      "phaseId": "phase-divine-emanation",
+      "groupIds": [
+        "group-four-luminaries"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 5.1
+      },
+      "alternativeNames": [
+        "Harmozel"
+      ],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "first luminary",
+          "status": "explicit"
+        }
+      ],
+      "summary": "The first of the Four Great Luminaries, emanated from the divine Autogenes. Armozel presides over the first aeonic triad within the ordered structure of the Pleroma: Grace (Charis), Truth (Aletheia), and Form (Morphē).",
+      "notes": "Armozel appears through the Four Luminaries group.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-22",
+      "overview": "The first of the Four Great Luminaries, established within the aeonic order of Autogenes. The perfect archetypal human, Geradamas (Pigera-Adamas), is placed in this first realm beside Armozel and the great Autogenes Christ.\n\nPresiding over the first aeonic triad: Grace (Charis), Truth (Aletheia), and Form (Morphē).",
+      "aeonicPosition": {
+        "luminaryNumber": 1,
+        "associatedAeons": [
+          "entity-grace",
+          "entity-truth",
+          "entity-form"
+        ],
+        "sequenceMeaning": "First luminary and first aeonic domain in the fourfold structure."
+      },
+      "researchNotes": {
+        "function": "Armozel structures the first of the four luminary domains and is associated with Grace, Truth and Form.",
+        "crossTextStatus": "The four-luminary pattern is attested in multiple Sethian texts, but functions, associated figures and terminology can vary by source.",
+        "pairingCaution": "Related Sethian texts may describe consorts of the luminaries. Such cross-text evidence should be identified by source and not silently imported into the Apocryphon of John reconstruction."
+      }
+    },
+    {
+      "id": "entity-oroiael",
+      "displayName": "Oroiael",
+      "entityType": "divine-luminary",
+      "phaseId": "phase-divine-emanation",
+      "groupIds": [
+        "group-four-luminaries"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 5.2
+      },
+      "alternativeNames": [
+        "Oriel",
+        "Oroiel"
+      ],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "second luminary",
+          "status": "explicit"
+        }
+      ],
+      "summary": "The second of the Four Great Luminaries, emanated from the divine Autogenes. Oroiael presides over the second aeonic triad within the ordered structure of the Pleroma: Afterthought (Epinoia), Perception (Aisthēsis), and Memory (Mnēmē).",
+      "notes": "Oroiael appears through the Four Luminaries group.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-22",
+      "overview": "The second great aeon of light. It governs the realm of intellect, mental perception, and conceptualization. This sphere of light is the spiritual dwelling place of Seth, the spiritual son of the archetypal human Geradamas (Adamas), ancestor of the Gnostic spiritual race and archetype of the enlightened soul.\n\nPresiding over the second aeonic triad: Afterthought (Epinoia), Perception (Aisthēsis), and Memory (Mnēmē).",
+      "aeonicPosition": {
+        "luminaryNumber": 2,
+        "associatedAeons": [
+          "entity-afterthought",
+          "entity-perception",
+          "entity-memory"
+        ],
+        "sequenceMeaning": "Second luminary and second aeonic domain in the fourfold structure."
+      },
+      "researchNotes": {
+        "function": "Oroiael structures the second of the four luminary domains and is associated with Afterthought, Perception and Memory.",
+        "crossTextStatus": "The four-luminary pattern is attested in multiple Sethian texts, but functions, associated figures and terminology can vary by source.",
+        "pairingCaution": "Related Sethian texts may describe consorts of the luminaries. Such cross-text evidence should be identified by source and not silently imported into the Apocryphon of John reconstruction.",
+        "interpretiveCaution": "The description of Oroiael as governing intellect, mental perception and conceptualization is an explanatory interpretation of the aeonic structure rather than a literal functional title stated by the Apocryphon of John."
+      }
+    },
+    {
+      "id": "entity-daveithai",
+      "displayName": "Daveithai",
+      "entityType": "divine-luminary",
+      "phaseId": "phase-divine-emanation",
+      "groupIds": [
+        "group-four-luminaries"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 5.3
+      },
+      "alternativeNames": [
+        "Daveithe",
+        "Davithe"
+      ],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "third luminary",
+          "status": "explicit"
+        }
+      ],
+      "summary": "The third of the Four Great Luminaries, emanated from the divine Autogenes. Daveithai presides over the third aeonic triad within the ordered structure of the Pleroma: Understanding (Synesis), Love (Agapē), and Idea (Idea).",
+      "notes": "Daveithai appears through the Four Luminaries group.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-22",
+      "overview": "The third great aeon of light. It governs the emotional and relational dimensions of the divine realm, specifically divine love and deep understanding. It houses the seed of Seth, the lineage of enlightened Gnostic souls who descend into the material world but ultimately belong to the Pleroma.\n\nPresiding over the third aeonic triad: Understanding (Synesis), Love (Agapē), and Idea.",
+      "aeonicPosition": {
+        "luminaryNumber": 3,
+        "associatedAeons": [
+          "entity-understanding",
+          "entity-love",
+          "entity-idea"
+        ],
+        "sequenceMeaning": "Third luminary and third aeonic domain in the fourfold structure."
+      },
+      "researchNotes": {
+        "function": "Daveithai structures the third of the four luminary domains and is associated with Understanding, Love and Idea.",
+        "crossTextStatus": "The four-luminary pattern is attested in multiple Sethian texts, but functions, associated figures and terminology can vary by source.",
+        "pairingCaution": "Related Sethian texts may describe consorts of the luminaries. Such cross-text evidence should be identified by source and not silently imported into the Apocryphon of John reconstruction.",
+        "interpretiveCaution": "The description of Daveithai as governing emotional and relational dimensions is an explanatory interpretation of the associated aeonic triad rather than a literal functional title stated by the Apocryphon of John."
+      }
+    },
+    {
+      "id": "entity-eleleth",
+      "displayName": "Eleleth",
+      "entityType": "divine-luminary",
+      "phaseId": "phase-divine-emanation",
+      "groupIds": [
+        "group-four-luminaries"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 5.4
+      },
+      "alternativeNames": [],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "fourth luminary",
+          "status": "explicit"
+        }
+      ],
+      "summary": "The fourth of the Four Great Luminaries, emanated from the divine Autogenes. Eleleth presides over the fourth and final aeonic triad within the ordered structure of the Pleroma: Perfection (Teleiotēs), Peace (Eirēnē), and Sophia (Wisdom).",
+      "notes": "Eleleth appears through the Four Luminaries group.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-22",
+      "overview": "The fourth of the Four Great Luminaries, established over the fourth divine realm. In this realm are placed the souls of those who were initially ignorant of the Fullness and did not repent immediately, but later turned back. Sophia occupies the third position in Eleleth's triad, immediately before the narrative turns to her independent act of generation.\n\nPresiding over the fourth aeonic triad: Perfection (Teleiotēs), Peace (Eirēnē), and Sophia (Wisdom).",
+      "aeonicPosition": {
+        "luminaryNumber": 4,
+        "associatedAeons": [
+          "entity-perfection",
+          "entity-peace",
+          "entity-sophia"
+        ],
+        "sequenceMeaning": "Fourth luminary and fourth aeonic domain in the fourfold structure."
+      },
+      "researchNotes": {
+        "function": "Eleleth structures the fourth of the four luminary domains and is associated with Perfection, Peace and Sophia.",
+        "sophiaImportance": "Sophia belongs to Eleleth's triad. Her later independent generation therefore occurs after the ordered twelve-aeon sequence has been established.",
+        "crossTextStatus": "The four-luminary pattern is attested in multiple Sethian texts, but functions, associated figures and terminology can vary by source.",
+        "pairingCaution": "Related Sethian texts may describe consorts of the luminaries. Such cross-text evidence should be identified by source and not silently imported into the Apocryphon of John reconstruction."
+      }
+    },
+    {
+      "id": "entity-grace",
+      "displayName": "Grace",
+      "entityType": "divine-aeon",
+      "phaseId": "phase-divine-emanation",
+      "groupIds": [
+        "group-twelve-aeons"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 5.51
+      },
+      "alternativeNames": [],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "aeon associated with Armozel",
+          "status": "explicit",
+          "notes": "Grace is listed in the aeonic triad associated with Armozel."
+        }
+      ],
+      "aeonicPosition": {
+        "sequenceNumber": 1,
+        "sequenceTotal": 12,
+        "luminaryId": "entity-armozel",
+        "luminary": "Armozel",
+        "positionWithinTriad": 1,
+        "numberingStatus": "editorial-sequence"
+      },
+      "summary": "The 1st aeon in Armozel's triad, named Grace in the source. Its explicit role here is structural: it belongs to Armozel's aeonic domain; no separate narrative action is assigned to it in this passage.",
+      "overview": "Grace is the first of the three aeons associated with Armozel in the Apocryphon of John, followed by Truth and Form. The text establishes its place in the first luminary domain but does not describe a separate action, office or cosmological task for Grace in this listing.",
+      "researchNotes": {
+        "sequenceCaution": "The numerical position is an editorial aid derived from the order in which the twelve aeons are listed; it should not be presented as an ancient numbered title.",
+        "pairingStatus": "No dyadic consort is assigned here unless a specific source explicitly identifies one.",
+        "meaningCaution": "The English display term follows translation conventions and should later be checked across manuscript witnesses and translations.",
+        "functionStatus": "The source explicitly places this aeon within a luminary triad. A separate individual action or office should not be inferred unless the text states one."
+      },
+      "notes": "Grace is displayed through the Twelve Aeons group.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-14"
+    },
+    {
+      "id": "entity-truth",
+      "displayName": "Truth",
+      "entityType": "divine-aeon",
+      "phaseId": "phase-divine-emanation",
+      "groupIds": [
+        "group-twelve-aeons"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 5.52
+      },
+      "alternativeNames": [],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "aeon associated with Armozel",
+          "status": "explicit",
+          "notes": "Truth is listed in the aeonic triad associated with Armozel."
+        }
+      ],
+      "aeonicPosition": {
+        "sequenceNumber": 2,
+        "sequenceTotal": 12,
+        "luminaryId": "entity-armozel",
+        "luminary": "Armozel",
+        "positionWithinTriad": 2,
+        "numberingStatus": "editorial-sequence"
+      },
+      "summary": "The 2nd aeon in Armozel's triad, named Truth in the source. Its explicit role here is structural: it belongs to Armozel's aeonic domain; no separate narrative action is assigned to it in this passage.",
+      "overview": "Truth is the second of the three aeons associated with Armozel in the Apocryphon of John, between Grace and Form. The text establishes its place in the first luminary domain but does not describe a separate action, office or cosmological task for Truth in this listing.",
+      "researchNotes": {
+        "sequenceCaution": "The numerical position is an editorial aid derived from the order in which the twelve aeons are listed; it should not be presented as an ancient numbered title.",
+        "pairingStatus": "No dyadic consort is assigned here unless a specific source explicitly identifies one.",
+        "meaningCaution": "The English display term follows translation conventions and should later be checked across manuscript witnesses and translations.",
+        "functionStatus": "The source explicitly places this aeon within a luminary triad. A separate individual action or office should not be inferred unless the text states one."
+      },
+      "notes": "Truth is displayed through the Twelve Aeons group.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-14"
+    },
+    {
+      "id": "entity-form",
+      "displayName": "Form",
+      "entityType": "divine-aeon",
+      "phaseId": "phase-divine-emanation",
+      "groupIds": [
+        "group-twelve-aeons"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 5.53
+      },
+      "alternativeNames": [],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "aeon associated with Armozel",
+          "status": "explicit",
+          "notes": "Form is listed in the aeonic triad associated with Armozel."
+        }
+      ],
+      "aeonicPosition": {
+        "sequenceNumber": 3,
+        "sequenceTotal": 12,
+        "luminaryId": "entity-armozel",
+        "luminary": "Armozel",
+        "positionWithinTriad": 3,
+        "numberingStatus": "editorial-sequence"
+      },
+      "summary": "The 3rd aeon in Armozel's triad, named Form in the source. Its explicit role here is structural: it belongs to Armozel's aeonic domain; no separate narrative action is assigned to it in this passage.",
+      "overview": "Form is the third of the three aeons associated with Armozel in the Apocryphon of John, after Grace and Truth. The text establishes its place in the first luminary domain but does not describe a separate action, office or cosmological task for Form in this listing.",
+      "researchNotes": {
+        "sequenceCaution": "The numerical position is an editorial aid derived from the order in which the twelve aeons are listed; it should not be presented as an ancient numbered title.",
+        "pairingStatus": "No dyadic consort is assigned here unless a specific source explicitly identifies one.",
+        "meaningCaution": "The English display term follows translation conventions and should later be checked across manuscript witnesses and translations.",
+        "functionStatus": "The source explicitly places this aeon within a luminary triad. A separate individual action or office should not be inferred unless the text states one."
+      },
+      "notes": "Form is displayed through the Twelve Aeons group.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-14"
+    },
+    {
+      "id": "entity-afterthought",
+      "displayName": "Afterthought",
+      "entityType": "divine-aeon",
+      "phaseId": "phase-divine-emanation",
+      "groupIds": [
+        "group-twelve-aeons"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 5.54
+      },
+      "alternativeNames": [
+        "Epinoia",
+        "Conception",
+        "Insight"
+      ],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "aeon associated with Oroiael",
+          "status": "explicit",
+          "notes": "Afterthought is listed in the aeonic triad associated with Oroiael."
+        }
+      ],
+      "aeonicPosition": {
+        "sequenceNumber": 4,
+        "sequenceTotal": 12,
+        "luminaryId": "entity-oroiael",
+        "luminary": "Oroiael",
+        "positionWithinTriad": 1,
+        "numberingStatus": "editorial-sequence"
+      },
+      "summary": "The 1st aeon in Oroiael's triad. Its name is variously rendered Afterthought, Conception or Insight, reflecting translation of the underlying Epinoia terminology.",
+      "overview": "This aeon is the first of the three associated with Oroiael, followed by Perception and Memory. Modern translations render the relevant term in different ways, including Afterthought, Conception and Insight. Its explicit role in this passage is its place within Oroiael's aeonic domain; the text does not assign it a separate narrative action here.",
+      "researchNotes": {
+        "sequenceCaution": "The numerical position is an editorial aid derived from the order in which the twelve aeons are listed; it should not be presented as an ancient numbered title.",
+        "pairingStatus": "No dyadic consort is assigned here unless a specific source explicitly identifies one.",
+        "meaningCaution": "The English display term follows translation conventions and should later be checked across manuscript witnesses and translations.",
+        "functionStatus": "The source explicitly places this aeon within a luminary triad. A separate individual action or office should not be inferred unless the text states one.",
+        "translationVariants": "Afterthought, Conception and Insight are translation choices associated with Epinoia terminology; they should be presented as translation variants rather than as separate entities."
+      },
+      "notes": "Afterthought is displayed through the Twelve Aeons group.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-14"
+    },
+    {
+      "id": "entity-perception",
+      "displayName": "Perception",
+      "entityType": "divine-aeon",
+      "phaseId": "phase-divine-emanation",
+      "groupIds": [
+        "group-twelve-aeons"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 5.55
+      },
+      "alternativeNames": [],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "aeon associated with Oroiael",
+          "status": "explicit",
+          "notes": "Perception is listed in the aeonic triad associated with Oroiael."
+        }
+      ],
+      "aeonicPosition": {
+        "sequenceNumber": 5,
+        "sequenceTotal": 12,
+        "luminaryId": "entity-oroiael",
+        "luminary": "Oroiael",
+        "positionWithinTriad": 2,
+        "numberingStatus": "editorial-sequence"
+      },
+      "summary": "The 2nd aeon in Oroiael's triad, named Perception in the source. Its explicit role here is structural; no separate narrative action is assigned to it in this passage.",
+      "overview": "Perception is the second of the three aeons associated with Oroiael in the Apocryphon of John, between Afterthought or Conception and Memory. The text establishes its place in the second luminary domain without assigning it a distinct narrative office in this listing.",
+      "researchNotes": {
+        "sequenceCaution": "The numerical position is an editorial aid derived from the order in which the twelve aeons are listed; it should not be presented as an ancient numbered title.",
+        "pairingStatus": "No dyadic consort is assigned here unless a specific source explicitly identifies one.",
+        "meaningCaution": "The English display term follows translation conventions and should later be checked across manuscript witnesses and translations.",
+        "functionStatus": "The source explicitly places this aeon within a luminary triad. A separate individual action or office should not be inferred unless the text states one."
+      },
+      "notes": "Perception is displayed through the Twelve Aeons group.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-14"
+    },
+    {
+      "id": "entity-memory",
+      "displayName": "Memory",
+      "entityType": "divine-aeon",
+      "phaseId": "phase-divine-emanation",
+      "groupIds": [
+        "group-twelve-aeons"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 5.56
+      },
+      "alternativeNames": [],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "aeon associated with Oroiael",
+          "status": "explicit",
+          "notes": "Memory is listed in the aeonic triad associated with Oroiael."
+        }
+      ],
+      "aeonicPosition": {
+        "sequenceNumber": 6,
+        "sequenceTotal": 12,
+        "luminaryId": "entity-oroiael",
+        "luminary": "Oroiael",
+        "positionWithinTriad": 3,
+        "numberingStatus": "editorial-sequence"
+      },
+      "summary": "The 3rd aeon in Oroiael's triad, named Memory in the source. Its explicit role here is structural; no separate narrative action is assigned to it in this passage.",
+      "overview": "Memory is the third of the three aeons associated with Oroiael in the Apocryphon of John. The text establishes its place in the second luminary domain after Afterthought or Conception and Perception, without assigning it a distinct narrative office in this listing.",
+      "researchNotes": {
+        "sequenceCaution": "The numerical position is an editorial aid derived from the order in which the twelve aeons are listed; it should not be presented as an ancient numbered title.",
+        "pairingStatus": "No dyadic consort is assigned here unless a specific source explicitly identifies one.",
+        "meaningCaution": "The English display term follows translation conventions and should later be checked across manuscript witnesses and translations.",
+        "functionStatus": "The source explicitly places this aeon within a luminary triad. A separate individual action or office should not be inferred unless the text states one."
+      },
+      "notes": "Memory is displayed through the Twelve Aeons group.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-14"
+    },
+    {
+      "id": "entity-understanding",
+      "displayName": "Understanding",
+      "entityType": "divine-aeon",
+      "phaseId": "phase-divine-emanation",
+      "groupIds": [
+        "group-twelve-aeons"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 5.57
+      },
+      "alternativeNames": [],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "aeon associated with Daveithai",
+          "status": "explicit",
+          "notes": "Understanding is listed in the aeonic triad associated with Daveithai."
+        }
+      ],
+      "aeonicPosition": {
+        "sequenceNumber": 7,
+        "sequenceTotal": 12,
+        "luminaryId": "entity-daveithai",
+        "luminary": "Daveithai",
+        "positionWithinTriad": 1,
+        "numberingStatus": "editorial-sequence"
+      },
+      "summary": "The 1st aeon in Daveithai's triad, named Understanding in the source. Its explicit role here is structural; no separate narrative action is assigned to it in this passage.",
+      "overview": "Understanding is the first of the three aeons associated with Daveithai in the Apocryphon of John, followed by Love and Idea. The text establishes its place in the third luminary domain but does not assign it a separate narrative action in this listing.",
+      "researchNotes": {
+        "sequenceCaution": "The numerical position is an editorial aid derived from the order in which the twelve aeons are listed; it should not be presented as an ancient numbered title.",
+        "pairingStatus": "No dyadic consort is assigned here unless a specific source explicitly identifies one.",
+        "meaningCaution": "The English display term follows translation conventions and should later be checked across manuscript witnesses and translations.",
+        "functionStatus": "The source explicitly places this aeon within a luminary triad. A separate individual action or office should not be inferred unless the text states one."
+      },
+      "notes": "Understanding is displayed through the Twelve Aeons group.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-14"
+    },
+    {
+      "id": "entity-love",
+      "displayName": "Love",
+      "entityType": "divine-aeon",
+      "phaseId": "phase-divine-emanation",
+      "groupIds": [
+        "group-twelve-aeons"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 5.58
+      },
+      "alternativeNames": [],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "aeon associated with Daveithai",
+          "status": "explicit",
+          "notes": "Love is listed in the aeonic triad associated with Daveithai."
+        }
+      ],
+      "aeonicPosition": {
+        "sequenceNumber": 8,
+        "sequenceTotal": 12,
+        "luminaryId": "entity-daveithai",
+        "luminary": "Daveithai",
+        "positionWithinTriad": 2,
+        "numberingStatus": "editorial-sequence"
+      },
+      "summary": "The 2nd aeon in Daveithai's triad, named Love in the source. Its explicit role here is structural; no separate narrative action is assigned to it in this passage.",
+      "overview": "Love is the second of the three aeons associated with Daveithai in the Apocryphon of John, between Understanding and Idea. The text establishes its place in the third luminary domain but does not assign it a separate narrative action in this listing.",
+      "researchNotes": {
+        "sequenceCaution": "The numerical position is an editorial aid derived from the order in which the twelve aeons are listed; it should not be presented as an ancient numbered title.",
+        "pairingStatus": "No dyadic consort is assigned here unless a specific source explicitly identifies one.",
+        "meaningCaution": "The English display term follows translation conventions and should later be checked across manuscript witnesses and translations.",
+        "functionStatus": "The source explicitly places this aeon within a luminary triad. A separate individual action or office should not be inferred unless the text states one."
+      },
+      "notes": "Love is displayed through the Twelve Aeons group.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-14"
+    },
+    {
+      "id": "entity-idea",
+      "displayName": "Idea",
+      "entityType": "divine-aeon",
+      "phaseId": "phase-divine-emanation",
+      "groupIds": [
+        "group-twelve-aeons"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 5.59
+      },
+      "alternativeNames": [],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "aeon associated with Daveithai",
+          "status": "explicit",
+          "notes": "Idea is listed in the aeonic triad associated with Daveithai."
+        }
+      ],
+      "aeonicPosition": {
+        "sequenceNumber": 9,
+        "sequenceTotal": 12,
+        "luminaryId": "entity-daveithai",
+        "luminary": "Daveithai",
+        "positionWithinTriad": 3,
+        "numberingStatus": "editorial-sequence"
+      },
+      "summary": "The 3rd aeon in Daveithai's triad, named Idea in the source. Its explicit role here is structural; no separate narrative action is assigned to it in this passage.",
+      "overview": "Idea is the third of the three aeons associated with Daveithai in the Apocryphon of John, after Understanding and Love. The text establishes its place in the third luminary domain but does not assign it a separate narrative action in this listing.",
+      "researchNotes": {
+        "sequenceCaution": "The numerical position is an editorial aid derived from the order in which the twelve aeons are listed; it should not be presented as an ancient numbered title.",
+        "pairingStatus": "No dyadic consort is assigned here unless a specific source explicitly identifies one.",
+        "meaningCaution": "The English display term follows translation conventions and should later be checked across manuscript witnesses and translations.",
+        "functionStatus": "The source explicitly places this aeon within a luminary triad. A separate individual action or office should not be inferred unless the text states one."
+      },
+      "notes": "Idea is displayed through the Twelve Aeons group.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-14"
+    },
+    {
+      "id": "entity-perfection",
+      "displayName": "Perfection",
+      "entityType": "divine-aeon",
+      "phaseId": "phase-divine-emanation",
+      "groupIds": [
+        "group-twelve-aeons"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 5.6
+      },
+      "alternativeNames": [],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "aeon associated with Eleleth",
+          "status": "explicit",
+          "notes": "Perfection is listed in the aeonic triad associated with Eleleth."
+        }
+      ],
+      "aeonicPosition": {
+        "sequenceNumber": 10,
+        "sequenceTotal": 12,
+        "luminaryId": "entity-eleleth",
+        "luminary": "Eleleth",
+        "positionWithinTriad": 1,
+        "numberingStatus": "editorial-sequence"
+      },
+      "summary": "The 1st aeon in Eleleth's triad, named Perfection in the source. Its explicit role here is structural; no separate narrative action is assigned to it in this passage.",
+      "overview": "Perfection is the first of the three aeons associated with Eleleth in the Apocryphon of John, followed by Peace and Sophia. The text establishes its place in the fourth luminary domain but does not assign it a separate narrative action in this listing.",
+      "researchNotes": {
+        "sequenceCaution": "The numerical position is an editorial aid derived from the order in which the twelve aeons are listed; it should not be presented as an ancient numbered title.",
+        "pairingStatus": "No dyadic consort is assigned here unless a specific source explicitly identifies one.",
+        "meaningCaution": "The English display term follows translation conventions and should later be checked across manuscript witnesses and translations.",
+        "functionStatus": "The source explicitly places this aeon within a luminary triad. A separate individual action or office should not be inferred unless the text states one."
+      },
+      "notes": "Perfection is displayed through the Twelve Aeons group.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-14"
+    },
+    {
+      "id": "entity-peace",
+      "displayName": "Peace",
+      "entityType": "divine-aeon",
+      "phaseId": "phase-divine-emanation",
+      "groupIds": [
+        "group-twelve-aeons"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 5.61
+      },
+      "alternativeNames": [],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "aeon associated with Eleleth",
+          "status": "explicit",
+          "notes": "Peace is listed in the aeonic triad associated with Eleleth."
+        }
+      ],
+      "aeonicPosition": {
+        "sequenceNumber": 11,
+        "sequenceTotal": 12,
+        "luminaryId": "entity-eleleth",
+        "luminary": "Eleleth",
+        "positionWithinTriad": 2,
+        "numberingStatus": "editorial-sequence"
+      },
+      "summary": "The 2nd aeon in Eleleth's triad, named Peace in the source. Its explicit role here is structural; no separate narrative action is assigned to it in this passage.",
+      "overview": "Peace is the second of the three aeons associated with Eleleth in the Apocryphon of John, between Perfection and Sophia. The text establishes its place in the fourth luminary domain but does not assign it a separate narrative action in this listing.",
+      "researchNotes": {
+        "sequenceCaution": "The numerical position is an editorial aid derived from the order in which the twelve aeons are listed; it should not be presented as an ancient numbered title.",
+        "pairingStatus": "No dyadic consort is assigned here unless a specific source explicitly identifies one.",
+        "meaningCaution": "The English display term follows translation conventions and should later be checked across manuscript witnesses and translations.",
+        "functionStatus": "The source explicitly places this aeon within a luminary triad. A separate individual action or office should not be inferred unless the text states one."
+      },
+      "notes": "Peace is displayed through the Twelve Aeons group.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-14"
+    },
+    {
+      "id": "entity-sophia",
+      "displayName": "Sophia",
+      "entityType": "divine-aeon",
+      "phaseId": "phase-divine-emanation",
+      "display": {
+        "level": "primary",
+        "order": 6
+      },
+      "alternativeNames": [
+        "Wisdom"
+      ],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "aeonic figure whose independent act initiates the emergence of the lower ruler",
+          "status": "explicit",
+          "notes": "Sophia brings forth an offspring without the agreement of her consort. The offspring becomes Yaldabaoth."
+        }
+      ],
+      "summary": "The 3rd aeon in Eleleth's triad and 12/12 in this editorial sequence. Sophia then becomes an active figure: her independent generation without the participation of her consort leads toward Yaldabaoth and the lower cosmological order.",
+      "overview": "Sophia, or Wisdom, is the third member of Eleleth's triad after Perfection and Peace. In the editorial sequence used by Anamnesis Mundi, this places Sophia at position 12 of 12. Unlike most members of the twelve-aeon listing, Sophia immediately becomes an active figure in the narrative. She seeks to bring forth a likeness from herself without the participation of her consort and without the approval of the Spirit. The resulting generation becomes the decisive transition toward Yaldabaoth and the lower cosmological order.",
+      "terminology": {
+        "editorialDisplayName": "Sophia",
+        "sourceTerms": [
+          "Sophia",
+          "Wisdom"
+        ]
+      },
+      "primaryLens": {
+        "tradition": "Sethian",
+        "source": "Apocryphon of John",
+        "interpretiveFrame": "Sophia stands at the threshold between the ordered higher divine realm and the emergence of the deficient lower order."
+      },
+      "researchNotes": {
+        "structuralImportance": "Sophia forms the principal narrative bridge between the higher aeonic order and the appearance of Yaldabaoth.",
+        "interpretiveCaution": "The episode should not be reduced to a simple moralized concept of a fall.",
+        "materialContinuity": "Sophia's relationship to the power carried by Yaldabaoth and to the later material and human orders must be reconstructed separately from the textual evidence.",
+        "aeonicPosition": "Sophia is the third member of Eleleth's triad, after Perfection and Peace, and is displayed as 12/12 in the editorial sequence reconstructed from the source order.",
+        "consortCaution": "The Apocryphon of John makes the absence of Sophia's consort or partner explicit in the generation episode. A specific name for that consort should not be supplied unless supported by a cited source.",
+        "crossTraditionCaution": "Valentinian and other Gnostic systems organize aeons and syzygies differently. Their pairings must not be imported into this Sethian reconstruction without explicit labeling.",
+        "functionStatus": "The source explicitly places this aeon within a luminary triad. A separate individual action or office should not be inferred unless the text states one."
+      },
+      "notes": "Sophia is retained as a primary timeline node because her episode changes the direction of the cosmological narrative.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-14",
+      "groupIds": [
+        "group-twelve-aeons"
+      ],
+      "aeonicPosition": {
+        "sequenceNumber": 12,
+        "sequenceTotal": 12,
+        "luminaryId": "entity-eleleth",
+        "luminary": "Eleleth",
+        "positionWithinTriad": 3,
+        "triadMembers": [
+          "entity-perfection",
+          "entity-peace",
+          "entity-sophia"
+        ],
+        "numberingStatus": "editorial-sequence"
+      },
+      "consortContext": {
+        "apocryphonOfJohn": "The narrative explicitly states that Sophia acts without the agreement or participation of her consort/partner, but this database does not assign a name to that consort unless a specific textual witness supports it.",
+        "structuralMeaning": "The absence of the consort is narratively significant because Sophia's generation occurs outside the ordered mode of divine generation described by the source.",
+        "status": "explicit-absence-unnamed-consort"
+      }
+    },
+    {
+      "id": "entity-yaldabaoth",
+      "displayName": "Yaldabaoth",
+      "entityType": "demiurgic-ruler",
+      "phaseId": "phase-demiurgic-order",
+      "display": {
+        "level": "primary",
+        "order": 7
+      },
+      "alternativeNames": [
+        "Yaltabaoth",
+        "Saklas",
+        "Samael",
+        "Demiurge",
+        "Chief Ruler"
+      ],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "chief ruler of the lower order",
+          "status": "explicit",
+          "notes": "Yaldabaoth is generated by Sophia, receives great power from his Mother, separates himself from his place of origin, establishes another aeon and generates subordinate authorities."
+        },
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "carrier of power originating from Sophia",
+          "status": "explicit",
+          "notes": "The source distinguishes Yaldabaoth's own fire from the power of light received from his Mother. This maternal power remains important later in the anthropogonic narrative."
+        }
+      ],
+      "summary": "The chief ruler of the lower demiurgic order, who generates and commands the archons through whom the lower cosmos is fashioned and humanity is formed.",
+      "overview": "In the Apocryphon of John, Yaldabaoth emerges from Sophia's independent generation and is placed outside the higher immortal realm. He receives great power from his Mother but does not understand the transcendent source from which that power ultimately derives. He establishes a separate aeonic domain and generates subordinate rulers and authorities. The text therefore presents Yaldabaoth as both dependent upon a power originating above him and ignorant of that origin. His subsequent activity becomes central to the organization of the lower cosmos and to the formation of humanity.",
+      "terminology": {
+        "editorialDisplayName": "Yaldabaoth",
+        "sourceTerms": [
+          "Yaldabaoth",
+          "Yaltabaoth",
+          "Saklas",
+          "Samael",
+          "Chief Ruler"
+        ],
+        "note": "Names and spellings vary among manuscript witnesses and modern translations. Saklas and Samael function as additional names or designations of the Chief Ruler in the source tradition."
+      },
+      "inheritedPower": {
+        "originEntityId": "entity-sophia",
+        "status": "explicit",
+        "description": "Yaldabaoth possesses a power whose origin is traced to Sophia. This continuity is not presented as a voluntary transfer from Sophia to Yaldabaoth.",
+        "distinguishedFrom": "The source distinguishes this maternal light-power from the fire that Yaldabaoth distributes among subordinate rulers.",
+        "laterTrajectory": "The maternal power becomes important again in the formation and animation of the human being.",
+        "materialQuestionStatus": "open-research"
+      },
+      "primaryLens": {
+        "tradition": "Sethian",
+        "source": "Apocryphon of John",
+        "interpretiveFrame": "Yaldabaoth is an ignorant lower ruler who possesses power derived from Sophia while remaining unaware of the higher divine reality from which that power ultimately originates."
+      },
+      "researchNotes": {
+        "powerContinuity": "The text explicitly establishes continuity between Sophia and the power possessed by Yaldabaoth. This continuity must be tracked through later stages of the narrative.",
+        "fireVsLight": "The source differentiates the ruler's distributed fire from the higher light-power received from Sophia. These categories should not be collapsed.",
+        "materialFormation": "The exact relationship among Yaldabaoth, the subordinate rulers, elemental matter and the later construction of the material cosmos requires a dedicated event-level reconstruction.",
+        "humanContinuity": "In the anthropogonic episode, the power originating from the Mother is transferred from Yaldabaoth into the human form. This will require an explicit relationship chain in the database.",
+        "interpretiveCaution": "Yaldabaoth should not be presented simply as the absolute creator of substance ex nihilo. The source depicts him as operating with powers and models whose origins precede him.",
+        "agencyCaution": "Language implying that Sophia voluntarily gave matter, light or creative power to Yaldabaoth should be avoided unless explicitly required by a particular source. The narrative sequence should distinguish unintended consequence from deliberate transmission.",
+        "comparativeCaution": "Possible identifications or comparisons with deities, biblical figures or creator concepts from other traditions should remain in the comparative layer unless directly supported by the historical evidence."
+      },
+      "comparativeTraditions": [
+        {
+          "category": "PHILOSOPHICAL PARALLEL",
+          "name": "The Platonic Demiurge",
+          "description": "Yaldabaoth can be compared with the Demiurge of Plato's Timaeus because both occupy a formative role in relation to the cosmos. The resemblance is accompanied by a fundamental reversal: Plato's Demiurge orders the cosmos by reference to an intelligible model, whereas Yaldabaoth acts in ignorance of the higher divine reality.",
+          "relationType": "PHILOSOPHICAL PARALLEL",
+          "traditionFamily": "Platonic",
+          "sourceIds": [
+            "source-plato-timaeus",
+            "source-turner-sethian-platonism"
+          ],
+          "sourceCitations": [
+            "PLATO, TIMAEUS 29E–30B",
+            "JOHN D. TURNER, SETHIAN GNOSTICISM AND THE PLATONIC TRADITION"
+          ],
+          "sourceAttestations": [
+            {
+              "sourceId": "source-plato-timaeus",
+              "role": "primary Platonic evidence for the good craftsman ordering the cosmos according to an intelligible model",
+              "status": "comparative-primary-text"
+            },
+            {
+              "sourceId": "source-turner-sethian-platonism",
+              "role": "scholarly context for the bounded comparison between Sethian myth and Platonic tradition",
+              "status": "modern-scholarly-comparison",
+              "notes": "Supports comparison without identifying Yaldabaoth with Plato’s Demiurge."
+            }
+          ]
+        },
+        {
+          "category": "SCRIPTURAL INTERTEXT",
+          "name": "The Biblical Creator",
+          "description": "Yaldabaoth's declarations of exclusive divinity echo biblical language asserting that there is no other God. In the Sethian narrative this language is radically recontextualized: the claim exposes Yaldabaoth's ignorance because a transcendent divine reality exists above him.",
+          "relationType": "SCRIPTURAL INTERTEXT",
+          "traditionFamily": "Biblical",
+          "sourceIds": [
+            "source-isaiah",
+            "source-apocryphon-of-john"
+          ],
+          "sourceCitations": [
+            "ISAIAH 45:5–6; 46:9",
+            "THE SECRET BOOK OF JOHN (THE APOCRYPHON OF JOHN)"
+          ],
+          "sourceAttestations": [
+            {
+              "sourceId": "source-isaiah",
+              "role": "biblical source for declarations that there is no other God",
+              "status": "comparative-primary-text"
+            },
+            {
+              "sourceId": "source-apocryphon-of-john",
+              "role": "primary Sethian evidence for the recontextualized declaration placed in Yaldabaoth’s mouth",
+              "status": "primary-sethian-text"
+            }
+          ]
+        },
+        {
+          "category": "MYTHIC PARALLEL",
+          "name": "The Seth-Typhon Tradition",
+          "description": "Some scholarship has explored Greco-Egyptian traditions surrounding Seth-Typhon as part of the cultural background against which an arrogant or negatively characterized lower ruler could be imagined. This does not identify Yaldabaoth with Seth or Typhon; it indicates a possible mythic-historical environment in which related motifs could be reworked.",
+          "relationType": "MYTHIC PARALLEL",
+          "traditionFamily": "Greco-Egyptian",
+          "sourceIds": [
+            "source-rasimus-paradise-reconsidered"
+          ],
+          "sourceCitations": [
+            "TUOMAS RASIMUS, PARADISE RECONSIDERED IN GNOSTIC MYTHMAKING, CH. 3"
+          ],
+          "sourceAttestations": [
+            {
+              "sourceId": "source-rasimus-paradise-reconsidered",
+              "role": "modern scholarly analysis of Seth-Typhon, Ophite and Sethian creator traditions",
+              "status": "modern-scholarly-comparison",
+              "notes": "Supports a possible mythic-historical context, not an identity between Yaldabaoth and Seth-Typhon."
+            }
+          ]
+        }
+      ],
+      "notes": "Yaldabaoth marks the beginning of the Demiurgic Order phase. The formation of the archons, the lower heavens, elemental matter and the material cosmos will be represented separately rather than compressed into this entry.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-14",
+      "subordinateStructure": {
+        "groupId": "group-twelve-authorities",
+        "displayBasis": "long-recension-list",
+        "authorityCount": 12,
+        "witnesses": [
+          "Nag Hammadi Codex II",
+          "Nag Hammadi Codex IV"
+        ],
+        "status": "explicit-list-recension-dependent",
+        "laterDistributionStatement": "After naming the twelve authorities, the long recension states that Yaldabaoth set up seven kings over the seven heavens and five over the depth of the abyss.",
+        "mappingStatus": "The naming passage does not explicitly map the first seven and last five names of the twelve-authority list to those later seven-and-five offices. Anamnesis Mundi therefore keeps the statements separate.",
+        "recensionCaution": "The short recension preserves a different naming and organizational pattern and should be modeled separately."
+      }
+    },
+    {
+      "id": "entity-authority-athoth",
+      "displayName": "Athoth",
+      "entityType": "demiurgic-authority",
+      "phaseId": "phase-demiurgic-order",
+      "groupIds": [
+        "group-twelve-authorities"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 8.01
+      },
+      "alternativeNames": [
+        "The Reaper"
+      ],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "1st authority in the long-recension list",
+          "status": "explicit-long-recension",
+          "witnessScope": [
+            "Nag Hammadi Codex II",
+            "Nag Hammadi Codex IV"
+          ]
+        }
+      ],
+      "authorityPosition": {
+        "sequenceNumber": 1,
+        "sequenceTotal": 12,
+        "parentEntityId": "entity-yaldabaoth",
+        "listBasis": "long recension",
+        "witnesses": [
+          "Nag Hammadi Codex II",
+          "Nag Hammadi Codex IV"
+        ],
+        "numberingStatus": "source-order-within-long-recension"
+      },
+      "summary": "The 1st authority in the long-recension list. The text adds that generations call Athoth the Reaper.",
+      "overview": "Athoth is named first among the twelve authorities generated under Yaldabaoth in the long recension. The passage adds the epithet 'the Reaper'.",
+      "researchNotes": {
+        "listStatus": "This entity belongs to the ordered twelve-authority list in the long recension of the Apocryphon of John.",
+        "individualFunctionStatus": "Only functions, epithets or placements explicitly stated in the naming passage are included. No additional office is inferred.",
+        "hierarchyCaution": "This twelve-authority list should not be silently collapsed into the distinct seven-power structure described elsewhere in the text.",
+        "nameRecurrenceCaution": "The name Athoth also appears in the distinct seven-power structure described later in the Apocryphon of John. Name recurrence alone should not be treated as proof that the two placements represent the same office or identical structural role.",
+        "recensionCaution": "The short recension preserves a different naming and organizational pattern and should be modeled separately."
+      },
+      "notes": "Displayed through the Twelve Authorities group.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-25"
+    },
+    {
+      "id": "entity-authority-harmas",
+      "displayName": "Harmas",
+      "entityType": "demiurgic-authority",
+      "phaseId": "phase-demiurgic-order",
+      "groupIds": [
+        "group-twelve-authorities"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 8.02
+      },
+      "alternativeNames": [
+        "Eye of Envy"
+      ],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "2nd authority in the long-recension list",
+          "status": "explicit-long-recension",
+          "witnessScope": [
+            "Nag Hammadi Codex II",
+            "Nag Hammadi Codex IV"
+          ]
+        }
+      ],
+      "authorityPosition": {
+        "sequenceNumber": 2,
+        "sequenceTotal": 12,
+        "parentEntityId": "entity-yaldabaoth",
+        "listBasis": "long recension",
+        "witnesses": [
+          "Nag Hammadi Codex II",
+          "Nag Hammadi Codex IV"
+        ],
+        "numberingStatus": "source-order-within-long-recension"
+      },
+      "summary": "The 2nd authority in the long-recension list, described as the Eye of Envy.",
+      "overview": "Harmas is named second among the twelve authorities generated under Yaldabaoth in the long recension and is described as the Eye of Envy.",
+      "researchNotes": {
+        "listStatus": "This entity belongs to the ordered twelve-authority list in the long recension of the Apocryphon of John.",
+        "individualFunctionStatus": "Only functions, epithets or placements explicitly stated in the naming passage are included. No additional office is inferred.",
+        "hierarchyCaution": "This twelve-authority list should not be silently collapsed into the distinct seven-power structure described elsewhere in the text.",
+        "recensionCaution": "The short recension preserves a different naming and organizational pattern and should be modeled separately."
+      },
+      "notes": "Displayed through the Twelve Authorities group.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-25"
+    },
+    {
+      "id": "entity-authority-kalila-oubri",
+      "displayName": "Kalila-Oumbri",
+      "entityType": "demiurgic-authority",
+      "phaseId": "phase-demiurgic-order",
+      "groupIds": [
+        "group-twelve-authorities"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 8.03
+      },
+      "alternativeNames": [],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "3rd authority in the long-recension list",
+          "status": "explicit-long-recension",
+          "witnessScope": [
+            "Nag Hammadi Codex II",
+            "Nag Hammadi Codex IV"
+          ]
+        }
+      ],
+      "authorityPosition": {
+        "sequenceNumber": 3,
+        "sequenceTotal": 12,
+        "parentEntityId": "entity-yaldabaoth",
+        "listBasis": "long recension",
+        "witnesses": [
+          "Nag Hammadi Codex II",
+          "Nag Hammadi Codex IV"
+        ],
+        "numberingStatus": "source-order-within-long-recension"
+      },
+      "summary": "The 3rd authority in the long-recension list. The passage names Kalila-Oumbri but gives no separate individual office or action here.",
+      "overview": "Kalila-Oumbri is named third among the twelve authorities generated under Yaldabaoth in the long recension. No separate individual office or action is specified for this authority in the naming passage.",
+      "researchNotes": {
+        "listStatus": "This entity belongs to the ordered twelve-authority list in the long recension of the Apocryphon of John.",
+        "individualFunctionStatus": "Only functions, epithets or placements explicitly stated in the naming passage are included. No additional office is inferred.",
+        "hierarchyCaution": "This twelve-authority list should not be silently collapsed into the distinct seven-power structure described elsewhere in the text.",
+        "recensionCaution": "The short recension preserves a different naming and organizational pattern and should be modeled separately."
+      },
+      "notes": "Displayed through the Twelve Authorities group.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-25"
+    },
+    {
+      "id": "entity-authority-yabel",
+      "displayName": "Yabel",
+      "entityType": "demiurgic-authority",
+      "phaseId": "phase-demiurgic-order",
+      "groupIds": [
+        "group-twelve-authorities"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 8.04
+      },
+      "alternativeNames": [],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "4th authority in the long-recension list",
+          "status": "explicit-long-recension",
+          "witnessScope": [
+            "Nag Hammadi Codex II",
+            "Nag Hammadi Codex IV"
+          ]
+        }
+      ],
+      "authorityPosition": {
+        "sequenceNumber": 4,
+        "sequenceTotal": 12,
+        "parentEntityId": "entity-yaldabaoth",
+        "listBasis": "long recension",
+        "witnesses": [
+          "Nag Hammadi Codex II",
+          "Nag Hammadi Codex IV"
+        ],
+        "numberingStatus": "source-order-within-long-recension"
+      },
+      "summary": "The 4th authority in the long-recension list. The passage names Yabel but gives no separate individual office or action here.",
+      "overview": "Yabel is named fourth among the twelve authorities generated under Yaldabaoth in the long recension. No separate individual office or action is specified for this authority in the naming passage.",
+      "researchNotes": {
+        "listStatus": "This entity belongs to the ordered twelve-authority list in the long recension of the Apocryphon of John.",
+        "individualFunctionStatus": "Only functions, epithets or placements explicitly stated in the naming passage are included. No additional office is inferred.",
+        "hierarchyCaution": "This twelve-authority list should not be silently collapsed into the distinct seven-power structure described elsewhere in the text.",
+        "recensionCaution": "The short recension preserves a different naming and organizational pattern and should be modeled separately."
+      },
+      "notes": "Displayed through the Twelve Authorities group.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-25"
+    },
+    {
+      "id": "entity-authority-adonaiou",
+      "displayName": "Adonaiou",
+      "entityType": "demiurgic-authority",
+      "phaseId": "phase-demiurgic-order",
+      "groupIds": [
+        "group-twelve-authorities"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 8.05
+      },
+      "alternativeNames": [
+        "Sabaoth"
+      ],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "parallelSourceIds": [
+        "source-hypostasis-of-the-archons"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "5th authority in the long-recension list",
+          "status": "explicit-long-recension",
+          "witnessScope": [
+            "Nag Hammadi Codex II",
+            "Nag Hammadi Codex IV"
+          ]
+        }
+      ],
+      "authorityPosition": {
+        "sequenceNumber": 5,
+        "sequenceTotal": 12,
+        "parentEntityId": "entity-yaldabaoth",
+        "listBasis": "long recension",
+        "witnesses": [
+          "Nag Hammadi Codex II",
+          "Nag Hammadi Codex IV"
+        ],
+        "numberingStatus": "source-order-within-long-recension"
+      },
+      "summary": "The 5th authority in the long-recension list. The text explicitly says that Adonaiou is called Sabaoth.",
+      "overview": "Adonaiou is named fifth among the twelve authorities generated under Yaldabaoth in the long recension. The passage explicitly identifies this authority by the additional name Sabaoth.",
+      "researchNotes": {
+        "listStatus": "This entity belongs to the ordered twelve-authority list in the long recension of the Apocryphon of John.",
+        "individualFunctionStatus": "Only functions, epithets or placements explicitly stated in the naming passage are included. No additional office is inferred.",
+        "hierarchyCaution": "This twelve-authority list should not be silently collapsed into the distinct seven-power structure described elsewhere in the text.",
+        "nameRecurrenceCaution": "The name Sabaoth also appears in the distinct seven-power structure of the Apocryphon of John. Shared naming should not automatically be treated as proof of an identical structural office.",
+        "crossTextTrajectory": "The Hypostasis of the Archons gives Sabaoth a distinct narrative trajectory in which he turns against the chief ruler, condemns him and is elevated through the intervention of Sophia and Zoe. This belongs to that parallel textual tradition and must not be silently imported into the twelve-authority sequence of the Apocryphon of John.",
+        "recensionCaution": "The short recension preserves a different naming and organizational pattern and should be modeled separately."
+      },
+      "notes": "Displayed through the Twelve Authorities group.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-25"
+    },
+    {
+      "id": "entity-authority-cain",
+      "displayName": "Cain",
+      "entityType": "demiurgic-authority",
+      "phaseId": "phase-demiurgic-order",
+      "groupIds": [
+        "group-twelve-authorities"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 8.06
+      },
+      "alternativeNames": [
+        "The Sun"
+      ],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "6th authority in the long-recension list",
+          "status": "explicit-long-recension",
+          "witnessScope": [
+            "Nag Hammadi Codex II",
+            "Nag Hammadi Codex IV"
+          ]
+        }
+      ],
+      "authorityPosition": {
+        "sequenceNumber": 6,
+        "sequenceTotal": 12,
+        "parentEntityId": "entity-yaldabaoth",
+        "listBasis": "long recension",
+        "witnesses": [
+          "Nag Hammadi Codex II",
+          "Nag Hammadi Codex IV"
+        ],
+        "numberingStatus": "source-order-within-long-recension"
+      },
+      "summary": "The 6th authority in the long-recension list. The text says that generations of humanity call this authority the Sun.",
+      "overview": "Cain is named sixth among the twelve authorities generated under Yaldabaoth in the long recension. The passage adds that generations of humanity call this authority the Sun. This occurrence must not automatically be merged with the later anthropogonic figure also called Cain.",
+      "researchNotes": {
+        "listStatus": "This entity belongs to the ordered twelve-authority list in the long recension of the Apocryphon of John.",
+        "individualFunctionStatus": "Only functions, epithets or placements explicitly stated in the naming passage are included. No additional office is inferred.",
+        "hierarchyCaution": "This twelve-authority list should not be silently collapsed into the distinct seven-power structure described elsewhere in the text.",
+        "recensionCaution": "The short recension preserves a different naming and organizational pattern and should be modeled separately.",
+        "homonymyCaution": "This authority named Cain must not automatically be merged with the later anthropogonic figure also called Cain."
+      },
+      "notes": "Displayed through the Twelve Authorities group.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-25"
+    },
+    {
+      "id": "entity-authority-abel",
+      "displayName": "Abel",
+      "entityType": "demiurgic-authority",
+      "phaseId": "phase-demiurgic-order",
+      "groupIds": [
+        "group-twelve-authorities"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 8.07
+      },
+      "alternativeNames": [],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "7th authority in the long-recension list",
+          "status": "explicit-long-recension",
+          "witnessScope": [
+            "Nag Hammadi Codex II",
+            "Nag Hammadi Codex IV"
+          ]
+        }
+      ],
+      "authorityPosition": {
+        "sequenceNumber": 7,
+        "sequenceTotal": 12,
+        "parentEntityId": "entity-yaldabaoth",
+        "listBasis": "long recension",
+        "witnesses": [
+          "Nag Hammadi Codex II",
+          "Nag Hammadi Codex IV"
+        ],
+        "numberingStatus": "source-order-within-long-recension"
+      },
+      "summary": "The 7th authority in the long-recension list. The passage names Abel but gives no separate individual office or action here.",
+      "overview": "Abel is named seventh among the twelve authorities generated under Yaldabaoth in the long recension. No separate individual office or action is specified for this authority in the naming passage. This occurrence must not automatically be merged with the later anthropogonic figure also called Abel.",
+      "researchNotes": {
+        "listStatus": "This entity belongs to the ordered twelve-authority list in the long recension of the Apocryphon of John.",
+        "individualFunctionStatus": "Only functions, epithets or placements explicitly stated in the naming passage are included. No additional office is inferred.",
+        "hierarchyCaution": "This twelve-authority list should not be silently collapsed into the distinct seven-power structure described elsewhere in the text.",
+        "recensionCaution": "The short recension preserves a different naming and organizational pattern and should be modeled separately.",
+        "homonymyCaution": "This authority named Abel must not automatically be merged with the later anthropogonic figure also called Abel."
+      },
+      "notes": "Displayed through the Twelve Authorities group.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-25"
+    },
+    {
+      "id": "entity-authority-abrisene",
+      "displayName": "Abrisene",
+      "entityType": "demiurgic-authority",
+      "phaseId": "phase-demiurgic-order",
+      "groupIds": [
+        "group-twelve-authorities"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 8.08
+      },
+      "alternativeNames": [],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "8th authority in the long-recension list",
+          "status": "explicit-long-recension",
+          "witnessScope": [
+            "Nag Hammadi Codex II",
+            "Nag Hammadi Codex IV"
+          ]
+        }
+      ],
+      "authorityPosition": {
+        "sequenceNumber": 8,
+        "sequenceTotal": 12,
+        "parentEntityId": "entity-yaldabaoth",
+        "listBasis": "long recension",
+        "witnesses": [
+          "Nag Hammadi Codex II",
+          "Nag Hammadi Codex IV"
+        ],
+        "numberingStatus": "source-order-within-long-recension"
+      },
+      "summary": "The 8th authority in the long-recension list. The passage names Abrisene but gives no separate individual office or action here.",
+      "overview": "Abrisene is named eighth among the twelve authorities generated under Yaldabaoth in the long recension. No separate individual office or action is specified for this authority in the naming passage.",
+      "researchNotes": {
+        "listStatus": "This entity belongs to the ordered twelve-authority list in the long recension of the Apocryphon of John.",
+        "individualFunctionStatus": "Only functions, epithets or placements explicitly stated in the naming passage are included. No additional office is inferred.",
+        "hierarchyCaution": "This twelve-authority list should not be silently collapsed into the distinct seven-power structure described elsewhere in the text.",
+        "recensionCaution": "The short recension preserves a different naming and organizational pattern and should be modeled separately."
+      },
+      "notes": "Displayed through the Twelve Authorities group.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-25"
+    },
+    {
+      "id": "entity-authority-yobel",
+      "displayName": "Yobel",
+      "entityType": "demiurgic-authority",
+      "phaseId": "phase-demiurgic-order",
+      "groupIds": [
+        "group-twelve-authorities"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 8.09
+      },
+      "alternativeNames": [],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "9th authority in the long-recension list",
+          "status": "explicit-long-recension",
+          "witnessScope": [
+            "Nag Hammadi Codex II",
+            "Nag Hammadi Codex IV"
+          ]
+        }
+      ],
+      "authorityPosition": {
+        "sequenceNumber": 9,
+        "sequenceTotal": 12,
+        "parentEntityId": "entity-yaldabaoth",
+        "listBasis": "long recension",
+        "witnesses": [
+          "Nag Hammadi Codex II",
+          "Nag Hammadi Codex IV"
+        ],
+        "numberingStatus": "source-order-within-long-recension"
+      },
+      "summary": "The 9th authority in the long-recension list. The passage names Yobel but gives no separate individual office or action here.",
+      "overview": "Yobel is named ninth among the twelve authorities generated under Yaldabaoth in the long recension. No separate individual office or action is specified for this authority in the naming passage.",
+      "researchNotes": {
+        "listStatus": "This entity belongs to the ordered twelve-authority list in the long recension of the Apocryphon of John.",
+        "individualFunctionStatus": "Only functions, epithets or placements explicitly stated in the naming passage are included. No additional office is inferred.",
+        "hierarchyCaution": "This twelve-authority list should not be silently collapsed into the distinct seven-power structure described elsewhere in the text.",
+        "recensionCaution": "The short recension preserves a different naming and organizational pattern and should be modeled separately."
+      },
+      "notes": "Displayed through the Twelve Authorities group.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-25"
+    },
+    {
+      "id": "entity-authority-armoupieel",
+      "displayName": "Armoupieel",
+      "entityType": "demiurgic-authority",
+      "phaseId": "phase-demiurgic-order",
+      "groupIds": [
+        "group-twelve-authorities"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 8.1
+      },
+      "alternativeNames": [],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "10th authority in the long-recension list",
+          "status": "explicit-long-recension",
+          "witnessScope": [
+            "Nag Hammadi Codex II",
+            "Nag Hammadi Codex IV"
+          ]
+        }
+      ],
+      "authorityPosition": {
+        "sequenceNumber": 10,
+        "sequenceTotal": 12,
+        "parentEntityId": "entity-yaldabaoth",
+        "listBasis": "long recension",
+        "witnesses": [
+          "Nag Hammadi Codex II",
+          "Nag Hammadi Codex IV"
+        ],
+        "numberingStatus": "source-order-within-long-recension"
+      },
+      "summary": "The 10th authority in the long-recension list. The passage names Armoupieel but gives no separate individual office or action here.",
+      "overview": "Armoupieel is named tenth among the twelve authorities generated under Yaldabaoth in the long recension. No separate individual office or action is specified for this authority in the naming passage.",
+      "researchNotes": {
+        "listStatus": "This entity belongs to the ordered twelve-authority list in the long recension of the Apocryphon of John.",
+        "individualFunctionStatus": "Only functions, epithets or placements explicitly stated in the naming passage are included. No additional office is inferred.",
+        "hierarchyCaution": "This twelve-authority list should not be silently collapsed into the distinct seven-power structure described elsewhere in the text.",
+        "recensionCaution": "The short recension preserves a different naming and organizational pattern and should be modeled separately."
+      },
+      "notes": "Displayed through the Twelve Authorities group.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-25"
+    },
+    {
+      "id": "entity-authority-melcheir-adonein",
+      "displayName": "Melcheir-Adonein",
+      "entityType": "demiurgic-authority",
+      "phaseId": "phase-demiurgic-order",
+      "groupIds": [
+        "group-twelve-authorities"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 8.11
+      },
+      "alternativeNames": [],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "11th authority in the long-recension list",
+          "status": "explicit-long-recension",
+          "witnessScope": [
+            "Nag Hammadi Codex II",
+            "Nag Hammadi Codex IV"
+          ]
+        }
+      ],
+      "authorityPosition": {
+        "sequenceNumber": 11,
+        "sequenceTotal": 12,
+        "parentEntityId": "entity-yaldabaoth",
+        "listBasis": "long recension",
+        "witnesses": [
+          "Nag Hammadi Codex II",
+          "Nag Hammadi Codex IV"
+        ],
+        "numberingStatus": "source-order-within-long-recension"
+      },
+      "summary": "The 11th authority in the long-recension list. The passage names Melcheir-Adonein but gives no separate individual office or action here.",
+      "overview": "Melcheir-Adonein is named eleventh among the twelve authorities generated under Yaldabaoth in the long recension. No separate individual office or action is specified for this authority in the naming passage.",
+      "researchNotes": {
+        "listStatus": "This entity belongs to the ordered twelve-authority list in the long recension of the Apocryphon of John.",
+        "individualFunctionStatus": "Only functions, epithets or placements explicitly stated in the naming passage are included. No additional office is inferred.",
+        "hierarchyCaution": "This twelve-authority list should not be silently collapsed into the distinct seven-power structure described elsewhere in the text.",
+        "recensionCaution": "The short recension preserves a different naming and organizational pattern and should be modeled separately."
+      },
+      "notes": "Displayed through the Twelve Authorities group.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-25"
+    },
+    {
+      "id": "entity-authority-belias",
+      "displayName": "Belias",
+      "entityType": "demiurgic-authority",
+      "phaseId": "phase-demiurgic-order",
+      "groupIds": [
+        "group-twelve-authorities"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 8.12
+      },
+      "alternativeNames": [],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "12th authority in the long-recension list",
+          "status": "explicit-long-recension",
+          "witnessScope": [
+            "Nag Hammadi Codex II",
+            "Nag Hammadi Codex IV"
+          ]
+        }
+      ],
+      "authorityPosition": {
+        "sequenceNumber": 12,
+        "sequenceTotal": 12,
+        "parentEntityId": "entity-yaldabaoth",
+        "listBasis": "long recension",
+        "witnesses": [
+          "Nag Hammadi Codex II",
+          "Nag Hammadi Codex IV"
+        ],
+        "numberingStatus": "source-order-within-long-recension"
+      },
+      "summary": "The 12th authority in the long-recension list. The text explicitly places Belias over the depth of Hades.",
+      "overview": "Belias is named twelfth among the twelve authorities generated under Yaldabaoth in the long recension. Unlike most names in the list, the passage gives Belias an explicit placement: over the depth of Hades.",
+      "researchNotes": {
+        "listStatus": "This entity belongs to the ordered twelve-authority list in the long recension of the Apocryphon of John.",
+        "individualFunctionStatus": "Only functions, epithets or placements explicitly stated in the naming passage are included. No additional office is inferred.",
+        "hierarchyCaution": "This twelve-authority list should not be silently collapsed into the distinct seven-power structure described elsewhere in the text.",
+        "recensionCaution": "The short recension preserves a different naming and organizational pattern and should be modeled separately."
+      },
+      "notes": "Displayed through the Twelve Authorities group.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-25",
+      "explicitRole": {
+        "domain": "depth of Hades",
+        "status": "explicit-long-recension"
+      }
+    },
+    {
+      "id": "entity-archontic-figure-athoth",
+      "displayName": "Athoth",
+      "entityType": "sevenfold-archontic-figure",
+      "phaseId": "phase-demiurgic-order",
+      "groupIds": [
+        "group-seven-powers"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 9.01
+      },
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "archonticPosition": {
+        "sequenceNumber": 1,
+        "sequenceTotal": 7,
+        "listBasis": "long recension"
+      },
+      "archonticProfile": {
+        "figure": "Athoth",
+        "form": "sheep-faced",
+        "associatedPower": "Goodness"
+      },
+      "primarySourceIds": [
+        "source-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "first figure in the sevenfold archontic structure",
+          "status": "explicit-long-recension"
+        }
+      ],
+      "summary": "The first figure in the sevenfold archontic structure, described as sheep-faced and associated with the power Goodness.",
+      "researchNotes": {
+        "identityCaution": "This Athoth belongs to the distinct sevenfold structure and should not automatically be merged with Athoth in the preceding twelve-authority list.",
+        "recensionCaution": "The short recension preserves a different sevenfold arrangement and different power associations; this entry follows the long-recension reconstruction."
+      },
+      "dateAdded": "2026-08-25",
+      "lastReviewed": "2026-08-27"
+    },
+    {
+      "id": "entity-archontic-figure-eloaios",
+      "displayName": "Eloaios",
+      "entityType": "sevenfold-archontic-figure",
+      "phaseId": "phase-demiurgic-order",
+      "groupIds": [
+        "group-seven-powers"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 9.02
+      },
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "archonticPosition": {
+        "sequenceNumber": 2,
+        "sequenceTotal": 7,
+        "listBasis": "long recension"
+      },
+      "archonticProfile": {
+        "figure": "Eloaios",
+        "form": "donkey-faced",
+        "associatedPower": "Forethought"
+      },
+      "primarySourceIds": [
+        "source-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "second figure in the sevenfold archontic structure",
+          "status": "explicit-long-recension"
+        }
+      ],
+      "summary": "The second figure in the sevenfold archontic structure, described as donkey-faced and associated with Forethought (Pronoia).",
+      "researchNotes": {
+        "translationNote": "Forethought renders Pronoia; translations may also use Foreknowledge or Providence.",
+        "recensionCaution": "The short recension preserves a different sevenfold arrangement and different power associations; this entry follows the long-recension reconstruction."
+      },
+      "dateAdded": "2026-08-25",
+      "lastReviewed": "2026-08-27"
+    },
+    {
+      "id": "entity-archontic-figure-astaphaios",
+      "displayName": "Astaphaios",
+      "entityType": "sevenfold-archontic-figure",
+      "phaseId": "phase-demiurgic-order",
+      "groupIds": [
+        "group-seven-powers"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 9.03
+      },
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "archonticPosition": {
+        "sequenceNumber": 3,
+        "sequenceTotal": 7,
+        "listBasis": "long recension"
+      },
+      "archonticProfile": {
+        "figure": "Astaphaios",
+        "form": "hyena-faced",
+        "associatedPower": "Divinity"
+      },
+      "primarySourceIds": [
+        "source-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "third figure in the sevenfold archontic structure",
+          "status": "explicit-long-recension"
+        }
+      ],
+      "summary": "The third figure in the sevenfold archontic structure, described as hyena-faced and associated with Divinity.",
+      "researchNotes": {
+        "translationNote": "Some translations render the associated term with closely related theological vocabulary; Divinity is retained as the public display form.",
+        "recensionCaution": "The short recension preserves a different sevenfold arrangement and different power associations; this entry follows the long-recension reconstruction."
+      },
+      "dateAdded": "2026-08-25",
+      "lastReviewed": "2026-08-27"
+    },
+    {
+      "id": "entity-archontic-figure-yao",
+      "displayName": "Yao",
+      "entityType": "sevenfold-archontic-figure",
+      "phaseId": "phase-demiurgic-order",
+      "groupIds": [
+        "group-seven-powers"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 9.04
+      },
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "archonticPosition": {
+        "sequenceNumber": 4,
+        "sequenceTotal": 7,
+        "listBasis": "long recension"
+      },
+      "archonticProfile": {
+        "figure": "Yao",
+        "form": "seven-headed serpent",
+        "associatedPower": "Lordship"
+      },
+      "primarySourceIds": [
+        "source-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "fourth figure in the sevenfold archontic structure",
+          "status": "explicit-long-recension"
+        }
+      ],
+      "summary": "The fourth figure in the sevenfold archontic structure, described as a seven-headed serpent and associated with Lordship.",
+      "researchNotes": {
+        "recensionCaution": "The short recension preserves variant descriptions of the fourth figure; this entry follows the long-recension reconstruction."
+      },
+      "dateAdded": "2026-08-25",
+      "lastReviewed": "2026-08-27"
+    },
+    {
+      "id": "entity-archontic-figure-sabaoth",
+      "displayName": "Sabaoth",
+      "entityType": "sevenfold-archontic-figure",
+      "phaseId": "phase-demiurgic-order",
+      "groupIds": [
+        "group-seven-powers"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 9.05
+      },
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "archonticPosition": {
+        "sequenceNumber": 5,
+        "sequenceTotal": 7,
+        "listBasis": "long recension"
+      },
+      "archonticProfile": {
+        "figure": "Sabaoth",
+        "form": "serpent/dragon-faced",
+        "associatedPower": "Kingdom"
+      },
+      "primarySourceIds": [
+        "source-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "fifth figure in the sevenfold archontic structure",
+          "status": "explicit-long-recension"
+        }
+      ],
+      "summary": "The fifth figure in the sevenfold archontic structure, described in translation as serpent- or dragon-faced and associated with Kingdom.",
+      "researchNotes": {
+        "formCaution": "Modern translations vary between serpent and dragon in rendering the form of Sabaoth.",
+        "identityCaution": "This placement of Sabaoth should not automatically be merged with Adonaiou/Sabaoth in the preceding twelve-authority roster or with distinct Sabaoth traditions in other texts.",
+        "recensionCaution": "This entry follows the long-recension reconstruction."
+      },
+      "dateAdded": "2026-08-25",
+      "lastReviewed": "2026-08-27"
+    },
+    {
+      "id": "entity-archontic-figure-adonin",
+      "displayName": "Adonin",
+      "entityType": "sevenfold-archontic-figure",
+      "phaseId": "phase-demiurgic-order",
+      "groupIds": [
+        "group-seven-powers"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 9.06
+      },
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "archonticPosition": {
+        "sequenceNumber": 6,
+        "sequenceTotal": 7,
+        "listBasis": "long recension"
+      },
+      "archonticProfile": {
+        "figure": "Adonin",
+        "form": "ape/monkey-faced",
+        "associatedPower": "Envy"
+      },
+      "primarySourceIds": [
+        "source-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "sixth figure in the sevenfold archontic structure",
+          "status": "explicit-long-recension"
+        }
+      ],
+      "summary": "The sixth figure in the sevenfold archontic structure, described as ape- or monkey-faced and associated with Envy.",
+      "researchNotes": {
+        "translationNote": "Some translations use Jealousy where others use Envy; Envy is retained here for the long-recension reconstruction.",
+        "recensionCaution": "The short recension preserves a different associated power for this position."
+      },
+      "dateAdded": "2026-08-25",
+      "lastReviewed": "2026-08-27"
+    },
+    {
+      "id": "entity-archontic-figure-sabbataios",
+      "displayName": "Sabbataios",
+      "entityType": "sevenfold-archontic-figure",
+      "phaseId": "phase-demiurgic-order",
+      "groupIds": [
+        "group-seven-powers"
+      ],
+      "display": {
+        "level": "expanded",
+        "order": 9.07
+      },
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "archonticPosition": {
+        "sequenceNumber": 7,
+        "sequenceTotal": 7,
+        "listBasis": "long recension"
+      },
+      "archonticProfile": {
+        "figure": "Sabbataios",
+        "form": "shining/flaming fire-faced",
+        "associatedPower": "Understanding"
+      },
+      "primarySourceIds": [
+        "source-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "seventh figure in the sevenfold archontic structure",
+          "status": "explicit-long-recension"
+        }
+      ],
+      "summary": "The seventh figure in the sevenfold archontic structure, described with a shining or flaming fire-face and associated with Understanding.",
+      "researchNotes": {
+        "formCaution": "Translations vary between formulations such as shining fire-face and flaming fire.",
+        "recensionCaution": "The short recension preserves a different associated power for this position; this entry follows the long-recension reconstruction."
+      },
+      "dateAdded": "2026-08-25",
+      "lastReviewed": "2026-08-27"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "1.0",
+  "lastUpdated": "2026-08-14",
+
+  "traditions": [
+    {
+      "id": "tradition-sethian",
+      "name": "Sethian",
+
+      "alternativeNames": [
+        "Sethian Gnostic Tradition",
+        "Sethianism"
+      ],
+
+      "category": "gnostic",
+
+      "historicalContext": {
+        "period": "Late Antiquity",
+        "approximateRange": "2nd-4th centuries CE",
+        "region": [
+          "Eastern Mediterranean",
+          "Egypt"
+        ]
+      },
+
+      "description": "A modern scholarly designation for a constellation of ancient texts and mythological systems sharing recurring figures, divine names and cosmological structures, including the transcendent Invisible Spirit, Barbelo, the higher divine realm, the lower creator and the figure of Seth.",
+
+      "coreThemes": [
+        "transcendent divine source",
+        "divine emanation",
+        "Barbelo",
+        "higher divine realm",
+        "distinction between the transcendent divine realm and the lower created cosmos",
+        "divine element within humanity",
+        "awakening through knowledge",
+        "return to the divine source"
+      ],
+
+      "primarySourceIds": [
+        "source-apocryphon-of-john"
+      ],
+
+      "researchPolicy": {
+        "terminologyRule": "Preserve terminology according to individual textual witnesses and do not assume that terms are universally interchangeable across Sethian texts.",
+        "comparisonRule": "Parallels with other philosophical, religious or esoteric traditions should be recorded as comparisons unless direct historical dependence is supported.",
+        "sourceRule": "Ancient textual witnesses take precedence over later interpretive synthesis when reconstructing the internal cosmology of this tradition.",
+        "genderRule": "Avoid assigning gender in descriptive language unless gender is explicit, textually relevant and sufficiently clear in the source context."
+      },
+
+      "notes": "Sethian is a modern scholarly classification rather than a securely attested self-designation for a single unified ancient community. Individual texts may differ substantially in terminology, sequence and doctrine.",
+
+      "dateAdded": "2026-08-11",
+      "lastReviewed": "2026-08-14"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "schemaVersion": "1.0",
+  "lastUpdated": "2026-09-11",
+  "realms": [
+    {
+      "id": "realm-pleroma",
+      "displayName": "Pleroma",
+      "realmType": "divine-fullness",
+      "alternativeNames": [
+        "The Fullness",
+        "Divine Fullness"
+      ],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "status": "textual-realm-editorial-visualization",
+          "notes": "Pleroma is represented by Anamnesis Mundi as the higher divine fullness or realm rather than as an individual entity in the chronological sequence."
+        }
+      ],
+      "summary": "The divine Fullness of aeons and luminous powers that unfolds through Barbelo and the self-generated Son, Autogenes. It is the ordered realm of divine multiplicity, perfection, and light proceeding from the ultimate Source.",
+      "display": {
+        "mode": "ambient-region",
+        "label": "PLEROMA",
+        "subtitle": "THE DIVINE FULLNESS",
+        "timelineBehavior": "background-realm"
+      },
+      "scope": {
+        "containsEntityIds": [
+          "entity-barbelo",
+          "entity-autogenes",
+          "entity-armozel",
+          "entity-oroiael",
+          "entity-daveithai",
+          "entity-eleleth",
+          "entity-grace",
+          "entity-truth",
+          "entity-form",
+          "entity-afterthought",
+          "entity-perception",
+          "entity-memory",
+          "entity-understanding",
+          "entity-love",
+          "entity-idea",
+          "entity-perfection",
+          "entity-peace",
+          "entity-sophia"
+        ],
+        "containsGroupIds": [
+          "group-four-luminaries",
+          "group-twelve-aeons"
+        ],
+        "boundaryStatus": "research-sensitive"
+      },
+      "researchNotes": {
+        "ontologicalStatus": "Pleroma is modeled as a realm or divine fullness, not as a person or event.",
+        "timelineRule": "Pleroma must not appear as an ordinary timeline card between Barbelo and Autogenes.",
+        "boundaryCaution": "The visible Pleroma field is anchored to the center of the First Unfolding node and fades smoothly downward from that exact chronological threshold.",
+        "comparativeCaution": "The use and organization of the term Pleroma differ across Gnostic and especially Valentinian systems. This record belongs specifically to the Sethian Apocryphon of John branch unless otherwise stated.",
+        "visualization": "The public interface should communicate Pleroma spatially as an encompassing divine realm, with its name present in the background rather than as another chronological node."
+      },
+      "dateAdded": "2026-08-21",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "id": "realm-demiurgic-order",
+      "displayName": "Demiurgic Order",
+      "realmType": "lower-archontic-realm",
+      "alternativeNames": [
+        "The Archontic Order",
+        "The Lower Heavens"
+      ],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "status": "textual-realm-editorial-visualization",
+          "notes": "The ambient region visualizes the established lower archontic order beginning with Yaldabaoth and continuing through the formation and expansion of his hierarchy."
+        }
+      ],
+      "summary": "The lower archontic order established by Yaldabaoth and governed through subordinate authorities and powers. It is a derivative cosmic hierarchy fashioned in imitation of the higher aeonic order.",
+      "display": {
+        "mode": "ambient-region",
+        "label": "",
+        "subtitle": "THE LOWER ARCHONTIC REALM",
+        "timelineBehavior": "background-realm",
+        "topOffset": 0,
+        "bottomOffset": 80
+      },
+      "scope": {
+        "containsEntityIds": [
+          "entity-yaldabaoth"
+        ],
+        "containsEventIds": [
+          "event-formation-subordinate-rulers",
+          "event-expansion-archontic-hierarchy"
+        ],
+        "boundaryStatus": "research-sensitive"
+      },
+      "researchNotes": {
+        "ontologicalStatus": "The Demiurgic Order is modeled as the established lower archontic environment, distinct from both the Pleroma and the ordered visible cosmos.",
+        "transitionRule": "The ambient field begins with the principal Yaldabaoth card. Sophia's rupture and the emergence of Yaldabaoth remain visually transitional and deliberately subdued.",
+        "boundaryCaution": "The field fades before the Material Cosmos begins so the lower archontic order and the visible cosmos remain related but visually distinct.",
+        "visualization": "The public interface should use layered rust, umber and muted copper depth with restrained concentric structures suggestive of nested authorities rather than a starfield."
+      },
+      "dateAdded": "2026-08-28",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "id": "realm-material-cosmos",
+      "displayName": "Material Cosmos",
+      "realmType": "ordered-visible-realm",
+      "alternativeNames": [
+        "The Lower Cosmos",
+        "The Ordered Visible Realm"
+      ],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "status": "textual-realm-editorial-visualization",
+          "notes": "The ambient region visualizes the lower cosmos organized by Yaldabaoth according to the likeness of the higher aeons."
+        },
+        {
+          "sourceId": "source-on-the-origin-of-the-world",
+          "status": "comparative-explicit",
+          "notes": "The tractate supplies a related but distinct extended account of matter, heavens, firmaments and lower cosmic ordering."
+        }
+      ],
+      "summary": "The derivative lower cosmos organized by Yaldabaoth after the likeness of the higher aeons, including heavens, firmaments, and the material and elemental domain in which human embodiment will occur. The source does not provide a complete account of the physical Earth and its natural contents as we know them.",
+      "display": {
+        "mode": "ambient-region",
+        "label": "MATERIAL COSMOS",
+        "subtitle": "THE ORDERED VISIBLE REALM",
+        "timelineBehavior": "background-realm",
+        "topOffset": 0,
+        "bottomOffset": 90
+      },
+      "scope": {
+        "containsEventIds": [
+          "event-ordering-material-cosmos",
+          "event-revelation-primordial-human",
+          "event-formation-adam-psychic-body",
+          "event-animation-of-adam",
+          "event-awakening-superiority-adam",
+          "event-adam-material-enclosure"
+        ],
+        "boundaryStatus": "research-sensitive"
+      },
+      "researchNotes": {
+        "ontologicalStatus": "The Material Cosmos is modeled as a lower ordered realm, not as an individual chronological actor.",
+        "transitionRule": "Its visual field begins at the actual top boundary of the Ordering of the Material Cosmos event. Color and texture then emerge gradually so the ontological change is clear without a hard horizontal cut.",
+        "visualization": "The public interface should move from demiurgic copper into mineral sage and blue-grey, with faint strata and firmament-like arcs rather than a modern starfield."
+      },
+      "dateAdded": "2026-08-28",
+      "lastReviewed": "2026-09-09"
+    }
+  ]
+}

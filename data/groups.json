@@ -1,0 +1,1017 @@
+{
+  "schemaVersion": "1.0",
+  "lastUpdated": "2026-09-11",
+  "groups": [
+    {
+      "id": "group-four-luminaries",
+      "displayName": "Four Great Luminaries",
+      "groupType": "divine-group",
+      "phaseId": "phase-divine-emanation",
+      "display": {
+        "level": "primary",
+        "order": 5
+      },
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "memberIds": [
+        "entity-armozel",
+        "entity-oroiael",
+        "entity-daveithai",
+        "entity-eleleth"
+      ],
+      "summary": "Supreme beings and divine realms. Emanated within the divine order of the Father (the Invisible Spirit), the Mother (Barbelo), and the Child (Autogenes/Christ), the Four Great Luminaries act as the essential pillars of the Pleroma, the divine fullness of light.\n\nEach Luminary rules over a specific spiritual realm and serves as a heavenly dwelling place for a foundational spiritual generation. Each Luminary is associated with three distinct sub-Aeons, creating a sacred structural total of 12 internal Aeons.",
+      "overview": "In the Apocryphon of John, four principal luminaries appear in association with Autogenes: Armozel, Oroiael, Daveithai and Eleleth. Each luminary is associated with a triad of aeons, producing a fourfold structure of twelve aeons within the higher divine realm. Related Sethian texts, including the Holy Book of the Great Invisible Spirit (Gospel of the Egyptians) and Zostrianos, preserve corresponding four-luminary structures, though their internal organization and associated beings should remain source-specific.",
+      "primarySourceIds": [
+        "source-apocryphon-of-john"
+      ],
+      "parallelSourceIds": [
+        "source-gospel-of-the-egyptians",
+        "source-zostrianos"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "status": "explicit",
+          "role": "primary source for the four luminaries and their aeonic structure",
+          "notes": "The four luminaries are named individually and associated with a structured set of aeonic domains."
+        },
+        {
+          "sourceId": "source-gospel-of-the-egyptians",
+          "status": "comparative-explicit",
+          "role": "parallel Sethian attestation of the four great luminaries",
+          "notes": "The Holy Book of the Great Invisible Spirit, also known as the Gospel of the Egyptians, preserves the four great luminaries within a related Sethian cosmological framework."
+        },
+        {
+          "sourceId": "source-zostrianos",
+          "status": "comparative-explicit",
+          "role": "parallel Sethian attestation of the four-luminary structure",
+          "notes": "Zostrianos preserves the four luminaries Harmozel, Oroiael, Daveithai and Eleleth within the Autogenes aeonic order."
+        }
+      ],
+      "researchNotes": {
+        "memberOrder": "The internal order follows the sequence preserved in the Apocryphon of John: Armozel, Oroiael, Daveithai and Eleleth.",
+        "expandedStructure": "Each luminary is associated with a triad of aeons. These twelve aeons are represented separately in the Twelve Aeons group.",
+        "crossTextStatus": "The four-luminary structure is also attested in the Holy Book of the Great Invisible Spirit (Gospel of the Egyptians) and Zostrianos. Variations in names, functions, associated beings and internal structure should remain attributed to their respective sources.",
+        "comparativeCaution": "The four luminaries should not automatically be equated with fourfold structures from other religious or philosophical traditions without separate comparative evidence.",
+        "terminologyCaution": "The label Four Great Luminaries is used for public display. The underlying sources may use variant formulations such as luminaries or great lights.",
+        "sourcePresentation": "The Apocryphon of John is the primary source for the reconstruction displayed by Anamnesis Mundi. The Holy Book of the Great Invisible Spirit (Gospel of the Egyptians) and Zostrianos should be displayed as parallel Sethian attestations rather than merged into the primary reconstruction."
+      },
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-23"
+    },
+    {
+      "id": "group-twelve-aeons",
+      "displayName": "The Twelve Aeons",
+      "groupType": "divine-group",
+      "phaseId": "phase-divine-emanation",
+      "display": {
+        "level": "primary",
+        "order": 5.5
+      },
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "memberIds": [
+        "entity-grace",
+        "entity-truth",
+        "entity-form",
+        "entity-afterthought",
+        "entity-perception",
+        "entity-memory",
+        "entity-understanding",
+        "entity-love",
+        "entity-idea",
+        "entity-perfection",
+        "entity-peace",
+        "entity-sophia"
+      ],
+      "summary": "Twelve aeons arranged in four triads beneath the Four Great Luminaries, culminating with Sophia in the fourth domain of Eleleth.",
+      "overview": "The Apocryphon of John associates three aeons with each of the Four Great Luminaries. Armozel is associated with Grace, Truth and Form; Oroiael with Afterthought, Perception and Memory; Daveithai with Understanding, Love and Idea; and Eleleth with Perfection, Peace and Sophia. Anamnesis Mundi represents this textual sequence as twelve positions for navigational clarity. The numbering is editorial and should not be understood as an ancient numbered system.",
+      "structure": {
+        "type": "four-triads",
+        "totalMembers": 12,
+        "domains": [
+          {
+            "luminaryId": "entity-armozel",
+            "luminary": "Armozel",
+            "domainNumber": 1,
+            "memberIds": [
+              "entity-grace",
+              "entity-truth",
+              "entity-form"
+            ]
+          },
+          {
+            "luminaryId": "entity-oroiael",
+            "luminary": "Oroiael",
+            "domainNumber": 2,
+            "memberIds": [
+              "entity-afterthought",
+              "entity-perception",
+              "entity-memory"
+            ]
+          },
+          {
+            "luminaryId": "entity-daveithai",
+            "luminary": "Daveithai",
+            "domainNumber": 3,
+            "memberIds": [
+              "entity-understanding",
+              "entity-love",
+              "entity-idea"
+            ]
+          },
+          {
+            "luminaryId": "entity-eleleth",
+            "luminary": "Eleleth",
+            "domainNumber": 4,
+            "memberIds": [
+              "entity-perfection",
+              "entity-peace",
+              "entity-sophia"
+            ]
+          }
+        ]
+      },
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "status": "explicit-structure-editorial-numbering",
+          "notes": "The source explicitly associates three aeons with each of the four luminaries. The continuous numbering from 1 to 12 is an editorial device used by Anamnesis Mundi to make the sequence legible."
+        }
+      ],
+      "researchNotes": {
+        "numberingStatus": "The labels 1/12 through 12/12 are editorial navigation aids derived from the order of the twelve aeons in the source. They are not presented as ancient numbered titles.",
+        "triadStatus": "The association of three aeons with each luminary is textual. The interface should preserve these four triads rather than displaying the twelve names as an undifferentiated list.",
+        "functionStatus": "The Apocryphon of John names and locates the aeons within the four luminary domains but does not assign a separate narrative office or action to most individual members. Public descriptions should distinguish textual placement from semantic interpretation of the aeon's name.",
+        "pairingStatus": "The twelve aeons should not currently be rearranged into six speculative pairs. Where a source explicitly identifies a consort or paired relationship, that relationship should be recorded separately with its own source attestation.",
+        "sophiaPosition": "Sophia is the third member of the fourth triad associated with Eleleth and therefore appears as 12/12 in this editorial sequence.",
+        "sophiaTransition": "The interface should make clear that Sophia belongs to the ordered higher realm before independent generation becomes the narrative rupture leading toward Yaldabaoth.",
+        "crossTextStatus": "Related Sethian texts contain additional information about luminaries, consorts and divine relationships. Such evidence should be shown as related textual attestations rather than silently incorporated into the Apocryphon of John reconstruction.",
+        "verificationStatus": "Names, translation choices and relationships should be checked against the surviving witnesses and relevant critical scholarship before the research layer is considered complete."
+      },
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-22"
+    },
+    {
+      "id": "group-twelve-authorities",
+      "displayName": "The Twelve Authorities",
+      "groupType": "demiurgic-group",
+      "phaseId": "phase-demiurgic-order",
+      "display": {
+        "level": "expanded",
+        "order": 8.1
+      },
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "memberIds": [
+        "entity-authority-athoth",
+        "entity-authority-harmas",
+        "entity-authority-kalila-oubri",
+        "entity-authority-yabel",
+        "entity-authority-adonaiou",
+        "entity-authority-cain",
+        "entity-authority-abel",
+        "entity-authority-abrisene",
+        "entity-authority-yobel",
+        "entity-authority-armoupieel",
+        "entity-authority-melcheir-adonein",
+        "entity-authority-belias"
+      ],
+      "summary": "Twelve named subordinate authorities generated under Yaldabaoth in the long recension of the Apocryphon of John.",
+      "overview": "The long recension of the Apocryphon of John gives an ordered list of twelve authorities generated under Yaldabaoth. They belong to the lower ruling order commonly described as the archontic order. Some receive an additional epithet or description, while others are only named in this passage. The twelve-name sequence is followed by a seven-plus-five cosmological distribution: seven rulers over the seven heavens and five over the depths of the abyss. This structure remains distinct from the separate sevenfold structure of powers described elsewhere in the text.",
+      "structure": {
+        "type": "ordered-twelve-authority-list",
+        "totalMembers": 12,
+        "recensionBasis": "long",
+        "cosmologicalDistribution": {
+          "heavenlyRulers": 7,
+          "abyssalRulers": 5
+        }
+      },
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "status": "explicit-long-recension",
+          "role": "primary source for the ordered twelve-authority roster",
+          "witnessScope": [
+            "Nag Hammadi Codex II",
+            "Nag Hammadi Codex IV"
+          ],
+          "notes": "The long recension preserves an ordered list of twelve named authorities under Yaldabaoth and associates the structure with seven rulers over the heavens and five over the depths of the abyss."
+        },
+        {
+          "sourceId": "source-hypostasis-of-the-archons",
+          "status": "comparative-archontic-parallel",
+          "role": "parallel Sethian or closely related archontic tradition",
+          "notes": "The Hypostasis of the Archons preserves a related narrative of the lower rulers and their chief, but it does not reproduce the twelve-authority roster of the long recension of the Apocryphon of John. Its rulers and narrative developments should remain source-specific."
+        },
+        {
+          "sourceId": "source-on-the-origin-of-the-world",
+          "status": "comparative-archontic-parallel",
+          "role": "parallel account of the lower cosmic rulers and their relation to humanity",
+          "notes": "On the Origin of the World develops a related lower-ruler cosmology and explicitly extends archontic rule into the human world. It should be used comparatively rather than merged into the twelve-authority reconstruction of the Apocryphon of John."
+        }
+      ],
+      "researchNotes": {
+        "recensionStatus": "The public roster is explicitly based on the long recension preserved by Nag Hammadi Codices II and IV. The short recension should be modeled separately rather than forced into one-to-one equivalence.",
+        "individualRoleStatus": "In this twelve-name passage, Athoth, Harmas, Adonaiou, Cain and Belias receive additional individual descriptors. Several other authorities are only named, so distinct functions should not be invented for them.",
+        "sevenPlusFiveStructure": "The long recension presents the twelve-name sequence together with a seven-plus-five distribution: seven rulers over the seven heavens and five over the depths of the abyss. This provides cosmological placement even where the text gives no separate individual office to a particular authority.",
+        "sevenPowersCaution": "The separate seven powers with their own names, forms and qualities constitute a distinct sevenfold structure. They must not be used as individual functions for the members of this twelve-authority roster, even where names overlap.",
+        "cainAbelCaution": "Cain and Abel here are names within the twelve-authority list. They must not automatically be merged with the later anthropogonic figures also called Cain and Abel.",
+        "sabaothCaution": "Adonaiou is called Sabaoth in this list. Other appearances and narrative developments of Sabaoth in Gnostic literature require independent source-level identification and should be represented as cross-text parallels rather than silently imported into the Apocryphon of John reconstruction.",
+        "displayStrategy": "This group should open directly into its ordered twelve-member list from the Formation of the Subordinate Rulers event, without repeating the group summary or source inside the explorer.",
+        "terminologyStatus": "The Twelve Authorities is the preferred public designation for this specific roster. Archons is an appropriate broader term for members of the lower ruling order, while Ruling Authorities and Exousiai clarify the underlying authority terminology. These labels should not imply that every Gnostic archon belongs to this twelve-member roster.",
+        "nameRecurrenceCaution": "Several names or closely related forms recur elsewhere in the Apocryphon of John, including in later cosmological and anthropogonic lists. Recurrence of a name should be recorded where useful, but should not by itself be treated as proof that the text intends an identical entity or office.",
+        "humanityTrajectory": "The twelve authorities belong to the larger lower archontic order that subsequently participates in the fashioning and governance of humanity. The precise mechanisms and later developments should be introduced at their proper chronological events rather than projected backward as individual functions of all twelve authorities.",
+        "crossTextStatus": "The Hypostasis of the Archons and On the Origin of the World preserve related archontic cosmologies. They are valuable parallel witnesses for the broader ruler tradition but do not attest the same ordered twelve-member roster and therefore should not be merged into the primary reconstruction.",
+        "comparativeTraditionsStatus": "No Explore Comparative Traditions section should currently be attached specifically to the Twelve Authorities. Broader astral or planetary comparisons are more appropriately evaluated in connection with the distinct sevenfold powers and related cosmological structures."
+      },
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-25",
+      "alsoKnownAs": [
+        "Archons",
+        "Ruling Authorities",
+        "Exousiai"
+      ],
+      "primarySourceIds": [
+        "source-apocryphon-of-john"
+      ],
+      "parallelSourceIds": [
+        "source-hypostasis-of-the-archons",
+        "source-on-the-origin-of-the-world"
+      ]
+    },
+    {
+      "id": "group-seven-powers",
+      "displayName": "The Seven Powers",
+      "groupType": "demiurgic-sevenfold-power-structure",
+      "phaseId": "phase-demiurgic-order",
+      "memberIds": [
+        "entity-archontic-figure-athoth",
+        "entity-archontic-figure-eloaios",
+        "entity-archontic-figure-astaphaios",
+        "entity-archontic-figure-yao",
+        "entity-archontic-figure-sabaoth",
+        "entity-archontic-figure-adonin",
+        "entity-archontic-figure-sabbataios"
+      ],
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "primarySourceIds": [
+        "source-apocryphon-of-john"
+      ],
+      "notes": "Seven principal figures in the expanded archontic hierarchy, preserved separately from the preceding twelve-authority structure.",
+      "lastReviewed": "2026-08-27"
+    },
+    {
+      "id": "group-seven-powers-comparative-traditions",
+      "displayName": "The Seven Powers across Comparative Traditions",
+      "groupType": "comparative-traditions",
+      "phaseId": "phase-demiurgic-order",
+      "display": {
+        "level": "embedded",
+        "order": 9.2
+      },
+      "explorerTitle": "Explore Comparative Traditions",
+      "comparativeSubject": "The Seven Powers",
+      "traditionIds": [],
+      "cosmologyIds": [],
+      "comparativeTraditions": [
+        {
+          "category": "COSMOLOGICAL PARALLEL",
+          "name": "The Seven Planetary Rulers of Hellenistic Cosmology",
+          "description": "The sevenfold hierarchy can be compared with the seven planetary rulers of Hellenistic cosmology and astrology. Scholarship reads the seven kings in the Apocryphon of John as planetary archons within an astral world model, a context that also helps explain the multiplication toward 365 archontic angels. This comparison does not establish a definitive one-to-one identification between each figure and a particular planet.",
+          "relationType": "COSMOLOGICAL PARALLEL",
+          "traditionFamily": "Hellenistic Astral",
+          "sourceIds": [
+            "source-corpus-hermeticum-i",
+            "source-rasimus-paradise-reconsidered"
+          ],
+          "sourceCitations": [
+            "CORPUS HERMETICUM I.9, 13–15",
+            "TUOMAS RASIMUS, PARADISE RECONSIDERED IN GNOSTIC MYTHMAKING, CH. 3"
+          ],
+          "sourceAttestations": [
+            {
+              "sourceId": "source-corpus-hermeticum-i",
+              "role": "primary comparative evidence for a sevenfold cosmic administration associated with the planetary spheres",
+              "status": "comparative-primary-text",
+              "notes": "Provides Hellenistic cosmological context, not a one-to-one roster for the Sethian Seven Powers."
+            },
+            {
+              "sourceId": "source-rasimus-paradise-reconsidered",
+              "role": "scholarly analysis of the creator, archons and astral or planetary background of Sethian mythmaking",
+              "status": "modern-scholarly-comparison",
+              "notes": "The individual planetary correspondences remain uncertain and are not fixed in the public entry."
+            }
+          ]
+        },
+        {
+          "category": "MYTHIC PARALLEL",
+          "name": "The Seven Animal-Form Archons of the Ophite Diagram",
+          "description": "Origen reports an Ophite diagram containing seven cosmic rulers represented through animal forms. The comparison lies in the sevenfold hierarchy and its animal-shaped rulers; the Ophite names, sequence and individual forms differ from those preserved in the Apocryphon of John and should not be treated as the same roster.",
+          "relationType": "MYTHIC PARALLEL",
+          "traditionFamily": "Ophite / Gnostic",
+          "sourceIds": [
+            "source-origen-contra-celsum",
+            "source-rasimus-paradise-reconsidered"
+          ],
+          "sourceCitations": [
+            "ORIGEN, CONTRA CELSUM VI.30–31",
+            "TUOMAS RASIMUS, PARADISE RECONSIDERED IN GNOSTIC MYTHMAKING, CH. 3"
+          ],
+          "sourceAttestations": [
+            {
+              "sourceId": "source-origen-contra-celsum",
+              "role": "indirect ancient witness to the Ophite diagram and its seven animal-formed rulers",
+              "status": "indirect-ancient-attestation",
+              "notes": "Origen reports the diagram polemically; its roster differs from that of the Secret Book of John."
+            },
+            {
+              "sourceId": "source-rasimus-paradise-reconsidered",
+              "role": "modern scholarly analysis of Ophite evidence in relation to Sethian mythmaking",
+              "status": "modern-scholarly-comparison",
+              "notes": "Supports comparison without collapsing the two sevenfold structures."
+            }
+          ]
+        },
+        {
+          "category": "COSMOLOGICAL PARALLEL",
+          "name": "Abrasax and the 365 Heavens of Basilidean Cosmology",
+          "alternativeNames": [
+            "Abraxas and the 365 Heavens"
+          ],
+          "description": "In the cosmological system attributed to Basilides by Irenaeus and Hippolytus, successive orders of powers and Basilidean angels produce 365 heavens, corresponding to the days of the solar year. Abrasax — whose name has the numerical value 365 when calculated from its Greek letters — is identified as the chief or Great Archon of this celestial totality. This creates a significant numerical and cosmological parallel with the 365 archontic angels named in the Apocryphon of John. The two structures should nevertheless remain distinct: the Basilidean account enumerates heavens, whereas the Sethian text gives a total of archontic angels. Abrasax should therefore not be identified with Yaldabaoth, placed above the seven figures, or treated as their ruler. Since the Basilidean system survives largely through reports written by its opponents, its precise reconstruction remains necessarily cautious.",
+          "sourceIds": [
+            "source-irenaeus-against-heresies",
+            "source-hippolytus-refutation-all-heresies"
+          ],
+          "sourceAttestations": [
+            {
+              "sourceId": "source-irenaeus-against-heresies",
+              "role": "heresiological witness to the Basilidean system of 365 heavens and the numerical significance of Abrasax",
+              "status": "indirect-ancient-attestation",
+              "notes": "Irenaeus reports the doctrine as an opponent and does not preserve a Basilidean text in its own voice."
+            },
+            {
+              "sourceId": "source-hippolytus-refutation-all-heresies",
+              "role": "heresiological witness identifying Abrasax with the Great Archon of the 365 heavens",
+              "status": "indirect-ancient-attestation",
+              "notes": "Hippolytus reports the doctrine polemically; numbering of the relevant section varies among editions."
+            }
+          ],
+          "placement": "after-member-parallels",
+          "relationType": "COSMOLOGICAL PARALLEL",
+          "traditionFamily": "Basilidean Gnostic"
+        },
+        {
+          "category": "RITUAL / MAGICAL PARALLEL",
+          "name": "Iao in Greco-Egyptian Magical Tradition",
+          "description": "In Greco-Egyptian magical papyri and amulets, Iao appears in solar and serpent or anguipede imagery. Scholars have proposed that the seven-headed form of Yao in the Apocryphon of John reflects the image of a solar ruler gathering the powers of the seven planetary archons. This provides a historical and iconographic comparison, not an identification of Yao with a single mythological deity.",
+          "relationType": "RITUAL / MAGICAL PARALLEL",
+          "traditionFamily": "Greco-Egyptian Magical",
+          "sourceIds": [
+            "source-greek-magical-papyri",
+            "source-rasimus-paradise-reconsidered"
+          ],
+          "sourceCitations": [
+            "THE GREEK MAGICAL PAPYRI (PGM)",
+            "TUOMAS RASIMUS, PARADISE RECONSIDERED IN GNOSTIC MYTHMAKING, CH. 3"
+          ],
+          "sourceAttestations": [
+            {
+              "sourceId": "source-greek-magical-papyri",
+              "role": "primary comparative evidence for the circulation of Iao in Greco-Egyptian magical formulae",
+              "status": "comparative-primary-corpus",
+              "notes": "The corpus establishes the magical use of Iao but does not itself identify Iao with the Sethian Yao."
+            },
+            {
+              "sourceId": "source-rasimus-paradise-reconsidered",
+              "role": "scholarly analysis of the creator, archons and related iconographic evidence",
+              "status": "modern-scholarly-comparison",
+              "notes": "The comparison is historical and iconographic and must not be presented as a one-to-one identity."
+            }
+          ]
+        }
+      ],
+      "notes": "All four comparisons associated with the Seven Powers are consolidated in this single comparative explorer. Member-level comparisons must not generate a second comparative section inside the structural explorer.",
+      "dateAdded": "2026-09-09",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "id": "group-seven-psychic-components",
+      "displayName": "Adam’s Psychic Construction",
+      "groupType": "anthropogonic-psychic-components",
+      "phaseId": "phase-material-cosmos",
+      "display": {
+        "level": "embedded",
+        "order": 13.1
+      },
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "psychicComponents": [
+        {
+          "sequenceNumber": 1,
+          "power": "Goodness",
+          "component": "Bone-soul"
+        },
+        {
+          "sequenceNumber": 2,
+          "power": "Foreknowledge",
+          "component": "Sinew-soul"
+        },
+        {
+          "sequenceNumber": 3,
+          "power": "Divinity",
+          "component": "Flesh-soul"
+        },
+        {
+          "sequenceNumber": 4,
+          "power": "Lordship",
+          "component": "Marrow-soul"
+        },
+        {
+          "sequenceNumber": 5,
+          "power": "Kingdom",
+          "component": "Blood-soul"
+        },
+        {
+          "sequenceNumber": 6,
+          "power": "Envy",
+          "component": "Skin-soul"
+        },
+        {
+          "sequenceNumber": 7,
+          "power": "Understanding",
+          "component": "Hair-soul"
+        }
+      ],
+      "contextualNote": "These are the same lower powers previously associated with the archontic hierarchy. Here they function anthropogonically, each supplying one of the psychic substances from which Adam’s natural form is organized.",
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "primary source for the seven power-to-soul correspondences",
+          "status": "explicit",
+          "notes": "The correspondence is preserved as an ordered sevenfold sequence immediately before the detailed formation of Adam’s bodily parts by subordinate archontic makers (angels)."
+        }
+      ],
+      "researchNotes": {
+        "identityContinuity": "This group reuses the seven lower powers in a new anthropogonic function and does not introduce a separate third septenary hierarchy.",
+        "displayRule": "The seven correspondences and the anatomical assignments belong only in this explorer and must not be duplicated in the main event summary.",
+        "translationCaution": "Compound terms such as bone-soul and sinew-soul follow the selected English translation and should remain visibly source-dependent.",
+        "anatomicalScope": "The public anatomical index preserves the named creator-to-part sequence while marking missing and uncertain readings. Additional overseers and passions remain source-level research data rather than being conflated with direct anatomical creators."
+      },
+      "dateAdded": "2026-08-29",
+      "lastReviewed": "2026-08-29",
+      "anatomicalRegions": [
+        {
+          "label": "Head and Brain",
+          "assignments": [
+            {
+              "creator": "Eteraphaope-Abron",
+              "part": "Head"
+            },
+            {
+              "creator": "Meniggesstroeth",
+              "part": "Brain"
+            }
+          ]
+        },
+        {
+          "label": "Eyes, Ears and Face",
+          "assignments": [
+            {
+              "creator": "Asterechme",
+              "part": "Right eye"
+            },
+            {
+              "creator": "Thaspomocha",
+              "part": "Left eye"
+            },
+            {
+              "creator": "Yeronumos",
+              "part": "Right ear"
+            },
+            {
+              "creator": "Bissoum",
+              "part": "Left ear"
+            },
+            {
+              "creator": "Akioreim",
+              "part": "Nose"
+            },
+            {
+              "creator": "Banen-Ephroum",
+              "part": "Lips"
+            },
+            {
+              "creator": "Amen",
+              "part": "Teeth"
+            },
+            {
+              "creator": "Ibikan",
+              "part": "Molars"
+            },
+            {
+              "creator": "Basiliademe",
+              "part": "Tonsils"
+            },
+            {
+              "creator": "Achcha",
+              "part": "Uvula"
+            }
+          ]
+        },
+        {
+          "label": "Neck and Torso",
+          "assignments": [
+            {
+              "creator": "Adaban",
+              "part": "Neck"
+            },
+            {
+              "creator": "Chaaman",
+              "part": "Vertebrae"
+            },
+            {
+              "creator": "Dearcho",
+              "part": "Throat"
+            },
+            {
+              "creator": "Astrops",
+              "part": "Right breast"
+            },
+            {
+              "creator": "Barroph",
+              "part": "Left breast"
+            },
+            {
+              "creator": "Areche",
+              "part": "Belly"
+            },
+            {
+              "creator": "Phthave",
+              "part": "Navel"
+            },
+            {
+              "creator": "Senaphim",
+              "part": "Abdomen"
+            },
+            {
+              "creator": "Arachethopi",
+              "part": "Right ribs"
+            },
+            {
+              "creator": "Zabedo",
+              "part": "Left ribs"
+            },
+            {
+              "creator": "Barias",
+              "part": "Right hip"
+            },
+            {
+              "creator": "Phnouth",
+              "part": "Left hip"
+            },
+            {
+              "creator": "Abenlenarchei",
+              "part": "Marrow"
+            },
+            {
+              "creator": "Chnoumeninorin",
+              "part": "Bones"
+            },
+            {
+              "creator": "Taphreo",
+              "part": "Spine of the body"
+            }
+          ]
+        },
+        {
+          "label": "Arms and Hands",
+          "assignments": [
+            {
+              "creator": "Tebar",
+              "part": "Right shoulder"
+            },
+            {
+              "creator": "Uncertain reading",
+              "part": "Left shoulder",
+              "status": "damaged"
+            },
+            {
+              "creator": "Mniarcon",
+              "part": "Right elbow"
+            },
+            {
+              "creator": "Uncertain reading",
+              "part": "Left elbow",
+              "status": "damaged"
+            },
+            {
+              "creator": "Abitrion",
+              "part": "Right underarm"
+            },
+            {
+              "creator": "Evanthen",
+              "part": "Left underarm"
+            },
+            {
+              "creator": "Krys",
+              "part": "Right hand"
+            },
+            {
+              "creator": "Beluai",
+              "part": "Left hand"
+            },
+            {
+              "creator": "Treneu",
+              "part": "Fingers of the right hand"
+            },
+            {
+              "creator": "Balbel",
+              "part": "Fingers of the left hand"
+            },
+            {
+              "creator": "Kriman",
+              "part": "Nails of the hands"
+            },
+            {
+              "creator": "Baoum",
+              "part": "Right shoulder joint"
+            },
+            {
+              "creator": "Ararim",
+              "part": "Left shoulder joint"
+            }
+          ]
+        },
+        {
+          "label": "Internal Organs and Whole-Body Systems",
+          "assignments": [
+            {
+              "creator": "Gesole",
+              "part": "Stomach"
+            },
+            {
+              "creator": "Agromauna",
+              "part": "Heart"
+            },
+            {
+              "creator": "Bano",
+              "part": "Lungs"
+            },
+            {
+              "creator": "Sostrapal",
+              "part": "Liver"
+            },
+            {
+              "creator": "Anesimalar",
+              "part": "Spleen"
+            },
+            {
+              "creator": "Thopithro",
+              "part": "Intestines"
+            },
+            {
+              "creator": "Biblo",
+              "part": "Kidneys"
+            },
+            {
+              "creator": "Roeror",
+              "part": "Sinews"
+            },
+            {
+              "creator": "Ipouspoboba",
+              "part": "Veins"
+            },
+            {
+              "creator": "Bineborin",
+              "part": "Arteries"
+            },
+            {
+              "creator": "Atoimenpsephei",
+              "part": "Breaths in all the limbs"
+            },
+            {
+              "creator": "Entholleia",
+              "part": "All the flesh"
+            }
+          ]
+        },
+        {
+          "label": "Pelvis and Reproductive Anatomy",
+          "assignments": [
+            {
+              "creator": "Bedouk",
+              "part": "Uncertain reading",
+              "status": "uncertain"
+            },
+            {
+              "creator": "Arabeei",
+              "part": "Uncertain reading",
+              "status": "uncertain"
+            },
+            {
+              "creator": "Eilo",
+              "part": "Testicles"
+            },
+            {
+              "creator": "Sorma",
+              "part": "Genitals"
+            }
+          ]
+        },
+        {
+          "label": "Legs and Feet",
+          "assignments": [
+            {
+              "creator": "Gorma-Kaiochlabar",
+              "part": "Right thigh"
+            },
+            {
+              "creator": "Nebrith",
+              "part": "Left thigh"
+            },
+            {
+              "creator": "Pserem",
+              "part": "Uncertain reading",
+              "status": "uncertain"
+            },
+            {
+              "creator": "Asaklas",
+              "part": "Uncertain reading",
+              "status": "uncertain"
+            },
+            {
+              "creator": "Ormaoth",
+              "part": "Right leg"
+            },
+            {
+              "creator": "Emenun",
+              "part": "Left leg"
+            },
+            {
+              "creator": "Knyx",
+              "part": "Right shin-bone"
+            },
+            {
+              "creator": "Tupelon",
+              "part": "Left shin-bone"
+            },
+            {
+              "creator": "Achiel",
+              "part": "Right knee"
+            },
+            {
+              "creator": "Phnene",
+              "part": "Left knee"
+            },
+            {
+              "creator": "Phiouthrom",
+              "part": "Right foot"
+            },
+            {
+              "creator": "Boabel",
+              "part": "Toes of the right foot"
+            },
+            {
+              "creator": "Trachoun",
+              "part": "Left foot"
+            },
+            {
+              "creator": "Phikna",
+              "part": "Toes of the left foot"
+            },
+            {
+              "creator": "Miamai",
+              "part": "Nails of the feet"
+            }
+          ]
+        },
+        {
+          "label": "Damaged Ending",
+          "assignments": [
+            {
+              "creator": "Labernioum",
+              "part": "Uncertain reading",
+              "status": "damaged"
+            }
+          ]
+        }
+      ],
+      "anatomicalNote": "The Apocryphon of John preserves an extensive but textually damaged list of subordinate archontic makers (angels) and anatomical parts. Throughout this section, “archontic angels” refers exclusively to subordinate makers belonging to Yaldabaoth’s realm. The designation preserves the terminology of the source and must not be confused with divine messengers originating from the Invisible Spirit or with beings of the Pleroma. Entries labeled “Uncertain reading” mark missing names, damaged passages, or correspondences whose anatomical meaning cannot be established securely; they are not silently reconstructed. The text continues with additional overseers, bodily powers, elemental conditions, and passions, but it does not provide a complete named assignment for each of the 365 archontic angels. This archontic anatomy belongs to Adam’s psychic or natural formation and must not be confused with his later enclosure in the mortal material body.",
+      "anatomicalIntroduction": "According to the Apocryphon of John, a multitude of subordinate archontic makers (angels) receive the seven psychic substances from the powers and use them to construct Adam limb by limb. These beings belong to Yaldabaoth’s lower archontic order; they are not emissaries of the Invisible Spirit or beings of the Pleroma. The text assigns named makers to individual anatomical parts and then continues with additional overseers, bodily powers, elemental conditions, and passions. The index below presents the preserved creator-to-part correspondences, grouped by region for clarity."
+    },
+    {
+      "id": "group-luminous-epinoia",
+      "displayName": "Luminous Epinoia",
+      "groupType": "embedded-divine-helper",
+      "phaseId": "phase-material-cosmos",
+      "display": {
+        "level": "embedded",
+        "order": 15.1
+      },
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "contextProfile": {
+        "label": "The Hidden Helper",
+        "title": "Luminous Epinoia — Life Within Adam",
+        "description": "Sent by the Mother-Father (Barbelo), Luminous Epinoia enters Adam as a hidden helper so that the rulers cannot recognize or seize her. Called Life, she assists the human creature, preserves the higher power within him, and works toward the restoration of Sophia’s deficiency. She also carries the knowledge of humanity’s descent and of the path by which the divine element may return to its origin."
+      },
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "primary source for Luminous Epinoia as Life and the hidden helper within Adam",
+          "status": "explicit",
+          "notes": "The text describes Luminous Epinoia as a helper sent to Adam, hidden from the rulers, assisting the whole creature, contributing to the correction of Sophia’s deficiency and teaching the way of descent and ascent."
+        }
+      ],
+      "researchNotes": {
+        "identityBoundary": "Luminous Epinoia is presented as the hidden divine helper called Life, not as another name for Adam or for his psychic body.",
+        "displayRule": "Her detailed functions belong only in the explorer and are not repeated in the main event summary.",
+        "chronologicalRole": "Her intervention follows the recognition of Adam’s superiority and precedes his enclosure in the mortal material body."
+      },
+      "dateAdded": "2026-08-29",
+      "lastReviewed": "2026-08-29"
+    },
+    {
+      "id": "group-comparative-anthropogonies",
+      "displayName": "Comparative Anthropogonies",
+      "groupType": "comparative-traditions",
+      "phaseId": "phase-material-cosmos",
+      "display": {
+        "level": "embedded",
+        "order": 16.1
+      },
+      "explorerTitle": "Explore Comparative Traditions",
+      "traditionIds": [],
+      "cosmologyIds": [],
+      "comparativeTraditions": [
+        {
+          "category": "SCRIPTURAL INTERTEXT",
+          "name": "Genesis 2:7 — Dust and the Breath of Life",
+          "description": "Genesis forms the human from the dust of the ground and animates him through the breath of life. The Apocryphon of John reworks this sequence by separating Adam’s psychic formation, the transfer of Sophia’s power through Yaldabaoth’s breath, and a later mortal material enclosure.",
+          "sourceIds": [
+            "source-genesis",
+            "source-king-secret-revelation-john"
+          ],
+          "sourceCitations": [
+            "GENESIS 2:7",
+            "KAREN L. KING, THE SECRET REVELATION OF JOHN"
+          ],
+          "relationType": "SCRIPTURAL INTERTEXT",
+          "traditionFamily": "Biblical",
+          "sourceAttestations": [
+            {
+              "sourceId": "source-genesis",
+              "role": "biblical evidence for the formation of the human from dust and animation through the breath of life",
+              "status": "comparative-primary-text"
+            },
+            {
+              "sourceId": "source-king-secret-revelation-john",
+              "role": "modern scholarly analysis of the Secret Book of John’s revisionary use of Genesis",
+              "status": "modern-scholarly-comparison"
+            }
+          ]
+        },
+        {
+          "category": "MYTHIC PARALLEL",
+          "name": "Atrahasis — Humanity from Clay and Divine Flesh and Blood",
+          "description": "Atrahasis describes humanity formed from clay combined with the flesh and blood of a slain deity so that humans may assume the labor imposed upon the gods. The shared pattern is earthly material joined to a divine component; the purpose and theology differ from the Sethian recovery of Sophia’s power.",
+          "sourceIds": [
+            "source-atrahasis"
+          ],
+          "sourceCitations": [
+            "ATRAHASIS, TABLET I"
+          ],
+          "relationType": "MYTHIC PARALLEL",
+          "traditionFamily": "Mesopotamian",
+          "sourceAttestations": [
+            {
+              "sourceId": "source-atrahasis",
+              "role": "primary Mesopotamian evidence for humanity formed from clay and the flesh and blood of a slain deity",
+              "status": "comparative-primary-text"
+            }
+          ]
+        },
+        {
+          "category": "MYTHIC PARALLEL",
+          "name": "Enūma Eliš — Humanity from the Blood of Qingu",
+          "description": "Enūma Eliš presents humanity as created from the blood of Qingu in order to carry the service of the gods. This offers a structural comparison for human life containing divine substance, but not for the Apocryphon’s distinction between a higher power and ignorant archontic makers.",
+          "sourceIds": [
+            "source-enuma-elish"
+          ],
+          "sourceCitations": [
+            "ENŪMA ELIŠ, TABLET VI"
+          ],
+          "relationType": "MYTHIC PARALLEL",
+          "traditionFamily": "Mesopotamian",
+          "sourceAttestations": [
+            {
+              "sourceId": "source-enuma-elish",
+              "role": "primary Mesopotamian evidence for humanity created from the blood of Qingu to assume divine service",
+              "status": "comparative-primary-text"
+            }
+          ]
+        },
+        {
+          "category": "THEOLOGICAL PARALLEL",
+          "name": "Corpus Hermeticum I — The Immortal Human within Mortal Nature",
+          "description": "Poimandres describes an archetypal human born from Life and Light who shares the energies of seven rulers and becomes mortal through embodiment in Nature. Unlike Adam’s imposed archontic enclosure, the Hermetic human descends through desire and consent.",
+          "sourceIds": [
+            "source-corpus-hermeticum-i"
+          ],
+          "sourceCitations": [
+            "CORPUS HERMETICUM I.12–21"
+          ],
+          "relationType": "THEOLOGICAL PARALLEL",
+          "traditionFamily": "Hermetic",
+          "sourceAttestations": [
+            {
+              "sourceId": "source-corpus-hermeticum-i",
+              "role": "primary Hermetic evidence for the divine Human’s descent into Nature and acquisition of mortal embodiment",
+              "status": "comparative-primary-text"
+            }
+          ]
+        },
+        {
+          "category": "PHILOSOPHICAL PARALLEL",
+          "name": "Plato, Timaeus — Mortal Bodies Formed by Subordinate Gods",
+          "description": "In Timaeus 41d–44d, the cosmic craftsman entrusts subordinate gods with forming mortal bodies around an immortal principle. The division of labor is comparable, while Plato’s makers are orderly and benevolent rather than ignorant or hostile.",
+          "sourceIds": [
+            "source-plato-timaeus",
+            "source-king-secret-revelation-john"
+          ],
+          "sourceCitations": [
+            "PLATO, TIMAEUS 41D–44D",
+            "KAREN L. KING, THE SECRET REVELATION OF JOHN"
+          ],
+          "relationType": "PHILOSOPHICAL PARALLEL",
+          "traditionFamily": "Platonic",
+          "sourceAttestations": [
+            {
+              "sourceId": "source-plato-timaeus",
+              "role": "primary Platonic evidence for subordinate gods forming mortal bodies around an immortal principle",
+              "status": "comparative-primary-text"
+            },
+            {
+              "sourceId": "source-king-secret-revelation-john",
+              "role": "modern scholarly context for the Secret Book of John’s anthropogony and Platonic intellectual environment",
+              "status": "modern-scholarly-comparison"
+            }
+          ]
+        },
+        {
+          "category": "PHILOSOPHICAL PARALLEL",
+          "name": "Plato, Cratylus — The Body as Tomb and Enclosure",
+          "description": "Cratylus 400c reports an Orphic interpretation of the body as the soul’s grave and enclosing prison. This illuminates the language of Adam’s material body as a tomb, without establishing direct textual dependence.",
+          "sourceIds": [
+            "source-plato-cratylus"
+          ],
+          "sourceCitations": [
+            "PLATO, CRATYLUS 400C"
+          ],
+          "relationType": "PHILOSOPHICAL PARALLEL",
+          "traditionFamily": "Platonic",
+          "sourceAttestations": [
+            {
+              "sourceId": "source-plato-cratylus",
+              "role": "primary philosophical evidence for the body interpreted as the soul’s grave and enclosure",
+              "status": "comparative-primary-text",
+              "notes": "Used as a lexical and philosophical parallel, not evidence of direct dependence."
+            }
+          ]
+        }
+      ],
+      "notes": "A single post-anthropogony explorer prevents repetition across the psychic formation, animation, awakening and material-enclosure cards.",
+      "dateAdded": "2026-08-30",
+      "lastReviewed": "2026-08-30",
+      "comparativeSubject": "Comparative Anthropogonies"
+    }
+  ]
+}

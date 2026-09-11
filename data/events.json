@@ -1,0 +1,940 @@
+{
+  "schemaVersion": "1.0",
+  "lastUpdated": "2026-09-11",
+  "events": [
+    {
+      "id": "event-sophia-independent-generation",
+      "displayName": "Sophia's Independent Generation",
+      "eventType": "cosmological-rupture",
+      "phaseId": "phase-cosmological-rupture",
+      "display": {
+        "level": "primary",
+        "order": 6.2
+      },
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "participantIds": [
+        "entity-sophia"
+      ],
+      "resultEntityIds": [
+        "entity-yaldabaoth"
+      ],
+      "summary": "Sophia conceives a thought from herself and seeks to bring forth a likeness without the approval of the Invisible Spirit and without the participation of her partner. Her act produces an imperfect offspring, different from the beings of the Pleroma. Seeing what her desire has produced, Sophia casts it outside the immortal realms and conceals it from the divine order. This offspring becomes Yaldabaoth, marking the rupture between the ordered Pleromatic realm and the emergence of the lower cosmological order. This act initiates Sophia’s displacement from her former aeonic position: she will remain unable to return to her own aeon until the deficiency brought about by her independent generation is corrected.",
+      "contextualNote": "The parallel Sethian accounts preserve a fuller account of the cosmological consequences of Sophia's act. In The Hypostasis of the Archons, a veil separates the incorruptible realm above from the regions below. Beneath it a shadow arises and becomes matter. Sophia's independently generated offspring enters this matter, takes form from the shadow, and emerges as a lion-like being. When he opens his eyes, he beholds an immeasurable expanse of matter surrounding him. On the Origin of the World develops this sequence further: outside the luminous realm, the shadow is called darkness and develops into limitless chaos, within which watery substance and matter arise. From these waters the being who will become Yaldabaoth emerges, before establishing his dominion over the lower realm.",
+      "overview": "Within the cosmological narrative of the Apocryphon of John, Sophia acts independently of the ordered generative structure of the higher divine realm. She seeks to produce from herself without the approval of the Invisible Spirit and without the participation of her partner. The resulting offspring does not resemble the perfection of the Pleroma. Sophia removes it from the immortal realms and conceals it, after which the narrative identifies this offspring as Yaldabaoth. The episode functions as the decisive cosmological rupture between the ordered Pleromatic realm and the lower demiurgic order that follows.",
+      "causalRole": {
+        "precededBy": [
+          "phase-divine-emanation"
+        ],
+        "leadsTo": [
+          "entity-yaldabaoth",
+          "phase-demiurgic-order"
+        ]
+      },
+      "primarySourceIds": [
+        "source-apocryphon-of-john"
+      ],
+      "parallelSourceIds": [
+        "source-hypostasis-of-the-archons",
+        "source-on-the-origin-of-the-world",
+        "source-sophia-of-jesus-christ"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "primary source for Sophia's independent generation and the emergence of Yaldabaoth",
+          "status": "explicit",
+          "notes": "The Apocryphon of John is the primary source used by Anamnesis Mundi for this reconstruction. The precise wording and sequence should remain sensitive to differences among the surviving recensions."
+        },
+        {
+          "sourceId": "source-hypostasis-of-the-archons",
+          "role": "parallel cosmogonic tradition",
+          "status": "comparative",
+          "notes": "Preserves a related Sophia/Pistis cosmogonic episode involving the emergence of an arrogant lower ruler. It should be treated as a parallel tradition rather than silently merged into the Apocryphon of John reconstruction."
+        },
+        {
+          "sourceId": "source-on-the-origin-of-the-world",
+          "role": "parallel cosmogonic tradition",
+          "status": "comparative",
+          "notes": "Preserves a related but distinct cosmogonic account involving Pistis, Sophia, chaos and the emergence of the lower ruler. Its terminology and sequence should remain source-specific."
+        },
+        {
+          "sourceId": "source-sophia-of-jesus-christ",
+          "role": "comparative source for Sophia-related cosmological tradition",
+          "status": "comparative",
+          "notes": "Provides comparative evidence for Sophia-related cosmological traditions, but should not be treated as an identical version of Sophia's independent generation in the Apocryphon of John."
+        }
+      ],
+      "researchNotes": {
+        "structuralImportance": "This event remains distinct from both Sophia as an aeonic entity and Yaldabaoth as the subsequent demiurgic ruler.",
+        "agencyCaution": "The event should not be described as Sophia deliberately commissioning, supplying or empowering Yaldabaoth to create the lower cosmos.",
+        "motivationCaution": "The Apocryphon of John should not be paraphrased as saying that Sophia acted specifically in order to imitate the Monad's generation of Barbelo unless a textual witness explicitly supports that interpretation.",
+        "materialContinuity": "The relationship between Sophia's rupture, the emergence of Yaldabaoth and the later material order requires separate source-level reconstruction.",
+        "visualization": "This event is intended to function as the principal transition point between the ordered Pleromatic realm and Demiurgic Order.",
+        "textualCaution": "Claims concerning Sophia's descent, loss or recovery of power, the substance available to Yaldabaoth and the precise mechanism of material creation must eventually be attached to specific textual witnesses.",
+        "comparativeCaution": "The Hypostasis of the Archons and On the Origin of the World preserve important parallel cosmogonic traditions but should not be treated as identical versions of the Apocryphon of John narrative.",
+        "comparativeSophiaNote": "Pistis Sophia, preserved in the Askew Codex, and the Valentinian figure Achamoth provide important comparative material for later or distinct Wisdom traditions. They should not be treated as alternative names for the Sophia of the Apocryphon of John.",
+        "alternativeNamesCaution": "For the Sethian Sophia represented in this chronology, Wisdom is a translation of the Greek name Sophia rather than evidence that Pistis Sophia, Achamoth, The Mother of All or The Defiled Wisdom are direct aliases of the same textual figure."
+      },
+      "notes": "This event provides the narrative bridge from the ordered Pleromatic realm to the emergence of Yaldabaoth and the lower demiurgic order.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-24"
+    },
+    {
+      "id": "event-yaldabaoth-emergence",
+      "displayName": "Emergence of Yaldabaoth",
+      "eventType": "demiurgic-emergence",
+      "phaseId": "phase-demiurgic-order",
+      "display": {
+        "level": "primary",
+        "order": 6.4
+      },
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "participantIds": [
+        "entity-sophia",
+        "entity-yaldabaoth"
+      ],
+      "resultEntityIds": [
+        "entity-yaldabaoth"
+      ],
+      "summary": "Yaldabaoth emerges as the imperfect offspring of Sophia's independent generation, distinct from the beings of the Pleroma. In the Apocryphon of John, Sophia removes him from the immortal realms and conceals him within a luminous cloud, placing a throne there so that the higher beings will not see him. Although he carries a power whose origin ultimately lies in his Mother, he is unaware of the higher divine reality from which it derives. Separating himself from his place of origin, he establishes a realm of his own and begins to generate subordinate rulers and authorities, initiating the active demiurgic order beneath the Pleroma.",
+      "overview": "Following Sophia's independent generation, Yaldabaoth appears outside the ordered higher divine realm. The Apocryphon of John presents him as possessing power derived from his mother while remaining ignorant of the higher divine reality from which that power ultimately originates. He separates himself from his place of origin, establishes realms of his own and proceeds toward the generation of subordinate rulers and authorities. His emergence therefore marks the transition from Sophia's cosmological rupture to the active formation of the lower demiurgic order.",
+      "causalRole": {
+        "precededBy": [
+          "event-sophia-independent-generation"
+        ],
+        "leadsTo": [
+          "entity-yaldabaoth",
+          "event-formation-subordinate-rulers"
+        ]
+      },
+      "primarySourceIds": [
+        "source-apocryphon-of-john"
+      ],
+      "parallelSourceIds": [
+        "source-hypostasis-of-the-archons",
+        "source-on-the-origin-of-the-world",
+        "source-trimorphic-protennoia"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "primary source for the emergence of Yaldabaoth and the beginning of the lower ruling order",
+          "status": "explicit",
+          "notes": "The Apocryphon of John presents Yaldabaoth as emerging through Sophia's independent generation, possessing power derived from his mother, separating himself from his place of origin and proceeding toward the establishment of a lower ruling order. Names, wording and details vary among manuscript witnesses and translations."
+        },
+        {
+          "sourceId": "source-hypostasis-of-the-archons",
+          "role": "parallel tradition concerning the arrogant lower ruler",
+          "status": "comparative",
+          "notes": "Preserves a related cosmogonic tradition involving Sophia, the lower ruler and his ignorance of the higher divine reality. It should be treated as a parallel tradition rather than silently merged into the Apocryphon of John reconstruction."
+        },
+        {
+          "sourceId": "source-on-the-origin-of-the-world",
+          "role": "parallel account of the emergence and activity of the lower ruler",
+          "status": "comparative",
+          "notes": "Preserves a related but distinct account involving Pistis, Sophia, chaos and the emergence of the lower ruler. Its terminology, sequence and description of the ruler should remain source-specific."
+        },
+        {
+          "sourceId": "source-trimorphic-protennoia",
+          "role": "parallel Sethian attestation concerning Yaldabaoth and the lower ruling order",
+          "status": "comparative",
+          "notes": "Trimorphic Protennoia provides important parallel Sethian evidence concerning the lower ruler and the lower cosmological order. It should remain a comparative witness rather than being treated as an identical version of the Apocryphon of John narrative."
+        }
+      ],
+      "researchNotes": {
+        "agencyCaution": "The emergence of Yaldabaoth should not be described as the result of Sophia deliberately empowering him to create the lower cosmos.",
+        "powerContinuity": "The source presents Yaldabaoth as possessing power whose origin is traced to Sophia. This continuity must remain distinct from any claim of voluntary transfer.",
+        "ignorance": "Yaldabaoth's ignorance of the higher divine reality is a central feature of his characterization and later explains his claim to supreme divinity within the lower order.",
+        "materialQuestion": "This event does not yet establish the exact nature or origin of the material substance subsequently involved in the lower cosmos.",
+        "structuralImportance": "This event marks the transition from cosmological rupture to the active formation of the demiurgic order.",
+        "sequenceCaution": "The generation of subordinate rulers belongs to the next distinct chronological event and should not be collapsed into this emergence event.",
+        "comparativeCaution": "The Hypostasis of the Archons, On the Origin of the World and Trimorphic Protennoia preserve important parallel traditions but should not be treated as identical versions of the Apocryphon of John narrative.",
+        "terminologyCaution": "Demiurge and Chief Ruler are useful descriptive or functional designations, but should remain distinct from explicitly attested proper names such as Yaldabaoth, Saklas and Samael."
+      },
+      "notes": "This event introduces Yaldabaoth as the first ruler of the lower order and establishes the transition toward the formation of subordinate rulers. The subsequent demiurgic hierarchy and the material cosmos remain separate stages.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-23"
+    },
+    {
+      "id": "event-formation-subordinate-rulers",
+      "displayName": "Formation of the Subordinate Rulers",
+      "eventType": "demiurgic-organization",
+      "phaseId": "phase-demiurgic-order",
+      "display": {
+        "level": "primary",
+        "order": 8
+      },
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "participantIds": [
+        "entity-yaldabaoth"
+      ],
+      "resultGroupIds": [
+        "group-twelve-authorities"
+      ],
+      "summary": "Yaldabaoth generates twelve ruling authorities in the long recension, establishing the first structured hierarchy of the lower order. The text subsequently describes seven kings set over the seven heavens and five over the depth of the abyss, without explicitly mapping those offices onto the twelve named authorities. From this archontic order further powers and subordinate beings arise; the lower rulers later participate in fashioning Adam and in the governance of humanity through ignorance, forgetfulness, and fate.",
+      "contextualNote": "COSMOLOGICAL DISTRIBUTION — Yaldabaoth establishes seven kings over the seven heavens, one for each heavenly firmament, and five over the depth of the abyss. The long recension preserves this seven-plus-five distribution immediately after the twelve named authorities, but does not explicitly identify each of the twelve names with one of these offices.",
+      "overview": "Following the emergence of Yaldabaoth as chief ruler, twelve subordinate authorities are generated. In the long recension of the Apocryphon of John, the twelve-name sequence is followed by the establishment of seven rulers over the seven heavenly spheres and five over the depths of the abyss. Anamnesis Mundi preserves this twelve-member hierarchy separately from other sevenfold power structures and from later anthropogonic figures that may share names with members of this list.",
+      "causalRole": {
+        "precededBy": [
+          "event-yaldabaoth-emergence"
+        ],
+        "leadsTo": [
+          "event-expansion-archontic-hierarchy"
+        ]
+      },
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "formation and distribution of the twelve subordinate authorities",
+          "status": "explicit-long-recension",
+          "witnessScope": [
+            "Nag Hammadi Codex II",
+            "Nag Hammadi Codex IV"
+          ],
+          "notes": "The long recension preserves a twelve-name sequence of subordinate authorities followed by the assignment of seven rulers to the seven heavenly spheres and five to the depths of the abyss."
+        }
+      ],
+      "researchNotes": {
+        "structuralImportance": "The subordinate authorities form a distinct layer of the demiurgic hierarchy and should not be collapsed into Yaldabaoth.",
+        "recensionStatus": "The public twelve-authority roster is based on the long recension. The short recension preserves a different naming and organizational pattern and should be modeled separately.",
+        "sevenPlusFiveStructure": "The long recension presents the twelve-name sequence together with a seven-plus-five distribution: seven rulers over the seven heavenly spheres and five over the depths of the abyss.",
+        "hierarchyCaution": "This twelve-authority sequence should remain distinct from other sevenfold ruler or power structures in the text unless a direct identification is explicitly supported.",
+        "cainAbelCaution": "Cain and Abel occur here as names within the twelve-authority list. They must not automatically be merged with later anthropogonic figures bearing the same names.",
+        "materialCaution": "This event establishes a ruling hierarchy but does not demonstrate creation of primordial material substance ex nihilo.",
+        "agencyCaution": "No voluntary transmission of Sophia's substance, light or creative power to Yaldabaoth should be inferred from this stage.",
+        "visualization": "The Twelve Authorities should remain expandable as a twelve-member hierarchy while preserving the source's seven-plus-five cosmological distribution."
+      },
+      "notes": "This event establishes the long-recension twelve-authority hierarchy before the chronology proceeds to the further expansion of the archontic order.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-25",
+      "alternativeNames": [
+        "The Twelve Authorities",
+        "Ruling Authorities (Exousiai)",
+        "Archons"
+      ],
+      "primarySourceIds": [
+        "source-apocryphon-of-john"
+      ],
+      "parallelSourceIds": [
+        "source-hypostasis-of-the-archons",
+        "source-on-the-origin-of-the-world"
+      ]
+    },
+    {
+      "id": "event-expansion-archontic-hierarchy",
+      "displayName": "Expansion of the Archontic Hierarchy",
+      "eventType": "demiurgic-hierarchical-expansion",
+      "phaseId": "phase-demiurgic-order",
+      "display": {
+        "level": "primary",
+        "order": 9
+      },
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "participantIds": [
+        "entity-yaldabaoth"
+      ],
+      "resultGroupIds": [
+        "group-seven-powers",
+        "group-seven-powers-comparative-traditions"
+      ],
+      "summary": "The rulers generate seven powers for themselves, and the powers in turn generate six archontic angels for each, until the text gives their total as 365 archontic angels. Seven principal figures are then named — Athoth, Eloaios, Astaphaios, Yao, Sabaoth, Adonin, and Sabbataios — each associated with a distinctive form and subsequently paired with a named power. This further articulates the lower hierarchy beyond the twelve authorities and establishes a more extensive celestial and archontic order.",
+      "overview": "Following the formation of the twelve subordinate authorities, the Apocryphon of John develops the lower hierarchy further through a sevenfold structure of powers and a multiplication of subordinate archontic makers (angels). The text states that the powers generate six archontic angels for each and nevertheless gives the resulting total as 365 archontic angels; Anamnesis Mundi preserves the transmitted total without attempting to correct the arithmetic. The sevenfold structure should remain distinct from the preceding twelve-authority list even where individual names recur or resemble names found elsewhere in the demiurgic hierarchy.",
+      "causalRole": {
+        "precededBy": [
+          "event-formation-subordinate-rulers"
+        ],
+        "leadsTo": [
+          "event-ordering-material-cosmos"
+        ]
+      },
+      "primarySourceIds": [
+        "source-apocryphon-of-john"
+      ],
+      "parallelSourceIds": [
+        "source-on-the-origin-of-the-world"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "expansion of the demiurgic hierarchy through seven powers and subordinate archontic makers (angels)",
+          "status": "explicit",
+          "notes": "The text describes a sevenfold power structure followed by the generation of subordinate archontic makers (angels) and gives their total as 365. Names, forms and associated powers should be modeled separately with attention to recension and translation differences."
+        },
+        {
+          "sourceId": "source-on-the-origin-of-the-world",
+          "role": "parallel account of a sevenfold cosmological structure in the lower ruling order",
+          "status": "comparative",
+          "notes": "On the Origin of the World is included only as a parallel witness to the septenary cosmological structure. It is not used as a source for the exact Figure, Form and Associated Power correspondences displayed in this event."
+        }
+      ],
+      "researchNotes": {
+        "structuralImportance": "This event represents a further hierarchical layer beyond the twelve authorities and should not be collapsed into the preceding twelve-member structure.",
+        "sevenfoldCaution": "The seven principal figures and powers require separate modeling from the twelve-authority list even where names recur or appear related.",
+        "arithmeticCaution": "The transmitted statement concerning six archontic angels for each power and a total of 365 should be preserved as textual data rather than mathematically harmonized.",
+        "entityCaution": "The seven named figures should not yet be merged with similarly named entities elsewhere in the database until source-level identity has been established.",
+        "visualization": "A future expandable seven-member structure may be attached to this event after the seven figures, their forms and their associated powers are modeled and validated."
+      },
+      "notes": "This event extends the demiurgic hierarchy beyond the twelve authorities before the chronology proceeds to the ordering of the lower material cosmos.",
+      "dateAdded": "2026-08-25",
+      "lastReviewed": "2026-08-25"
+    },
+    {
+      "id": "event-ordering-material-cosmos",
+      "displayName": "Ordering of the Material Cosmos",
+      "eventType": "material-cosmological-ordering",
+      "phaseId": "phase-material-cosmos",
+      "display": {
+        "level": "primary",
+        "order": 10
+      },
+      "contentStatus": {
+        "classification": "source-grounded-reconstruction",
+        "verificationRequired": false
+      },
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "participantIds": [
+        "entity-yaldabaoth"
+      ],
+      "summary": "Using the power he had taken from Sophia, Yaldabaoth organizes the lower creation after a likeness of the higher aeons. He establishes a structured cosmic order of heavens, firmaments, and lower domains administered through the archons, including seven rulers corresponding to the seven heavens and five assigned to the depth of the abyss. He neither sees nor understands the indestructible realms from which this pattern ultimately derives. What emerges is not the Pleroma itself, nor yet a complete account of the physical Earth and its natural contents, but a derivative and diminished lower cosmos within which material embodiment and the subsequent human narrative will unfold.",
+      "overview": "In the Apocryphon of John, the ordering of the lower cosmos follows the establishment of Yaldabaoth’s authorities, powers, and subordinate archontic makers (angels). Having created the lower hierarchy, Yaldabaoth organizes what has come into being according to the pattern of the first aeons. He has not directly seen the indestructible realms; rather, the power he had taken from Sophia produces within him a likeness of the cosmos. The resulting order is therefore presented as an incomplete and derivative imitation of the higher divine pattern, administered through the archons, the seven heavens and their corresponding firmaments, together with the lower domains of the abyss. The passage describes formation and organization, not creation from nothing, and does not yet provide a complete sequence for the production of the earth, celestial bodies, plants, animals, or humanity.",
+      "causalRole": {
+        "precededBy": [
+          "event-expansion-archontic-hierarchy"
+        ],
+        "leadsTo": [
+          "event-sophia-repentance-intermediate-restoration"
+        ]
+      },
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "primary narrative source",
+          "status": "explicit",
+          "notes": "The text states that Yaldabaoth organized what had come into being according to the model of the first aeons and that the power he had taken from Sophia produced within him the likeness of the cosmos."
+        },
+        {
+          "sourceId": "source-on-the-origin-of-the-world",
+          "role": "parallel lower-cosmos account",
+          "status": "comparative-explicit",
+          "notes": "This tractate gives a more extended account of matter, the separation and ordering of cosmic regions, the seven heavens and their rulers. It is used as a parallel witness, not as the source of the exact Apocryphon of John sequence."
+        },
+        {
+          "sourceId": "source-hypostasis-of-the-archons",
+          "role": "parallel archontic cosmology",
+          "status": "comparative",
+          "notes": "This tractate preserves a related archontic rereading of Genesis and the organization of the lower world. It supports the broader cosmological context while remaining a distinct narrative."
+        }
+      ],
+      "researchNotes": {
+        "organizingVsCreating": "The ordering or formation of the cosmos must not be equated with creation from nothing. The primary passage describes Yaldabaoth organizing what has come into being according to a higher pattern.",
+        "borrowedPattern": "Yaldabaoth does not directly see the indestructible realms. The likeness of the cosmos is produced within him through the power he had taken from Sophia.",
+        "textualSequence": "The passage follows the establishment of the rulers, seven heavens, firmaments and subordinate archontic makers (angels), and precedes the detailed anthropogony.",
+        "parallelSourceBoundary": "On the Origin of the World and the Hypostasis of the Archons illuminate related lower-cosmos traditions but do not replace the Apocryphon of John as the primary narrative source.",
+        "comparativeBoundary": "The Timaeus and Genesis entries are interpretive comparisons. Neither is presented as an attestation of the Sethian event.",
+        "scopeCaution": "This event should not yet claim a complete textual sequence for the earth, celestial bodies, plants, animals or humanity.",
+        "visualization": "This event begins the Material Cosmos ambient region, shifting the visual field from demiurgic copper toward mineral sage and blue-grey."
+      },
+      "notes": "This node marks the transition from the expansion of the demiurgic hierarchy to the ordered lower cosmos. Its wording distinguishes textual formation and organization from creation ex nihilo.",
+      "dateAdded": "2026-08-14",
+      "lastReviewed": "2026-08-28",
+      "primarySourceIds": [
+        "source-apocryphon-of-john"
+      ],
+      "parallelSourceIds": [
+        "source-on-the-origin-of-the-world",
+        "source-hypostasis-of-the-archons"
+      ],
+      "comparativeTraditions": [
+        {
+          "category": "COSMOLOGICAL PARALLEL",
+          "name": "The Demiurge and the Ordered Cosmos in Plato’s Timaeus",
+          "description": "In Plato’s Timaeus, the divine craftsman brings the visible realm from disorder into order and fashions the cosmos according to an intelligible model. The Apocryphon of John preserves the structural relationship between model and copy but radically reverses its theological meaning: Plato’s craftsman is good and rational, whereas Yaldabaoth reproduces the higher order through power taken from Sophia and without direct knowledge of the indestructible realms.",
+          "sourceIds": [
+            "source-plato-timaeus",
+            "source-king-secret-revelation-john"
+          ],
+          "relationType": "COSMOLOGICAL PARALLEL",
+          "traditionFamily": "Platonic",
+          "sourceCitations": [
+            "PLATO, TIMAEUS 29E–30B",
+            "KAREN L. KING, THE SECRET REVELATION OF JOHN"
+          ],
+          "sourceAttestations": [
+            {
+              "sourceId": "source-plato-timaeus",
+              "role": "primary Platonic evidence for the craftsman ordering the visible cosmos according to an intelligible model",
+              "status": "comparative-primary-text"
+            },
+            {
+              "sourceId": "source-king-secret-revelation-john",
+              "role": "modern scholarly context for the Secret Book of John and its intellectual environment",
+              "status": "modern-scholarly-comparison"
+            }
+          ]
+        },
+        {
+          "category": "SCRIPTURAL INTERTEXT",
+          "name": "The Ordering of Heaven and Earth in Genesis",
+          "description": "Genesis 1 presents creation as a sequence of separations and ordered domains: light and darkness, the waters above and below, heaven and earth, and the celestial lights governing time. Sethian texts reuse this scriptural architecture while relocating its creator within a subordinate and imperfect cosmological order. The comparison concerns the structure being reinterpreted, not an agreement about the identity or nature of the creator.",
+          "sourceIds": [
+            "source-genesis",
+            "source-king-secret-revelation-john"
+          ],
+          "relationType": "SCRIPTURAL INTERTEXT",
+          "traditionFamily": "Biblical",
+          "sourceCitations": [
+            "GENESIS 1",
+            "KAREN L. KING, THE SECRET REVELATION OF JOHN"
+          ],
+          "sourceAttestations": [
+            {
+              "sourceId": "source-genesis",
+              "role": "biblical evidence for the ordered sequence of heaven, earth, firmament and celestial lights",
+              "status": "comparative-primary-text"
+            },
+            {
+              "sourceId": "source-king-secret-revelation-john",
+              "role": "modern scholarly analysis of the Secret Book of John’s revisionary reading of biblical creation",
+              "status": "modern-scholarly-comparison"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "event-sophia-repentance-intermediate-restoration",
+      "displayName": "Sophia’s Repentance and Intermediate Restoration",
+      "eventType": "sophian-repentance-and-provisional-restoration",
+      "phaseId": "phase-material-cosmos",
+      "display": {
+        "level": "primary",
+        "order": 11
+      },
+      "contentStatus": {
+        "classification": "source-grounded-reconstruction",
+        "verificationRequired": false
+      },
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "participantIds": [
+        "entity-sophia"
+      ],
+      "primarySourceIds": [
+        "source-apocryphon-of-john"
+      ],
+      "summary": "After Yaldabaoth has established his rulers, expanded the archontic hierarchy, and ordered the lower cosmos, Sophia now becomes fully conscious of the consequences of her earlier actions. His renewed proclamation of exclusive divinity reveals the full extent of his ignorance and of the deficiency brought about by her independent generation. Her light has diminished, and she moves to and fro in darkness, ignorance, and shame, unable to return to her own aeon. She repents, and her plea is heard by the higher divine realm. Power is sent from the Pleroma to assist her, and she is raised above her son and placed in the ninth sphere. She is not yet restored to her own aeon, however, and remains in this intermediate position until her deficiency is corrected.",
+      "overview": "Sophia’s repentance and elevation form one continuous restorative episode in the Apocryphon of John. The higher divine realm responds to her repentance, and assistance descends to correct her deficiency. Her elevation is provisional rather than complete: she is placed above Yaldabaoth, in the ninth sphere, but does not yet return to the aeon from which she departed.",
+      "causalRole": {
+        "precededBy": [
+          "event-ordering-material-cosmos"
+        ],
+        "leadsTo": [
+          "event-revelation-primordial-human"
+        ]
+      },
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "primary narrative source",
+          "status": "explicit",
+          "notes": "The text joins Sophia’s repentance, the response of the higher fullness and her provisional elevation above her son while stating that she has not yet returned to her own aeon."
+        }
+      ],
+      "researchNotes": {
+        "singleEventRule": "Sophia’s repentance and provisional elevation are presented as one continuous restorative episode and must remain a single timeline card.",
+        "restorationBoundary": "Intermediate restoration does not mean complete reintegration into the Pleroma. Sophia remains outside her own aeon until her deficiency is corrected.",
+        "spatialStatus": "The ninth sphere is above Yaldabaoth and the lower rulers but below Sophia’s original aeonic position.",
+        "sequenceRule": "This event follows the ordering of the lower cosmos and precedes the formation of humanity.",
+        "visualPlacement": "The card belongs on the left side of the chronological axis, opposite the preceding Material Cosmos card, with all content aligned toward the axis.",
+        "comparativeBoundary": "The Valentinian Achamoth and the later Pistis Sophia are comparative developments of Sophia’s displacement, repentance and restoration. Neither is treated as the same figure or narrative sequence as the Sethian Sophia."
+      },
+      "notes": "This card marks a corrective intervention from the higher realm without collapsing the distinction between provisional elevation and Sophia’s eventual complete restoration.",
+      "dateAdded": "2026-08-28",
+      "lastReviewed": "2026-08-28",
+      "comparativeTraditions": [
+        {
+          "category": "THEOLOGICAL PARALLEL",
+          "name": "The Repentance and Restoration of Achamoth in Valentinian Cosmology",
+          "description": "In Valentinian cosmology, Achamoth exists outside the Pleroma, separated from its light and affected by ignorance, grief, fear and the desire to return. Assistance comes from the higher realm, and the Saviour ultimately gives her form according to knowledge and heals her passions. The parallel lies in a displaced Sophia receiving progressive restoration from the Pleroma; Achamoth, her passions and the sequence of her restoration belong to a distinct Valentinian system and should not be identified with the Sethian Sophia.",
+          "sourceIds": [
+            "source-irenaeus-against-heresies",
+            "source-thomassen-spiritual-seed"
+          ],
+          "sourceCitations": [
+            "IRENAEUS, AGAINST HERESIES I.4",
+            "EINAR THOMASSEN, THE SPIRITUAL SEED"
+          ],
+          "relationType": "THEOLOGICAL PARALLEL",
+          "traditionFamily": "Valentinian",
+          "sourceAttestations": [
+            {
+              "sourceId": "source-irenaeus-against-heresies",
+              "role": "indirect ancient witness to the Valentinian account of Achamoth’s displacement, passions and restoration",
+              "status": "indirect-ancient-attestation",
+              "notes": "Irenaeus reports the tradition as an opponent."
+            },
+            {
+              "sourceId": "source-thomassen-spiritual-seed",
+              "role": "modern scholarly context for Valentinian cosmology and the Achamoth tradition",
+              "status": "modern-scholarly-comparison"
+            }
+          ]
+        },
+        {
+          "category": "HISTORICAL RECEPTION",
+          "name": "The Repentances and Gradual Ascent of Pistis Sophia",
+          "description": "In the later Pistis Sophia, Sophia falls into Chaos, loses part of her light-power and directs a series of repentances toward the Light. Her petitions are answered progressively, while hostile rulers continue to oppose her and her rescue unfolds in stages. This is a later development of the motif of Sophia’s repentance and restoration, not a continuation of the episode in the Apocryphon of John.",
+          "sourceIds": [
+            "source-pistis-sophia"
+          ],
+          "sourceCitations": [
+            "PISTIS SOPHIA, BOOK I"
+          ],
+          "relationType": "HISTORICAL RECEPTION",
+          "traditionFamily": "Later Gnostic",
+          "sourceAttestations": [
+            {
+              "sourceId": "source-pistis-sophia",
+              "role": "primary evidence for Sophia’s repeated repentances, loss of light-power and progressive rescue",
+              "status": "comparative-primary-text",
+              "notes": "A later and distinct work, not a continuation of the Secret Book of John."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "event-revelation-primordial-human",
+      "displayName": "Revelation of the Primordial Human",
+      "eventType": "anthropogonic-revelation",
+      "phaseId": "phase-material-cosmos",
+      "display": {
+        "level": "primary",
+        "order": 12,
+        "periodLabel": "Anthropogonic Revelation"
+      },
+      "contentStatus": {
+        "classification": "source-grounded-reconstruction",
+        "verificationRequired": false
+      },
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "participantIds": [
+        "entity-yaldabaoth"
+      ],
+      "primarySourceIds": [
+        "source-apocryphon-of-john"
+      ],
+      "parallelSourceIds": [
+        "source-hypostasis-of-the-archons",
+        "source-on-the-origin-of-the-world"
+      ],
+      "summary": "After Sophia’s repentance, a voice from the exalted divine realm declares that the Human and the Son of the Human exist. Yaldabaoth hears the voice but mistakes its origin, believing that it has come from his mother. He and his authorities then look into the waters below and perceive the reflected form of the primordial Human. Yaldabaoth says to them, “Come, let us create a human according to the image of God and according to our likeness.” The text does not present this declaration as Yaldabaoth’s conscious recognition of a higher God: he remains ignorant of the image’s true origin and responds only to a reflected likeness that he cannot comprehend. The authorities then begin to construct Adam through their respective powers in correspondence with the revealed image. Adam has not yet been animated.",
+      "overview": "The anthropogonic sequence begins with a revelation rather than with Adam’s immediate construction. A voice from the exalted divine realm announces the Human and the Son of the Human, but Yaldabaoth misidentifies its origin as his mother. The chief ruler and his authorities perceive only the reflected form of the primordial Human in the waters below. Their decision to create according to “the image of God” and “our likeness” therefore does not amount to recognition of a higher God: they imitate a revealed image whose true source they neither know nor comprehend. The episode remains distinct from the subsequent construction and animation of Adam.",
+      "causalRole": {
+        "precededBy": [
+          "event-sophia-repentance-intermediate-restoration"
+        ],
+        "leadsTo": [
+          "event-formation-adam-psychic-body"
+        ]
+      },
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "primary narrative source for the revelation of the higher human image in the waters",
+          "status": "explicit",
+          "notes": "The text places the proclamation concerning the Human and the Son of the Human before the rulers look into the waters and see the image that becomes the model for their proposed human creation."
+        },
+        {
+          "sourceId": "source-hypostasis-of-the-archons",
+          "role": "parallel archontic anthropogony involving a reflected incorruptible image",
+          "status": "comparative",
+          "notes": "This tractate preserves a related but distinct account in which the rulers see an image reflected in the waters. Its terminology and sequence are not silently merged into the Apocryphon of John reconstruction."
+        },
+        {
+          "sourceId": "source-on-the-origin-of-the-world",
+          "role": "parallel account of the heavenly human pattern perceived by the rulers",
+          "status": "comparative",
+          "notes": "This tractate offers a related but distinct development of the reflected human image and the rulers’ attempt to reproduce it."
+        }
+      ],
+      "researchNotes": {
+        "chronologicalBoundary": "This event reveals the model for Adam but does not yet describe the formation of his psychic body, the construction of his material body, his animation or his awakening.",
+        "reflectionBoundary": "The rulers perceive a reflected image in the lower waters; they do not directly apprehend or comprehend the higher primordial Human.",
+        "agencyCaution": "The higher revelation provides the archetypal occasion for the rulers’ project but should not be described as their successful understanding of the divine realm.",
+        "visualPlacement": "The card follows Sophia’s Repentance and Intermediate Restoration, belongs on the right side of the axis and remains within the Material Cosmos ambient region.",
+        "comparativeBoundary": "The Hypostasis of the Archons and On the Origin of the World are parallel witnesses and must remain distinct from the primary Apocryphon of John sequence.",
+        "explorerBoundary": "Comparative anthropogonic traditions are deferred until the full formation and awakening sequence has been completed.",
+        "voiceMisrecognition": "Yaldabaoth hears the higher declaration but believes that it comes from his mother; the text explicitly states that he does not know its true origin.",
+        "imageFormula": "The quoted image-of-God formula must not be interpreted as Yaldabaoth consciously acknowledging a higher God. He and the authorities respond to a reflected form while remaining ignorant of its source.",
+        "voiceAttribution": "The source leaves the speaker unnamed and locates the voice in the exalted divine realm. It must not be attributed categorically to Sophia, Barbelo, or another named figure."
+      },
+      "notes": "This card opens the anthropogonic sequence by distinguishing the revelation of the human archetype from every subsequent stage in Adam’s formation.",
+      "dateAdded": "2026-08-29",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "id": "event-formation-adam-psychic-body",
+      "displayName": "Formation of Adam’s Psychic Body",
+      "eventType": "psychic-anthropogonic-formation",
+      "phaseId": "phase-material-cosmos",
+      "display": {
+        "level": "primary",
+        "order": 13,
+        "periodLabel": "Psychic Formation"
+      },
+      "contentStatus": {
+        "classification": "source-grounded-reconstruction",
+        "verificationRequired": false
+      },
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "participantIds": [
+        "entity-yaldabaoth",
+        "entity-archontic-figure-athoth",
+        "entity-archontic-figure-eloaios",
+        "entity-archontic-figure-astaphaios",
+        "entity-archontic-figure-yao",
+        "entity-archontic-figure-sabaoth",
+        "entity-archontic-figure-adonin",
+        "entity-archontic-figure-sabbataios"
+      ],
+      "resultGroupIds": [
+        "group-seven-psychic-components"
+      ],
+      "primarySourceIds": [
+        "source-apocryphon-of-john"
+      ],
+      "summary": "Following their decision to fashion a human being after the reflected image, the lower rulers begin the psychic formation of Adam. Through a layered collaboration of powers and subordinate archontic makers (angels), his natural form is progressively assembled according to the higher archetype they had perceived. Although Adam’s psychic body is complete, it remains motionless and inert; Sophia’s power has not yet entered him.",
+      "overview": "The rulers’ anthropogonic project proceeds through a coordinated psychic construction. Seven powers supply distinct soul-substances, after which numerous subordinate archontic makers (angels) articulate Adam’s bodily proportions, limbs and organs. In the narrative sequence this assembled natural form remains inactive. Its construction must therefore remain distinct from the later transmission of Sophia’s power, Adam’s awakening and superiority, and his subsequent enclosure in a material body.",
+      "causalRole": {
+        "precededBy": [
+          "event-revelation-primordial-human"
+        ],
+        "leadsTo": [
+          "event-animation-of-adam"
+        ]
+      },
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "primary narrative source for the seven psychic substances and the articulation of Adam’s natural form by subordinate archontic makers (angels)",
+          "status": "explicit",
+          "notes": "The text assigns seven soul-components to the seven powers, then describes subordinate archontic makers (angels) using those substances to form the proportions, limbs and coordinated parts of Adam. The completed form remains inactive before the later animation episode."
+        },
+        {
+          "sourceId": "source-hypostasis-of-the-archons",
+          "role": "parallel gnostic account of Adam formed by the rulers",
+          "status": "comparative",
+          "notes": "The related tractate preserves an archontic formation of Adam but not the Apocryphon’s ordered list of seven psychic components."
+        },
+        {
+          "sourceId": "source-on-the-origin-of-the-world",
+          "role": "parallel gnostic account of the rulers forming the earthly human",
+          "status": "comparative",
+          "notes": "The text preserves a related formation narrative whose details remain distinct from the Apocryphon of John."
+        },
+        {
+          "sourceId": "source-plato-timaeus",
+          "role": "philosophical comparison for subordinate divine makers forming mortal embodiment",
+          "status": "comparative",
+          "notes": "Timaeus 41d–44d assigns the formation of mortal bodies to subordinate gods; Plato’s makers are orderly and good, unlike the ignorant Sethian rulers."
+        }
+      ],
+      "researchNotes": {
+        "chronologicalBoundary": "The psychic substances and the formation of limbs by subordinate archontic makers (angels) belong to one continuous construction stage that ends with Adam inert.",
+        "materialBodyBoundary": "This is not yet the later material body formed from earth, water, fire and the spirit originating in matter after Adam’s awakening and descent.",
+        "animationBoundary": "Sophia’s power has not yet entered Adam. Animation belongs to the next chronological event.",
+        "sevenPowersContinuity": "The seven powers are the lower powers previously associated with the archontic hierarchy, now acting in an anthropogonic capacity.",
+        "comparativeBoundary": "No external mythological explorer is attached here because the closest ancient comparisons concern human creation as a whole rather than this precise sevenfold psychic anatomy.",
+        "visualPlacement": "The card follows the primordial-human revelation, belongs on the left side of the axis and remains within the Material Cosmos ambient region.",
+        "displayBoundary": "The main summary states the chronological outcome only. The seven psychic correspondences and the textual mechanism of archontic anatomical formation remain exclusively inside the explorer."
+      },
+      "notes": "The detailed correspondences are confined to the attached explorer so the main description does not repeat them.",
+      "dateAdded": "2026-08-29",
+      "lastReviewed": "2026-08-29"
+    },
+    {
+      "id": "event-animation-of-adam",
+      "displayName": "The Animation of Adam’s Psychic Body",
+      "eventType": "psychic-anthropogonic-animation",
+      "phaseId": "phase-material-cosmos",
+      "display": {
+        "level": "primary",
+        "order": 14,
+        "periodLabel": "Psychic Animation"
+      },
+      "contentStatus": {
+        "classification": "source-grounded-reconstruction",
+        "verificationRequired": false
+      },
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "participantIds": [
+        "entity-sophia",
+        "entity-barbelo",
+        "entity-yaldabaoth"
+      ],
+      "primarySourceIds": [
+        "source-apocryphon-of-john"
+      ],
+      "summary": "Because Adam’s assembled psychic form remains inert, Sophia seeks to recover the power that had passed from her into Yaldabaoth through his generation—a power she had not knowingly or voluntarily bestowed upon him. In response, the Mother-Father (Barbelo) sends five lights into the realm of the chief ruler (Yaldabaoth). They advise Yaldabaoth to breathe into Adam so that his psychic body may arise. Acting in ignorance, Yaldabaoth breathes into Adam the spirit he carries, unaware that it is Sophia’s power. This power passes out of Yaldabaoth and enters Adam’s psychic body, bringing it into motion. Adam has not yet been enclosed in the mortal material body; that occurs only after the rulers recognize his superiority.",
+      "overview": "Adam’s animation is presented as the recovery and redirection of a higher power already carried unknowingly by Yaldabaoth. The power entered the chief ruler through his generation from Sophia; it was not a conscious or voluntary gift from her. Through the intervention of Barbelo and the five lights, Yaldabaoth is induced to breathe into the inert psychic form. His action transfers Sophia’s power into Adam and brings that psychic body into motion. This stage precedes both the recognition of Adam’s luminosity and superior intelligence and his later enclosure in a mortal material body.",
+      "causalRole": {
+        "precededBy": [
+          "event-formation-adam-psychic-body"
+        ],
+        "leadsTo": [
+          "event-awakening-superiority-adam"
+        ]
+      },
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "primary narrative source for the animation of Adam through the transfer of Sophia’s power",
+          "status": "explicit",
+          "notes": "The text describes Sophia seeking to retrieve the power present in Yaldabaoth, the Mother-Father sending five lights, and Yaldabaoth being advised to breathe into Adam. Acting in ignorance, he transfers the power of his Mother into the inert natural body."
+        },
+        {
+          "sourceId": "source-genesis",
+          "role": "biblical intertext for a formed human becoming living through divine breath",
+          "status": "comparative",
+          "notes": "Genesis 2:7 provides the scriptural sequence reworked by the Apocryphon: formation precedes animation by breath."
+        },
+        {
+          "sourceId": "source-hypostasis-of-the-archons",
+          "role": "parallel gnostic animation of the rulers’ inert human",
+          "status": "comparative",
+          "notes": "The related account distinguishes the rulers’ inability from the higher spiritual agency that makes Adam living."
+        },
+        {
+          "sourceId": "source-on-the-origin-of-the-world",
+          "role": "parallel gnostic account of the animation of Adam",
+          "status": "comparative",
+          "notes": "The tractate preserves a related but independently developed transition from inert formation to living humanity."
+        }
+      ],
+      "researchNotes": {
+        "involuntaryTransfer": "The power reached Yaldabaoth through his generation from Sophia. The public wording must not imply that Sophia knowingly or voluntarily bestowed it upon him.",
+        "agencyBoundary": "Yaldabaoth performs the breath action but does not understand the origin or nature of the power he transmits.",
+        "identityClarity": "Mother-Father is identified publicly as Barbelo, and chief ruler is identified publicly as Yaldabaoth, to support readers encountering the terminology for the first time.",
+        "psychicBodyBoundary": "The body animated here is Adam’s assembled psychic or natural form, not yet the mortal material body formed later from lower elements.",
+        "superiorityBoundary": "Adam’s resulting luminosity, intelligence and superiority belong to the next chronological event and are not developed on this card.",
+        "comparativeBoundary": "Genesis 2:7 is reserved for the comparative explorer following the complete anthropogonic sequence, preventing duplicated discussion.",
+        "visualPlacement": "The card follows psychic formation, belongs on the right side of the axis and remains within the Material Cosmos ambient region."
+      },
+      "notes": "This event isolates the transfer of Sophia’s power and the animation of Adam’s psychic body from the superiority and material-enclosure episodes that follow.",
+      "dateAdded": "2026-08-29",
+      "lastReviewed": "2026-08-29"
+    },
+    {
+      "id": "event-awakening-superiority-adam",
+      "displayName": "The Awakening and Superiority of Adam",
+      "eventType": "luminous-anthropogonic-awakening",
+      "phaseId": "phase-material-cosmos",
+      "display": {
+        "level": "primary",
+        "order": 15,
+        "periodLabel": "Luminous Awakening"
+      },
+      "contentStatus": {
+        "classification": "source-grounded-reconstruction",
+        "verificationRequired": false
+      },
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "participantIds": [
+        "entity-yaldabaoth",
+        "entity-barbelo"
+      ],
+      "resultGroupIds": [
+        "group-luminous-epinoia"
+      ],
+      "primarySourceIds": [
+        "source-apocryphon-of-john"
+      ],
+      "summary": "Once Sophia’s power has entered him, Adam is revealed as luminous, capable of thought, and free from the wickedness of his makers. The rulers recognize that his intelligence surpasses both theirs and Yaldabaoth’s, and jealousy replaces their confidence in the being they constructed. They cast him into the lowest region of matter, but the Mother-Father (Barbelo) sends a hidden helper to preserve and assist the divine power within him. Adam’s superiority remains, and the rulers prepare a new means of confinement. He is not yet mortal; his enclosure in a material body occurs in the next stage.",
+      "overview": "The animation of Adam immediately exposes a result the lower rulers did not anticipate. The psychic form becomes luminous and demonstrates an intelligence greater than that of the powers and their chief. Their jealousy leads them to cast Adam toward the lowest material region. The higher realm responds by sending Luminous Epinoia as a hidden helper within him. This intervention preserves the higher power and prepares Adam’s eventual restoration, while the rulers move toward a second and more restrictive formation: enclosure in a mortal material body.",
+      "causalRole": {
+        "precededBy": [
+          "event-animation-of-adam"
+        ],
+        "leadsTo": [
+          "event-adam-material-enclosure"
+        ]
+      },
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "primary narrative source for Adam’s luminosity, superior intelligence, archontic jealousy and the sending of Luminous Epinoia",
+          "status": "explicit",
+          "notes": "The text states that Adam becomes luminous and thinks better than his makers and the chief ruler. After he is cast into the lowest material region, the Mother-Father sends Luminous Epinoia, called Life, as a helper hidden within him."
+        },
+        {
+          "sourceId": "source-hypostasis-of-the-archons",
+          "role": "parallel gnostic account of higher spiritual power exceeding the rulers",
+          "status": "comparative",
+          "notes": "The related account contrasts the rulers’ limited formation with a higher spiritual intervention."
+        },
+        {
+          "sourceId": "source-on-the-origin-of-the-world",
+          "role": "parallel gnostic account of Adam’s awakening beyond his makers",
+          "status": "comparative",
+          "notes": "The tractate develops a related superiority and awakening motif without being merged into the Apocryphon’s sequence."
+        },
+        {
+          "sourceId": "source-corpus-hermeticum-i",
+          "role": "Hermetic comparison for the divine human within the sevenfold cosmic order",
+          "status": "comparative",
+          "notes": "Poimandres presents an archetypal human bearing Life and Light and sharing the energies of seven rulers."
+        }
+      ],
+      "researchNotes": {
+        "animationBoundary": "This card presents the consequences of the preceding animation rather than repeating the transfer of Sophia’s power.",
+        "superiority": "Adam’s luminosity and superior intelligence reveal the limits of the archontic makers and provoke their jealousy.",
+        "epinoiaPlacement": "Luminous Epinoia belongs within this event as a compact explorer because her hidden assistance follows Adam’s casting down and precedes his material enclosure.",
+        "materialBodyBoundary": "Adam is not yet mortal on this card. His enclosure in the lower elemental body belongs to the next event.",
+        "identityClarity": "Mother-Father is identified publicly as Barbelo, and Yaldabaoth is named alongside the rulers for readers new to the terminology.",
+        "comparativeBoundary": "Corpus Hermeticum I is reserved for the comparative treatment following the completed anthropogonic sequence.",
+        "visualPlacement": "The card follows psychic animation, belongs on the left side of the axis and remains within the Material Cosmos ambient region."
+      },
+      "notes": "The explorer preserves the role of Luminous Epinoia without turning her intervention into a separate primary timeline card.",
+      "dateAdded": "2026-08-29",
+      "lastReviewed": "2026-08-29"
+    },
+    {
+      "id": "event-adam-material-enclosure",
+      "displayName": "Adam’s Enclosure in the Material Body",
+      "eventType": "material-anthropogonic-enclosure",
+      "phaseId": "phase-material-cosmos",
+      "display": {
+        "level": "primary",
+        "order": 16,
+        "periodLabel": "Material Embodiment"
+      },
+      "contentStatus": {
+        "classification": "source-grounded-reconstruction",
+        "verificationRequired": false
+      },
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "participantIds": [
+        "entity-yaldabaoth"
+      ],
+      "primarySourceIds": [
+        "source-apocryphon-of-john"
+      ],
+      "summary": "Unable to overcome Adam’s superior thought, the rulers take counsel and combine the lower elements in order to confine him. They form him again from earth, water, fire, and the spirit originating in matter—a compound associated with darkness, desire, and the counterfeit spirit. This is a second formation: it encloses the already animated psychic human within a mortal material body. The text describes this new body as a tomb and a bond of forgetfulness. Adam now becomes mortal, while Luminous Epinoia remains hidden within him.",
+      "overview": "The material embodiment of Adam is not the same event as the earlier psychic construction. After the psychic body has been animated through Sophia’s power and has revealed an intelligence superior to that of its makers, the rulers respond by producing a lower elemental enclosure. Earth, water, fire, fiery winds and a spirit originating in matter are worked together to form Adam again within the shadow of death. This newly formed body imposes mortality and forgetfulness upon the already living psychic human, while the hidden Luminous Epinoia continues to preserve the possibility of awakening and return.",
+      "causalRole": {
+        "precededBy": [
+          "event-awakening-superiority-adam"
+        ],
+        "leadsTo": []
+      },
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "role": "primary narrative source for Adam’s second formation and enclosure in a mortal material body",
+          "status": "explicit",
+          "notes": "The text describes the rulers combining earth, water, fire and fiery winds, bringing Adam into the shadow of death and forming him again with a spirit originating in matter. It calls the resulting body a tomb and a bond of forgetfulness and states that Adam became mortal."
+        },
+        {
+          "sourceId": "source-genesis",
+          "role": "biblical intertext for humanity formed from earthly matter and animated by breath",
+          "status": "comparative",
+          "notes": "Genesis 2:7 joins dust and divine breath but does not distinguish the Sethian psychic formation from a later material enclosure."
+        },
+        {
+          "sourceId": "source-atrahasis",
+          "role": "Mesopotamian anthropogonic comparison for humanity formed from clay and divine substance",
+          "status": "comparative",
+          "notes": "Atrahasis combines clay with divine flesh and blood so humans may assume the labor of the gods."
+        },
+        {
+          "sourceId": "source-enuma-elish",
+          "role": "Mesopotamian anthropogonic comparison for humanity made from the blood of Qingu",
+          "status": "comparative",
+          "notes": "Enūma Eliš creates humanity from Qingu’s blood for service to the gods."
+        },
+        {
+          "sourceId": "source-corpus-hermeticum-i",
+          "role": "Hermetic comparison for immortal essence within mortal embodiment",
+          "status": "comparative",
+          "notes": "Poimandres describes the human as immortal in essential identity yet mortal through bodily existence within Nature."
+        },
+        {
+          "sourceId": "source-plato-cratylus",
+          "role": "philosophical parallel for the body as tomb and enclosure",
+          "status": "comparative",
+          "notes": "Cratylus 400c reports an Orphic interpretation of the body as the soul’s grave and prison."
+        }
+      ],
+      "researchNotes": {
+        "secondFormation": "This event is explicitly modeled as a second formation and must not be merged with the preceding psychic construction of Adam’s natural form.",
+        "materialComposition": "The public summary preserves the lower elemental composition while avoiding the claim that the physical cosmos itself first comes into existence at this point.",
+        "mortalityBoundary": "Adam becomes mortal through this material enclosure; mortality is not retroactively assigned to the earlier psychic body.",
+        "epinoiaContinuity": "Luminous Epinoia remains hidden within Adam and preserves continuity with the higher intervention described in the preceding event.",
+        "realmRule": "The event remains within Material Cosmos because Adam’s condition changes while the surrounding cosmological realm does not.",
+        "comparativeBoundary": "Atrahasis, Enūma Eliš, Genesis and Corpus Hermeticum I remain reserved for the comparative explorer completing the anthropogonic sequence.",
+        "visualPlacement": "The card follows Adam’s awakening and superiority, belongs on the right side of the axis and remains within the Material Cosmos ambient region."
+      },
+      "notes": "This card completes the primary formation sequence by distinguishing Adam’s mortal material enclosure from the psychic body assembled and animated earlier.",
+      "dateAdded": "2026-08-29",
+      "lastReviewed": "2026-08-29",
+      "resultGroupIds": [
+        "group-comparative-anthropogonies"
+      ]
+    }
+  ]
+}

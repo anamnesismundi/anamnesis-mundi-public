@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1.0",
+  "lastUpdated": "2026-09-11",
+  "relationships": [
+    {
+      "id": "relationship-monad-barbelo-001",
+      "fromId": "entity-monad",
+      "toId": "entity-barbelo",
+      "relationshipType": "comes-forth-from",
+      "cosmologyIds": [
+        "cosmology-sethian-apocryphon-of-john"
+      ],
+      "sourceAttestations": [
+        {
+          "sourceId": "source-apocryphon-of-john",
+          "status": "explicit",
+          "description": "Barbelo is presented as the first power and first thought to come forth in relation to the Invisible Spirit."
+        }
+      ],
+      "interpretation": "",
+      "notes": "The relationship is recorded conservatively according to the source wording. It should not automatically be generalized as 'emanation' across all traditions.",
+      "dateAdded": "2026-08-11",
+      "lastReviewed": "2026-08-14"
+    }
+  ]
+}

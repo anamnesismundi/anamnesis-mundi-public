@@ -1,0 +1,1633 @@
+{
+  "schemaVersion": "1.0",
+  "lastUpdated": "2026-09-09",
+  "sources": [
+    {
+      "id": "source-apocryphon-of-john",
+      "title": "The Secret Book of John",
+      "displayName": "The Secret Book of John (The Apocryphon of John)",
+      "alternativeTitles": [
+        "Secret Book of John",
+        "Apocryphon of John the Apostle"
+      ],
+      "sourceType": "ancient-text",
+      "collection": {
+        "primaryDisplayName": "Nag Hammadi Library",
+        "additionalWitnessCollections": [
+          "Berlin Codex 8502"
+        ]
+      },
+      "timelineCitation": "The Secret Book of John (The Apocryphon of John)",
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "originalLanguage": "Greek",
+      "originalLanguageStatus": "inferred-lost-original",
+      "survivingLanguages": [
+        "Coptic"
+      ],
+      "approximateDate": {
+        "from": 120,
+        "to": 180,
+        "era": "CE",
+        "certainty": "approximate"
+      },
+      "manuscriptWitnesses": [
+        {
+          "name": "Nag Hammadi Codex II",
+          "tractate": "II,1",
+          "collection": "Nag Hammadi Library",
+          "language": "Coptic",
+          "recension": "long"
+        },
+        {
+          "name": "Nag Hammadi Codex III",
+          "tractate": "III,1",
+          "collection": "Nag Hammadi Library",
+          "language": "Coptic",
+          "recension": "short"
+        },
+        {
+          "name": "Nag Hammadi Codex IV",
+          "tractate": "IV,1",
+          "collection": "Nag Hammadi Library",
+          "language": "Coptic",
+          "recension": "long"
+        },
+        {
+          "name": "Berlin Codex 8502",
+          "tractate": "BG 8502,2",
+          "collection": "Berlin Codex",
+          "language": "Coptic",
+          "recension": "short"
+        }
+      ],
+      "sourcePriority": {
+        "tier": 1,
+        "role": "primary-cosmological-source"
+      },
+      "scope": [
+        "Monad",
+        "Barbelo",
+        "Pleroma",
+        "divine emanation",
+        "Autogenes",
+        "Four Great Luminaries",
+        "aeonic order",
+        "Sophia",
+        "Yaldabaoth",
+        "demiurgic order",
+        "archons",
+        "cosmogony",
+        "anthropogony",
+        "salvation through knowledge"
+      ],
+      "editorialUse": {
+        "timelineDisplay": true,
+        "preferredCitation": "The Secret Book of John (The Apocryphon of John)",
+        "witnessLevelDetail": "research-layer",
+        "note": "The public timeline uses a concise work title and groups shared collection names instead of repeating the collection after every source title."
+      },
+      "researchNotes": {
+        "textualTransmission": "The Apocryphon of John survives in four Coptic manuscript witnesses: Nag Hammadi Codices II, III and IV, and Berlin Codex 8502.",
+        "recensions": "Nag Hammadi Codices II and IV preserve the longer recension, while Nag Hammadi Codex III and Berlin Codex 8502 preserve the shorter recension.",
+        "originalLanguage": "The surviving witnesses are Coptic translations of a lost Greek original.",
+        "citationCaution": "Claims that differ among recensions or manuscript witnesses should be tied to the relevant witness or recension rather than generalized to the work as a whole."
+      },
+      "notes": "Primary source for the initial Sethian cosmological branch of Anamnesis Mundi.",
+      "dateAdded": "2026-08-11",
+      "lastReviewed": "2026-08-22"
+    },
+    {
+      "id": "source-gospel-of-the-egyptians",
+      "title": "The Holy Book of the Great Invisible Spirit",
+      "displayName": "The Holy Book of the Great Invisible Spirit (The Gospel of the Egyptians)",
+      "alternativeTitles": [
+        "The Holy Book of the Great Invisible Spirit",
+        "Gospel of the Egyptians",
+        "The Egyptian Gospel"
+      ],
+      "sourceType": "ancient-text",
+      "collection": {
+        "primaryDisplayName": "Nag Hammadi Library",
+        "additionalWitnessCollections": []
+      },
+      "timelineCitation": "The Holy Book of the Great Invisible Spirit (The Gospel of the Egyptians)",
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "originalLanguage": "Greek",
+      "originalLanguageStatus": "lost-original-inferred-through-coptic-transmission",
+      "survivingLanguages": [
+        "Coptic"
+      ],
+      "approximateDate": {
+        "from": 100,
+        "to": 200,
+        "era": "CE",
+        "certainty": "approximate"
+      },
+      "manuscriptWitnesses": [
+        {
+          "name": "Nag Hammadi Codex III",
+          "tractate": "III,2",
+          "collection": "Nag Hammadi Library",
+          "language": "Coptic",
+          "recension": "witness"
+        },
+        {
+          "name": "Nag Hammadi Codex IV",
+          "tractate": "IV,2",
+          "collection": "Nag Hammadi Library",
+          "language": "Coptic",
+          "recension": "witness"
+        }
+      ],
+      "sourcePriority": {
+        "tier": 1,
+        "role": "comparative-primary-sethian-source"
+      },
+      "scope": [
+        "Great Invisible Spirit",
+        "transcendent divine source",
+        "divine light",
+        "silence",
+        "Autogenes",
+        "Barbelo",
+        "Pleroma",
+        "Four Great Luminaries",
+        "Great Seth",
+        "incorruptible divine realm",
+        "Sethian cosmology"
+      ],
+      "editorialUse": {
+        "timelineDisplay": true,
+        "preferredCitation": "The Holy Book of the Great Invisible Spirit (The Gospel of the Egyptians)",
+        "witnessLevelDetail": "research-layer",
+        "note": "Used comparatively alongside the Apocryphon of John where Sethian terminology or structures overlap."
+      },
+      "researchNotes": {
+        "title": "The work is commonly called the Gospel of the Egyptians and is also identified as the Holy Book of the Great Invisible Spirit.",
+        "manuscripts": "The work survives in Nag Hammadi Codex III,2 and IV,2.",
+        "identityCaution": "This Sethian Gospel of the Egyptians must not be confused with the different Greek Gospel of the Egyptians known through patristic quotations."
+      },
+      "notes": "Primary Sethian comparative source.",
+      "dateAdded": "2026-08-21",
+      "lastReviewed": "2026-08-22"
+    },
+    {
+      "id": "source-allogenes",
+      "title": "Allogenes the Stranger",
+      "displayName": "Allogenes the Stranger (Allogenes)",
+      "alternativeTitles": [
+        "Allogenes"
+      ],
+      "sourceType": "ancient-text",
+      "collection": {
+        "primaryDisplayName": "Nag Hammadi Library",
+        "additionalWitnessCollections": []
+      },
+      "timelineCitation": "Allogenes the Stranger (Allogenes)",
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "originalLanguage": "Greek",
+      "originalLanguageStatus": "inferred-lost-original",
+      "survivingLanguages": [
+        "Coptic"
+      ],
+      "approximateDate": {
+        "from": 220,
+        "to": 270,
+        "era": "CE",
+        "certainty": "approximate"
+      },
+      "manuscriptWitnesses": [
+        {
+          "name": "Nag Hammadi Codex XI",
+          "tractate": "XI,3",
+          "collection": "Nag Hammadi Library",
+          "language": "Coptic",
+          "recension": "witness"
+        }
+      ],
+      "sourcePriority": {
+        "tier": 1,
+        "role": "comparative-primary-sethian-source"
+      },
+      "scope": [
+        "Barbelo",
+        "Sethian metaphysics",
+        "transcendent divine reality",
+        "aeons",
+        "contemplative ascent"
+      ],
+      "editorialUse": {
+        "timelineDisplay": true,
+        "preferredCitation": "Allogenes the Stranger (Allogenes)",
+        "witnessLevelDetail": "research-layer",
+        "note": "Used as a comparative Sethian source; claims should remain source-attributed when they differ from the Apocryphon of John."
+      },
+      "researchNotes": {
+        "manuscript": "Allogenes survives as Nag Hammadi Codex XI,3.",
+        "dating": "The Greek original is generally placed in the third century CE; the surviving text is Coptic."
+      },
+      "notes": "Comparative Sethian source for Barbelo and higher metaphysical structures.",
+      "dateAdded": "2026-08-22",
+      "lastReviewed": "2026-09-04"
+    },
+    {
+      "id": "source-gospel-of-judas",
+      "title": "Gospel of Judas",
+      "displayName": "The Gospel of Judas",
+      "alternativeTitles": [
+        "Gospel of Judas"
+      ],
+      "sourceType": "ancient-text",
+      "collection": {
+        "primaryDisplayName": "Codex Tchacos",
+        "additionalWitnessCollections": []
+      },
+      "timelineCitation": "The Gospel of Judas, Codex Tchacos",
+      "traditionIds": [],
+      "originalLanguage": "Greek",
+      "originalLanguageStatus": "inferred-lost-original",
+      "survivingLanguages": [
+        "Coptic"
+      ],
+      "approximateDate": {
+        "from": 130,
+        "to": 180,
+        "era": "CE",
+        "certainty": "approximate"
+      },
+      "manuscriptWitnesses": [
+        {
+          "name": "Codex Tchacos",
+          "tractate": "Gospel of Judas",
+          "collection": "Codex Tchacos",
+          "language": "Coptic",
+          "recension": "witness"
+        }
+      ],
+      "sourcePriority": {
+        "tier": 2,
+        "role": "comparative-gnostic-source"
+      },
+      "scope": [
+        "Autogenes",
+        "cosmology",
+        "divine realms",
+        "Judas"
+      ],
+      "editorialUse": {
+        "timelineDisplay": true,
+        "preferredCitation": "The Gospel of Judas, Codex Tchacos",
+        "witnessLevelDetail": "research-layer",
+        "note": "The Gospel of Judas is not part of the Nag Hammadi Library. Its surviving witness belongs to Codex Tchacos and must be cited separately."
+      },
+      "researchNotes": {
+        "collectionCaution": "Do not label the Gospel of Judas as a Nag Hammadi text. The surviving Coptic witness is in Codex Tchacos.",
+        "dating": "The work was known to Irenaeus by the late second century; the surviving manuscript is later."
+      },
+      "notes": "Comparative source used only where explicitly relevant.",
+      "dateAdded": "2026-08-22",
+      "lastReviewed": "2026-08-22"
+    },
+    {
+      "id": "source-zostrianos",
+      "title": "Zostrianos",
+      "displayName": "Zostrianos",
+      "alternativeTitles": [
+        "Zostrien"
+      ],
+      "sourceType": "ancient-text",
+      "collection": {
+        "primaryDisplayName": "Nag Hammadi Library",
+        "additionalWitnessCollections": []
+      },
+      "timelineCitation": "Zostrianos",
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "originalLanguage": "Greek",
+      "originalLanguageStatus": "lost-original",
+      "survivingLanguages": [
+        "Coptic"
+      ],
+      "approximateDate": {
+        "from": 180,
+        "to": 230,
+        "era": "CE",
+        "certainty": "approximate"
+      },
+      "manuscriptWitnesses": [
+        {
+          "name": "Nag Hammadi Codex VIII",
+          "tractate": "VIII,1",
+          "collection": "Nag Hammadi Library",
+          "language": "Coptic",
+          "recension": "witness"
+        }
+      ],
+      "sourcePriority": {
+        "tier": 1,
+        "role": "comparative-primary-sethian-source"
+      },
+      "scope": [
+        "Autogenes",
+        "Four Great Luminaries",
+        "Harmozel",
+        "Oroiael",
+        "Daveithai",
+        "Eleleth",
+        "aeonic structure",
+        "Sethian ascent",
+        "higher divine realms"
+      ],
+      "editorialUse": {
+        "timelineDisplay": true,
+        "preferredCitation": "Zostrianos",
+        "witnessLevelDetail": "research-layer",
+        "note": "Used comparatively for the four-luminary structure and related Sethian aeonic material. Differences from the Apocryphon of John should remain source-attributed."
+      },
+      "researchNotes": {
+        "manuscript": "Zostrianos survives in Nag Hammadi Codex VIII,1.",
+        "originalLanguage": "The surviving Coptic text represents a Greek composition.",
+        "dating": "Scholarly study commonly places the composition around the end of the second century or the beginning of the third century CE.",
+        "fourLuminaries": "Zostrianos explicitly preserves the four luminary structure of Harmozel, Oroiael, Daveithai and Eleleth within the Autogenes aeonic order.",
+        "structuralCaution": "The internal organization and associated beings in Zostrianos are not identical to those in the Apocryphon of John and should not be silently merged."
+      },
+      "notes": "Comparative Sethian source for the four luminaries and the higher Autogenes aeonic structure.",
+      "dateAdded": "2026-08-22",
+      "lastReviewed": "2026-08-22"
+    },
+    {
+      "id": "source-hypostasis-of-the-archons",
+      "title": "The Nature of the Rulers",
+      "displayName": "The Nature of the Rulers (The Hypostasis of the Archons)",
+      "alternativeTitles": [
+        "Hypostasis of the Archons",
+        "The Reality of the Rulers",
+        "The Nature of the Rulers"
+      ],
+      "sourceType": "ancient-text",
+      "collection": {
+        "primaryDisplayName": "Nag Hammadi Library",
+        "additionalWitnessCollections": []
+      },
+      "timelineCitation": "The Nature of the Rulers (The Hypostasis of the Archons)",
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "originalLanguage": "Greek",
+      "originalLanguageStatus": "inferred-lost-original",
+      "survivingLanguages": [
+        "Coptic"
+      ],
+      "approximateDate": {
+        "from": 200,
+        "to": 300,
+        "era": "CE",
+        "certainty": "approximate"
+      },
+      "manuscriptWitnesses": [
+        {
+          "name": "Nag Hammadi Codex II",
+          "tractate": "II,4",
+          "collection": "Nag Hammadi Library",
+          "language": "Coptic",
+          "recension": "witness"
+        }
+      ],
+      "sourcePriority": {
+        "tier": 1,
+        "role": "comparative-cosmogonic-source"
+      },
+      "scope": [
+        "Pistis Sophia",
+        "Yaldabaoth",
+        "archons",
+        "lower rulers",
+        "cosmogony",
+        "anthropogony",
+        "Norea",
+        "upper and lower realms"
+      ],
+      "editorialUse": {
+        "timelineDisplay": true,
+        "preferredCitation": "The Nature of the Rulers (The Hypostasis of the Archons)",
+        "witnessLevelDetail": "research-layer",
+        "note": "Used as a parallel cosmogonic source where its Sophia/Pistis and archontic narrative illuminates motifs also present in the Apocryphon of John. Its sequence and terminology must remain source-specific."
+      },
+      "researchNotes": {
+        "manuscript": "The Hypostasis of the Archons survives in Nag Hammadi Codex II,4.",
+        "originalLanguage": "The surviving Coptic text is generally understood as a translation of a lost Greek composition.",
+        "title": "The work is also translated as The Reality of the Rulers or The Nature of the Rulers.",
+        "cosmogonicRelation": "The text preserves a closely related but distinct account of the upper and lower realms, Pistis Sophia, Yaldabaoth and the archons.",
+        "comparativeCaution": "Pistis Sophia in this text should not automatically be treated as a direct alternative name for the Sophia of the Apocryphon of John. Shared motifs should be compared without collapsing the two narratives."
+      },
+      "notes": "Comparative Nag Hammadi source for Sophia/Pistis, Yaldabaoth and the archontic cosmogony.",
+      "dateAdded": "2026-08-23",
+      "lastReviewed": "2026-08-23"
+    },
+    {
+      "id": "source-on-the-origin-of-the-world",
+      "title": "On the Origin of the World",
+      "displayName": "On the Origin of the World",
+      "alternativeTitles": [
+        "On the Origin of the World",
+        "The Untitled Text",
+        "Untitled Work"
+      ],
+      "sourceType": "ancient-text",
+      "collection": {
+        "primaryDisplayName": "Nag Hammadi Library",
+        "additionalWitnessCollections": []
+      },
+      "timelineCitation": "On the Origin of the World",
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "originalLanguage": "Greek",
+      "originalLanguageStatus": "inferred-lost-original",
+      "survivingLanguages": [
+        "Coptic"
+      ],
+      "approximateDate": {
+        "from": 250,
+        "to": 320,
+        "era": "CE",
+        "certainty": "approximate"
+      },
+      "manuscriptWitnesses": [
+        {
+          "name": "Nag Hammadi Codex II",
+          "tractate": "II,5",
+          "collection": "Nag Hammadi Library",
+          "language": "Coptic",
+          "recension": "principal witness"
+        },
+        {
+          "name": "Nag Hammadi Codex XIII",
+          "tractate": "XIII,2",
+          "collection": "Nag Hammadi Library",
+          "language": "Coptic",
+          "recension": "fragmentary witness"
+        }
+      ],
+      "sourcePriority": {
+        "tier": 1,
+        "role": "comparative-cosmogonic-source"
+      },
+      "scope": [
+        "Pistis",
+        "Sophia",
+        "chaos",
+        "shadow",
+        "Yaldabaoth",
+        "archons",
+        "cosmogony",
+        "material cosmos",
+        "anthropogony"
+      ],
+      "editorialUse": {
+        "timelineDisplay": true,
+        "preferredCitation": "On the Origin of the World",
+        "witnessLevelDetail": "research-layer",
+        "note": "Used as a parallel cosmogonic source. Its account of Pistis, Sophia, chaos, Yaldabaoth and the lower world is related to, but not identical with, the sequence reconstructed from the Apocryphon of John."
+      },
+      "researchNotes": {
+        "manuscripts": "The principal surviving text is Nag Hammadi Codex II,5. A fragmentary second witness survives as Nag Hammadi Codex XIII,2.",
+        "title": "The ancient manuscript does not preserve a conventional title; On the Origin of the World is the modern title generally used for the work.",
+        "originalLanguage": "The surviving witnesses are Coptic and are generally understood to derive from a Greek composition.",
+        "cosmogonicRelation": "The work contains extensive parallels with the Hypostasis of the Archons and develops a distinct account of Pistis, Sophia, chaos, Yaldabaoth and the formation of the lower cosmos.",
+        "comparativeCaution": "The sequence, terminology and relationships in On the Origin of the World should not be imported directly into the Apocryphon of John reconstruction."
+      },
+      "notes": "Comparative Nag Hammadi source for Sophia/Pistis, Yaldabaoth, chaos and the lower cosmogonic order.",
+      "dateAdded": "2026-08-23",
+      "lastReviewed": "2026-08-23"
+    },
+    {
+      "id": "source-trimorphic-protennoia",
+      "title": "Three Forms of First Thought",
+      "displayName": "Three Forms of First Thought (Trimorphic Protennoia)",
+      "alternativeTitles": [
+        "The Three Forms of the First Thought",
+        "Three Forms of First Thought"
+      ],
+      "sourceType": "ancient-text",
+      "collection": {
+        "primaryDisplayName": "Nag Hammadi Library",
+        "additionalWitnessCollections": []
+      },
+      "timelineCitation": "Three Forms of First Thought (Trimorphic Protennoia)",
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+      "originalLanguage": "Greek",
+      "originalLanguageStatus": "inferred-lost-original",
+      "survivingLanguages": [
+        "Coptic"
+      ],
+      "approximateDate": {
+        "from": 150,
+        "to": 250,
+        "era": "CE",
+        "certainty": "approximate"
+      },
+      "manuscriptWitnesses": [
+        {
+          "name": "Nag Hammadi Codex XIII",
+          "tractate": "XIII,1",
+          "collection": "Nag Hammadi Library",
+          "language": "Coptic",
+          "recension": "witness"
+        }
+      ],
+      "sourcePriority": {
+        "tier": 1,
+        "role": "comparative-primary-sethian-source"
+      },
+      "scope": [
+        "Protennoia",
+        "First Thought",
+        "Barbelo",
+        "divine descent",
+        "divine voice",
+        "Sethian cosmology",
+        "lower realms",
+        "salvation",
+        "revelation"
+      ],
+      "editorialUse": {
+        "timelineDisplay": true,
+        "preferredCitation": "Three Forms of First Thought (Trimorphic Protennoia)",
+        "witnessLevelDetail": "research-layer",
+        "note": "Used as a comparative Sethian source for the descent of the divine First Thought into the lower realms and the revelatory or salvific movement within the cosmos. Its narrative should not be merged directly with the Sophia-Yaldabaoth sequence of the Apocryphon of John."
+      },
+      "researchNotes": {
+        "manuscript": "Trimorphic Protennoia survives as Nag Hammadi Codex XIII,1.",
+        "title": "The modern title Trimorphic Protennoia reflects the text's presentation of the First Thought in a threefold revelatory form.",
+        "originalLanguage": "The surviving text is Coptic and is generally understood to derive from a Greek composition.",
+        "sethianRelation": "The work belongs to the cluster of texts commonly associated with Sethian traditions and shares important terminology and mythological structures with the Apocryphon of John.",
+        "comparativeCaution": "Trimorphic Protennoia provides an important parallel for divine descent and intervention in the lower cosmos, but it does not simply retell the Sophia-Yaldabaoth episode of the Apocryphon of John. It should therefore be cited as a parallel rather than as direct evidence for every detail of Sophia's independent generation."
+      },
+      "notes": "Comparative Sethian source for divine First Thought, descent, revelation and intervention within the lower cosmos.",
+      "dateAdded": "2026-08-23",
+      "lastReviewed": "2026-08-23"
+    },
+    {
+      "id": "source-sophia-of-jesus-christ",
+      "title": "The Wisdom of Jesus Christ",
+      "displayName": "The Wisdom of Jesus Christ (The Sophia of Jesus Christ)",
+      "alternativeTitles": [
+        "Sophia of Jesus Christ",
+        "The Wisdom of Jesus Christ"
+      ],
+      "sourceType": "ancient-text",
+      "collection": {
+        "primaryDisplayName": "Nag Hammadi Library",
+        "additionalWitnessCollections": [
+          "Berlin Codex 8502"
+        ]
+      },
+      "timelineCitation": "The Wisdom of Jesus Christ (The Sophia of Jesus Christ)",
+      "traditionIds": [],
+      "originalLanguage": "Greek",
+      "originalLanguageStatus": "inferred-lost-original",
+      "survivingLanguages": [
+        "Coptic"
+      ],
+      "approximateDate": {
+        "from": 150,
+        "to": 250,
+        "era": "CE",
+        "certainty": "approximate"
+      },
+      "manuscriptWitnesses": [
+        {
+          "name": "Nag Hammadi Codex III",
+          "tractate": "III,4",
+          "collection": "Nag Hammadi Library",
+          "language": "Coptic",
+          "recension": "witness"
+        },
+        {
+          "name": "Berlin Codex 8502",
+          "tractate": "BG 8502,3",
+          "collection": "Berlin Codex",
+          "language": "Coptic",
+          "recension": "witness"
+        }
+      ],
+      "sourcePriority": {
+        "tier": 2,
+        "role": "comparative-gnostic-source"
+      },
+      "scope": [
+        "Sophia",
+        "cosmology",
+        "divine generation",
+        "higher divine realm",
+        "lower cosmic order",
+        "revelation"
+      ],
+      "editorialUse": {
+        "timelineDisplay": true,
+        "preferredCitation": "The Wisdom of Jesus Christ (The Sophia of Jesus Christ)",
+        "witnessLevelDetail": "research-layer",
+        "note": "Used as a comparative source for Sophia-related cosmological and revelatory traditions. Its cosmological sequence should not be treated as identical with Sophia's independent generation in the Apocryphon of John."
+      },
+      "researchNotes": {
+        "manuscripts": "The Sophia of Jesus Christ survives in Nag Hammadi Codex III,4 and Berlin Codex 8502,3.",
+        "originalLanguage": "The surviving witnesses are Coptic and are generally understood to derive from a Greek composition.",
+        "literaryRelation": "The work has a close literary relationship with Eugnostos the Blessed, while recasting related material within a Christian revelatory framework.",
+        "comparativeCaution": "The Sophia of Jesus Christ should be used comparatively. Its Sophia-related material and cosmological structures should not be silently imported into the Apocryphon of John reconstruction."
+      },
+      "notes": "Comparative source for Sophia-related cosmological and revelatory material.",
+      "dateAdded": "2026-08-24",
+      "lastReviewed": "2026-08-24"
+    },
+    {
+      "id": "source-irenaeus-against-heresies",
+      "title": "Against Heresies",
+      "displayName": "Irenaeus, Against Heresies",
+      "alternativeTitles": [
+        "Adversus Haereses"
+      ],
+      "sourceType": "ancient-heresiological-text",
+      "collection": {
+        "primaryDisplayName": "Early Christian Heresiological Literature",
+        "additionalWitnessCollections": []
+      },
+      "timelineCitation": "Irenaeus, Against Heresies I.4; I.24",
+      "traditionIds": [],
+      "originalLanguage": "Greek",
+      "originalLanguageStatus": "fragmentary-original-with-ancient-latin-translation",
+      "survivingLanguages": [
+        "Latin",
+        "Greek fragments"
+      ],
+      "approximateDate": {
+        "from": 175,
+        "to": 190,
+        "era": "CE",
+        "certainty": "approximate"
+      },
+      "manuscriptWitnesses": [],
+      "sourcePriority": {
+        "tier": 2,
+        "role": "indirect-ancient-witness"
+      },
+      "scope": [
+        "Basilides",
+        "Basilidean cosmology",
+        "Abrasax",
+        "365 heavens",
+        "archons",
+        "Valentinian cosmology",
+        "Achamoth",
+        "repentance and restoration"
+      ],
+      "editorialUse": {
+        "timelineDisplay": true,
+        "preferredCitation": "Irenaeus, Against Heresies I.4; I.24",
+        "witnessLevelDetail": "research-layer",
+        "note": "Used as an indirect and polemical ancient witness: I.4 for the Valentinian account of Achamoth and I.24 for Basilidean cosmology. Each public entry must display its own passage-level citation."
+      },
+      "researchNotes": {
+        "sourceCaution": "Irenaeus writes as an opponent of the traditions he reports. His account should not be treated as a preserved Basilidean doctrinal text.",
+        "abrasaxAttestation": "The report connects the chief named Abraxas/Abrasax with a numerical value of 365 and describes a system of 365 heavens.",
+        "achamothAttestation": "Against Heresies I.4 reports the Valentinian account of Achamoth outside the Pleroma, her passions, desire for the light, and assistance from the Saviour."
+      },
+      "notes": "Indirect ancient witness for Basilidean cosmology and the Abrasax-365 association.",
+      "dateAdded": "2026-08-27",
+      "lastReviewed": "2026-08-27"
+    },
+    {
+      "id": "source-hippolytus-refutation-all-heresies",
+      "title": "Refutation of All Heresies",
+      "displayName": "Hippolytus, Refutation of All Heresies",
+      "alternativeTitles": [
+        "Philosophumena",
+        "Refutatio Omnium Haeresium"
+      ],
+      "sourceType": "ancient-heresiological-text",
+      "collection": {
+        "primaryDisplayName": "Early Christian Heresiological Literature",
+        "additionalWitnessCollections": []
+      },
+      "timelineCitation": "Hippolytus, Refutation of All Heresies VII.14",
+      "traditionIds": [],
+      "originalLanguage": "Greek",
+      "originalLanguageStatus": "surviving-original-language",
+      "survivingLanguages": [
+        "Greek"
+      ],
+      "approximateDate": {
+        "from": 210,
+        "to": 235,
+        "era": "CE",
+        "certainty": "approximate"
+      },
+      "manuscriptWitnesses": [],
+      "sourcePriority": {
+        "tier": 2,
+        "role": "indirect-ancient-witness"
+      },
+      "scope": [
+        "Basilides",
+        "Basilidean cosmology",
+        "Abrasax",
+        "365 heavens",
+        "Great Archon"
+      ],
+      "editorialUse": {
+        "timelineDisplay": true,
+        "preferredCitation": "Hippolytus, Refutation of All Heresies VII.14",
+        "witnessLevelDetail": "research-layer",
+        "note": "Used as an indirect heresiological witness identifying Abrasax with the Great Archon of the 365 heavens. Section numbering varies among editions."
+      },
+      "researchNotes": {
+        "sourceCaution": "Hippolytus reports Basilidean teaching polemically; the passage is not a surviving work authored by Basilides.",
+        "numberingCaution": "The relevant passage is conventionally cited in Book VII, chapter 14, although section numbering differs among editions.",
+        "abrasaxAttestation": "The report states that the 365 heavens have Abrasax as their Great Archon and connects the numerical value of the name with 365."
+      },
+      "notes": "Indirect ancient witness for the Great Archon Abrasax and the 365 heavens.",
+      "dateAdded": "2026-08-27",
+      "lastReviewed": "2026-08-27"
+    },
+    {
+      "id": "source-plato-timaeus",
+      "title": "Timaeus",
+      "displayName": "Plato, Timaeus",
+      "alternativeTitles": [],
+      "sourceType": "ancient-philosophical-text",
+      "collection": {
+        "primaryDisplayName": "Platonic Dialogues",
+        "additionalWitnessCollections": []
+      },
+      "timelineCitation": "Plato, Timaeus 29e–30b",
+      "traditionIds": [],
+      "originalLanguage": "Greek",
+      "originalLanguageStatus": "surviving-original-language",
+      "survivingLanguages": [
+        "Greek"
+      ],
+      "approximateDate": {
+        "from": 360,
+        "to": 350,
+        "era": "BCE",
+        "certainty": "approximate"
+      },
+      "manuscriptWitnesses": [],
+      "sourcePriority": {
+        "tier": 2,
+        "role": "comparative-philosophical-source"
+      },
+      "scope": [
+        "demiurge",
+        "ordered cosmos",
+        "intelligible model",
+        "visible world",
+        "subordinate gods",
+        "mortal embodiment",
+        "immortal principle"
+      ],
+      "editorialUse": {
+        "timelineDisplay": true,
+        "preferredCitation": "Plato, Timaeus 29e–30b",
+        "witnessLevelDetail": "research-layer",
+        "note": "Used only as a philosophical-cosmological parallel for the relationship between an intelligible model and an ordered visible copy."
+      },
+      "researchNotes": {
+        "structuralParallel": "The dialogue describes a craftsman who brings order to the visible cosmos according to an intelligible model.",
+        "differenceCaution": "Plato’s craftsman is good and rational. The Sethian narrative reverses that valuation by presenting Yaldabaoth as ignorant of the higher realms.",
+        "anthropogonicParallel": "Timaeus 41d–44d assigns the formation of mortal bodies to subordinate gods around an immortal principle; this is compared structurally without equating Plato’s benevolent makers with hostile archons."
+      },
+      "notes": "Comparative source for model, copy and the ordering of the visible cosmos.",
+      "dateAdded": "2026-08-28",
+      "lastReviewed": "2026-08-28"
+    },
+    {
+      "id": "source-genesis",
+      "title": "Genesis",
+      "displayName": "Genesis",
+      "alternativeTitles": [
+        "Book of Genesis",
+        "Bereshit"
+      ],
+      "sourceType": "ancient-scriptural-text",
+      "collection": {
+        "primaryDisplayName": "Hebrew Bible",
+        "additionalWitnessCollections": []
+      },
+      "timelineCitation": "Genesis 1",
+      "traditionIds": [],
+      "originalLanguage": "Hebrew",
+      "originalLanguageStatus": "surviving-original-language",
+      "survivingLanguages": [
+        "Hebrew"
+      ],
+      "approximateDate": {
+        "from": 600,
+        "to": 400,
+        "era": "BCE",
+        "certainty": "broad-compositional-range"
+      },
+      "manuscriptWitnesses": [],
+      "sourcePriority": {
+        "tier": 2,
+        "role": "scriptural-intertext"
+      },
+      "scope": [
+        "creation",
+        "heaven and earth",
+        "firmament",
+        "cosmic ordering",
+        "celestial lights",
+        "human formation from dust",
+        "breath of life"
+      ],
+      "editorialUse": {
+        "timelineDisplay": true,
+        "preferredCitation": "Genesis 1",
+        "witnessLevelDetail": "research-layer",
+        "note": "Used as a scriptural intertext whose cosmic architecture is reinterpreted by Sethian sources, not as a direct attestation of their cosmology."
+      },
+      "researchNotes": {
+        "structuralParallel": "Genesis 1 orders the cosmos through separations, domains, the firmament and celestial lights.",
+        "receptionCaution": "The Sethian texts reinterpret the creator and the theological value of this ordered structure.",
+        "datingCaution": "Genesis has a complex compositional and redactional history; the date range is deliberately broad.",
+        "anthropogony": "Genesis 2:7 forms the human from dust and animates him with the breath of life; the Secret Book of John reworks this sequence in its account of Adam."
+      },
+      "notes": "Scriptural intertext for the ordered architecture of heaven and earth.",
+      "dateAdded": "2026-08-28",
+      "lastReviewed": "2026-08-28"
+    },
+    {
+      "id": "source-pistis-sophia",
+      "title": "Pistis Sophia",
+      "displayName": "Pistis Sophia",
+      "alternativeTitles": [],
+      "sourceType": "ancient-christian-gnostic-text",
+      "collection": {
+        "primaryDisplayName": "Askew Codex",
+        "additionalWitnessCollections": []
+      },
+      "timelineCitation": "Pistis Sophia, Book I",
+      "traditionIds": [],
+      "originalLanguage": "Greek",
+      "originalLanguageStatus": "lost-original-language-preserved-in-coptic-translation",
+      "survivingLanguages": [
+        "Coptic"
+      ],
+      "approximateDate": {
+        "from": 250,
+        "to": 350,
+        "era": "CE",
+        "certainty": "broad-approximate-range"
+      },
+      "manuscriptWitnesses": [
+        {
+          "name": "Askew Codex",
+          "siglum": "Codex Askewianus",
+          "language": "Coptic",
+          "completeness": "principal surviving witness"
+        }
+      ],
+      "sourcePriority": {
+        "tier": 2,
+        "role": "later-comparative-gnostic-source"
+      },
+      "scope": [
+        "Pistis Sophia",
+        "repentance",
+        "loss of light-power",
+        "Chaos",
+        "gradual ascent",
+        "restoration"
+      ],
+      "editorialUse": {
+        "timelineDisplay": true,
+        "preferredCitation": "Pistis Sophia, Book I",
+        "witnessLevelDetail": "research-layer",
+        "note": "Used as a later comparative reception of Sophia’s repentance and gradual restoration, not as a source for the Sethian chronology."
+      },
+      "researchNotes": {
+        "thematicParallel": "The text presents repeated repentances, diminished light-power, opposition from rulers and a staged rescue from Chaos.",
+        "chronologyCaution": "Pistis Sophia represents a later and distinct cosmological system and must not be presented as a continuation of the Apocryphon of John."
+      },
+      "notes": "Later comparative source for the reception and expansion of the Sophia repentance motif.",
+      "dateAdded": "2026-08-28",
+      "lastReviewed": "2026-08-28"
+    },
+    {
+      "id": "source-atrahasis",
+      "title": "Atrahasis",
+      "displayName": "Atrahasis",
+      "alternativeTitles": [
+        "Atra-Hasis Epic"
+      ],
+      "sourceType": "ancient-mesopotamian-mythological-text",
+      "collection": {
+        "primaryDisplayName": "Akkadian Literary Tradition",
+        "additionalWitnessCollections": []
+      },
+      "timelineCitation": "Atrahasis, Tablet I",
+      "traditionIds": [],
+      "originalLanguage": "Akkadian",
+      "originalLanguageStatus": "surviving-original-language",
+      "survivingLanguages": [
+        "Akkadian"
+      ],
+      "approximateDate": {
+        "from": 1800,
+        "to": 1600,
+        "era": "BCE",
+        "certainty": "broad-old-babylonian-range"
+      },
+      "manuscriptWitnesses": [],
+      "sourcePriority": {
+        "tier": 2,
+        "role": "comparative-anthropogonic-source"
+      },
+      "scope": [
+        "human creation",
+        "clay",
+        "divine flesh and blood",
+        "human labor"
+      ],
+      "editorialUse": {
+        "timelineDisplay": true,
+        "preferredCitation": "Atrahasis, Tablet I",
+        "witnessLevelDetail": "research-layer",
+        "note": "Used as a Mesopotamian anthropogonic comparison, not as a direct source for the Sethian account."
+      },
+      "researchNotes": {
+        "structuralParallel": "Humanity is formed from clay combined with the flesh and blood of a slain deity.",
+        "differenceCaution": "The purpose is to assume divine labor; the narrative does not preserve the Sethian transfer and recovery of Sophia’s power."
+      },
+      "notes": "Comparative source for the formation of humanity from earthly and divine components.",
+      "dateAdded": "2026-08-30",
+      "lastReviewed": "2026-08-30"
+    },
+    {
+      "id": "source-enuma-elish",
+      "title": "Enūma Eliš",
+      "displayName": "Enūma Eliš",
+      "alternativeTitles": [
+        "The Babylonian Epic of Creation"
+      ],
+      "sourceType": "ancient-mesopotamian-cosmogonic-text",
+      "collection": {
+        "primaryDisplayName": "Babylonian Literary Tradition",
+        "additionalWitnessCollections": []
+      },
+      "timelineCitation": "Enūma Eliš, Tablet VI",
+      "traditionIds": [],
+      "originalLanguage": "Akkadian",
+      "originalLanguageStatus": "surviving-original-language",
+      "survivingLanguages": [
+        "Akkadian"
+      ],
+      "approximateDate": {
+        "from": 1200,
+        "to": 1000,
+        "era": "BCE",
+        "certainty": "broad-standard-babylonian-range"
+      },
+      "manuscriptWitnesses": [],
+      "sourcePriority": {
+        "tier": 2,
+        "role": "comparative-anthropogonic-source"
+      },
+      "scope": [
+        "human creation",
+        "blood of Qingu",
+        "service of the gods"
+      ],
+      "editorialUse": {
+        "timelineDisplay": true,
+        "preferredCitation": "Enūma Eliš, Tablet VI",
+        "witnessLevelDetail": "research-layer",
+        "note": "Used as a Mesopotamian anthropogonic comparison, not as a direct source for the Sethian account."
+      },
+      "researchNotes": {
+        "structuralParallel": "Humanity is created from the blood of Qingu, joining human existence to a divine substance.",
+        "differenceCaution": "The Babylonian account assigns humanity service to the gods and does not reproduce the Sethian distinction between higher power and ignorant makers."
+      },
+      "notes": "Comparative source for humanity created from the blood of a defeated divine being.",
+      "dateAdded": "2026-08-30",
+      "lastReviewed": "2026-08-30"
+    },
+    {
+      "id": "source-corpus-hermeticum-i",
+      "title": "Corpus Hermeticum I",
+      "displayName": "Corpus Hermeticum I — Poimandres",
+      "alternativeTitles": [
+        "Poimandres",
+        "Pimander"
+      ],
+      "sourceType": "ancient-hermetic-philosophical-text",
+      "collection": {
+        "primaryDisplayName": "Corpus Hermeticum",
+        "additionalWitnessCollections": []
+      },
+      "timelineCitation": "Corpus Hermeticum I.12–21",
+      "traditionIds": [],
+      "originalLanguage": "Greek",
+      "originalLanguageStatus": "surviving-original-language",
+      "survivingLanguages": [
+        "Greek"
+      ],
+      "approximateDate": {
+        "from": 100,
+        "to": 300,
+        "era": "CE",
+        "certainty": "broad-approximate-range"
+      },
+      "manuscriptWitnesses": [],
+      "sourcePriority": {
+        "tier": 2,
+        "role": "comparative-hermetic-source"
+      },
+      "scope": [
+        "archetypal human",
+        "seven rulers",
+        "descent into nature",
+        "mortal body",
+        "immortal essence"
+      ],
+      "editorialUse": {
+        "timelineDisplay": true,
+        "preferredCitation": "Corpus Hermeticum I.12–21",
+        "witnessLevelDetail": "research-layer",
+        "note": "Used as a Hermetic comparison for the twofold human condition, not as a source for Sethian chronology."
+      },
+      "researchNotes": {
+        "structuralParallel": "The archetypal human bears divine Life and Light, receives the energies of seven rulers and becomes mortal through embodiment in Nature.",
+        "differenceCaution": "The Hermetic human descends through desire and consent; Adam’s Sethian material enclosure is imposed by jealous rulers."
+      },
+      "notes": "Hermetic comparison for the immortal human within mortal nature.",
+      "dateAdded": "2026-08-30",
+      "lastReviewed": "2026-08-30"
+    },
+    {
+      "id": "source-plato-cratylus",
+      "title": "Cratylus",
+      "displayName": "Plato, Cratylus",
+      "alternativeTitles": [],
+      "sourceType": "ancient-philosophical-text",
+      "collection": {
+        "primaryDisplayName": "Platonic Dialogues",
+        "additionalWitnessCollections": []
+      },
+      "timelineCitation": "Plato, Cratylus 400c",
+      "traditionIds": [],
+      "originalLanguage": "Greek",
+      "originalLanguageStatus": "surviving-original-language",
+      "survivingLanguages": [
+        "Greek"
+      ],
+      "approximateDate": {
+        "from": 390,
+        "to": 360,
+        "era": "BCE",
+        "certainty": "approximate"
+      },
+      "manuscriptWitnesses": [],
+      "sourcePriority": {
+        "tier": 2,
+        "role": "comparative-philosophical-source"
+      },
+      "scope": [
+        "body as tomb",
+        "body as enclosure",
+        "soul"
+      ],
+      "editorialUse": {
+        "timelineDisplay": true,
+        "preferredCitation": "Plato, Cratylus 400c",
+        "witnessLevelDetail": "research-layer",
+        "note": "Used only as a philosophical parallel for the body as tomb or enclosure of the soul."
+      },
+      "researchNotes": {
+        "conceptualParallel": "Socrates reports an Orphic interpretation of the body as the soul’s grave and enclosure.",
+        "differenceCaution": "This is a lexical and philosophical comparison, not evidence that the Apocryphon of John directly depends on Plato’s dialogue."
+      },
+      "notes": "Philosophical parallel for the body described as a tomb and enclosure.",
+      "dateAdded": "2026-08-30",
+      "lastReviewed": "2026-08-30"
+    },
+    {
+      "id": "source-greek-magical-papyri",
+      "title": "The Greek Magical Papyri",
+      "displayName": "The Greek Magical Papyri in Translation, Including the Demotic Spells",
+      "alternativeTitles": [
+        "Papyri Graecae Magicae",
+        "PGM"
+      ],
+      "sourceType": "ancient-text-corpus",
+      "collection": {
+        "primaryDisplayName": "Greco-Egyptian Magical Papyri",
+        "additionalWitnessCollections": []
+      },
+      "timelineCitation": "The Greek Magical Papyri (PGM)",
+      "traditionIds": [],
+      "originalLanguage": "Greek",
+      "survivingLanguages": [
+        "Greek",
+        "Demotic Egyptian",
+        "Old Coptic"
+      ],
+      "approximateDate": {
+        "from": 100,
+        "to": 400,
+        "era": "CE",
+        "certainty": "corpus-range-approximate"
+      },
+      "sourcePriority": {
+        "tier": 2,
+        "role": "comparative-primary-magical-source"
+      },
+      "scope": [
+        "Iao",
+        "divine names",
+        "solar invocations",
+        "Greco-Egyptian ritual practice"
+      ],
+      "editorialUse": {
+        "timelineDisplay": true,
+        "preferredCitation": "The Greek Magical Papyri (PGM)",
+        "witnessLevelDetail": "research-layer",
+        "note": "Used as primary comparative evidence for the circulation of Iao in Greco-Egyptian magical formulae; individual claims should receive passage-level citations where available."
+      },
+      "researchNotes": {
+        "edition": "Hans Dieter Betz, ed., The Greek Magical Papyri in Translation, Including the Demotic Spells, 2nd ed. (University of Chicago Press, 1992; reprints).",
+        "boundary": "The occurrence of Iao in magical formulae does not by itself identify the figure with Yao in the Secret Book of John."
+      },
+      "notes": "Comparative corpus for Greco-Egyptian magical traditions.",
+      "dateAdded": "2026-09-09",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "id": "source-rasimus-paradise-reconsidered",
+      "title": "Paradise Reconsidered in Gnostic Mythmaking",
+      "displayName": "Tuomas Rasimus, Paradise Reconsidered in Gnostic Mythmaking",
+      "alternativeTitles": [],
+      "sourceType": "modern-scholarship",
+      "collection": {
+        "primaryDisplayName": "Nag Hammadi and Manichaean Studies 68",
+        "additionalWitnessCollections": []
+      },
+      "timelineCitation": "Tuomas Rasimus, Paradise Reconsidered in Gnostic Mythmaking, ch. 3",
+      "originalLanguage": "English",
+      "approximateDate": {
+        "from": 2009,
+        "to": 2009,
+        "era": "CE",
+        "certainty": "exact"
+      },
+      "sourcePriority": {
+        "tier": 2,
+        "role": "comparative-scholarly-analysis"
+      },
+      "scope": [
+        "Yao",
+        "Iao",
+        "archons",
+        "Ophite evidence",
+        "Greco-Egyptian iconography",
+        "Sethian mythmaking"
+      ],
+      "editorialUse": {
+        "timelineDisplay": true,
+        "preferredCitation": "Tuomas Rasimus, Paradise Reconsidered in Gnostic Mythmaking, ch. 3",
+        "witnessLevelDetail": "research-layer",
+        "note": "Used for the carefully bounded historical and iconographic comparison between Sethian archontic imagery and Greco-Egyptian magical traditions."
+      },
+      "researchNotes": {
+        "bibliography": "Tuomas Rasimus, Paradise Reconsidered in Gnostic Mythmaking: Rethinking Sethianism in Light of the Ophite Evidence (Leiden: Brill, 2009), chapter 3, “The Creator and the Archons.”",
+        "boundary": "The study supports a comparative historical reconstruction, not a direct identity between Yao and a single magical deity or image."
+      },
+      "notes": "Modern scholarly source for the Yao/Iao comparison.",
+      "dateAdded": "2026-09-09",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "id": "source-alcinous-handbook-platonism",
+      "title": "The Handbook of Platonism",
+      "displayName": "Alcinous, The Handbook of Platonism",
+      "alternativeTitles": [
+        "Didaskalikos",
+        "The Handbook of Platonism"
+      ],
+      "sourceType": "ancient-philosophical-text",
+      "collection": {
+        "primaryDisplayName": "Middle Platonic Literature",
+        "additionalWitnessCollections": []
+      },
+      "timelineCitation": "Alcinous, The Handbook of Platonism 10",
+      "traditionIds": [],
+      "originalLanguage": "Greek",
+      "survivingLanguages": [
+        "Greek"
+      ],
+      "approximateDate": {
+        "from": 100,
+        "to": 200,
+        "era": "CE",
+        "certainty": "approximate"
+      },
+      "sourcePriority": {
+        "tier": 2,
+        "role": "comparative-primary-philosophical-source"
+      },
+      "scope": [
+        "first God",
+        "transcendence",
+        "ineffability",
+        "intellect"
+      ],
+      "editorialUse": {
+        "timelineDisplay": true,
+        "preferredCitation": "Alcinous, The Handbook of Platonism 10",
+        "witnessLevelDetail": "research-layer",
+        "note": "Primary comparative evidence for Middle Platonic discourse concerning the transcendent first God."
+      },
+      "researchNotes": {
+        "boundary": "The first God in Alcinous provides philosophical comparison, not an identity with the Sethian Invisible Spirit."
+      },
+      "notes": "Primary Middle Platonic comparative source.",
+      "dateAdded": "2026-09-09",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "id": "source-plotinus-enneads",
+      "title": "The Enneads",
+      "displayName": "Plotinus, The Enneads",
+      "alternativeTitles": [
+        "Enneads"
+      ],
+      "sourceType": "ancient-philosophical-text",
+      "collection": {
+        "primaryDisplayName": "Neoplatonic Literature",
+        "additionalWitnessCollections": []
+      },
+      "timelineCitation": "Plotinus, Enneads V.1–2",
+      "traditionIds": [],
+      "originalLanguage": "Greek",
+      "survivingLanguages": [
+        "Greek"
+      ],
+      "approximateDate": {
+        "from": 250,
+        "to": 270,
+        "era": "CE",
+        "certainty": "approximate"
+      },
+      "sourcePriority": {
+        "tier": 2,
+        "role": "comparative-primary-philosophical-source"
+      },
+      "scope": [
+        "the One",
+        "Intellect",
+        "Soul",
+        "procession"
+      ],
+      "editorialUse": {
+        "timelineDisplay": true,
+        "preferredCitation": "Plotinus, Enneads V.1–2",
+        "witnessLevelDetail": "research-layer",
+        "note": "Primary evidence for the later Platonic articulation of differentiated reality proceeding from the One."
+      },
+      "researchNotes": {
+        "chronology": "Plotinus is later than the earliest likely composition of the Secret Book of John and is used comparatively, not as proof of direct dependence.",
+        "boundary": "The Plotinian One and the Sethian Invisible Spirit must remain distinct."
+      },
+      "notes": "Primary later Platonic comparative source.",
+      "dateAdded": "2026-09-09",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "id": "source-turner-sethian-platonism",
+      "title": "Sethian Gnosticism and the Platonic Tradition",
+      "displayName": "John D. Turner, Sethian Gnosticism and the Platonic Tradition",
+      "alternativeTitles": [],
+      "sourceType": "modern-scholarship",
+      "collection": {
+        "primaryDisplayName": "Bibliothèque Copte de Nag Hammadi, Section Études 6",
+        "additionalWitnessCollections": []
+      },
+      "timelineCitation": "John D. Turner, Sethian Gnosticism and the Platonic Tradition",
+      "originalLanguage": "English",
+      "approximateDate": {
+        "from": 2001,
+        "to": 2001,
+        "era": "CE",
+        "certainty": "exact"
+      },
+      "sourcePriority": {
+        "tier": 2,
+        "role": "comparative-scholarly-analysis"
+      },
+      "scope": [
+        "Sethianism",
+        "Platonism",
+        "Invisible Spirit",
+        "Barbelo",
+        "aeonic structures"
+      ],
+      "editorialUse": {
+        "timelineDisplay": true,
+        "preferredCitation": "John D. Turner, Sethian Gnosticism and the Platonic Tradition",
+        "witnessLevelDetail": "research-layer",
+        "note": "Scholarly support for bounded comparison between Sethian metaphysics and Platonic traditions."
+      },
+      "researchNotes": {
+        "boundary": "Use to establish comparative intellectual context without reducing Sethian figures to Platonic equivalents."
+      },
+      "notes": "Modern scholarship for Sethian-Platonic comparison.",
+      "dateAdded": "2026-09-09",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "id": "source-pyramid-texts",
+      "title": "The Pyramid Texts",
+      "displayName": "The Ancient Egyptian Pyramid Texts",
+      "alternativeTitles": [
+        "Pyramid Texts"
+      ],
+      "sourceType": "ancient-text-corpus",
+      "collection": {
+        "primaryDisplayName": "Old Kingdom Royal Pyramid Inscriptions",
+        "additionalWitnessCollections": []
+      },
+      "timelineCitation": "The Pyramid Texts, Utterance 527",
+      "traditionIds": [],
+      "originalLanguage": "Egyptian",
+      "survivingLanguages": [
+        "Egyptian"
+      ],
+      "approximateDate": {
+        "from": 2400,
+        "to": 2200,
+        "era": "BCE",
+        "certainty": "corpus-range-approximate"
+      },
+      "sourcePriority": {
+        "tier": 2,
+        "role": "comparative-primary-egyptian-source"
+      },
+      "scope": [
+        "Atum",
+        "Heliopolis",
+        "Shu",
+        "Tefnut",
+        "divine generation"
+      ],
+      "editorialUse": {
+        "timelineDisplay": true,
+        "preferredCitation": "The Pyramid Texts, Utterance 527",
+        "witnessLevelDetail": "research-layer",
+        "note": "Primary Egyptian evidence for Atum and the generation of Shu and Tefnut."
+      },
+      "researchNotes": {
+        "boundary": "The Heliopolitan creator tradition is a mythic comparison and must not be equated with the Sethian Monad."
+      },
+      "notes": "Primary ancient Egyptian comparative source.",
+      "dateAdded": "2026-09-09",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "id": "source-wilkinson-complete-gods",
+      "title": "The Complete Gods and Goddesses of Ancient Egypt",
+      "displayName": "Richard H. Wilkinson, The Complete Gods and Goddesses of Ancient Egypt",
+      "alternativeTitles": [],
+      "sourceType": "modern-scholarship",
+      "collection": {
+        "primaryDisplayName": "Egyptological Reference",
+        "additionalWitnessCollections": []
+      },
+      "timelineCitation": "Richard H. Wilkinson, The Complete Gods and Goddesses of Ancient Egypt — Atum",
+      "originalLanguage": "English",
+      "approximateDate": {
+        "from": 2003,
+        "to": 2003,
+        "era": "CE",
+        "certainty": "exact"
+      },
+      "sourcePriority": {
+        "tier": 2,
+        "role": "comparative-scholarly-reference"
+      },
+      "scope": [
+        "Atum",
+        "Heliopolitan cosmogony",
+        "Egyptian deities",
+        "divine genealogy"
+      ],
+      "editorialUse": {
+        "timelineDisplay": true,
+        "preferredCitation": "Richard H. Wilkinson, The Complete Gods and Goddesses of Ancient Egypt — Atum",
+        "witnessLevelDetail": "research-layer",
+        "note": "Modern Egyptological support for the concise contextual presentation of Atum."
+      },
+      "researchNotes": {
+        "boundary": "Supports the Egyptian context only; it does not establish direct historical dependence between Heliopolitan cosmogony and Sethian theology."
+      },
+      "notes": "Modern Egyptological reference for Atum.",
+      "dateAdded": "2026-09-09",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "id": "source-isaiah",
+      "title": "Isaiah",
+      "displayName": "The Book of Isaiah",
+      "alternativeTitles": [
+        "Isaiah"
+      ],
+      "sourceType": "ancient-biblical-text",
+      "collection": {
+        "primaryDisplayName": "Hebrew Bible",
+        "additionalWitnessCollections": [
+          "Dead Sea Scrolls",
+          "Septuagint"
+        ]
+      },
+      "timelineCitation": "Isaiah 45:5–6; 46:9",
+      "traditionIds": [],
+      "originalLanguage": "Hebrew",
+      "survivingLanguages": [
+        "Hebrew",
+        "Greek"
+      ],
+      "approximateDate": {
+        "from": 700,
+        "to": 500,
+        "era": "BCE",
+        "certainty": "composite-broad-range"
+      },
+      "sourcePriority": {
+        "tier": 2,
+        "role": "comparative-scriptural-source"
+      },
+      "scope": [
+        "exclusive-divinity declarations",
+        "creator language",
+        "Yaldabaoth scriptural intertext"
+      ],
+      "editorialUse": {
+        "timelineDisplay": true,
+        "preferredCitation": "Isaiah 45:5–6; 46:9",
+        "witnessLevelDetail": "research-layer",
+        "note": "Used as the scriptural intertext for Yaldabaoth’s declarations of exclusive divinity; the Sethian narrative recontextualizes rather than affirms the claim."
+      },
+      "researchNotes": {
+        "intertext": "Isaiah 45:5–6 and 46:9 contain declarations that there is no other God; the Secret Book of John places comparable language in Yaldabaoth’s mouth to expose his ignorance.",
+        "boundary": "The biblical speaker and the Sethian lower ruler must not be presented as identical theological figures outside the explicit intertextual comparison."
+      },
+      "notes": "Biblical source for the exclusive-divinity language reworked in the Yaldabaoth narrative.",
+      "dateAdded": "2026-09-09",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "id": "source-origen-contra-celsum",
+      "title": "Contra Celsum",
+      "displayName": "Origen, Contra Celsum",
+      "alternativeTitles": [
+        "Against Celsus"
+      ],
+      "sourceType": "ancient-Christian-polemical-text",
+      "collection": {
+        "primaryDisplayName": "Early Christian Literature",
+        "additionalWitnessCollections": []
+      },
+      "timelineCitation": "Origen, Contra Celsum VI.30–31",
+      "traditionIds": [],
+      "originalLanguage": "Greek",
+      "survivingLanguages": [
+        "Greek"
+      ],
+      "approximateDate": {
+        "from": 248,
+        "to": 248,
+        "era": "CE",
+        "certainty": "approximate"
+      },
+      "sourcePriority": {
+        "tier": 2,
+        "role": "comparative-indirect-ancient-attestation"
+      },
+      "scope": [
+        "Ophite diagram",
+        "seven archontic figures",
+        "animal-formed rulers"
+      ],
+      "editorialUse": {
+        "timelineDisplay": true,
+        "preferredCitation": "Origen, Contra Celsum VI.30–31",
+        "witnessLevelDetail": "research-layer",
+        "note": "Used as an indirect and polemical ancient witness to the seven animal-formed rulers in the Ophite diagram."
+      },
+      "researchNotes": {
+        "witnessStatus": "Origen reports and disputes material attributed to Celsus and to an Ophite diagram; the evidence is ancient but indirect and polemical.",
+        "boundary": "The Ophite roster differs in names, sequence and forms from the Seven Powers in the Secret Book of John and must remain a comparison rather than a merged list."
+      },
+      "notes": "Indirect ancient witness for the Ophite diagram and its seven animal-formed rulers.",
+      "dateAdded": "2026-09-09",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "id": "source-king-secret-revelation-john",
+      "title": "The Secret Revelation of John",
+      "displayName": "Karen L. King, The Secret Revelation of John",
+      "alternativeTitles": [],
+      "sourceType": "modern-scholarship",
+      "collection": {
+        "primaryDisplayName": "Harvard University Press",
+        "additionalWitnessCollections": []
+      },
+      "timelineCitation": "Karen L. King, The Secret Revelation of John",
+      "originalLanguage": "English",
+      "approximateDate": {
+        "from": 2006,
+        "to": 2006,
+        "era": "CE",
+        "certainty": "exact"
+      },
+      "sourcePriority": {
+        "tier": 2,
+        "role": "modern-scholarly-commentary"
+      },
+      "scope": [
+        "Secret Book of John",
+        "biblical reinterpretation",
+        "creation",
+        "cosmos",
+        "Adam",
+        "Genesis",
+        "Platonism"
+      ],
+      "editorialUse": {
+        "timelineDisplay": true,
+        "preferredCitation": "Karen L. King, The Secret Revelation of John",
+        "witnessLevelDetail": "research-layer",
+        "note": "Used for the historical and interpretive context of the Secret Book of John’s revisionary reading of biblical creation and its intellectual environment."
+      },
+      "researchNotes": {
+        "bibliography": "Karen L. King, The Secret Revelation of John (Cambridge, MA: Harvard University Press, 2006).",
+        "boundary": "Supports interpretation of the Sethian narrative; ancient claims must continue to cite the relevant primary text."
+      },
+      "notes": "Modern scholarly commentary on the Secret Book of John and its biblical and intellectual contexts.",
+      "dateAdded": "2026-09-09",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "id": "source-thomassen-spiritual-seed",
+      "title": "The Spiritual Seed",
+      "displayName": "Einar Thomassen, The Spiritual Seed: The Church of the ‘Valentinians’",
+      "alternativeTitles": [],
+      "sourceType": "modern-scholarship",
+      "collection": {
+        "primaryDisplayName": "Nag Hammadi and Manichaean Studies 60",
+        "additionalWitnessCollections": []
+      },
+      "timelineCitation": "Einar Thomassen, The Spiritual Seed",
+      "originalLanguage": "English",
+      "approximateDate": {
+        "from": 2006,
+        "to": 2006,
+        "era": "CE",
+        "certainty": "exact"
+      },
+      "sourcePriority": {
+        "tier": 2,
+        "role": "modern-scholarly-valentinian-study"
+      },
+      "scope": [
+        "Valentinianism",
+        "Achamoth",
+        "Sophia",
+        "Pleroma",
+        "restoration"
+      ],
+      "editorialUse": {
+        "timelineDisplay": true,
+        "preferredCitation": "Einar Thomassen, The Spiritual Seed",
+        "witnessLevelDetail": "research-layer",
+        "note": "Used to contextualize the Valentinian Achamoth tradition reported polemically by Irenaeus."
+      },
+      "researchNotes": {
+        "bibliography": "Einar Thomassen, The Spiritual Seed: The Church of the ‘Valentinians’ (Leiden: Brill, 2006).",
+        "boundary": "The Valentinian Achamoth sequence is compared with, but not merged into, the Sethian Sophia narrative."
+      },
+      "notes": "Modern scholarly source for Valentinian traditions and the Achamoth narrative.",
+      "dateAdded": "2026-09-09",
+      "lastReviewed": "2026-09-09"
+    }
+  ]
+}

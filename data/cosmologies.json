@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0",
+  "lastUpdated": "2026-08-14",
+
+  "cosmologies": [
+    {
+      "id": "cosmology-sethian-apocryphon-of-john",
+      "name": "Sethian Cosmology - Apocryphon of John",
+
+      "traditionIds": [
+        "tradition-sethian"
+      ],
+
+      "sourceIds": [
+        "source-apocryphon-of-john"
+      ],
+
+      "region": "Eastern Mediterranean / Late Antique",
+      "period": "Late Antiquity",
+
+      "chronology": {
+        "branchOrder": 1,
+        "sequenceOrder": 1,
+        "chronologyType": "cosmological",
+        "chronologyNote": "Sequence position within this specific cosmological tradition; not a claim of historical priority over other traditions."
+      },
+
+      "status": "active-research",
+
+      "notes": "This branch represents the cosmological sequence reconstructed specifically from the Apocryphon of John and should not be treated as identical to all Sethian cosmologies. Timeline order is derived from the entities, groups and events associated with this cosmology rather than maintained as a separate sequence in this record. Ontological realms such as the Pleroma are represented separately from timeline entities."
+    }
+  ]
+}
