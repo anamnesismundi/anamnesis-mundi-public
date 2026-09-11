@@ -7709,3 +7709,89 @@ html body .timeline .event
     transform: translateX(-50%) !important;
   }
 }
+
+
+/* ============================================================
+   MOBILE REALM + AXIS + EXPLORER GEOMETRY — 2026-09-11
+   Final mobile-only specificity layer. Desktop is unchanged.
+   ============================================================ */
+
+@media (max-width: 700px) {
+  /*
+    Realm introductions reserve measured document-flow space on
+    their first card. These selectors outrank alternating-card
+    padding rules that previously caused Pleroma and Material
+    Cosmos copy to overlap the first title.
+  */
+  .event.realm-start-entry,
+  .event:nth-of-type(odd).realm-start-entry,
+  .event:nth-of-type(even).realm-start-entry {
+    padding-top: var(--realm-intro-clearance, 245px) !important;
+  }
+
+  .event.realm-start-entry::after,
+  .event:nth-of-type(odd).realm-start-entry::after,
+  .event:nth-of-type(even).realm-start-entry::after {
+    top: calc(var(--realm-intro-clearance, 245px) + 12px) !important;
+  }
+
+  /*
+    The mobile axis starts at the calculated Pleroma anchor and
+    ends at the bottom of the final rendered chronology card.
+  */
+  .timeline::before {
+    top: var(--timeline-start, 478px) !important;
+    bottom: auto !important;
+    height: var(--timeline-length, 0px) !important;
+  }
+
+  /*
+    Explorer controls follow the owning card: odd cards face the
+    right edge, even cards the left edge. Monad remains centred by
+    its dedicated higher-specificity rule above.
+  */
+  .event:not([data-entity-id="entity-monad"]):nth-of-type(odd)
+  .group-explorer > summary,
+  .event:not([data-entity-id="entity-monad"]):nth-of-type(odd)
+  .angelic-anatomy-explorer > summary {
+    justify-content: flex-end !important;
+    text-align: right !important;
+  }
+
+  .event:not([data-entity-id="entity-monad"]):nth-of-type(even)
+  .group-explorer > summary,
+  .event:not([data-entity-id="entity-monad"]):nth-of-type(even)
+  .angelic-anatomy-explorer > summary {
+    justify-content: flex-start !important;
+    text-align: left !important;
+  }
+
+  /*
+    Structured explorer rails use the same side as their card.
+    Narrative/comparative entries keep their approved horizontal
+    separators and are not given new vertical rails.
+  */
+  .event:nth-of-type(odd) .group-members .group-member,
+  .event:nth-of-type(odd) .aeon-members .aeon-member,
+  .event:nth-of-type(odd) .pleromatic-process-member,
+  .event:nth-of-type(odd) .psychic-component,
+  .event:nth-of-type(odd) .context-profile-content {
+    padding-left: 0 !important;
+    padding-right: 14px !important;
+    border-left: 0 !important;
+    border-right: 1.15px solid var(--member-rail) !important;
+    text-align: right !important;
+  }
+
+  .event:nth-of-type(even) .group-members .group-member,
+  .event:nth-of-type(even) .aeon-members .aeon-member,
+  .event:nth-of-type(even) .pleromatic-process-member,
+  .event:nth-of-type(even) .psychic-component,
+  .event:nth-of-type(even) .context-profile-content {
+    padding-left: 14px !important;
+    padding-right: 0 !important;
+    border-left: 1.15px solid var(--member-rail) !important;
+    border-right: 0 !important;
+    text-align: left !important;
+  }
+}
