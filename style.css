@@ -7662,3 +7662,22 @@ html body .timeline .event
     margin-top: 30px;
   }
 }
+
+/* ============================================================
+   MOBILE-ONLY CONCISE HERO COPY — 2026-09-11
+   Desktop retains the approved full methodological introduction.
+   ============================================================ */
+
+.hero-method-mobile {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .hero-method-desktop {
+    display: none;
+  }
+
+  .hero-method-mobile {
+    display: block;
+  }
+}
