@@ -3082,6 +3082,29 @@ async function renderTimeline() {
       )}px`
     );
 
+    /*
+      The desktop public axis meets the short horizontal divider
+      above the continuation section. Mobile continues to use the
+      final-card length above, preserving its approved geometry.
+    */
+    const publicContinuation =
+      timeline.querySelector(
+        ".public-continuation"
+      );
+
+    const desktopAxisEnd =
+      publicContinuation
+        ? publicContinuation.offsetTop
+        : axisEnd;
+
+    timeline.style.setProperty(
+      "--timeline-end",
+      `${Math.max(
+        axisStart,
+        desktopAxisEnd
+      )}px`
+    );
+
     const eventAxisPosition =
       eventId => {
         const eventElement =
