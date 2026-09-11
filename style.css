@@ -7912,3 +7912,55 @@ html body .timeline .event
     text-align: left !important;
   }
 }
+
+
+/* ============================================================
+   MOBILE CARD-BOUND COMPARATIVE CONTAINMENT — 2026-09-11
+   Prevents long titles, prose, and sources from widening a card.
+   ============================================================ */
+
+@media (max-width: 700px) {
+  html body .timeline
+  .event:not([data-entity-id="entity-monad"])
+  .comparative-explorer,
+  html body .timeline
+  .event:not([data-entity-id="entity-monad"])
+  .comparative-traditions,
+  html body .timeline
+  .event:not([data-entity-id="entity-monad"])
+  .comparative-tradition {
+    width: auto !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  html body .timeline
+  .event:not([data-entity-id="entity-monad"])
+  .comparative-explorer {
+    overflow-x: clip;
+  }
+
+  html body .timeline
+  .event:not([data-entity-id="entity-monad"])
+  .comparative-tradition
+  :is(
+    h3,
+    p,
+    span,
+    .source-block,
+    .source-row,
+    .source-list,
+    .source-item
+  ) {
+    width: auto !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+    box-sizing: border-box !important;
+  }
+}
