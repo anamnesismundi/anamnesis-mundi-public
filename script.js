@@ -3007,17 +3007,43 @@ async function renderTimeline() {
       `${axisStart}px`
     );
 
-    const continuation =
-      timeline.querySelector(
-        ".public-continuation"
+    /*
+      The public and complete builds expose different final cards.
+      Measuring the last rendered event keeps the same code safe in
+      both: the axis ends with the final visible chronology card and
+      never continues into the timeline's trailing padding.
+    */
+    const renderedEvents =
+      Array.from(
+        timeline.querySelectorAll(
+          ".event"
+        )
+      ).filter(
+        eventElement =>
+          !eventElement.hidden &&
+          window.getComputedStyle(
+            eventElement
+          ).display !== "none"
       );
 
-    if (continuation) {
-      timeline.style.setProperty(
-        "--timeline-end",
-        `${continuation.offsetTop}px`
-      );
-    }
+    const lastRenderedEvent =
+      renderedEvents[
+        renderedEvents.length - 1
+      ];
+
+    const axisEnd =
+      lastRenderedEvent
+        ? lastRenderedEvent.offsetTop +
+          lastRenderedEvent.offsetHeight
+        : axisStart;
+
+    timeline.style.setProperty(
+      "--timeline-length",
+      `${Math.max(
+        0,
+        axisEnd - axisStart
+      )}px`
+    );
 
     const eventAxisPosition =
       eventId => {
