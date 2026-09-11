@@ -2452,7 +2452,14 @@ function positionRealmOverlay(
     first chronology card. The class is assigned from realm data,
     so future realms inherit the same structure automatically.
   */
-  const firstElement = elements[0];
+  const firstElement =
+    realm?.id === "realm-pleroma"
+      ? elements.find(
+          element =>
+            element.dataset.entityId !==
+            "entity-monad"
+        ) || elements[0]
+      : elements[0];
 
   firstElement.classList.add(
     "realm-start-entry"
@@ -2468,6 +2475,8 @@ function positionRealmOverlay(
     overlay.querySelector(
       ".realm-region-copy"
     );
+
+  overlay.hidden = false;
 
   if (realmCopy) {
     const isMobile =
@@ -2487,7 +2496,7 @@ function positionRealmOverlay(
         minimumClearance,
         Math.ceil(
           copyBottom +
-          (isMobile ? 56 : 64)
+          (isMobile ? 84 : 64)
         )
       );
 
@@ -2496,8 +2505,6 @@ function positionRealmOverlay(
       `${measuredClearance}px`
     );
   }
-
-  overlay.hidden = false;
 
   const timelineRect =
     timeline.getBoundingClientRect();
@@ -2976,13 +2983,24 @@ async function renderTimeline() {
         ".pleroma-threshold-node"
       );
 
+    const mobilePleromaStart =
+      window.matchMedia(
+        "(max-width: 700px)"
+      ).matches
+        ? timeline.querySelector(
+            '[data-entity-id="entity-barbelo"].primary-entity'
+          )
+        : null;
+
     const axisStart =
-      thresholdNode
-        ? thresholdNode.offsetParent.offsetTop +
-          thresholdNode.offsetTop +
-          thresholdNode.offsetHeight / 2
-        : monad.offsetTop +
-          monad.offsetHeight;
+      mobilePleromaStart
+        ? mobilePleromaStart.offsetTop
+        : thresholdNode
+          ? thresholdNode.offsetParent.offsetTop +
+            thresholdNode.offsetTop +
+            thresholdNode.offsetHeight / 2
+          : monad.offsetTop +
+            monad.offsetHeight;
 
     timeline.style.setProperty(
       "--timeline-start",
@@ -3079,7 +3097,20 @@ async function renderTimeline() {
 
   }
 
-  updateTimelineStart();
+  /*
+    Realm spacing changes event offsets. Install and measure those
+    regions before the axis is calculated, then keep this order for
+    every expandable-content and viewport update.
+  */
+  renderRealmRegions(
+    timeline,
+    timelineItems,
+    database
+  );
+
+  requestAnimationFrame(
+    updateTimelineStart
+  );
 
   timeline
     .querySelectorAll("details")
@@ -3109,11 +3140,6 @@ async function renderTimeline() {
   window.addEventListener(
     "resize",
     updateTimelineStart
-  );
-  renderRealmRegions(
-    timeline,
-    timelineItems,
-    database
   );
 }
 
