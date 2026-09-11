@@ -2968,6 +2968,43 @@ async function renderTimeline() {
     }
   }
 
+  /*
+    Realm overlays are prepended to the timeline and therefore make
+    DOM nth-of-type parity unreliable. Freeze each ordinary card's
+    actual visual side after those overlays exist, then let every
+    explorer component inherit that explicit ownership.
+  */
+  function synchronizeTimelineCardSides() {
+    timeline
+      .querySelectorAll(
+        ".event"
+      )
+      .forEach(eventElement => {
+        eventElement.classList.remove(
+          "timeline-card-left",
+          "timeline-card-right"
+        );
+
+        if (
+          eventElement.dataset.entityId ===
+          "entity-monad"
+        ) {
+          return;
+        }
+
+        const textAlignment =
+          window.getComputedStyle(
+            eventElement
+          ).textAlign;
+
+        eventElement.classList.add(
+          textAlignment === "right"
+            ? "timeline-card-right"
+            : "timeline-card-left"
+        );
+      });
+  }
+
   function updateTimelineStart() {
     const monad =
       timeline.querySelector(
@@ -3134,6 +3171,12 @@ async function renderTimeline() {
     database
   );
 
+  /*
+    renderRealmRegions prepends its overlays synchronously. Read the
+    resulting card alignment only after that DOM structure is final.
+  */
+  synchronizeTimelineCardSides();
+
   requestAnimationFrame(
     updateTimelineStart
   );
@@ -3165,7 +3208,10 @@ async function renderTimeline() {
 
   window.addEventListener(
     "resize",
-    updateTimelineStart
+    () => {
+      synchronizeTimelineCardSides();
+      updateTimelineStart();
+    }
   );
 }
 
