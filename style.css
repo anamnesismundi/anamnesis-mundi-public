@@ -7681,3 +7681,31 @@ html body .timeline .event
     display: block;
   }
 }
+
+/* ============================================================
+   MOBILE CHRONOLOGY GEOMETRY — 2026-09-11
+   Keeps the hero layers separated, begins the axis at Pleroma,
+   and centres every event marker on the single mobile axis.
+   ============================================================ */
+
+@media (max-width: 700px) {
+  .hero-content {
+    transform: translateY(18px);
+  }
+
+  body.chronology-entered .hero-content {
+    transform: translateY(18px);
+  }
+
+  .timeline::before {
+    left: 20px !important;
+  }
+
+  .event::after,
+  .event:nth-of-type(odd)::after,
+  .event:nth-of-type(even)::after {
+    left: 20px !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+  }
+}
