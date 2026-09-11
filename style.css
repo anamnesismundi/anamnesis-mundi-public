@@ -2407,7 +2407,7 @@ summary::after {
 .hero-quote {
   position: absolute;
 
-  top: 58px;
+  top: 72px;
   left: 50%;
 
   width: min(760px, 86%);
@@ -2475,7 +2475,7 @@ summary::after {
 @media (max-width: 700px) {
 
   .hero-quote {
-    top: 60px;
+    top: 72px;
 
     width:
       calc(100% - 48px);
@@ -7542,7 +7542,7 @@ html body .timeline .event
   }
 
   .hero-quote {
-    top: 64px;
+    top: 76px;
     width: min(340px, calc(100% - 52px));
   }
 
@@ -7607,10 +7607,12 @@ html body .timeline .event
 
 .hero p.hero-subtitle {
   max-width: 760px;
+  font-size: 0.9375rem;
+  line-height: 1.7;
   text-wrap: balance;
 }
 
-.hero p.hero-method {
+.hero .hero-method {
   max-width: 800px;
   margin: 15px auto 0;
   color: var(--text-secondary);
@@ -7619,7 +7621,19 @@ html body .timeline .event
   text-wrap: pretty;
 }
 
-.hero p.hero-method em {
+.hero .hero-method p {
+  max-width: none;
+  margin: 0;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.hero .hero-method p + p {
+  margin-top: 12px;
+}
+
+.hero .hero-method em {
   color: inherit;
 }
 
@@ -7627,17 +7641,21 @@ html body .timeline .event
   .hero p.hero-subtitle {
     width: min(100%, 340px);
     margin-top: 22px;
-    font-size: 1rem;
-    line-height: 1.55;
+    font-size: 0.875rem;
+    line-height: 1.65;
     text-wrap: balance;
   }
 
-  .hero p.hero-method {
+  .hero .hero-method {
     width: min(100%, 350px);
     margin-top: 16px;
     font-size: 0.875rem;
     line-height: 1.65;
     text-wrap: pretty;
+  }
+
+  .hero .hero-method p + p {
+    margin-top: 11px;
   }
 
   .hero .begin {
