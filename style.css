@@ -7795,3 +7795,120 @@ html body .timeline .event
     text-align: left !important;
   }
 }
+
+
+/* ============================================================
+   MOBILE EXPLORER CARD OWNERSHIP — 2026-09-11
+   Uses the card's computed visual side instead of DOM parity.
+   ============================================================ */
+
+@media (max-width: 700px) {
+  /*
+    Every explorer control follows the explicit side of its card.
+    This also overrides older card-specific mobile exceptions.
+  */
+  html body .timeline
+  .event.timeline-card-right
+  .group-explorer > summary,
+  html body .timeline
+  .event.timeline-card-right
+  .angelic-anatomy-explorer > summary {
+    justify-content: flex-end !important;
+    text-align: right !important;
+  }
+
+  html body .timeline
+  .event.timeline-card-left
+  .group-explorer > summary,
+  html body .timeline
+  .event.timeline-card-left
+  .angelic-anatomy-explorer > summary {
+    justify-content: flex-start !important;
+    text-align: left !important;
+  }
+
+  /*
+    Text inside every explorer follows the same side, including
+    comparative entries whose legacy global style was centred.
+  */
+  html body .timeline
+  .event.timeline-card-right
+  :is(.group-explorer, .angelic-anatomy-explorer)
+  :is(article, section, aside, div, dl, dt, dd, h3, h4, p, span) {
+    text-align: right !important;
+  }
+
+  html body .timeline
+  .event.timeline-card-left
+  :is(.group-explorer, .angelic-anatomy-explorer)
+  :is(article, section, aside, div, dl, dt, dd, h3, h4, p, span) {
+    text-align: left !important;
+  }
+
+  /*
+    Structured vertical rails belong to the same edge as the card.
+    The generic aeon selector is intentional: aeon members live in
+    .aeon-domain-members, not in the older .aeon-members selector.
+  */
+  html body .timeline
+  .event.timeline-card-right
+  :is(
+    .group-member,
+    .aeon-member,
+    .pleromatic-process-member,
+    .psychic-component,
+    .context-profile-content
+  ) {
+    padding-left: 0 !important;
+    padding-right: 14px !important;
+    border-left: 0 !important;
+    border-right: 1.15px solid var(--member-rail) !important;
+  }
+
+  html body .timeline
+  .event.timeline-card-left
+  :is(
+    .group-member,
+    .aeon-member,
+    .pleromatic-process-member,
+    .psychic-component,
+    .context-profile-content
+  ) {
+    padding-left: 14px !important;
+    padding-right: 0 !important;
+    border-left: 1.15px solid var(--member-rail) !important;
+    border-right: 0 !important;
+  }
+
+  /*
+    Aeon domain headings contain a numbered circle plus a title.
+    Their flex direction must follow the explicit card side too.
+  */
+  html body .timeline
+  .event.timeline-card-right
+  .aeon-domain-header {
+    flex-direction: row-reverse !important;
+  }
+
+  html body .timeline
+  .event.timeline-card-left
+  .aeon-domain-header {
+    flex-direction: row !important;
+  }
+
+  /*
+    The one-column mobile anatomy index keeps its existing rules,
+    but each creator/part description adopts its owning card side.
+  */
+  html body .timeline
+  .event.timeline-card-right
+  .anatomical-assignment {
+    text-align: right !important;
+  }
+
+  html body .timeline
+  .event.timeline-card-left
+  .anatomical-assignment {
+    text-align: left !important;
+  }
+}
