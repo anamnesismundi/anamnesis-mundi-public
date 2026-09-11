@@ -7506,3 +7506,95 @@ html body .timeline .event
     )
   );
 }
+
+/* ============================================================
+   MOBILE VIEWPORT + ORIGIN FLOW — 2026-09-11
+   Stabilizes iOS/WebView text scaling, keeps the complete Monad
+   centred, and lets realm introductions reserve measured space.
+   ============================================================ */
+
+.realm-start-entry {
+  padding-top: var(--realm-intro-clearance, 235px);
+}
+
+.realm-start-entry::after {
+  top: calc(var(--realm-intro-clearance, 235px) + 12px);
+}
+
+@media (max-width: 700px) {
+  html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  .research-note {
+    padding-right: max(18px, env(safe-area-inset-right));
+    padding-left: max(18px, env(safe-area-inset-left));
+  }
+
+  .hero-quote {
+    top: 64px;
+    width: min(340px, calc(100% - 52px));
+  }
+
+  .hero-quote blockquote,
+  .hero-quote cite {
+    max-width: 100%;
+  }
+
+  .hero-quote cite {
+    line-height: 1.4;
+    padding-bottom: 1px;
+  }
+
+  .event.primary-entity[data-entity-id="entity-monad"] {
+    width: 100%;
+    padding: 52px clamp(24px, 7vw, 34px) 72px;
+    text-align: center !important;
+  }
+
+  .event.primary-entity[data-entity-id="entity-monad"] .period,
+  .event.primary-entity[data-entity-id="entity-monad"] h2,
+  .event.primary-entity[data-entity-id="entity-monad"] p,
+  .event.primary-entity[data-entity-id="entity-monad"] .alternative-names-block,
+  .event.primary-entity[data-entity-id="entity-monad"] .alternative-names-label,
+  .event.primary-entity[data-entity-id="entity-monad"] .alternative-names-list,
+  .event.primary-entity[data-entity-id="entity-monad"] .source-block,
+  .event.primary-entity[data-entity-id="entity-monad"] .source-label,
+  .event.primary-entity[data-entity-id="entity-monad"] .source-list,
+  .event.primary-entity[data-entity-id="entity-monad"] .source-item,
+  .event.primary-entity[data-entity-id="entity-monad"] .comparative-explorer,
+  .event.primary-entity[data-entity-id="entity-monad"] .comparative-traditions,
+  .event.primary-entity[data-entity-id="entity-monad"] .comparative-tradition,
+  .event.primary-entity[data-entity-id="entity-monad"] .comparative-tradition-category,
+  .event.primary-entity[data-entity-id="entity-monad"] .comparative-tradition h3,
+  .event.primary-entity[data-entity-id="entity-monad"] .comparative-tradition p,
+  .event.primary-entity[data-entity-id="entity-monad"] .comparative-tradition-sources {
+    margin-right: auto !important;
+    margin-left: auto !important;
+    text-align: center !important;
+  }
+
+  .event.primary-entity[data-entity-id="entity-monad"]
+  .comparative-explorer > summary {
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .realm-start-entry {
+    padding-top: var(--realm-intro-clearance, 245px);
+  }
+
+  .realm-start-entry::after {
+    top: calc(var(--realm-intro-clearance, 245px) + 12px);
+  }
+}
