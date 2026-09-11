@@ -7598,3 +7598,49 @@ html body .timeline .event
     top: calc(var(--realm-intro-clearance, 245px) + 12px);
   }
 }
+
+/* ============================================================
+   HERO — SOURCE-BASED PROJECT INTRODUCTION — 2026-09-11
+   Keeps the methodology readable without displacing the primary
+   chronology entry point or introducing horizontal overflow.
+   ============================================================ */
+
+.hero p.hero-subtitle {
+  max-width: 760px;
+  text-wrap: balance;
+}
+
+.hero p.hero-method {
+  max-width: 800px;
+  margin: 15px auto 0;
+  color: var(--text-secondary);
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  text-wrap: pretty;
+}
+
+.hero p.hero-method em {
+  color: inherit;
+}
+
+@media (max-width: 700px) {
+  .hero p.hero-subtitle {
+    width: min(100%, 340px);
+    margin-top: 22px;
+    font-size: 1rem;
+    line-height: 1.55;
+    text-wrap: balance;
+  }
+
+  .hero p.hero-method {
+    width: min(100%, 350px);
+    margin-top: 16px;
+    font-size: 0.875rem;
+    line-height: 1.65;
+    text-wrap: pretty;
+  }
+
+  .hero .begin {
+    margin-top: 30px;
+  }
+}
