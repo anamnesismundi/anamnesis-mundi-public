@@ -2458,6 +2458,45 @@ function positionRealmOverlay(
     "realm-start-entry"
   );
 
+  /*
+    Reserve enough real document-flow space for the complete realm
+    introduction at the current viewport width. This prevents the
+    first card from colliding with a note that wraps differently in
+    mobile browsers or after an orientation change.
+  */
+  const realmCopy =
+    overlay.querySelector(
+      ".realm-region-copy"
+    );
+
+  if (realmCopy) {
+    const isMobile =
+      window.matchMedia(
+        "(max-width: 700px)"
+      ).matches;
+
+    const minimumClearance =
+      isMobile ? 245 : 235;
+
+    const copyBottom =
+      realmCopy.offsetTop +
+      realmCopy.getBoundingClientRect().height;
+
+    const measuredClearance =
+      Math.max(
+        minimumClearance,
+        Math.ceil(
+          copyBottom +
+          (isMobile ? 56 : 64)
+        )
+      );
+
+    firstElement.style.setProperty(
+      "--realm-intro-clearance",
+      `${measuredClearance}px`
+    );
+  }
+
   overlay.hidden = false;
 
   const timelineRect =
