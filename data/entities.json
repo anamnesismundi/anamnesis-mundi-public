@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "lastUpdated": "2026-09-09",
+  "lastUpdated": "2026-09-12",
   "entities": [
     {
       "id": "entity-monad",
@@ -140,7 +140,19 @@
       ],
       "notes": "Primary transcendent-source node for the Sethian Apocryphon of John branch. The public visualization intentionally places the Monad outside the Pleroma.",
       "dateAdded": "2026-08-11",
-      "lastReviewed": "2026-08-22"
+      "lastReviewed": "2026-09-12",
+      "primarySourceIds": [
+        "source-apocryphon-of-john"
+      ],
+      "parallelSourceIds": [
+        "source-gospel-of-the-egyptians"
+      ],
+      "primarySourceCitations": [
+        "THE SECRET BOOK OF JOHN (THE APOCRYPHON OF JOHN), NHC II,1; III,1; IV,1; BG 8502,2"
+      ],
+      "parallelSourceCitations": [
+        "THE HOLY BOOK OF THE GREAT INVISIBLE SPIRIT (THE GOSPEL OF THE EGYPTIANS), NHC III,2; IV,2"
+      ]
     },
     {
       "id": "entity-barbelo",
