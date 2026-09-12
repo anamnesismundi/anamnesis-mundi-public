@@ -390,7 +390,7 @@
       },
       "notes": "This node marks the transition from the expansion of the demiurgic hierarchy to the ordered lower cosmos. Its wording distinguishes textual formation and organization from creation ex nihilo.",
       "dateAdded": "2026-08-14",
-      "lastReviewed": "2026-08-28",
+      "lastReviewed": "2026-09-12",
       "primarySourceIds": [
         "source-apocryphon-of-john"
       ],
@@ -453,6 +453,13 @@
             }
           ]
         }
+      ],
+      "primarySourceCitations": [
+        "THE SECRET BOOK OF JOHN (THE APOCRYPHON OF JOHN), NHC II,1; III,1; IV,1; BG 8502,2"
+      ],
+      "parallelSourceCitations": [
+        "ON THE ORIGIN OF THE WORLD, NHC II,5; XIII,2",
+        "THE NATURE OF THE RULERS (THE HYPOSTASIS OF THE ARCHONS), NHC II,4"
       ]
     },
     {
@@ -508,7 +515,7 @@
       },
       "notes": "This card marks a corrective intervention from the higher realm without collapsing the distinction between provisional elevation and Sophia’s eventual complete restoration.",
       "dateAdded": "2026-08-28",
-      "lastReviewed": "2026-08-28",
+      "lastReviewed": "2026-09-12",
       "comparativeTraditions": [
         {
           "category": "THEOLOGICAL PARALLEL",
@@ -559,6 +566,9 @@
             }
           ]
         }
+      ],
+      "primarySourceCitations": [
+        "THE SECRET BOOK OF JOHN (THE APOCRYPHON OF JOHN), NHC II,1; III,1; IV,1; BG 8502,2"
       ]
     },
     {
