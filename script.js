@@ -1,5 +1,38 @@
+/*
+  Every fresh navigation and reload begins at the top of the
+  introduction. Browsers otherwise restore the previous scroll
+  offset on F5 / Reload, which can leave the hero visibly cropped.
+  Explicit hash links retain their native destination.
+*/
+function resetInitialPagePosition() {
+  if (window.location.hash) {
+    return;
+  }
+
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "auto"
+  });
+}
+
+if ("scrollRestoration" in window.history) {
+  window.history.scrollRestoration = "manual";
+}
+
+resetInitialPagePosition();
+
+window.addEventListener(
+  "pageshow",
+  () => {
+    requestAnimationFrame(
+      resetInitialPagePosition
+    );
+  }
+);
+
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260912-public-material-embodiment-genesis-last-1";
+const DATA_VERSION = "20260912-public-scroll-restoration-reset-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
