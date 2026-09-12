@@ -1,5 +1,5 @@
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260912-public-spiritual-generations-sophia-1";
+const DATA_VERSION = "20260912-public-yaldabaoth-citations-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
