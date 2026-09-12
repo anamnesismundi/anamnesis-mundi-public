@@ -171,7 +171,15 @@
       },
       "notes": "This event introduces Yaldabaoth as the first ruler of the lower order and establishes the transition toward the formation of subordinate rulers. The subsequent demiurgic hierarchy and the material cosmos remain separate stages.",
       "dateAdded": "2026-08-14",
-      "lastReviewed": "2026-08-23"
+      "lastReviewed": "2026-09-12",
+      "primarySourceCitations": [
+        "THE SECRET BOOK OF JOHN (THE APOCRYPHON OF JOHN), NHC II,1; III,1; IV,1; BG 8502,2"
+      ],
+      "parallelSourceCitations": [
+        "THE NATURE OF THE RULERS (THE HYPOSTASIS OF THE ARCHONS), NHC II,4",
+        "ON THE ORIGIN OF THE WORLD, NHC II,5; XIII,2",
+        "THREE FORMS OF FIRST THOUGHT (TRIMORPHIC PROTENNOIA), NHC XIII,1"
+      ]
     },
     {
       "id": "event-formation-subordinate-rulers",
