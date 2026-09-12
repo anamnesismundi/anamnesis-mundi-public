@@ -498,19 +498,33 @@ function createSemanticSourcesMarkup(
       database
     );
 
+  const explicitPrimaryCitations =
+    Array.isArray(item.primarySourceCitations)
+      ? item.primarySourceCitations.filter(Boolean)
+      : [];
+
+  const explicitParallelCitations =
+    Array.isArray(item.parallelSourceCitations)
+      ? item.parallelSourceCitations.filter(Boolean)
+      : [];
+
   const primaryCitationGroups =
-    createCitationGroupsFromSources(
-      primarySources,
-      true,
-      false
-    );
+    explicitPrimaryCitations.length
+      ? explicitPrimaryCitations
+      : createCitationGroupsFromSources(
+          primarySources,
+          true,
+          false
+        );
 
   const parallelCitationGroups =
-    createCitationGroupsFromSources(
-      parallelSources,
-      true,
-      false
-    );
+    explicitParallelCitations.length
+      ? explicitParallelCitations
+      : createCitationGroupsFromSources(
+          parallelSources,
+          true,
+          false
+        );
 
   const sourceRows =
     createSourceRowsMarkup([
