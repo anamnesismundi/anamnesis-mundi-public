@@ -1,5 +1,5 @@
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260912-public-luminaries-aeons-1";
+const DATA_VERSION = "20260912-public-spiritual-generations-sophia-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -1202,14 +1202,14 @@ function createSpiritualGenerationsCard() {
           {
             label: "Primary Source",
             citations: [
-              "The Secret Book of John (The Apocryphon of John)"
+              "THE SECRET BOOK OF JOHN (THE APOCRYPHON OF JOHN), NHC II,1; III,1; IV,1; BG 8502,2"
             ]
           },
           {
             label: "Parallels",
             citations: [
-              "The Holy Book of the Great Invisible Spirit (The Gospel of the Egyptians)",
-              "The Three Steles of Seth"
+              "THE HOLY BOOK OF THE GREAT INVISIBLE SPIRIT (THE GOSPEL OF THE EGYPTIANS), NHC III,2; IV,2",
+              "THE THREE STELES OF SETH, NHC VII,5"
             ]
           }
         ])}
