@@ -220,7 +220,7 @@
       },
       "notes": "Barbelo is retained as a distinct primary entity because the Apocryphon of John gives this figure a central structural role in the unfolding of the transcendent divine realm.",
       "dateAdded": "2026-08-11",
-      "lastReviewed": "2026-08-22",
+      "lastReviewed": "2026-09-12",
       "pleromaticProcess": {
         "explorerTitle": "Explore Barbelo’s Attendant Aeons",
         "entries": [
@@ -254,7 +254,21 @@
           "name": "The Aeonic Complex Around Barbelo",
           "description": "The source presents these realities as distinct aeonic powers associated with Barbelo. Their enumeration contributes to the complex described as an androgynous pentad and, in its paired aspect, a decad. Truth here belongs to this initial complex and is not being merged with the later aeon named Truth in Armozel’s triad."
         }
-      }
+      },
+      "primarySourceIds": [
+        "source-apocryphon-of-john"
+      ],
+      "parallelSourceIds": [
+        "source-trimorphic-protennoia",
+        "source-allogenes"
+      ],
+      "primarySourceCitations": [
+        "THE SECRET BOOK OF JOHN (THE APOCRYPHON OF JOHN), NHC II,1; III,1; IV,1; BG 8502,2"
+      ],
+      "parallelSourceCitations": [
+        "THREE FORMS OF FIRST THOUGHT (TRIMORPHIC PROTENNOIA), NHC XIII,1",
+        "ALLOGENES THE STRANGER (ALLOGENES), NHC XI,3"
+      ]
     },
     {
       "id": "entity-autogenes",
@@ -320,7 +334,7 @@
       },
       "notes": "Autogenes is included in the primary view because it marks a major structural transition within the higher divine order.",
       "dateAdded": "2026-08-14",
-      "lastReviewed": "2026-08-22",
+      "lastReviewed": "2026-09-12",
       "pleromaticProcess": {
         "explorerTitle": "Explore The Powers Around Autogenes",
         "entries": [
@@ -357,7 +371,23 @@
           "name": "A Preparatory Sequence",
           "description": "This sequence describes the articulation of divine activity around Autogenes. It should not be treated as a second list of the Twelve Aeons or confused with the Four Great Luminaries that emerge next."
         }
-      }
+      },
+      "primarySourceIds": [
+        "source-apocryphon-of-john"
+      ],
+      "parallelSourceIds": [
+        "source-zostrianos",
+        "source-allogenes",
+        "source-gospel-of-judas"
+      ],
+      "primarySourceCitations": [
+        "THE SECRET BOOK OF JOHN (THE APOCRYPHON OF JOHN), NHC II,1; III,1; IV,1; BG 8502,2"
+      ],
+      "parallelSourceCitations": [
+        "ZOSTRIANOS, NHC VIII,1",
+        "ALLOGENES THE STRANGER (ALLOGENES), NHC XI,3",
+        "THE GOSPEL OF JUDAS, CODEX TCHACOS"
+      ]
     },
     {
       "id": "entity-armozel",
