@@ -1,5 +1,5 @@
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260912-public-material-cosmos-citations-1";
+const DATA_VERSION = "20260912-public-primordial-human-adam-psychic-citations-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
