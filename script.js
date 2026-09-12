@@ -1,5 +1,5 @@
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260911-public-5";
+const DATA_VERSION = "20260912-public-monad-citations-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -272,19 +272,33 @@ function createSourcesMarkup(
         !primaryIdSet.has(source.id)
     );
 
+  const explicitPrimaryCitations =
+    Array.isArray(item.primarySourceCitations)
+      ? item.primarySourceCitations.filter(Boolean)
+      : [];
+
+  const explicitParallelCitations =
+    Array.isArray(item.parallelSourceCitations)
+      ? item.parallelSourceCitations.filter(Boolean)
+      : [];
+
   const primaryCitationGroups =
-    createCitationGroupsFromSources(
-      primarySources,
-      true,
-      false
-    );
+    explicitPrimaryCitations.length
+      ? explicitPrimaryCitations
+      : createCitationGroupsFromSources(
+          primarySources,
+          true,
+          false
+        );
 
   const parallelCitationGroups =
-    createCitationGroupsFromSources(
-      parallelSources,
-      true,
-      false
-    );
+    explicitParallelCitations.length
+      ? explicitParallelCitations
+      : createCitationGroupsFromSources(
+          parallelSources,
+          true,
+          false
+        );
 
   /*
     Legacy records without explicit semantic fields still
