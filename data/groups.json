@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "lastUpdated": "2026-09-11",
+  "lastUpdated": "2026-09-12",
   "groups": [
     {
       "id": "group-four-luminaries",
@@ -61,7 +61,14 @@
         "sourcePresentation": "The Apocryphon of John is the primary source for the reconstruction displayed by Anamnesis Mundi. The Holy Book of the Great Invisible Spirit (Gospel of the Egyptians) and Zostrianos should be displayed as parallel Sethian attestations rather than merged into the primary reconstruction."
       },
       "dateAdded": "2026-08-14",
-      "lastReviewed": "2026-08-23"
+      "lastReviewed": "2026-09-12",
+      "primarySourceCitations": [
+        "THE SECRET BOOK OF JOHN (THE APOCRYPHON OF JOHN), NHC II,1; III,1; IV,1; BG 8502,2"
+      ],
+      "parallelSourceCitations": [
+        "THE HOLY BOOK OF THE GREAT INVISIBLE SPIRIT (THE GOSPEL OF THE EGYPTIANS), NHC III,2; IV,2",
+        "ZOSTRIANOS, NHC VIII,1"
+      ]
     },
     {
       "id": "group-twelve-aeons",
@@ -158,7 +165,13 @@
         "verificationStatus": "Names, translation choices and relationships should be checked against the surviving witnesses and relevant critical scholarship before the research layer is considered complete."
       },
       "dateAdded": "2026-08-14",
-      "lastReviewed": "2026-08-22"
+      "lastReviewed": "2026-09-12",
+      "primarySourceIds": [
+        "source-apocryphon-of-john"
+      ],
+      "primarySourceCitations": [
+        "THE SECRET BOOK OF JOHN (THE APOCRYPHON OF JOHN), NHC II,1; III,1; IV,1; BG 8502,2"
+      ]
     },
     {
       "id": "group-twelve-authorities",
