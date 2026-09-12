@@ -886,33 +886,6 @@
       "cosmologyIds": [],
       "comparativeTraditions": [
         {
-          "category": "SCRIPTURAL INTERTEXT",
-          "name": "Genesis 2:7 — Dust and the Breath of Life",
-          "description": "Genesis forms the human from the dust of the ground and animates him through the breath of life. The Apocryphon of John reworks this sequence by separating Adam’s psychic formation, the transfer of Sophia’s power through Yaldabaoth’s breath, and a later mortal material enclosure.",
-          "sourceIds": [
-            "source-genesis",
-            "source-king-secret-revelation-john"
-          ],
-          "sourceCitations": [
-            "GENESIS 2:7",
-            "KAREN L. KING, THE SECRET REVELATION OF JOHN"
-          ],
-          "relationType": "SCRIPTURAL INTERTEXT",
-          "traditionFamily": "Biblical",
-          "sourceAttestations": [
-            {
-              "sourceId": "source-genesis",
-              "role": "biblical evidence for the formation of the human from dust and animation through the breath of life",
-              "status": "comparative-primary-text"
-            },
-            {
-              "sourceId": "source-king-secret-revelation-john",
-              "role": "modern scholarly analysis of the Secret Book of John’s revisionary use of Genesis",
-              "status": "modern-scholarly-comparison"
-            }
-          ]
-        },
-        {
           "category": "MYTHIC PARALLEL",
           "name": "Atrahasis — Humanity from Clay and Divine Flesh and Blood",
           "description": "Atrahasis describes humanity formed from clay combined with the flesh and blood of a slain deity so that humans may assume the labor imposed upon the gods. The shared pattern is earthly material joined to a divine component; the purpose and theology differ from the Sethian recovery of Sophia’s power.",
@@ -1019,11 +992,38 @@
               "notes": "Used as a lexical and philosophical parallel, not evidence of direct dependence."
             }
           ]
+        },
+        {
+          "category": "SCRIPTURAL INTERTEXT",
+          "name": "Genesis 2:7 — Dust and the Breath of Life",
+          "description": "Genesis forms the human from the dust of the ground and animates him through the breath of life. The Apocryphon of John reworks this sequence by separating Adam’s psychic formation, the transfer of Sophia’s power through Yaldabaoth’s breath, and a later mortal material enclosure.",
+          "sourceIds": [
+            "source-genesis",
+            "source-king-secret-revelation-john"
+          ],
+          "sourceCitations": [
+            "GENESIS 2:7",
+            "KAREN L. KING, THE SECRET REVELATION OF JOHN"
+          ],
+          "relationType": "SCRIPTURAL INTERTEXT",
+          "traditionFamily": "Biblical",
+          "sourceAttestations": [
+            {
+              "sourceId": "source-genesis",
+              "role": "biblical evidence for the formation of the human from dust and animation through the breath of life",
+              "status": "comparative-primary-text"
+            },
+            {
+              "sourceId": "source-king-secret-revelation-john",
+              "role": "modern scholarly analysis of the Secret Book of John’s revisionary use of Genesis",
+              "status": "modern-scholarly-comparison"
+            }
+          ]
         }
       ],
       "notes": "A single post-anthropogony explorer prevents repetition across the psychic formation, animation, awakening and material-enclosure cards.",
       "dateAdded": "2026-08-30",
-      "lastReviewed": "2026-08-30",
+      "lastReviewed": "2026-09-12",
       "comparativeSubject": "Comparative Anthropogonies"
     }
   ]
