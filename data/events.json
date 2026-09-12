@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "lastUpdated": "2026-09-11",
+  "lastUpdated": "2026-09-12",
   "events": [
     {
       "id": "event-sophia-independent-generation",
@@ -82,7 +82,15 @@
       },
       "notes": "This event provides the narrative bridge from the ordered Pleromatic realm to the emergence of Yaldabaoth and the lower demiurgic order.",
       "dateAdded": "2026-08-14",
-      "lastReviewed": "2026-08-24"
+      "lastReviewed": "2026-09-12",
+      "primarySourceCitations": [
+        "THE SECRET BOOK OF JOHN (THE APOCRYPHON OF JOHN), NHC II,1; III,1; IV,1; BG 8502,2"
+      ],
+      "parallelSourceCitations": [
+        "THE NATURE OF THE RULERS (THE HYPOSTASIS OF THE ARCHONS), NHC II,4",
+        "ON THE ORIGIN OF THE WORLD, NHC II,5; XIII,2",
+        "THE WISDOM OF JESUS CHRIST (THE SOPHIA OF JESUS CHRIST), NHC III,4; BG 8502,3"
+      ]
     },
     {
       "id": "event-yaldabaoth-emergence",
