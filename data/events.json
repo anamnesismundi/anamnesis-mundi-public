@@ -816,7 +816,10 @@
       },
       "notes": "This event isolates the transfer of Sophia’s power and the animation of Adam’s psychic body from the superiority and material-enclosure episodes that follow.",
       "dateAdded": "2026-08-29",
-      "lastReviewed": "2026-08-29"
+      "lastReviewed": "2026-09-12",
+      "primarySourceCitations": [
+        "THE SECRET BOOK OF JOHN (THE APOCRYPHON OF JOHN), NHC II,1; III,1; IV,1; BG 8502,2"
+      ]
     },
     {
       "id": "event-awakening-superiority-adam",
@@ -895,7 +898,10 @@
       },
       "notes": "The explorer preserves the role of Luminous Epinoia without turning her intervention into a separate primary timeline card.",
       "dateAdded": "2026-08-29",
-      "lastReviewed": "2026-08-29"
+      "lastReviewed": "2026-09-12",
+      "primarySourceCitations": [
+        "THE SECRET BOOK OF JOHN (THE APOCRYPHON OF JOHN), NHC II,1; III,1; IV,1; BG 8502,2"
+      ]
     },
     {
       "id": "event-adam-material-enclosure",
@@ -980,9 +986,12 @@
       },
       "notes": "This card completes the primary formation sequence by distinguishing Adam’s mortal material enclosure from the psychic body assembled and animated earlier.",
       "dateAdded": "2026-08-29",
-      "lastReviewed": "2026-08-29",
+      "lastReviewed": "2026-09-12",
       "resultGroupIds": [
         "group-comparative-anthropogonies"
+      ],
+      "primarySourceCitations": [
+        "THE SECRET BOOK OF JOHN (THE APOCRYPHON OF JOHN), NHC II,1; III,1; IV,1; BG 8502,2"
       ]
     }
   ]
