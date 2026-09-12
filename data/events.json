@@ -237,7 +237,7 @@
       },
       "notes": "This event establishes the long-recension twelve-authority hierarchy before the chronology proceeds to the further expansion of the archontic order.",
       "dateAdded": "2026-08-14",
-      "lastReviewed": "2026-08-25",
+      "lastReviewed": "2026-09-12",
       "alternativeNames": [
         "The Twelve Authorities",
         "Ruling Authorities (Exousiai)",
@@ -249,6 +249,13 @@
       "parallelSourceIds": [
         "source-hypostasis-of-the-archons",
         "source-on-the-origin-of-the-world"
+      ],
+      "primarySourceCitations": [
+        "THE SECRET BOOK OF JOHN (THE APOCRYPHON OF JOHN), NHC II,1; IV,1"
+      ],
+      "parallelSourceCitations": [
+        "THE NATURE OF THE RULERS (THE HYPOSTASIS OF THE ARCHONS), NHC II,4",
+        "ON THE ORIGIN OF THE WORLD, NHC II,5; XIII,2"
       ]
     },
     {
@@ -312,7 +319,13 @@
       },
       "notes": "This event extends the demiurgic hierarchy beyond the twelve authorities before the chronology proceeds to the ordering of the lower material cosmos.",
       "dateAdded": "2026-08-25",
-      "lastReviewed": "2026-08-25"
+      "lastReviewed": "2026-09-12",
+      "primarySourceCitations": [
+        "THE SECRET BOOK OF JOHN (THE APOCRYPHON OF JOHN), NHC II,1; III,1; IV,1; BG 8502,2"
+      ],
+      "parallelSourceCitations": [
+        "ON THE ORIGIN OF THE WORLD, NHC II,5; XIII,2"
+      ]
     },
     {
       "id": "event-ordering-material-cosmos",
