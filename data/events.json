@@ -644,7 +644,14 @@
       },
       "notes": "This card opens the anthropogonic sequence by distinguishing the revelation of the human archetype from every subsequent stage in Adam’s formation.",
       "dateAdded": "2026-08-29",
-      "lastReviewed": "2026-09-09"
+      "lastReviewed": "2026-09-12",
+      "primarySourceCitations": [
+        "THE SECRET BOOK OF JOHN (THE APOCRYPHON OF JOHN), NHC II,1; III,1; IV,1; BG 8502,2"
+      ],
+      "parallelSourceCitations": [
+        "THE NATURE OF THE RULERS (THE HYPOSTASIS OF THE ARCHONS), NHC II,4",
+        "ON THE ORIGIN OF THE WORLD, NHC II,5; XIII,2"
+      ]
     },
     {
       "id": "event-formation-adam-psychic-body",
@@ -729,7 +736,10 @@
       },
       "notes": "The detailed correspondences are confined to the attached explorer so the main description does not repeat them.",
       "dateAdded": "2026-08-29",
-      "lastReviewed": "2026-08-29"
+      "lastReviewed": "2026-09-12",
+      "primarySourceCitations": [
+        "THE SECRET BOOK OF JOHN (THE APOCRYPHON OF JOHN), NHC II,1; III,1; IV,1; BG 8502,2"
+      ]
     },
     {
       "id": "event-animation-of-adam",
