@@ -8,12 +8,12 @@
     var(--origin) 0,
     var(--origin) 130px,
     var(--emanation) 330px,
-    var(--emanation) var(--axis-rupture-fade, 58%),
-    var(--rupture) var(--axis-rupture, 66%),
-    var(--rupture) var(--axis-demiurgic, 72%),
-    var(--demiurgic) var(--axis-demiurgic, 72%),
-    var(--demiurgic) var(--axis-material, 100%),
-    var(--material) var(--axis-material, 100%),
+    var(--emanation) var(--axis-rupture-fade-effective, 58%),
+    var(--rupture) var(--axis-rupture-effective, 66%),
+    var(--rupture) var(--axis-demiurgic-effective, 72%),
+    var(--demiurgic) var(--axis-demiurgic-effective, 72%),
+    var(--demiurgic) var(--axis-material-effective, 100%),
+    var(--material) var(--axis-material-effective, 100%),
     var(--material) 100%
   ) !important;
 }
