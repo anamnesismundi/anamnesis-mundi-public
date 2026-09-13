@@ -22,9 +22,9 @@
 .public-continuation-label,
 .public-support-label {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 400;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.14em;
   line-height: normal;
   text-transform: uppercase;
 }
