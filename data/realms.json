@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "lastUpdated": "2026-09-11",
+  "lastUpdated": "2026-09-13",
   "realms": [
     {
       "id": "realm-pleroma",
@@ -65,7 +65,19 @@
         "visualization": "The public interface should communicate Pleroma spatially as an encompassing divine realm, with its name present in the background rather than as another chronological node."
       },
       "dateAdded": "2026-08-21",
-      "lastReviewed": "2026-09-09"
+      "lastReviewed": "2026-09-09",
+      "navigationScope": {
+        "entryIds": [
+          "entity-barbelo",
+          "entity-autogenes",
+          "group-four-luminaries",
+          "group-twelve-aeons",
+          "virtual-spiritual-generations",
+          "event-sophia-independent-generation"
+        ],
+        "behavior": "independent-collapsible-chapter",
+        "notes": "Navigation grouping only. It does not alter the realm's ontological scope or the chronological identity of transitional events."
+      }
     },
     {
       "id": "realm-demiurgic-order",
@@ -114,7 +126,17 @@
         "visualization": "The public interface should use layered rust, umber and muted copper depth with restrained concentric structures suggestive of nested authorities rather than a starfield."
       },
       "dateAdded": "2026-08-28",
-      "lastReviewed": "2026-09-09"
+      "lastReviewed": "2026-09-09",
+      "navigationScope": {
+        "entryIds": [
+          "event-yaldabaoth-emergence",
+          "entity-yaldabaoth",
+          "event-formation-subordinate-rulers",
+          "event-expansion-archontic-hierarchy"
+        ],
+        "behavior": "independent-collapsible-chapter",
+        "notes": "Navigation grouping only. It does not alter the realm's ontological scope or the chronological identity of transitional events."
+      }
     },
     {
       "id": "realm-material-cosmos",
@@ -168,7 +190,20 @@
         "visualization": "The public interface should move from demiurgic copper into mineral sage and blue-grey, with faint strata and firmament-like arcs rather than a modern starfield."
       },
       "dateAdded": "2026-08-28",
-      "lastReviewed": "2026-09-09"
+      "lastReviewed": "2026-09-09",
+      "navigationScope": {
+        "entryIds": [
+          "event-ordering-material-cosmos",
+          "event-sophia-repentance-intermediate-restoration",
+          "event-revelation-primordial-human",
+          "event-formation-adam-psychic-body",
+          "event-animation-of-adam",
+          "event-awakening-superiority-adam",
+          "event-adam-material-enclosure"
+        ],
+        "behavior": "independent-collapsible-chapter",
+        "notes": "Navigation grouping only. It does not alter the realm's ontological scope or the chronological identity of transitional events."
+      }
     }
   ]
 }

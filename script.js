@@ -32,7 +32,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260912-public-scroll-restoration-reset-1";
+const DATA_VERSION = "20260913-public-realm-folding-monad-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -2508,11 +2508,6 @@ function positionRealmOverlay(
     return;
   }
 
-  /*
-    Every realm reserves a complete introductory band before its
-    first chronology card. The class is assigned from realm data,
-    so future realms inherit the same structure automatically.
-  */
   const firstElement =
     realm?.id === "realm-pleroma"
       ? elements.find(
@@ -2522,53 +2517,144 @@ function positionRealmOverlay(
         ) || elements[0]
       : elements[0];
 
-  firstElement.classList.add(
-    "realm-start-entry"
-  );
-
-  /*
-    Reserve enough real document-flow space for the complete realm
-    introduction at the current viewport width. This prevents the
-    first card from colliding with a note that wraps differently in
-    mobile browsers or after an orientation change.
-  */
   const realmCopy =
     overlay.querySelector(
       ".realm-region-copy"
     );
 
-  overlay.hidden = false;
+  const usesChapterNavigation =
+    timeline.dataset.realmNavigation ===
+    "true";
 
-  if (realmCopy) {
-    const isMobile =
-      window.matchMedia(
-        "(max-width: 700px)"
-      ).matches;
-
-    const minimumClearance =
-      isMobile ? 245 : 235;
-
-    const copyBottom =
-      realmCopy.offsetTop +
-      realmCopy.getBoundingClientRect().height;
-
-    const measuredClearance =
-      Math.max(
-        minimumClearance,
-        Math.ceil(
-          copyBottom +
-          (isMobile ? 84 : 64)
-        )
-      );
-
-    firstElement.style.setProperty(
-      "--realm-intro-clearance",
-      `${measuredClearance}px`
+  if (usesChapterNavigation) {
+    firstElement.classList.remove(
+      "realm-start-entry"
     );
+
+    firstElement.style.removeProperty(
+      "--realm-intro-clearance"
+    );
+
+    if (realmCopy) {
+      realmCopy.hidden = true;
+    }
+  } else {
+    firstElement.classList.add(
+      "realm-start-entry"
+    );
+
+    if (realmCopy) {
+      const isMobile =
+        window.matchMedia(
+          "(max-width: 700px)"
+        ).matches;
+
+      const minimumClearance =
+        isMobile ? 245 : 235;
+
+      const copyBottom =
+        realmCopy.offsetTop +
+        realmCopy.getBoundingClientRect().height;
+
+      const measuredClearance =
+        Math.max(
+          minimumClearance,
+          Math.ceil(
+            copyBottom +
+            (isMobile ? 84 : 64)
+          )
+        );
+
+      firstElement.style.setProperty(
+        "--realm-intro-clearance",
+        `${measuredClearance}px`
+      );
+    }
   }
+
+  overlay.hidden = false;
 
   const timelineRect =
     timeline.getBoundingClientRect();
+
+  const chapterHeader =
+    usesChapterNavigation
+      ? timeline.querySelector(
+          `[data-realm-navigation-card="${CSS.escape(
+            realm.id
+          )}"]`
+        )
+      : null;
+
+  const realmIsOpen =
+    Boolean(
+      chapterHeader &&
+      chapterHeader.classList.contains(
+        "is-active"
+      )
+    );
+
+  /*
+    In folded navigation, the existing ambient overlay becomes the
+    realm's own header field. When opened, the same overlay simply
+    extends downward through the original chronology content.
+  */
+  if (
+    usesChapterNavigation &&
+    chapterHeader
+  ) {
+    const headerRect =
+      chapterHeader.getBoundingClientRect();
+
+    const topPosition =
+      headerRect.top -
+      timelineRect.top;
+
+    let bottomPosition =
+      headerRect.bottom -
+      timelineRect.top;
+
+    if (realmIsOpen) {
+      const visibleElementRects =
+        elements
+          .filter(
+            element =>
+              !element.hidden &&
+              window.getComputedStyle(
+                element
+              ).display !== "none"
+          )
+          .map(
+            element =>
+              element.getBoundingClientRect()
+          );
+
+      if (visibleElementRects.length) {
+        bottomPosition =
+          Math.max(
+            ...visibleElementRects.map(
+              rect => rect.bottom
+            )
+          ) -
+          timelineRect.top;
+      }
+    }
+
+    overlay.style.top =
+      `${Math.max(
+        0,
+        topPosition
+      )}px`;
+
+    overlay.style.height =
+      `${Math.max(
+        0,
+        bottomPosition -
+        topPosition
+      )}px`;
+
+    return;
+  }
 
   const elementRects =
     elements.map(
@@ -2599,11 +2685,6 @@ function positionRealmOverlay(
     timelineRect.top -
     topOffset;
 
-  /*
-    Pleroma begins at the actual First Unfolding node.
-    This avoids estimating its threshold from Barbelo's card,
-    whose position changes when Monad's explorers are opened.
-  */
   if (realm?.id === "realm-pleroma") {
     const thresholdNode =
       timeline.querySelector(
@@ -2612,7 +2693,8 @@ function positionRealmOverlay(
 
     if (thresholdNode) {
       const thresholdRect =
-        thresholdNode.getBoundingClientRect();
+        thresholdNode
+          .getBoundingClientRect();
 
       topPosition =
         thresholdRect.top -
@@ -2639,10 +2721,7 @@ function positionRealmOverlay(
       : measuredBottom;
 
   const safeTop =
-    Math.max(
-      0,
-      topPosition
-    );
+    Math.max(0, topPosition);
 
   overlay.style.top =
     `${safeTop}px`;
@@ -2760,6 +2839,547 @@ function renderRealmRegions(
   );
 }
 
+
+/* ==========================================================
+   INLINE REALM CHAPTER NAVIGATION
+   ========================================================== */
+
+/*
+  Chapter navigation stays separate from ontological realm scope.
+  Headers are inserted directly before their original flat content,
+  so opening a chapter pushes every following closed header downward
+  without moving or recreating chronology cards.
+*/
+function getRealmNavigationEntryIds(realm) {
+  return Array.isArray(
+    realm?.navigationScope?.entryIds
+  )
+    ? realm.navigationScope.entryIds
+    : [];
+}
+
+function createRealmNavigationMarkup(
+  chapter
+) {
+  const chapterName =
+    chapter.display?.label ||
+    chapter.displayName ||
+    "";
+
+  const subtitle =
+    chapter.display?.subtitle || "";
+
+  return `
+    <section
+      class="realm-navigation-card"
+      data-realm-navigation-card="${escapeHtml(
+        chapter.id
+      )}"
+    >
+      <button
+        class="realm-navigation-toggle"
+        type="button"
+        aria-expanded="false"
+        data-realm-navigation-toggle="${escapeHtml(
+          chapter.id
+        )}"
+      >
+        <span class="realm-navigation-copy">
+          <span class="realm-navigation-kicker">
+            ${escapeHtml(
+              chapter.navigationKicker ||
+              "Realm"
+            )}
+          </span>
+
+          <span class="realm-navigation-name">
+            ${escapeHtml(chapterName)}
+          </span>
+
+          ${subtitle
+            ? `
+              <span class="realm-navigation-subtitle">
+                ${escapeHtml(subtitle)}
+              </span>
+            `
+            : ""
+          }
+
+          ${(
+            Array.isArray(
+              chapter.summaryLines
+            ) &&
+            chapter.summaryLines.length
+          )
+            ? `
+              <span class="realm-navigation-summary">
+                ${chapter.summaryLines
+                  .map(
+                    line => `
+                      <span class="realm-navigation-summary-line">
+                        ${escapeHtml(line)}
+                      </span>
+                    `
+                  )
+                  .join("")}
+              </span>
+            `
+            : chapter.summary
+              ? `
+                <span class="realm-navigation-summary">
+                  ${escapeHtml(
+                    chapter.summary
+                  )}
+                </span>
+              `
+              : ""
+          }
+        </span>
+
+        <span
+          class="realm-navigation-action"
+          aria-hidden="true"
+        >
+          <span class="realm-navigation-action-label">
+            ${chapter.id === "chapter-monad"
+              ? "Explore Monad"
+              : "Explore Realm"}
+          </span>
+          <span class="realm-navigation-symbol">↓</span>
+        </span>
+      </button>
+    </section>
+  `;
+}
+
+function initializeRealmNavigation(
+  timeline,
+  timelineItems,
+  database,
+  synchronizeTimelineCardSides,
+  updateTimelineStart
+) {
+  const monad =
+    database.entities.find(
+      entity =>
+        entity.id === "entity-monad"
+    ) || null;
+
+  const realms =
+    database.realms.filter(
+      realm =>
+        realm.display?.mode ===
+          "ambient-region" &&
+        getRealmNavigationEntryIds(
+          realm
+        ).length
+    );
+
+  if (!monad || !realms.length) {
+    return;
+  }
+
+  const monadChapter = {
+    id: "chapter-monad",
+    displayName: monad.displayName,
+    navigationKicker: "Origin",
+    summaryLines: [
+      "The uncaused and ineffable Source — pure light and perfect silence,",
+      "beyond space, time, and every name."
+    ],
+    display: {
+      label: monad.displayName,
+      subtitle: "THE INVISIBLE SPIRIT"
+    },
+    navigationScope: {
+      entryIds: ["entity-monad"]
+    }
+  };
+
+  const chapters = [
+    monadChapter,
+    ...realms
+  ];
+
+  const navigationEntryIds =
+    new Set(
+      chapters.flatMap(
+        getRealmNavigationEntryIds
+      )
+    );
+
+  const elementByEntryId =
+    new Map();
+
+  timelineItems.forEach(entry => {
+    const entryId =
+      getTimelineEntryId(entry);
+
+    const element =
+      getTimelineElementForEntry(
+        timeline,
+        entry
+      );
+
+    if (entryId && element) {
+      elementByEntryId.set(
+        entryId,
+        element
+      );
+    }
+  });
+
+  chapters.forEach(chapter => {
+    const firstEntryId =
+      getRealmNavigationEntryIds(
+        chapter
+      )[0];
+
+    let anchor =
+      elementByEntryId.get(
+        firstEntryId
+      ) || null;
+
+    if (
+      chapter.id ===
+        "realm-pleroma"
+    ) {
+      anchor =
+        timeline.querySelector(
+          ".pleroma-threshold"
+        ) || anchor;
+    }
+
+    if (!anchor) {
+      return;
+    }
+
+    anchor.insertAdjacentHTML(
+      "beforebegin",
+      createRealmNavigationMarkup(
+        chapter
+      )
+    );
+  });
+
+  const chapterCards =
+    Array.from(
+      timeline.querySelectorAll(
+        ".realm-navigation-card"
+      )
+    );
+
+  if (!chapterCards.length) {
+    return;
+  }
+
+  const monadChapterCard =
+    chapterCards.find(
+      card =>
+        card.dataset
+          .realmNavigationCard ===
+        "chapter-monad"
+    ) || null;
+
+  const monadEntry =
+    elementByEntryId.get(
+      "entity-monad"
+    ) || null;
+
+  const monadRegion =
+    document.createElement(
+      "div"
+    );
+
+  monadRegion.className =
+    "monad-region";
+
+  timeline.prepend(
+    monadRegion
+  );
+
+  const positionMonadRegion = () => {
+    if (!monadChapterCard) {
+      monadRegion.hidden = true;
+      return;
+    }
+
+    monadRegion.hidden = false;
+
+    const timelineRect =
+      timeline.getBoundingClientRect();
+
+    const headerRect =
+      monadChapterCard
+        .getBoundingClientRect();
+
+    const topPosition =
+      headerRect.top -
+      timelineRect.top;
+
+    let bottomPosition =
+      headerRect.bottom -
+      timelineRect.top;
+
+    if (
+      monadChapterCard.classList.contains(
+        "is-active"
+      ) &&
+      monadEntry &&
+      !monadEntry.hidden
+    ) {
+      bottomPosition =
+        Math.max(
+          bottomPosition,
+          monadEntry
+            .getBoundingClientRect()
+            .bottom -
+          timelineRect.top
+        );
+    }
+
+    monadRegion.style.top =
+      `${Math.max(
+        0,
+        topPosition
+      )}px`;
+
+    monadRegion.style.height =
+      `${Math.max(
+        0,
+        bottomPosition -
+        topPosition
+      )}px`;
+  };
+
+  timeline.dataset.realmNavigation =
+    "true";
+  timeline.dataset.hasOpenRealm =
+    "false";
+  timeline.dataset.openChapterIds =
+    "";
+
+  const openChapterIds =
+    new Set();
+
+  function applyRealmSelection(
+    requestedChapterId
+  ) {
+    /*
+      Every chapter owns its own fold state. Keeping already opened
+      chapters in the document prevents content above the selected
+      header from disappearing and therefore removes scroll jumps
+      during chronological navigation.
+    */
+    if (requestedChapterId) {
+      if (
+        openChapterIds.has(
+          requestedChapterId
+        )
+      ) {
+        openChapterIds.delete(
+          requestedChapterId
+        );
+      } else {
+        openChapterIds.add(
+          requestedChapterId
+        );
+      }
+    }
+
+    timeline.dataset.openChapterIds =
+      Array.from(
+        openChapterIds
+      ).join(" ");
+
+    timeline.dataset.hasOpenRealm =
+      String(
+        chapters.some(
+          chapter =>
+            chapter.id !==
+              "chapter-monad" &&
+            openChapterIds.has(
+              chapter.id
+            )
+        )
+      );
+
+    const activeEntryIds =
+      new Set(
+        chapters
+          .filter(
+            chapter =>
+              openChapterIds.has(
+                chapter.id
+              )
+          )
+          .flatMap(
+            chapter =>
+              getRealmNavigationEntryIds(
+                chapter
+              )
+          )
+      );
+
+    timelineItems.forEach(entry => {
+      const entryId =
+        getTimelineEntryId(entry);
+
+      if (
+        !navigationEntryIds.has(entryId)
+      ) {
+        return;
+      }
+
+      const element =
+        elementByEntryId.get(
+          entryId
+        );
+
+      if (element) {
+        element.hidden =
+          !activeEntryIds.has(entryId);
+      }
+    });
+
+    const pleromaThreshold =
+      timeline.querySelector(
+        ".pleroma-threshold"
+      );
+
+    if (pleromaThreshold) {
+      pleromaThreshold.hidden =
+        !openChapterIds.has(
+          "realm-pleroma"
+        );
+    }
+
+    chapterCards.forEach(card => {
+      const chapterId =
+        card.dataset
+          .realmNavigationCard ||
+        "";
+
+      const isActive =
+        openChapterIds.has(
+          chapterId
+        );
+
+      card.classList.toggle(
+        "is-active",
+        isActive
+      );
+
+      const button =
+        card.querySelector(
+          ".realm-navigation-toggle"
+        );
+
+      const actionLabel =
+        card.querySelector(
+          ".realm-navigation-action-label"
+        );
+
+      const symbol =
+        card.querySelector(
+          ".realm-navigation-symbol"
+        );
+
+      if (button) {
+        button.setAttribute(
+          "aria-expanded",
+          String(isActive)
+        );
+      }
+
+      if (actionLabel) {
+        actionLabel.textContent =
+          isActive
+            ? (
+                chapterId ===
+                "chapter-monad"
+                  ? "Close Monad"
+                  : "Close Realm"
+              )
+            : (
+                chapterId ===
+                "chapter-monad"
+                  ? "Explore Monad"
+                  : "Explore Realm"
+              );
+      }
+
+      if (symbol) {
+        symbol.textContent =
+          isActive ? "↑" : "↓";
+      }
+    });
+
+    /*
+      There is deliberately no scrollTo here. The clicked header
+      remains the browser's stable visual anchor while its own
+      chronology is revealed or folded beneath it.
+    */
+    requestAnimationFrame(() => {
+      synchronizeTimelineCardSides();
+      positionMonadRegion();
+      updateTimelineStart();
+
+      window.dispatchEvent(
+        new Event("resize")
+      );
+    });
+  }
+
+  chapterCards
+    .map(card =>
+      card.querySelector(
+        ".realm-navigation-toggle"
+      )
+    )
+    .filter(Boolean)
+    .forEach(button => {
+      button.addEventListener(
+        "click",
+        () => {
+          applyRealmSelection(
+            button.dataset
+              .realmNavigationToggle ||
+            ""
+          );
+        }
+      );
+    });
+
+  applyRealmSelection("");
+
+  window.addEventListener(
+    "resize",
+    () => {
+      requestAnimationFrame(
+        positionMonadRegion
+      );
+    },
+    {
+      passive: true
+    }
+  );
+
+  if (monadEntry) {
+    monadEntry
+      .querySelectorAll("details")
+      .forEach(details => {
+        details.addEventListener(
+          "toggle",
+          () => {
+            requestAnimationFrame(
+              positionMonadRegion
+            );
+          }
+        );
+      });
+  }
+}
 
 /* ==========================================================
    PRIMARY TIMELINE ITEMS
@@ -3090,15 +3710,64 @@ async function renderTimeline() {
           )
         : null;
 
-    const axisStart =
-      mobilePleromaStart
-        ? mobilePleromaStart.offsetTop
-        : thresholdNode
-          ? thresholdNode.offsetParent.offsetTop +
-            thresholdNode.offsetTop +
-            thresholdNode.offsetHeight / 2
-          : monad.offsetTop +
-            monad.offsetHeight;
+    const usesChapterNavigation =
+      timeline.dataset.realmNavigation ===
+      "true";
+
+    let axisStart;
+
+    if (usesChapterNavigation) {
+      const pleromaIsOpen =
+        timeline
+          .querySelector(
+            '[data-realm-navigation-card="realm-pleroma"]'
+          )
+          ?.classList.contains(
+            "is-active"
+          );
+
+      if (
+        pleromaIsOpen &&
+        thresholdNode &&
+        thresholdNode.offsetParent
+      ) {
+        axisStart =
+          thresholdNode.offsetParent.offsetTop +
+          thresholdNode.offsetTop +
+          thresholdNode.offsetHeight / 2;
+      } else {
+        const firstVisibleEvent =
+          Array.from(
+            timeline.querySelectorAll(
+              ".event"
+            )
+          ).find(
+            eventElement =>
+              !eventElement.hidden &&
+              window.getComputedStyle(
+                eventElement
+              ).display !== "none"
+          );
+
+        axisStart =
+          firstVisibleEvent
+            ? firstVisibleEvent.offsetTop +
+              70
+            : monad.offsetTop +
+              monad.offsetHeight;
+      }
+    } else {
+      axisStart =
+        mobilePleromaStart
+          ? mobilePleromaStart.offsetTop
+          : thresholdNode &&
+              thresholdNode.offsetParent
+            ? thresholdNode.offsetParent.offsetTop +
+              thresholdNode.offsetTop +
+              thresholdNode.offsetHeight / 2
+            : monad.offsetTop +
+              monad.offsetHeight;
+    }
 
     timeline.style.setProperty(
       "--timeline-start",
@@ -3143,29 +3812,6 @@ async function renderTimeline() {
       )}px`
     );
 
-    /*
-      The desktop public axis meets the short horizontal divider
-      above the continuation section. Mobile continues to use the
-      final-card length above, preserving its approved geometry.
-    */
-    const publicContinuation =
-      timeline.querySelector(
-        ".public-continuation"
-      );
-
-    const desktopAxisEnd =
-      publicContinuation
-        ? publicContinuation.offsetTop
-        : axisEnd;
-
-    timeline.style.setProperty(
-      "--timeline-end",
-      `${Math.max(
-        axisStart,
-        desktopAxisEnd
-      )}px`
-    );
-
     const eventAxisPosition =
       eventId => {
         const eventElement =
@@ -3205,6 +3851,11 @@ async function renderTimeline() {
         "event-ordering-material-cosmos"
       );
 
+    const primordialHumanityPosition =
+      eventAxisPosition(
+        "event-adam-archontic-paradise"
+      );
+
     if (rupturePosition !== null) {
       timeline.style.setProperty(
         "--axis-rupture-fade",
@@ -3242,6 +3893,20 @@ async function renderTimeline() {
       );
     }
 
+    if (primordialHumanityPosition !== null) {
+      timeline.style.setProperty(
+        "--axis-primordial-fade",
+        `${Math.max(
+          0,
+          primordialHumanityPosition - 220
+        )}px`
+      );
+
+      timeline.style.setProperty(
+        "--axis-primordial",
+        `${primordialHumanityPosition + 20}px`
+      );
+    }
   }
 
   /*
@@ -3260,6 +3925,14 @@ async function renderTimeline() {
     resulting card alignment only after that DOM structure is final.
   */
   synchronizeTimelineCardSides();
+
+  initializeRealmNavigation(
+    timeline,
+    timelineItems,
+    database,
+    synchronizeTimelineCardSides,
+    updateTimelineStart
+  );
 
   requestAnimationFrame(
     updateTimelineStart
