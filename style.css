@@ -8356,6 +8356,27 @@ html body .timeline .event
   ] .realm-navigation-name {
     font-size: 29px;
   }
+
+  /*
+    The Pleroma threshold belongs to the same one-sided mobile
+    chronology as Barbelo: its node centres on the 20px axis and
+    its label begins on the event-content inset.
+  */
+  .pleroma-threshold {
+    align-items: flex-start;
+  }
+
+  .pleroma-threshold-label {
+    margin:
+      18px 0
+      22px 50px;
+    padding: 0;
+    text-align: left;
+  }
+
+  .pleroma-threshold-node {
+    margin-left: 13.5px;
+  }
 }
 
 
