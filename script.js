@@ -3972,6 +3972,61 @@ async function renderTimeline() {
   );
 }
 
+function scrollChronologyToStart(
+  timeline,
+  behavior
+) {
+  const isMobile =
+    window.matchMedia(
+      "(max-width: 700px)"
+    ).matches;
+
+  if (!isMobile) {
+    timeline.scrollIntoView({
+      behavior,
+      block: "start"
+    });
+    return;
+  }
+
+  /*
+    On mobile the research note is fixed above the document.
+    Align the chronology immediately below its rendered bottom,
+    so the complete Monad chapter header remains visible on entry.
+  */
+  const researchNote =
+    document.querySelector(
+      ".research-note"
+    );
+
+  const fixedHeaderInset =
+    researchNote
+      ? Math.max(
+          0,
+          researchNote
+            .getBoundingClientRect()
+            .bottom
+        )
+      : 0;
+
+  const timelineTop =
+    window.scrollY +
+    timeline
+      .getBoundingClientRect()
+      .top;
+
+  window.scrollTo({
+    top: Math.max(
+      0,
+      timelineTop -
+      fixedHeaderInset
+    ),
+    left: 0,
+    behavior
+  });
+}
+
+
 function initializeChronologyEntry() {
   const entry =
     document.querySelector(
@@ -4022,13 +4077,12 @@ function initializeChronologyEntry() {
       */
       requestAnimationFrame(() => {
         requestAnimationFrame(() => {
-          timeline.scrollIntoView({
-            behavior:
-              reduceMotion
-                ? "auto"
-                : "smooth",
-            block: "start"
-          });
+          scrollChronologyToStart(
+            timeline,
+            reduceMotion
+              ? "auto"
+              : "smooth"
+          );
         });
       });
     }
