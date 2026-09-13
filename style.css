@@ -1,5 +1,6 @@
 :root {
   --background: #0b0b0b;
+  --pleroma-marker-surface: rgba(23, 24, 35, 0.96);
 
   --text-primary: #e8e4dc;
   --text-secondary: #a39e94;
@@ -2253,7 +2254,11 @@ summary::after {
   border: 1px solid var(--origin) !important;
   border-radius: 50% !important;
 
-  background: var(--background) !important;
+  /*
+    Protected invariant: Barbelo belongs visually to Pleroma.
+    Never fall back to the global black page surface here.
+  */
+  background: var(--pleroma-marker-surface) !important;
 
   box-shadow: none !important;
 
