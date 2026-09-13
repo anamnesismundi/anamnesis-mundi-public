@@ -12,8 +12,8 @@
     var(--rupture) var(--axis-rupture, 66%),
     var(--rupture) var(--axis-demiurgic, 72%),
     var(--demiurgic) var(--axis-demiurgic, 72%),
-    var(--demiurgic) var(--axis-material, 89%),
-    var(--material) var(--axis-material, 89%),
+    var(--demiurgic) var(--axis-material, 100%),
+    var(--material) var(--axis-material, 100%),
     var(--material) 100%
   ) !important;
 }
