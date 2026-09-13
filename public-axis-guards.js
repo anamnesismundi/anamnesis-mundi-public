@@ -1,8 +1,8 @@
 (() => {
   const boundaryMap = [
-    ["--axis-rupture-fade", "--axis-rupture", "event-sophia-independent-generation", -180, 20],
-    [null, "--axis-demiurgic", "event-yaldabaoth-emergence", 0, 20],
-    ["--axis-material-fade", "--axis-material", "event-ordering-material-cosmos", -220, 20]
+    ["--axis-rupture-fade-effective", "--axis-rupture-effective", "event-sophia-independent-generation", -180, 20],
+    [null, "--axis-demiurgic-effective", "event-yaldabaoth-emergence", 0, 20],
+    ["--axis-material-fade-effective", "--axis-material-effective", "event-ordering-material-cosmos", -220, 20]
   ];
 
   const repairPublicAxis = () => {
@@ -27,7 +27,7 @@
 
       const position = Math.max(0, eventElement.offsetTop + 70 - axisStart);
       if (fadeProperty) {
-        const minimum = fadeProperty === "--axis-rupture-fade" ? 340 : 0;
+        const minimum = fadeProperty === "--axis-rupture-fade-effective" ? 340 : 0;
         timeline.style.setProperty(
           fadeProperty,
           `${Math.max(minimum, position + fadeOffset)}px`
