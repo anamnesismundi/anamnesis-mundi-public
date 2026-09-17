@@ -1,0 +1,32 @@
+/* ==========================================================
+   CHRONOLOGY RESEARCH NOTE — PARITY CONTRACT
+   Matches the canonical fixed research notice on the main chronology.
+   ========================================================== */
+
+.research-note {
+  padding: 12px 24px 10px;
+  color: rgba(215, 207, 191, 0.76);
+  font-size: 0.6875rem;
+  line-height: 1.5;
+  letter-spacing: 0.16em;
+}
+
+/* Reserve exactly the rendered desktop notice height:
+   11px × 1.5 line-height + 12px + 10px padding = 38.5px. */
+body {
+  padding-top: 38.5px;
+}
+
+@media (max-width: 700px) {
+  .research-note {
+    padding-top: 10px;
+    padding-right: max(18px, env(safe-area-inset-right));
+    padding-bottom: 9px;
+    padding-left: max(18px, env(safe-area-inset-left));
+  }
+
+  /* Mobile notice height: 11px × 1.5 + 10px + 9px = 35.5px. */
+  body {
+    padding-top: 35.5px;
+  }
+}
