@@ -7652,15 +7652,18 @@ html body .timeline .event
    Desktop retains the approved full methodological introduction.
    ============================================================ */
 
+.hero-subtitle-mobile,
 .hero-method-mobile {
   display: none;
 }
 
 @media (max-width: 700px) {
+  .hero-subtitle-desktop,
   .hero-method-desktop {
     display: none;
   }
 
+  .hero-subtitle-mobile,
   .hero-method-mobile {
     display: block;
   }
@@ -8467,4 +8470,173 @@ html body .timeline .event
   data-realm-navigation-card="realm-primordial-humanity"
 ] .realm-navigation-summary {
   color: rgba(207, 196, 172, 0.64);
+}
+
+/* ==========================================================
+   UNIFIED LUMINOUS ENTRY PORTAL — 2026-09-17
+   ========================================================== */
+
+/*
+  The invitation text keeps its approved luminous pulse.
+  The symbol below is one continuous visual unit: a diffuse
+  radial source, a fading shaft born inside that light, and
+  a CSS-drawn arrowhead joined directly to the shaft.
+*/
+
+.begin {
+  gap: 22px;
+}
+
+.begin-portal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 57px;
+  height: 123px;
+  animation:
+    chronology-portal-breathe 3.2s ease-in-out infinite;
+}
+
+.begin-node {
+  flex: 0 0 auto;
+  width: 27px;
+  height: 27px;
+  border: 0 !important;
+  border-radius: 50%;
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(255, 244, 202, 1) 0%,
+      rgba(244, 226, 169, 0.96) 16%,
+      rgba(221, 199, 133, 0.72) 35%,
+      rgba(184, 169, 128, 0.28) 58%,
+      rgba(184, 169, 128, 0.08) 72%,
+      transparent 100%
+    ) !important;
+  box-shadow:
+    0 0 18px rgba(221, 208, 168, 0.24),
+    0 0 42px rgba(184, 169, 128, 0.12) !important;
+  opacity: 1;
+  transform: none;
+  animation: none !important;
+}
+
+.begin-line {
+  position: relative;
+  flex: 0 0 auto;
+  width: 1px;
+  height: 84px;
+  min-height: 0;
+  margin-top: -3px;
+  color: rgba(221, 208, 168, 0.72);
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(238, 220, 164, 0.72) 0%,
+      rgba(205, 186, 122, 0.46) 30%,
+      rgba(184, 169, 128, 0.20) 68%,
+      rgba(221, 208, 168, 0.58) 100%
+    );
+  box-shadow:
+    0 0 6px rgba(205, 186, 122, 0.12);
+  transform: none;
+  transform-origin: center top;
+  animation: none !important;
+}
+
+/*
+  Two fine strokes meet at the shaft endpoint. There is no
+  typographic arrow and therefore no visual gap.
+*/
+
+.begin-line::before,
+.begin-line::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 10px;
+  height: 1px;
+  background:
+    linear-gradient(
+      to right,
+      rgba(184, 169, 128, 0.34),
+      rgba(221, 208, 168, 0.76)
+    );
+  box-shadow:
+    0 0 5px rgba(205, 186, 122, 0.12);
+}
+
+.begin-line::before {
+  left: 50%;
+  transform-origin: right center;
+  transform:
+    translateX(-100%)
+    rotate(45deg);
+}
+
+.begin-line::after {
+  left: 50%;
+  transform-origin: left center;
+  transform:
+    rotate(-45deg);
+  background:
+    linear-gradient(
+      to left,
+      rgba(184, 169, 128, 0.34),
+      rgba(221, 208, 168, 0.76)
+    );
+}
+
+.begin-arrow {
+  display: none !important;
+}
+
+@keyframes chronology-portal-breathe {
+  0%,
+  100% {
+    opacity: 0.76;
+    filter:
+      drop-shadow(
+        0 0 2px
+        rgba(184, 169, 128, 0.05)
+      );
+  }
+
+  50% {
+    opacity: 1;
+    filter:
+      drop-shadow(
+        0 0 8px
+        rgba(221, 208, 168, 0.18)
+      );
+  }
+}
+
+@media (max-width: 700px) {
+  .begin {
+    gap: 20px;
+  }
+
+  .begin-portal {
+    width: 57px;
+    height: 111px;
+  }
+
+  .begin-node {
+    width: 25px;
+    height: 25px;
+  }
+
+  .begin-line {
+    height: 76px;
+    margin-top: -3px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .begin-text,
+  .begin-portal {
+    animation: none !important;
+  }
 }
