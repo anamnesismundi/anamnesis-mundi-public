@@ -32,7 +32,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260917-public-monad-alias-cleanup-1";
+const DATA_VERSION = "20260917-public-monad-terminology-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -595,31 +595,86 @@ function createAlternativeNamesMarkup(
   item,
   className = "source"
 ) {
-  const names = Array.isArray(
-    item.alternativeNames
-  )
-    ? item.alternativeNames.filter(Boolean)
-    : [];
+  const translationRenderings =
+    Array.isArray(
+      item.translationRenderings
+    )
+      ? item.translationRenderings.filter(
+          Boolean
+        )
+      : [];
 
-  if (!names.length) {
-    return "";
+  const sourceDesignations =
+    Array.isArray(
+      item.sourceDesignations
+    )
+      ? item.sourceDesignations.filter(
+          Boolean
+        )
+      : [];
+
+  const alternativeNames =
+    Array.isArray(
+      item.alternativeNames
+    )
+      ? item.alternativeNames.filter(
+          Boolean
+        )
+      : [];
+
+  const createNamesBlock = (
+    label,
+    names,
+    modifier = ""
+  ) => {
+    if (!names.length) {
+      return "";
+    }
+
+    return `
+      <span class="${escapeHtml(
+        className
+      )} alternative-names-block ${escapeHtml(
+        modifier
+      )}">
+        <span class="alternative-names-label">
+          ${escapeHtml(label)}
+        </span>
+        <span class="alternative-names-list">
+          ${names
+            .map(name => `
+              <span class="alternative-name">${escapeHtml(name)}</span>
+            `)
+            .join("")}
+        </span>
+      </span>
+    `;
+  };
+
+  if (
+    translationRenderings.length ||
+    sourceDesignations.length
+  ) {
+    return [
+      createNamesBlock(
+        "Translation renderings",
+        translationRenderings,
+        "translation-renderings-block"
+      ),
+      createNamesBlock(
+        "Designations in the source",
+        sourceDesignations,
+        "source-designations-block"
+      )
+    ].join("");
   }
 
-  return `
-    <span class="${escapeHtml(className)} alternative-names-block">
-      <span class="alternative-names-label">
-        Also known as
-      </span>
-      <span class="alternative-names-list">
-        ${names
-          .map(name => `
-            <span class="alternative-name">${escapeHtml(name)}</span>
-          `)
-          .join("")}
-      </span>
-    </span>
-  `;
+  return createNamesBlock(
+    "Also known as",
+    alternativeNames
+  );
 }
+
 
 /* ==========================================================
    SUMMARY
