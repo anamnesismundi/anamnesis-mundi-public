@@ -667,6 +667,36 @@ body.entry-monad::after {
   text-transform: uppercase;
 }
 
+
+/* Keep every Monad source designation intact; balance two desktop rows. */
+.entry-monad .source-designations-value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.entry-monad .source-designations-line {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.entry-monad .source-designations-line .inline-term {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+  .entry-monad .source-designations-value {
+    display: block;
+    text-wrap: balance;
+  }
+
+  .entry-monad .source-designations-line {
+    display: contents;
+  }
+}
+
 .editorial-value.editorial-explanation {
   max-width: 690px;
   margin: 0 auto;
