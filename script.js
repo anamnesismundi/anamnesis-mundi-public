@@ -32,7 +32,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260917-public-monad-source-copy-1";
+const DATA_VERSION = "20260917-public-entry-clearance-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -3976,23 +3976,11 @@ function scrollChronologyToStart(
   timeline,
   behavior
 ) {
-  const isMobile =
-    window.matchMedia(
-      "(max-width: 700px)"
-    ).matches;
-
-  if (!isMobile) {
-    timeline.scrollIntoView({
-      behavior,
-      block: "start"
-    });
-    return;
-  }
-
   /*
-    On mobile the research note is fixed above the document.
-    Align the chronology immediately below its rendered bottom,
-    so the complete Monad chapter header remains visible on entry.
+    The research note remains fixed above the document on both
+    desktop and mobile. Reserve its full rendered height plus a
+    deliberate breathing space, so the complete Monad chapter
+    header is never clipped against the top edge on entry.
   */
   const researchNote =
     document.querySelector(
@@ -4009,6 +3997,8 @@ function scrollChronologyToStart(
         )
       : 0;
 
+  const entryClearance = 20;
+
   const timelineTop =
     window.scrollY +
     timeline
@@ -4019,7 +4009,8 @@ function scrollChronologyToStart(
     top: Math.max(
       0,
       timelineTop -
-      fixedHeaderInset
+      fixedHeaderInset -
+      entryClearance
     ),
     left: 0,
     behavior
