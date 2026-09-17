@@ -7090,6 +7090,36 @@ body.chronology-entered .timeline {
   color: rgba(var(--gold-rgb), 0.52);
 }
 
+
+/* Monad source designations: preserve complete names and balance desktop rows. */
+.source-designations-block .alternative-names-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.source-designations-block .alternative-names-line {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.source-designations-block .alternative-name {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+  .source-designations-block .alternative-names-list {
+    display: block;
+    text-wrap: balance;
+  }
+
+  .source-designations-block .alternative-names-line {
+    display: contents;
+  }
+}
+
 /* Monad alone centres this editorial metadata. */
 .event.primary-entity[data-entity-id="entity-monad"]
 .alternative-names-block,
