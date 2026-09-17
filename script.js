@@ -32,7 +32,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260917-public-entry-clearance-1";
+const DATA_VERSION = "20260917-public-monad-alias-cleanup-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
