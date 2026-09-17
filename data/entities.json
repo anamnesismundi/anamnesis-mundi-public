@@ -11,13 +11,6 @@
         "level": "primary",
         "order": 1
       },
-      "alternativeNames": [
-        "The One",
-        "The Invisible Spirit",
-        "The Father of Everything",
-        "The Unknown God",
-        "The Uncontainable Light"
-      ],
       "traditionIds": [
         "tradition-sethian"
       ],
@@ -41,10 +34,12 @@
       "terminology": {
         "editorialDisplayName": "Monad",
         "sourceTerms": [
-          "The One",
-          "Invisible Spirit",
-          "Invisible Virginal Spirit",
-          "Father"
+          "The Invisible Spirit",
+          "The Invisible One",
+          "The Invisible Virginal Spirit",
+          "God and Parent",
+          "God and Father of the All",
+          "Father of Everything"
         ],
         "comparativeTerms": [
           {
@@ -59,7 +54,7 @@
             "status": "comparative-other-tradition"
           }
         ],
-        "note": "Monad is retained as the editorial display name used by Anamnesis Mundi. The surviving Sethian sources use titles centered on the Invisible Spirit rather than presenting Monad as a single uniform historical title."
+        "note": "The major English translations preserve different opening renderings. Frederik Wisse uses The Monad; Marvin Meyer uses The One; Karen L. King renders the shorter recension as The Unity and the longer recension as The Monad. The Invisible Spirit and related designations recur throughout the source. These Sethian terms remain separate from Bythos, which belongs to the Valentinian comparative layer."
       },
       "primaryLens": {
         "tradition": "Sethian",
@@ -171,6 +166,19 @@
       ],
       "parallelSourceCitations": [
         "THE HOLY BOOK OF THE GREAT INVISIBLE SPIRIT (THE GOSPEL OF THE EGYPTIANS), NHC III,2; IV,2"
+      ],
+      "translationRenderings": [
+        "The Monad",
+        "The Unity",
+        "The One"
+      ],
+      "sourceDesignations": [
+        "The Invisible Spirit",
+        "The Invisible One",
+        "The Invisible Virginal Spirit",
+        "God and Parent",
+        "God and Father of the All",
+        "Father of Everything"
       ]
     },
     {
