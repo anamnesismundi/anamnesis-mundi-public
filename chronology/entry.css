@@ -871,3 +871,185 @@ body.entry-monad::after {
     margin: 0 12px;
   }
 }
+
+
+/* ==========================================================
+   MONAD SOURCE-RESEARCH PAGE
+   ========================================================== */
+
+.entry-monad-research .entry-hero {
+  max-width: 760px;
+}
+
+.entry-monad-research .entry-deck {
+  max-width: 750px;
+}
+
+.hero-chronology-link {
+  display: inline-block;
+  margin-top: 25px;
+  color: var(--gold-editorial);
+  font-family: Arial, sans-serif;
+  font-size: 0.6875rem;
+  line-height: 1.5;
+  letter-spacing: 0.14em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.hero-chronology-link:hover,
+.hero-chronology-link:focus-visible {
+  color: var(--gold);
+}
+
+.entry-monad-research .entry-section > p,
+.entry-monad-research .section-followup {
+  max-width: 760px;
+}
+
+.section-followup {
+  margin: 24px 0 0;
+  color: #817d75;
+  font-size: 14px;
+  line-height: 1.72;
+}
+
+.recension-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 36px;
+  margin-top: 29px;
+}
+
+.recension-block {
+  padding: 18px 0 20px;
+  border-top: 1px solid rgba(184, 169, 128, 0.18);
+  border-bottom: 1px solid rgba(184, 169, 128, 0.1);
+}
+
+.recension-witnesses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin-top: 10px;
+  color: #aaa49a;
+  font-family: Arial, sans-serif;
+  font-size: 0.71875rem;
+  line-height: 1.6;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
+.recension-witnesses span {
+  white-space: nowrap;
+}
+
+.recension-witnesses span:not(:last-child)::after {
+  content: " · ";
+  padding: 0 0.36em;
+  color: rgba(184, 169, 128, 0.52);
+}
+
+.source-term-list {
+  margin-top: 28px;
+}
+
+.source-term {
+  display: grid;
+  grid-template-columns: minmax(190px, 0.72fr) minmax(0, 1.7fr);
+  gap: 32px;
+  padding: 20px 0;
+  border-top: 1px solid rgba(184, 169, 128, 0.12);
+}
+
+.source-term:last-child {
+  border-bottom: 1px solid rgba(184, 169, 128, 0.12);
+}
+
+.source-term h3 {
+  margin: 0;
+  color: #ded9cf;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.35;
+}
+
+.source-term p {
+  margin: 0;
+  color: #817d75;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.bibliography {
+  margin-top: 27px;
+}
+
+.bibliography-group {
+  padding: 20px 0;
+  border-top: 1px solid rgba(184, 169, 128, 0.12);
+}
+
+.bibliography-group:last-child {
+  border-bottom: 1px solid rgba(184, 169, 128, 0.12);
+}
+
+.bibliography-group p,
+.bibliography-group ul {
+  margin: 10px 0 0;
+  color: #aaa59b;
+  font-size: 14px;
+  line-height: 1.72;
+}
+
+.bibliography-group ul {
+  padding-left: 19px;
+}
+
+.bibliography-group li + li {
+  margin-top: 8px;
+}
+
+.entry-monad-research .entry-cta h2 {
+  margin: 11px auto 18px;
+  font-size: clamp(25px, 3.3vw, 34px);
+  font-weight: normal;
+  line-height: 1.18;
+}
+
+@media (max-width: 700px) {
+  .entry-monad-research .entry-deck {
+    font-size: 15px;
+    line-height: 1.72;
+  }
+
+  .hero-chronology-link {
+    max-width: 280px;
+    margin-top: 23px;
+  }
+
+  .recension-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-top: 24px;
+  }
+
+  .recension-block + .recension-block {
+    border-top: 0;
+  }
+
+  .source-term {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 18px 0 19px;
+  }
+
+  .source-term h3 {
+    font-size: 17px;
+  }
+
+  .bibliography-group p,
+  .bibliography-group ul {
+    font-size: 13px;
+  }
+}
