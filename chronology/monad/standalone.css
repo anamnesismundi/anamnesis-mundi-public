@@ -11,14 +11,13 @@ body.entry-monad-research::after { height:900px; background:radial-gradient(circ
 .entry-monad-research .provenance { display:inline-flex;align-items:center;gap:6px;color:color-mix(in srgb,var(--gold) 68%,#aaa49a);font-family:Arial,sans-serif;font-size:.625rem;font-weight:400;line-height:1.35;letter-spacing:.16em;text-transform:uppercase;opacity:.72; }
 .entry-monad-research .provenance-mark { position:relative;width:10px;height:8px;border:1px solid currentColor;border-radius:1px;background:none;opacity:.78; }
 .entry-monad-research .provenance-mark::after { content:"";position:absolute;top:0;bottom:0;left:50%;width:1px;background:currentColor;opacity:.7; }
-/* Provenance is sufficient on the standalone entity page. */
 .entry-monad-research .period,.entry-monad-research .origin-marker { display:none; }
 .entry-monad-research .entry-hero { max-width:760px;margin:0;text-align:left; }
-.entry-monad-research .entry-hero h1 { margin:28px 0 27px;text-align:left;font-size:clamp(44px,6.8vw,78px); }
+.entry-monad-research .entry-hero h1 { margin:24px 0 25px;text-align:left;font-size:clamp(40px,5.7vw,68px);line-height:1.02; }
 .entry-monad-research .entry-deck { margin:0;text-align:left; }
 .entry-monad-research .hero-chronology-link { margin-top:25px;text-align:left; }
 .entry-monad-research .entry-section,.entry-monad-research .entry-section h2,.entry-monad-research .entry-section>p,.entry-monad-research .section-followup,.entry-monad-research .editorial-lines,.entry-monad-research .editorial-line,.entry-monad-research .editorial-value,.entry-monad-research .source-designations-line,.entry-monad-research .source-term-list,.entry-monad-research .source-term,.entry-monad-research .witness-translation-panel,.entry-monad-research .recension-grid,.entry-monad-research .recension-block,.entry-monad-research .translations-consulted,.entry-monad-research .chronology-return { text-align:left; }
-.entry-monad-research .entry-section h2 { font-size:clamp(24px,3.1vw,33px);line-height:1.18; }
+.entry-monad-research .entry-section h2 { font-size:clamp(21px,2.6vw,28px);line-height:1.22; }
 .entry-monad-research .editorial-lines { max-width:760px;margin-left:0;margin-right:0; }
 .entry-monad-research .editorial-line { padding:10px 0;border:0; }
 .entry-monad-research .editorial-line+.editorial-line { margin-top:8px; }
@@ -38,4 +37,4 @@ body.entry-monad-research::after { height:900px; background:radial-gradient(circ
 .chronology-return a { color:var(--gold-editorial);font-family:Arial,sans-serif;font-size:.75rem;line-height:1.5;letter-spacing:.14em;text-decoration:none;text-transform:uppercase; }
 .chronology-return a:hover,.chronology-return a:focus-visible { color:var(--gold); }
 .entry-monad-research .entry-cta,.entry-monad-research .entry-nav { display:none; }
-@media (max-width:700px) { body.entry-monad-research::before,body.entry-monad-research::after { height:720px; } .entry-monad-research .provenance { font-size:.59375rem; } .entry-monad-research .entry-hero h1 { margin-top:24px;font-size:clamp(42px,14vw,60px); } .entry-monad-research .entry-section h2 { font-size:clamp(23px,7.5vw,30px); } .recension-grid { gap:12px; } .recension-block,.translations-consulted { padding:16px 17px; } .translations-consulted ul { font-size:13px; } .chronology-return { margin-top:58px;padding-top:24px; } }
+@media (max-width:700px) { body.entry-monad-research::before,body.entry-monad-research::after { height:720px; } .entry-monad-research .provenance { font-size:.59375rem; } .entry-monad-research .entry-hero h1 { margin-top:22px;font-size:clamp(38px,12vw,52px); } .entry-monad-research .entry-section h2 { font-size:clamp(20px,6.6vw,26px); } .recension-grid { gap:12px; } .recension-block,.translations-consulted { padding:16px 17px; } .translations-consulted ul { font-size:13px; } .chronology-return { margin-top:58px;padding-top:24px; } }
