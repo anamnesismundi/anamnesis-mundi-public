@@ -32,7 +32,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260913-public-realm-folding-monad-1";
+const DATA_VERSION = "20260917-public-monad-source-copy-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -2982,10 +2982,10 @@ function initializeRealmNavigation(
   const monadChapter = {
     id: "chapter-monad",
     displayName: monad.displayName,
-    navigationKicker: "Origin",
+    navigationKicker: "",
     summaryLines: [
-      "The uncaused and ineffable Source — pure light and perfect silence,",
-      "beyond space, time, and every name."
+      "The Monad is sovereign, with nothing above it.",
+      "It is God and Parent, the Father of the All."
     ],
     display: {
       label: monad.displayName,
