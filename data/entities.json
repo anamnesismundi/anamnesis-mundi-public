@@ -37,7 +37,7 @@
           "status": "comparative-explicit"
         }
       ],
-      "summary": "The Monad is the ultimate principle of divine reality: ungenerated, incorruptible, immeasurable, and beyond comprehension. Nothing precedes or contains it. From its self-contemplation, the first divine unfolding begins with Barbelo.",
+      "summary": "The One is the Invisible Spirit, the pure light upon which no eye can gaze. It is not among the things that exist, but is far greater. It is the head of all realms and sustains them through its goodness. It is eternal because it needs nothing, for it is absolutely complete.",
       "overview": "In the Sethian cosmological framework represented here, the Monad stands beyond the ordered divine realms and beyond every lower cosmological structure. The Apocryphon of John describes the supreme source through apophatic language: invisible, immeasurable, incorruptible, ineffable and beyond comprehension. Rather than existing as one being among others, it is the ultimate transcendent source from which the higher divine order unfolds.",
       "terminology": {
         "editorialDisplayName": "Monad",
@@ -75,6 +75,26 @@
         "crossSourceCaution": "The Gospel of the Egyptians provides closely related Sethian language concerning the Great Invisible Spirit, but terminology from that text should remain source-attributed when it is not independently explicit in the Apocryphon of John."
       },
       "comparativeTraditions": [
+        {
+          "category": "VALENTINIAN COMPARISON",
+          "name": "Bythos — The Depth in Valentinian Pleromatic Theology",
+          "description": "In the Valentinian system, Bythos, the primordial Depth, stands at the beginning of the Pleromatic genealogy and is paired with Ennoea or Sige. Bythos offers a comparison with the transcendent Sethian source, but it belongs to a distinct Valentinian structure and is not presented as a direct alternative name used by The Apocryphon of John.",
+          "relationType": "VALENTINIAN THEOLOGICAL COMPARISON",
+          "traditionFamily": "Valentinian",
+          "sourceIds": [
+            "source-irenaeus-against-heresies"
+          ],
+          "sourceCitations": [
+            "IRENAEUS, AGAINST HERESIES I.1.1"
+          ],
+          "sourceAttestations": [
+            {
+              "sourceId": "source-irenaeus-against-heresies",
+              "role": "ancient heresiological witness to Bythos at the beginning of the Valentinian Pleromatic genealogy",
+              "status": "comparative-ancient-witness"
+            }
+          ]
+        },
         {
           "category": "PHILOSOPHICAL PARALLEL",
           "name": "The Platonic / Middle-Platonic One",
