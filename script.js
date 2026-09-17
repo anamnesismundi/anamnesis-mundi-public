@@ -32,7 +32,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260917-public-monad-terminology-1";
+const DATA_VERSION = "20260917-public-monad-designation-wrap-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -625,11 +625,30 @@ function createAlternativeNamesMarkup(
   const createNamesBlock = (
     label,
     names,
-    modifier = ""
+    modifier = "",
+    rowSize = 0
   ) => {
     if (!names.length) {
       return "";
     }
+
+    const rows =
+      rowSize > 0
+        ? names.reduce(
+            (groups, name, index) => {
+              const groupIndex =
+                Math.floor(index / rowSize);
+
+              if (!groups[groupIndex]) {
+                groups[groupIndex] = [];
+              }
+
+              groups[groupIndex].push(name);
+              return groups;
+            },
+            []
+          )
+        : [names];
 
     return `
       <span class="${escapeHtml(
@@ -641,9 +660,15 @@ function createAlternativeNamesMarkup(
           ${escapeHtml(label)}
         </span>
         <span class="alternative-names-list">
-          ${names
-            .map(name => `
-              <span class="alternative-name">${escapeHtml(name)}</span>
+          ${rows
+            .map(row => `
+              <span class="alternative-names-line">
+                ${row
+                  .map(name => `
+                    <span class="alternative-name">${escapeHtml(name)}</span>
+                  `)
+                  .join("")}
+              </span>
             `)
             .join("")}
         </span>
@@ -664,7 +689,8 @@ function createAlternativeNamesMarkup(
       createNamesBlock(
         "Designations in the source",
         sourceDesignations,
-        "source-designations-block"
+        "source-designations-block",
+        3
       )
     ].join("");
   }
