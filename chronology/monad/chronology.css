@@ -1,0 +1,4 @@
+/* Monad chronology-only refinements. */
+.event.primary-entity[data-entity-id="entity-monad"] > .period {
+  display: none;
+}
