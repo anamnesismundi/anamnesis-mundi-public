@@ -1,20 +1,62 @@
 /* ==========================================================
-   MONAD STANDALONE — REFINED SOURCE PAGE
+   MONAD STANDALONE — SOURCE PAGE
    Scoped only to chronology/monad.
    ========================================================== */
 
 body.entry-monad-research {
-  background:
-    radial-gradient(ellipse 52% 74% at 50% 20%, rgba(239, 235, 225, 0.105) 0%, rgba(223, 213, 185, 0.062) 24%, rgba(184, 169, 128, 0.028) 48%, rgba(11, 11, 11, 0) 76%),
-    radial-gradient(ellipse 72% 58% at 50% 58%, rgba(184, 169, 128, 0.035) 0%, rgba(11, 11, 11, 0) 70%),
-    linear-gradient(to bottom, rgba(18, 17, 14, 0.52), #0b0b0b 78%);
-  background-attachment: fixed;
+  position: relative;
+  background: #0b0b0b;
 }
 
 body.entry-monad-research::before,
 body.entry-monad-research::after {
-  display: none;
-  content: none;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+body.entry-monad-research::before {
+  height: 900px;
+  background:
+    radial-gradient(
+      ellipse 52% 74% at 50% 42%,
+      rgba(239, 235, 225, 0.105) 0%,
+      rgba(223, 213, 185, 0.062) 24%,
+      rgba(184, 169, 128, 0.028) 48%,
+      rgba(11, 11, 11, 0) 76%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(18, 17, 14, 0.5),
+      rgba(11, 11, 11, 0.96) 88%
+    );
+  box-shadow:
+    inset 0 1px 0 rgba(239, 235, 225, 0.018),
+    inset 0 -1px 0 rgba(184, 169, 128, 0.018);
+}
+
+body.entry-monad-research::after {
+  height: 900px;
+  background:
+    radial-gradient(
+      circle at 50% 36%,
+      rgba(255, 251, 237, 0.055) 0,
+      rgba(222, 207, 162, 0.018) 31%,
+      transparent 62%
+    );
+}
+
+.entry-monad-research .back-link {
+  color: rgba(184, 169, 128, 0.78);
+}
+
+.entry-monad-research .back-link:hover,
+.entry-monad-research .back-link:focus-visible {
+  color: rgba(221, 208, 168, 0.98);
 }
 
 .entry-monad-research .provenance {
@@ -60,8 +102,25 @@ body.entry-monad-research::after {
   display: none;
 }
 
+.entry-monad-research .entry-hero {
+  max-width: 760px;
+  margin: 0;
+  text-align: left;
+}
+
 .entry-monad-research .entry-hero h1 {
-  margin-top: 28px;
+  margin: 28px 0 27px;
+  text-align: left;
+}
+
+.entry-monad-research .entry-deck {
+  margin: 0;
+  text-align: left;
+}
+
+.entry-monad-research .hero-chronology-link {
+  margin-top: 25px;
+  text-align: left;
 }
 
 .entry-monad-research .entry-section,
@@ -77,7 +136,8 @@ body.entry-monad-research::after {
 .entry-monad-research .witness-translation-panel,
 .entry-monad-research .recension-grid,
 .entry-monad-research .recension-block,
-.entry-monad-research .translations-consulted {
+.entry-monad-research .translations-consulted,
+.entry-monad-research .chronology-return {
   text-align: left;
 }
 
@@ -158,14 +218,37 @@ body.entry-monad-research::after {
   max-width: 720px;
 }
 
+.chronology-return {
+  max-width: 760px;
+  margin-top: 70px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(184, 169, 128, 0.14);
+}
+
+.chronology-return a {
+  color: var(--gold-editorial);
+  font-family: Arial, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  letter-spacing: 0.14em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.chronology-return a:hover,
+.chronology-return a:focus-visible {
+  color: var(--gold);
+}
+
 .entry-monad-research .entry-cta,
 .entry-monad-research .entry-nav {
   display: none;
 }
 
 @media (max-width: 700px) {
-  body.entry-monad-research {
-    background-attachment: scroll;
+  body.entry-monad-research::before,
+  body.entry-monad-research::after {
+    height: 720px;
   }
 
   .entry-monad-research .provenance {
@@ -187,5 +270,10 @@ body.entry-monad-research::after {
 
   .translations-consulted ul {
     font-size: 13px;
+  }
+
+  .chronology-return {
+    margin-top: 58px;
+    padding-top: 24px;
   }
 }
