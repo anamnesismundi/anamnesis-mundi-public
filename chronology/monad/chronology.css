@@ -2,3 +2,23 @@
 .event.primary-entity[data-entity-id="entity-monad"] > .period {
   display: none;
 }
+
+/* Keep all Monad editorial metadata groups on one vertical rhythm.
+   Translation renderings -> Designations -> Primary Source -> Parallels. */
+.event.primary-entity[data-entity-id="entity-monad"] > .source-block {
+  margin-top: 18px !important;
+}
+
+.event.primary-entity[data-entity-id="entity-monad"] .source-row + .source-row {
+  margin-top: 18px !important;
+}
+
+@media (max-width: 700px) {
+  .event.primary-entity[data-entity-id="entity-monad"] > .source-block {
+    margin-top: 16px !important;
+  }
+
+  .event.primary-entity[data-entity-id="entity-monad"] .source-row + .source-row {
+    margin-top: 16px !important;
+  }
+}
