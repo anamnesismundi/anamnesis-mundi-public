@@ -5326,9 +5326,7 @@ body.chronology-entered .hero-content {
   background:
     linear-gradient(
       to bottom,
-      var(--origin) 0,
-      var(--origin) 130px,
-      var(--emanation) 330px,
+      var(--emanation) 0,
       var(--emanation)
         var(--axis-rupture-fade, 58%),
       var(--rupture)
@@ -8826,9 +8824,7 @@ html body .timeline
   height: var(--timeline-length, 0px) !important;
   background: linear-gradient(
     to bottom,
-    var(--origin) 0,
-    var(--origin) 130px,
-    var(--emanation) 330px,
+    var(--emanation) 0,
     var(--emanation) var(--axis-rupture-fade, 58%),
     var(--rupture) var(--axis-rupture, 66%),
     var(--rupture) var(--axis-demiurgic-fade, 72%),
