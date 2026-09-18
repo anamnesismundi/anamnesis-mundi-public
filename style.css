@@ -8694,3 +8694,21 @@ html body .timeline .event
     font-size: 0.6875rem !important;
   }
 }
+
+
+/* Individual chronology pages: preserve card typography while exposing a real link. */
+.entity-page-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.entity-page-link:hover,
+.entity-page-link:focus-visible {
+  color: inherit;
+  text-decoration: none;
+}
+
+.entity-page-link:focus-visible {
+  outline: 1px solid rgba(184, 169, 128, 0.58);
+  outline-offset: 7px;
+}
