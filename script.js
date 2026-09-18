@@ -32,7 +32,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260918-public-aeon-punctuation-1";
+const DATA_VERSION = "20260918-public-pleroma-sequences-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -3057,6 +3057,131 @@ function getRealmNavigationEntryIds(realm) {
     : [];
 }
 
+function getRealmChronologicalSequences(
+  realm
+) {
+  return Array.isArray(
+    realm?.chronologicalSequences
+  )
+    ? realm.chronologicalSequences
+    : [];
+}
+
+function getSequenceEntryIds(
+  sequence
+) {
+  return Array.isArray(
+    sequence?.entryIds
+  )
+    ? sequence.entryIds
+    : [];
+}
+
+function createSequenceSubtitleMarkup(
+  subtitle,
+  realmId
+) {
+  if (!subtitle) {
+    return "";
+  }
+
+  if (realmId !== "realm-pleroma") {
+    return escapeHtml(subtitle);
+  }
+
+  const units =
+    subtitle
+      .split(/\s*,\s*/)
+      .filter(Boolean);
+
+  if (units.length <= 1) {
+    return `
+      <span class="sequence-subtitle-unit">
+        ${escapeHtml(subtitle)}
+      </span>
+    `;
+  }
+
+  return units
+    .map((unit, index) => `
+      <span class="sequence-subtitle-unit">
+        ${escapeHtml(unit)}${index < units.length - 1 ? "," : ""}
+      </span>
+    `)
+    .join(" ");
+}
+
+
+function createSequenceNavigationMarkup(
+  sequence,
+  realmId
+) {
+  const label =
+    sequence.display?.label ||
+    "Sequence";
+
+  const title =
+    sequence.displayName || "";
+
+  const subtitle =
+    sequence.subtitle || "";
+
+  return `
+    <section
+      class="sequence-navigation-card"
+      data-sequence-navigation-card="${escapeHtml(
+        sequence.id
+      )}"
+      data-sequence-realm-id="${escapeHtml(
+        realmId
+      )}"
+      hidden
+    >
+      <button
+        class="sequence-navigation-toggle"
+        type="button"
+        aria-expanded="false"
+        data-sequence-navigation-toggle="${escapeHtml(
+          sequence.id
+        )}"
+      >
+        <span class="sequence-navigation-copy">
+          <span class="sequence-navigation-kicker">
+            ${escapeHtml(label)}
+          </span>
+
+          <span class="sequence-navigation-name">
+            ${escapeHtml(title)}
+          </span>
+
+          ${subtitle
+            ? `
+              <span class="sequence-navigation-subtitle">
+                ${createSequenceSubtitleMarkup(
+                  subtitle,
+                  realmId
+                )}
+              </span>
+            `
+            : ""
+          }
+        </span>
+
+        <span
+          class="sequence-navigation-action"
+          aria-hidden="true"
+        >
+          <span class="sequence-navigation-action-label">
+            Explore Sequence
+          </span>
+          <span class="sequence-navigation-symbol">↓</span>
+        </span>
+      </button>
+    </section>
+  `;
+}
+
+
 function createRealmNavigationMarkup(
   chapter
 ) {
@@ -3067,6 +3192,14 @@ function createRealmNavigationMarkup(
 
   const subtitle =
     chapter.display?.subtitle || "";
+
+  const navigationKicker =
+    chapter.id === "chapter-monad"
+      ? ""
+      : (
+          chapter.navigationKicker ||
+          "Realm"
+        );
 
   return `
     <section
@@ -3084,12 +3217,14 @@ function createRealmNavigationMarkup(
         )}"
       >
         <span class="realm-navigation-copy">
-          <span class="realm-navigation-kicker">
-            ${escapeHtml(
-              chapter.navigationKicker ||
-              "Realm"
-            )}
-          </span>
+          ${navigationKicker
+            ? `
+              <span class="realm-navigation-kicker">
+                ${escapeHtml(navigationKicker)}
+              </span>
+            `
+            : ""
+          }
 
           <span class="realm-navigation-name">
             ${escapeHtml(chapterName)}
@@ -3200,6 +3335,29 @@ function initializeRealmNavigation(
     ...realms
   ];
 
+  const sequences =
+    realms
+      .filter(realm => realm.id === "realm-pleroma")
+      .flatMap(
+      realm =>
+        getRealmChronologicalSequences(
+          realm
+        ).map(sequence => ({
+          ...sequence,
+          realmId: realm.id
+        }))
+    );
+
+  const sequenceById =
+    new Map(
+      sequences.map(
+        sequence => [
+          sequence.id,
+          sequence
+        ]
+      )
+    );
+
   const navigationEntryIds =
     new Set(
       chapters.flatMap(
@@ -3260,6 +3418,51 @@ function initializeRealmNavigation(
       )
     );
   });
+
+  sequences.forEach(sequence => {
+    const firstEntryId =
+      getSequenceEntryIds(
+        sequence
+      )[0];
+
+    let anchor =
+      elementByEntryId.get(
+        firstEntryId
+      ) || null;
+
+    /*
+      The first unfolding is the threshold of Barbelo's sequence,
+      not a free-standing marker between the realm and its chapters.
+    */
+    if (
+      sequence.id ===
+        "sequence-pleroma-first-emanations"
+    ) {
+      anchor =
+        timeline.querySelector(
+          ".pleroma-threshold"
+        ) || anchor;
+    }
+
+    if (!anchor) {
+      return;
+    }
+
+    anchor.insertAdjacentHTML(
+      "beforebegin",
+      createSequenceNavigationMarkup(
+        sequence,
+        sequence.realmId
+      )
+    );
+  });
+
+  const sequenceCards =
+    Array.from(
+      timeline.querySelectorAll(
+        ".sequence-navigation-card"
+      )
+    );
 
   const chapterCards =
     Array.from(
@@ -3357,8 +3560,13 @@ function initializeRealmNavigation(
     "false";
   timeline.dataset.openChapterIds =
     "";
+  timeline.dataset.openSequenceIds =
+    "";
 
   const openChapterIds =
+    new Set();
+
+  const openSequenceIds =
     new Set();
 
   function applyRealmSelection(
@@ -3391,33 +3599,67 @@ function initializeRealmNavigation(
         openChapterIds
       ).join(" ");
 
-    timeline.dataset.hasOpenRealm =
-      String(
-        chapters.some(
-          chapter =>
-            chapter.id !==
-              "chapter-monad" &&
-            openChapterIds.has(
-              chapter.id
-            )
-        )
-      );
+    timeline.dataset.openSequenceIds =
+      Array.from(
+        openSequenceIds
+      ).join(" ");
 
     const activeEntryIds =
-      new Set(
-        chapters
+      new Set();
+
+    chapters
+      .filter(
+        chapter =>
+          openChapterIds.has(
+            chapter.id
+          )
+      )
+      .forEach(chapter => {
+        const chapterSequences =
+          getRealmChronologicalSequences(
+            chapter
+          );
+
+        if (!chapterSequences.length) {
+          getRealmNavigationEntryIds(
+            chapter
+          ).forEach(
+            entryId =>
+              activeEntryIds.add(
+                entryId
+              )
+          );
+          return;
+        }
+
+        chapterSequences
           .filter(
-            chapter =>
-              openChapterIds.has(
-                chapter.id
+            sequence =>
+              openSequenceIds.has(
+                sequence.id
               )
           )
-          .flatMap(
-            chapter =>
-              getRealmNavigationEntryIds(
-                chapter
+          .forEach(
+            sequence =>
+              getSequenceEntryIds(
+                sequence
+              ).forEach(
+                entryId =>
+                  activeEntryIds.add(
+                    entryId
+                  )
               )
-          )
+          );
+      });
+
+    timeline.dataset.hasOpenRealm =
+      String(
+        Array.from(
+          activeEntryIds
+        ).some(
+          entryId =>
+            entryId !== "entity-monad"
+        )
       );
 
     timelineItems.forEach(entry => {
@@ -3441,6 +3683,71 @@ function initializeRealmNavigation(
       }
     });
 
+    sequenceCards.forEach(card => {
+      const sequenceId =
+        card.dataset
+          .sequenceNavigationCard ||
+        "";
+
+      const realmId =
+        card.dataset
+          .sequenceRealmId ||
+        "";
+
+      const realmIsOpen =
+        openChapterIds.has(
+          realmId
+        );
+
+      const isActive =
+        realmIsOpen &&
+        openSequenceIds.has(
+          sequenceId
+        );
+
+      card.hidden =
+        !realmIsOpen;
+
+      card.classList.toggle(
+        "is-active",
+        isActive
+      );
+
+      const button =
+        card.querySelector(
+          ".sequence-navigation-toggle"
+        );
+
+      const actionLabel =
+        card.querySelector(
+          ".sequence-navigation-action-label"
+        );
+
+      const symbol =
+        card.querySelector(
+          ".sequence-navigation-symbol"
+        );
+
+      if (button) {
+        button.setAttribute(
+          "aria-expanded",
+          String(isActive)
+        );
+      }
+
+      if (actionLabel) {
+        actionLabel.textContent =
+          isActive
+            ? "Close Sequence"
+            : "Explore Sequence";
+      }
+
+      if (symbol) {
+        symbol.textContent =
+          isActive ? "↑" : "↓";
+      }
+    });
+
     const pleromaThreshold =
       timeline.querySelector(
         ".pleroma-threshold"
@@ -3450,6 +3757,9 @@ function initializeRealmNavigation(
       pleromaThreshold.hidden =
         !openChapterIds.has(
           "realm-pleroma"
+        ) ||
+        !openSequenceIds.has(
+          "sequence-pleroma-first-emanations"
         );
     }
 
@@ -3546,6 +3856,55 @@ function initializeRealmNavigation(
               .realmNavigationToggle ||
             ""
           );
+        }
+      );
+    });
+
+  sequenceCards
+    .map(card =>
+      card.querySelector(
+        ".sequence-navigation-toggle"
+      )
+    )
+    .filter(Boolean)
+    .forEach(button => {
+      button.addEventListener(
+        "click",
+        () => {
+          const sequenceId =
+            button.dataset
+              .sequenceNavigationToggle ||
+            "";
+
+          const sequence =
+            sequenceById.get(
+              sequenceId
+            );
+
+          if (
+            !sequence ||
+            !openChapterIds.has(
+              sequence.realmId
+            )
+          ) {
+            return;
+          }
+
+          if (
+            openSequenceIds.has(
+              sequenceId
+            )
+          ) {
+            openSequenceIds.delete(
+              sequenceId
+            );
+          } else {
+            openSequenceIds.add(
+              sequenceId
+            );
+          }
+
+          applyRealmSelection("");
         }
       );
     });
