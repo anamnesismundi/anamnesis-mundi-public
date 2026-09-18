@@ -3948,12 +3948,14 @@ async function renderTimeline() {
           lastRenderedEvent.offsetHeight
         : axisStart;
 
+    const axisLength = Math.max(
+      0,
+      axisEnd - axisStart
+    );
+
     timeline.style.setProperty(
       "--timeline-length",
-      `${Math.max(
-        0,
-        axisEnd - axisStart
-      )}px`
+      `${axisLength}px`
     );
 
     const eventAxisPosition =
@@ -3963,7 +3965,11 @@ async function renderTimeline() {
             `[data-event-id="${eventId}"]`
           );
 
-        if (!eventElement) {
+        if (
+          !eventElement ||
+          eventElement.hidden ||
+          window.getComputedStyle(eventElement).display === "none"
+        ) {
           return null;
         }
 
@@ -3980,22 +3986,75 @@ async function renderTimeline() {
         );
       };
 
+    const realmAxisPosition =
+      realmId => {
+        const realmRegion =
+          timeline.querySelector(
+            `.realm-region[data-realm-id="${CSS.escape(
+              realmId
+            )}"]`
+          );
+
+        if (
+          !realmRegion ||
+          realmRegion.hidden ||
+          window.getComputedStyle(realmRegion).display === "none"
+        ) {
+          return null;
+        }
+
+        const timelineRect =
+          timeline.getBoundingClientRect();
+
+        const realmRect =
+          realmRegion.getBoundingClientRect();
+
+        return Math.max(
+          0,
+          realmRect.top -
+            timelineRect.top -
+            axisStart
+        );
+      };
+
+    [
+      "--axis-rupture-fade",
+      "--axis-rupture",
+      "--axis-demiurgic-fade",
+      "--axis-demiurgic",
+      "--axis-material-fade",
+      "--axis-material",
+      "--axis-primordial-fade",
+      "--axis-primordial"
+    ].forEach(propertyName =>
+      timeline.style.removeProperty(propertyName)
+    );
+
     const rupturePosition =
       eventAxisPosition(
         "event-sophia-independent-generation"
       );
 
     const demiurgicPosition =
+      realmAxisPosition(
+        "realm-demiurgic-order"
+      ) ??
       eventAxisPosition(
         "event-yaldabaoth-emergence"
       );
 
     const materialPosition =
+      realmAxisPosition(
+        "realm-material-cosmos"
+      ) ??
       eventAxisPosition(
         "event-ordering-material-cosmos"
       );
 
     const primordialHumanityPosition =
+      realmAxisPosition(
+        "realm-primordial-humanity"
+      ) ??
       eventAxisPosition(
         "event-adam-archontic-paradise"
       );
@@ -4015,40 +4074,41 @@ async function renderTimeline() {
       );
     }
 
+    const realmAxisFadeLength = 120;
+
     if (demiurgicPosition !== null) {
       timeline.style.setProperty(
+        "--axis-demiurgic-fade",
+        `${demiurgicPosition}px`
+      );
+
+      timeline.style.setProperty(
         "--axis-demiurgic",
-        `${demiurgicPosition + 20}px`
+        `${demiurgicPosition + realmAxisFadeLength}px`
       );
     }
 
     if (materialPosition !== null) {
       timeline.style.setProperty(
         "--axis-material-fade",
-        `${Math.max(
-          0,
-          materialPosition - 220
-        )}px`
+        `${materialPosition}px`
       );
 
       timeline.style.setProperty(
         "--axis-material",
-        `${materialPosition + 20}px`
+        `${materialPosition + realmAxisFadeLength}px`
       );
     }
 
     if (primordialHumanityPosition !== null) {
       timeline.style.setProperty(
         "--axis-primordial-fade",
-        `${Math.max(
-          0,
-          primordialHumanityPosition - 220
-        )}px`
+        `${primordialHumanityPosition}px`
       );
 
       timeline.style.setProperty(
         "--axis-primordial",
-        `${primordialHumanityPosition + 20}px`
+        `${primordialHumanityPosition + realmAxisFadeLength}px`
       );
     }
   }
