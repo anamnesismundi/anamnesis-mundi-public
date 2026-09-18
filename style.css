@@ -8790,3 +8790,268 @@ html body .timeline
   justify-content: flex-start;
   text-align: left;
 }
+
+
+/* ============================================================
+   PUBLIC-SAFE REALM-BOUNDARY AXIS COLOR OVERRIDE — 2026-09-18
+   ============================================================ */
+.timeline::before {
+  top: var(--timeline-start, 478px) !important;
+  bottom: auto !important;
+  height: var(--timeline-length, 0px) !important;
+  background: linear-gradient(
+    to bottom,
+    var(--origin) 0,
+    var(--origin) 130px,
+    var(--emanation) 330px,
+    var(--emanation) var(--axis-rupture-fade, 58%),
+    var(--rupture) var(--axis-rupture, 66%),
+    var(--rupture) var(--axis-demiurgic-fade, 72%),
+    var(--demiurgic) var(--axis-demiurgic, 76%),
+    var(--demiurgic) var(--axis-material-fade, 84%),
+    var(--material) var(--axis-material, 88%),
+    var(--material) var(--axis-primordial-fade, 96%),
+    var(--primordial, var(--material)) var(--axis-primordial, 98%),
+    var(--primordial, var(--material)) 100%
+  ) !important;
+}
+
+
+/* ============================================================
+   NON-SYMBOLIC LUMINOUS NODES — 2026-09-17
+   Replaces the circumpunct-like outlined nodes with continuous
+   radial light. No ring, border, or separately defined centre.
+   ============================================================ */
+
+.begin-node,
+.pleroma-threshold-node {
+  border: 0 !important;
+  border-radius: 50%;
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(250, 237, 193, 0.98) 0%,
+      rgba(238, 218, 158, 0.9) 22%,
+      rgba(205, 186, 122, 0.56) 48%,
+      rgba(184, 169, 128, 0.2) 72%,
+      rgba(184, 169, 128, 0) 100%
+    ) !important;
+}
+
+.begin-node {
+  width: 27px;
+  height: 27px;
+  box-shadow:
+    0 0 18px rgba(205, 186, 122, 0.2),
+    0 0 42px rgba(184, 169, 128, 0.1);
+}
+
+.begin:hover .begin-node,
+.begin:focus-visible .begin-node {
+  border-color: transparent;
+  box-shadow:
+    0 0 24px rgba(221, 208, 168, 0.3),
+    0 0 52px rgba(184, 169, 128, 0.15);
+}
+
+.pleroma-threshold-node {
+  width: 18px;
+  height: 18px;
+  box-shadow:
+    0 0 14px rgba(205, 186, 122, 0.18),
+    0 0 30px rgba(184, 169, 128, 0.09);
+  animation:
+    unfolding-light-pulse 3.1s ease-in-out infinite;
+}
+
+@keyframes chronology-node-pulse {
+  0%,
+  100% {
+    transform: scale(0.96);
+    opacity: 0.86;
+    box-shadow:
+      0 0 16px rgba(205, 186, 122, 0.17),
+      0 0 38px rgba(184, 169, 128, 0.08);
+  }
+
+  50% {
+    transform: scale(1.08);
+    opacity: 1;
+    box-shadow:
+      0 0 26px rgba(221, 208, 168, 0.32),
+      0 0 56px rgba(184, 169, 128, 0.15);
+  }
+}
+
+@keyframes unfolding-light-pulse {
+  0%,
+  100% {
+    transform: scale(0.97);
+    opacity: 0.88;
+    box-shadow:
+      0 0 12px rgba(205, 186, 122, 0.16),
+      0 0 26px rgba(184, 169, 128, 0.07);
+  }
+
+  50% {
+    transform: scale(1.06);
+    opacity: 1;
+    box-shadow:
+      0 0 18px rgba(221, 208, 168, 0.25),
+      0 0 36px rgba(184, 169, 128, 0.12);
+  }
+}
+
+@media (max-width: 700px) {
+  .begin-node {
+    width: 25px;
+    height: 25px;
+  }
+
+  .pleroma-threshold-node {
+    width: 17px;
+    height: 17px;
+    margin-left: 11.5px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pleroma-threshold-node {
+    animation: none;
+  }
+}
+
+
+/* ============================================================
+   PLEROMA TIMELINE — NEUTRAL LINEAR EVENT TICKS — 2026-09-18
+   Replaces the outlined origin/emanation circles with short,
+   non-emblematic luminous ticks centred on the chronology axis.
+   ============================================================ */
+
+.event:not([data-entity-id="entity-monad"])[data-phase-color="origin"]::after,
+.event:not([data-entity-id="entity-monad"])[data-phase-color="emanation"]::after {
+  top: 70px;
+  width: 18px;
+  height: 2px;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background:
+    linear-gradient(
+      to right,
+      transparent 0%,
+      var(--phase-color) 38%,
+      var(--phase-color) 62%,
+      transparent 100%
+    ) !important;
+  box-shadow:
+    0 0 5px var(--phase-color) !important;
+  opacity: 0.82;
+}
+
+.event:nth-of-type(odd):not([data-entity-id="entity-monad"])[data-phase-color="origin"]::after,
+.event:nth-of-type(odd):not([data-entity-id="entity-monad"])[data-phase-color="emanation"]::after {
+  right: -9px;
+  left: auto;
+}
+
+.event:nth-of-type(even):not([data-entity-id="entity-monad"])[data-phase-color="origin"]::after,
+.event:nth-of-type(even):not([data-entity-id="entity-monad"])[data-phase-color="emanation"]::after {
+  left: -9px;
+  right: auto;
+}
+
+.event[data-entity-id="entity-barbelo"]::after {
+  top: 70px !important;
+  width: 22px !important;
+  height: 2px !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background:
+    linear-gradient(
+      to right,
+      transparent 0%,
+      rgba(234, 221, 181, 0.76) 36%,
+      rgba(240, 226, 181, 0.98) 50%,
+      rgba(234, 221, 181, 0.76) 64%,
+      transparent 100%
+    ) !important;
+  box-shadow:
+    0 0 6px rgba(205, 186, 122, 0.4) !important;
+  opacity: 0.9;
+}
+
+.event:nth-of-type(odd)[data-entity-id="entity-barbelo"]::after {
+  right: -11px !important;
+  left: auto !important;
+}
+
+.event:nth-of-type(even)[data-entity-id="entity-barbelo"]::after {
+  left: -11px !important;
+  right: auto !important;
+}
+
+@media (max-width: 700px) {
+  .event:not([data-entity-id="entity-monad"])[data-phase-color="origin"]::after,
+  .event:not([data-entity-id="entity-monad"])[data-phase-color="emanation"]::after,
+  .event[data-entity-id="entity-barbelo"]::after {
+    left: 20px !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+  }
+}
+
+
+/* ============================================================
+   ALL TIMELINE CARDS — NEUTRAL LINEAR EVENT-TICK RULE — 2026-09-18
+   From Sophia's rupture onward, and for every future chronology
+   card, phase-specific emblems give way to one neutral map key.
+   Barbelo retains its approved warmer, longer tick; Monad has no
+   ordinary event marker.
+   ============================================================ */
+
+.event:not([data-entity-id="entity-monad"]):not([data-entity-id="entity-barbelo"])::after {
+  top: 70px !important;
+  width: 18px !important;
+  height: 2px !important;
+  border: 0 !important;
+  outline: 0 !important;
+  border-radius: 0 !important;
+  clip-path: none !important;
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+  background-color: transparent !important;
+  background-image:
+    linear-gradient(
+      to right,
+      transparent 0%,
+      var(--phase-color) 38%,
+      var(--phase-color) 62%,
+      transparent 100%
+    ) !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 100% 100% !important;
+  box-shadow:
+    0 0 5px var(--phase-color) !important;
+  filter: none !important;
+  transform: none !important;
+  opacity: 0.82;
+}
+
+.event:nth-of-type(odd):not([data-entity-id="entity-monad"]):not([data-entity-id="entity-barbelo"])::after {
+  right: -9px !important;
+  left: auto !important;
+}
+
+.event:nth-of-type(even):not([data-entity-id="entity-monad"]):not([data-entity-id="entity-barbelo"])::after {
+  left: -9px !important;
+  right: auto !important;
+}
+
+@media (max-width: 700px) {
+  .event:not([data-entity-id="entity-monad"]):not([data-entity-id="entity-barbelo"])::after {
+    left: 20px !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+  }
+}
