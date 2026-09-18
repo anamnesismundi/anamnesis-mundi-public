@@ -8721,6 +8721,25 @@ html body .timeline .event
    Names and compact labels stay intact; prose and citations reflow.
    ========================================================== */
 
+[data-sequence-realm-id="realm-pleroma"] .sequence-navigation-name {
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+}
+
+[data-sequence-realm-id="realm-pleroma"] .sequence-navigation-subtitle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.32em;
+}
+
+[data-sequence-realm-id="realm-pleroma"] .sequence-subtitle-unit {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+
+
 .pleroma-atomic-card > h2,
 .pleroma-atomic-card .group-member h3,
 .pleroma-atomic-card .aeon-domain-title h3,
@@ -8770,6 +8789,11 @@ html body .timeline .event
 }
 
 @media (max-width: 700px) {
+  [data-sequence-realm-id="realm-pleroma"] .sequence-navigation-name {
+    white-space: normal;
+    text-wrap: balance;
+  }
+
   .pleroma-atomic-card .pleroma-explorer-title {
     white-space: normal;
     text-wrap: balance;
@@ -9117,4 +9141,196 @@ html body .timeline
 @media (max-width: 700px) {
   .pleroma-threshold-label { font-size: 9.6px !important; }
   .anatomical-region > summary { font-size: 8.4px !important; }
+}/* ==========================================================
+   NESTED CHRONOLOGICAL SEQUENCES
+   ========================================================== */
+
+/*
+  Sequences are navigation chapters inside an ontological realm.
+  They remain visually subordinate to the realm introduction and do
+  not alter the established event cards, axis, or ambient field.
+*/
+.sequence-navigation-card {
+  --sequence-accent: var(--gold-base);
+
+  position: relative;
+  z-index: 4;
+  isolation: isolate;
+  width: min(560px, calc(100% - 112px));
+  margin: 0 auto 0 0;
+  border: 0;
+  background: transparent;
 }
+
+/*
+  Closed sequences remain transparent. An open sequence receives only
+  a restrained, flat realm-coloured surface: no glow, gradient, border,
+  line, or shadow competes with the chronology axis and event cards.
+*/
+.sequence-navigation-card::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: transparent;
+  pointer-events: none;
+  transition: background-color 320ms ease;
+}
+
+.sequence-navigation-card[data-sequence-realm-id="realm-pleroma"] {
+  --sequence-accent: var(--emanation);
+}
+
+.sequence-navigation-card[data-sequence-realm-id="realm-demiurgic-order"] {
+  --sequence-accent: var(--demiurgic);
+}
+
+.sequence-navigation-card[data-sequence-realm-id="realm-material-cosmos"] {
+  --sequence-accent: var(--material);
+}
+
+.sequence-navigation-card[data-sequence-realm-id="realm-primordial-humanity"] {
+  --sequence-accent: var(--primordial);
+}
+
+.sequence-navigation-toggle {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 34px;
+  align-items: center;
+  width: 100%;
+  min-height: 148px;
+  padding: 30px 12px 32px;
+  border: 0;
+  color: inherit;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+
+.sequence-navigation-toggle:focus-visible {
+  outline: 1px solid color-mix(
+    in srgb,
+    var(--sequence-accent) 62%,
+    transparent
+  );
+  outline-offset: 5px;
+}
+
+.sequence-navigation-copy,
+.sequence-navigation-kicker,
+.sequence-navigation-name,
+.sequence-navigation-subtitle {
+  display: block;
+}
+
+.sequence-navigation-copy {
+  min-width: 0;
+}
+
+.sequence-navigation-kicker {
+  margin-bottom: 8px;
+  color: var(--sequence-accent);
+  font-family: Arial, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.sequence-navigation-name {
+  color: var(--explorer-title-color, #ddd6c8);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 1.28;
+  text-wrap: balance;
+}
+
+.sequence-navigation-subtitle {
+  margin-top: 8px;
+  color: var(--explorer-copy-color, #aaa49a);
+  font-family: Arial, sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: 0.035em;
+  text-wrap: pretty;
+  opacity: 0.78;
+}
+
+.sequence-navigation-action {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  color: var(--sequence-accent);
+  font-family: Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: 0.82;
+}
+
+.sequence-navigation-symbol {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.sequence-navigation-card.is-active::before {
+  background-color: color-mix(
+    in srgb,
+    var(--sequence-accent) 5%,
+    transparent
+  );
+}
+
+.sequence-navigation-card.is-active +
+.event {
+  margin-top: 0;
+}
+
+@media (max-width: 700px) {
+  .sequence-navigation-card {
+    width: calc(100% - 40px);
+    margin: 0 0 0 20px;
+  }
+
+  .sequence-navigation-toggle {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    min-height: 132px;
+    padding: 25px 10px 27px;
+  }
+
+  .sequence-navigation-name {
+    font-size: 1.1875rem;
+  }
+
+  .sequence-navigation-subtitle {
+    font-size: 0.75rem;
+  }
+
+  .sequence-navigation-action {
+    justify-content: flex-start;
+    font-size: 0.6875rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sequence-navigation-card::before {
+    transition: none;
+  }
+
+  .sequence-navigation-toggle {
+    scroll-behavior: auto;
+  }
+}
+
+
+
