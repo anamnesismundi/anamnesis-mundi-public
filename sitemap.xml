@@ -2,6 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://anamnesismundi.github.io/anamnesis-mundi-public/</loc>
-    <lastmod>2026-09-16</lastmod>
+    <lastmod>2026-09-18</lastmod>
+  </url>
+  <url>
+    <loc>https://anamnesismundi.github.io/anamnesis-mundi-public/chronology/monad/</loc>
+    <lastmod>2026-09-18</lastmod>
   </url>
 </urlset>
