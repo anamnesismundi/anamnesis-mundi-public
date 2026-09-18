@@ -32,7 +32,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260918-public-pleroma-source-summaries-1";
+const DATA_VERSION = "20260918-public-aeon-alias-remove-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -1198,12 +1198,6 @@ function createAeonMember(member) {
       ? `${sequenceNumber}/${sequenceTotal}`
       : "Aeon";
 
-  const alternativeNames =
-    createAlternativeNamesMarkup(
-      member,
-      "aeon-aliases"
-    );
-
   const isSophia =
     member.id === "entity-sophia";
 
@@ -1242,8 +1236,6 @@ function createAeonMember(member) {
       </h4>
 
       ${summary}
-
-      ${alternativeNames}
 
       ${
         isSophia
