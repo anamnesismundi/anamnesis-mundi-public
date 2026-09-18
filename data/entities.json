@@ -64,8 +64,8 @@
       "researchNotes": {
         "ontologicalPriority": "The Monad is represented outside the Pleroma in the visualization because it functions as the transcendent source prior to the ordered divine Fullness.",
         "apophaticCharacter": "The source relies heavily on negative or apophatic description: the supreme principle exceeds ordinary predicates, measurement, form and comprehension.",
-        "terminologyCaution": "The labels The Unknown God and The Uncontainable Light are useful comparative or interpretive descriptions but should not be treated as equally stable manuscript titles across all witnesses.",
-        "bythosCaution": "Bythos belongs particularly to Valentinian cosmological terminology and is therefore kept in the comparative layer rather than listed as a direct Sethian alternative name.",
+        "terminologyCaution": "The Frederik Wisse translation explicitly begins this discourse with “The Monad is a monarchy with nothing above it,” while Invisible Spirit is the recurrent designation throughout the passage. The title is therefore source-grounded in this translation but not treated as terminology exclusive to Sethianism.",
+        "bythosCaution": "Bythos is a Valentinian term for the primal Depth and is not displayed as a direct Sethian alternative name for the Monad.",
         "crossSourceCaution": "The Gospel of the Egyptians provides closely related Sethian language concerning the Great Invisible Spirit, but terminology from that text should remain source-attributed when it is not independently explicit in the Apocryphon of John."
       },
       "comparativeTraditions": [
@@ -154,7 +154,7 @@
       ],
       "notes": "Primary transcendent-source node for the Sethian Apocryphon of John branch. The public visualization intentionally places the Monad outside the Pleroma.",
       "dateAdded": "2026-08-11",
-      "lastReviewed": "2026-09-12",
+      "lastReviewed": "2026-09-17",
       "primarySourceIds": [
         "source-apocryphon-of-john"
       ],
