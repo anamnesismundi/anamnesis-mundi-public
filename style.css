@@ -9066,3 +9066,8 @@ html body .timeline
   display: inline-block;
   white-space: nowrap;
 }
+
+
+.twelve-aeons-context-note {
+  margin: 18px 0 0;
+}
