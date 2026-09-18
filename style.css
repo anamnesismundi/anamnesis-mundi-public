@@ -9071,3 +9071,10 @@ html body .timeline
 .twelve-aeons-context-note {
   margin: 18px 0 0;
 }
+
+
+/* Realm descriptor readability: +20% from the established 11px micro-label scale. */
+.realm-region-subtitle,
+.event.primary-entity[data-entity-id="entity-monad"] .period {
+  font-size: 0.825rem !important;
+}
