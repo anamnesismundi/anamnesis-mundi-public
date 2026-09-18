@@ -9073,8 +9073,12 @@ html body .timeline
 }
 
 
-/* Realm descriptor readability: +20% from the established 11px micro-label scale. */
-.realm-region-subtitle,
+/* Realm descriptor readability: exact +20% from each original component value.
+   Realm subtitle: 7px -> 8.4px. Monad descriptor: 10px -> 12px. */
+.realm-region-subtitle {
+  font-size: 8.4px !important;
+}
+
 .event.primary-entity[data-entity-id="entity-monad"] .period {
-  font-size: 0.825rem !important;
+  font-size: 12px !important;
 }
