@@ -32,7 +32,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260918-public-atomic-manuscript-sigla-1";
+const DATA_VERSION = "20260918-public-pleroma-source-summaries-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -1427,7 +1427,7 @@ function createSpiritualGenerationsCard() {
       </h2>
 
       <p>
-        Within the established structure of the Pleroma, the narrative places successive spiritual figures and generations within the four Great Luminary realms. These belong to the divine, archetypal order presented before Sophia's independent generation and the emergence of the lower cosmos.
+        From the foreknowledge of the perfect Mind, through the revelation of the will of the Invisible Spirit and Autogenes, the perfect heavenly Human comes forth as the first revelation and the truth. Named Pigera-Adamas and placed in the first aeon, he precedes the earthly Adam and functions within the narrative as the higher pattern of humanity from which the spiritual lineage unfolds.
       </p>
 
       <span class="group-sources source-block">
