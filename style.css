@@ -8774,3 +8774,19 @@ html body .timeline .event
     text-wrap: balance;
   }
 }
+
+
+/* Pleroma aliases follow the owning timeline side explicitly. */
+html body .timeline
+.event.pleroma-atomic-card.timeline-card-right
+.alternative-names-list {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+html body .timeline
+.event.pleroma-atomic-card.timeline-card-left
+.alternative-names-list {
+  justify-content: flex-start;
+  text-align: left;
+}
