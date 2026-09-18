@@ -32,7 +32,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260918-public-autogenes-source-summary-1";
+const DATA_VERSION = "20260918-public-atomic-manuscript-sigla-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -468,6 +468,65 @@ function createCitationGroupsFromSources(
     });
 }
 
+
+function createAtomicCitationMarkup(citation) {
+  const manuscriptClusterPattern =
+    /NHC\s+[IVXLCDM]+,\d+(?:\s*;\s*(?:(?:NHC\s+)?[IVXLCDM]+,\d+|BG\s+8502,\d+))*|BG\s+8502,\d+|CODEX\s+TCHACOS/gi;
+
+  let lastIndex = 0;
+  let markup = "";
+
+  String(citation).replace(
+    manuscriptClusterPattern,
+    (cluster, offset) => {
+      markup += escapeHtml(
+        String(citation).slice(lastIndex, offset)
+      );
+
+      const units = cluster
+        .split(/\s*;\s*/)
+        .filter(Boolean);
+
+      let activeSiglum = "";
+
+      markup += units
+        .map((unit, index) => {
+          let normalizedUnit = unit.trim();
+
+          if (/^NHC\s+/i.test(normalizedUnit)) {
+            activeSiglum = "NHC";
+          } else if (
+            activeSiglum === "NHC" &&
+            /^[IVXLCDM]+,\d+$/i.test(normalizedUnit)
+          ) {
+            normalizedUnit = `NHC ${normalizedUnit}`;
+          } else {
+            activeSiglum = "";
+          }
+
+          const separator =
+            index < units.length - 1
+              ? ";"
+              : "";
+
+          return `
+            <span class="citation-unit">${escapeHtml(normalizedUnit + separator)}</span>
+          `;
+        })
+        .join(" ");
+
+      lastIndex = offset + cluster.length;
+      return cluster;
+    }
+  );
+
+  markup += escapeHtml(
+    String(citation).slice(lastIndex)
+  );
+
+  return markup;
+}
+
 function createSourceRowsMarkup(rows) {
   return rows
     .filter(row =>
@@ -479,7 +538,7 @@ function createSourceRowsMarkup(rows) {
         <span class="source-list">
           ${row.citations
             .map(citation => `
-              <span class="source-item">${escapeHtml(citation)}</span>
+              <span class="source-item">${createAtomicCitationMarkup(citation)}</span>
             `)
             .join("")}
         </span>
