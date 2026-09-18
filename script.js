@@ -32,7 +32,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260918-public-pleroma-sequences-realm-bg-1";
+const DATA_VERSION = "20260918-public-pleroma-parity-axis-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -3844,14 +3844,26 @@ function initializeRealmNavigation(
       remains the browser's stable visual anchor while its own
       chronology is revealed or folded beneath it.
     */
+    /*
+      Realm and sequence folding changes both normal-flow card positions
+      and absolutely positioned ambient-region bounds. Reposition the
+      realm overlays first, then measure the axis on the following frame.
+      This keeps the axis start, length, and realm-colour transitions
+      deterministic regardless of toggle order.
+    */
     requestAnimationFrame(() => {
       synchronizeTimelineCardSides();
       positionMonadRegion();
-      updateTimelineStart();
 
       window.dispatchEvent(
         new Event("resize")
       );
+
+      requestAnimationFrame(() => {
+        synchronizeTimelineCardSides();
+        positionMonadRegion();
+        updateTimelineStart();
+      });
     });
   }
 
