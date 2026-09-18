@@ -32,7 +32,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260918-public-sethian-gnostic-data-1";
+const DATA_VERSION = "20260918-public-pleroma-atomic-wrap-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -908,7 +908,9 @@ function createPleromaticProcessMarkup(entity) {
   return `
     <details class="group-explorer pleromatic-process-explorer">
       <summary>
-        ${escapeHtml(process.explorerTitle || "Explore")}
+        <span class="pleroma-explorer-title">
+          ${escapeHtml(process.explorerTitle || "Explore")}
+        </span>
       </summary>
 
       <div class="pleromatic-process-members">
@@ -1019,7 +1021,7 @@ function createEntityCard(
 
   return `
     <article
-      class="event primary-entity"
+      class="event primary-entity${["entity-barbelo", "entity-autogenes"].includes(entity.id) ? " pleroma-atomic-card" : ""}"
       data-item-type="entity"
       data-entity-id="${escapeHtml(
         entity.id
@@ -1351,7 +1353,7 @@ function createSpiritualGenerationsCard() {
 
   return `
     <article
-      class="event primary-group spiritual-generations-card"
+      class="event primary-group spiritual-generations-card pleroma-atomic-card"
       data-item-type="spiritual-generations"
       data-spiritual-generations="true"
       data-phase-id="phase-divine-emanation"
@@ -1389,7 +1391,9 @@ function createSpiritualGenerationsCard() {
 
       <details class="group-explorer">
         <summary>
-          Explore The Spiritual Generations
+          <span class="pleroma-explorer-title">
+            Explore The Spiritual Generations
+          </span>
         </summary>
 
         <div class="group-members">
@@ -1460,7 +1464,7 @@ function createTwelveAeonsCard(
 
   return `
     <article
-      class="event primary-group twelve-aeons-group"
+      class="event primary-group twelve-aeons-group pleroma-atomic-card"
       data-item-type="group"
       data-group-id="${escapeHtml(
         group.id
@@ -1493,9 +1497,10 @@ function createTwelveAeonsCard(
               class="group-explorer aeon-explorer"
             >
               <summary>
-                Explore ${escapeHtml(
-                  group.displayName
-                )}
+                ${group.id === "group-four-luminaries"
+                  ? `<span class="pleroma-explorer-title">Explore ${escapeHtml(group.displayName)}</span>`
+                  : `Explore ${escapeHtml(group.displayName)}`
+                }
               </summary>
 
               <div class="aeon-domains">
@@ -2260,7 +2265,7 @@ function createGroupCard(
 
   return `
     <article
-      class="event primary-group"
+      class="event primary-group${group.id === "group-four-luminaries" ? " pleroma-atomic-card" : ""}"
       data-item-type="group"
       data-group-id="${escapeHtml(
         group.id
@@ -2384,7 +2389,7 @@ const contextualNote =
   
   return `
     <article
-      class="event primary-event"
+      class="event primary-event${event.id === "event-sophia-independent-generation" ? " pleroma-atomic-card" : ""}"
       data-item-type="event"
       data-event-id="${escapeHtml(
         event.id
