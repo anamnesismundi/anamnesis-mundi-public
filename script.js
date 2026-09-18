@@ -32,7 +32,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260918-public-pleroma-parity-axis-1";
+const DATA_VERSION = "20260918-public-pleroma-parity-axis-2";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -4429,17 +4429,29 @@ async function renderTimeline() {
 
     const realmAxisPosition =
       realmId => {
-        const realmRegion =
-          timeline.querySelector(
-            `.realm-region[data-realm-id="${CSS.escape(
-              realmId
-            )}"]`
-          );
+        /*
+          In folded navigation, the realm header is the stable visual
+          boundary. Ambient overlays are absolutely positioned and are
+          recalculated asynchronously, so using them as color anchors can
+          expose a stale position during rapid fold/unfold changes.
+        */
+        const realmBoundary =
+          usesChapterNavigation
+            ? timeline.querySelector(
+                `[data-realm-navigation-card="${CSS.escape(
+                  realmId
+                )}"]`
+              )
+            : timeline.querySelector(
+                `.realm-region[data-realm-id="${CSS.escape(
+                  realmId
+                )}"]`
+              );
 
         if (
-          !realmRegion ||
-          realmRegion.hidden ||
-          window.getComputedStyle(realmRegion).display === "none"
+          !realmBoundary ||
+          realmBoundary.hidden ||
+          window.getComputedStyle(realmBoundary).display === "none"
         ) {
           return null;
         }
@@ -4447,12 +4459,12 @@ async function renderTimeline() {
         const timelineRect =
           timeline.getBoundingClientRect();
 
-        const realmRect =
-          realmRegion.getBoundingClientRect();
+        const boundaryRect =
+          realmBoundary.getBoundingClientRect();
 
         return Math.max(
           0,
-          realmRect.top -
+          boundaryRect.top -
             timelineRect.top -
             axisStart
         );
