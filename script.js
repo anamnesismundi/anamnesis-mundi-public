@@ -986,9 +986,15 @@ function createEntityCard(
       </span>
 
       <h2>
-        ${escapeHtml(
-          entity.displayName
-        )}
+        ${
+          entity.id === "entity-monad"
+            ? `<a
+                class="entity-page-link"
+                href="chronology/monad/"
+                aria-label="Open the individual Monad page"
+              >${escapeHtml(entity.displayName)}</a>`
+            : escapeHtml(entity.displayName)
+        }
       </h2>
 
       ${summary}
