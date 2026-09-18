@@ -99,7 +99,7 @@
         "entity-peace",
         "entity-sophia"
       ],
-      "summary": "The source places three aeons with each of the four lights, forming twelve aeons that belong to and attend the divine Autogenes. The first eleven aeons are presented here primarily as members of the Pleromatic order; no separate narrative action is assigned to them in this passage. Sophia, the twelfth aeon, is the exception: her independent action becomes the threshold of the cosmological rupture that follows.",
+      "summary": "The source places three aeons with each of the four lights, forming twelve aeons that belong to and attend the divine Autogenes.",
       "overview": "The Apocryphon of John associates three aeons with each of the Four Great Luminaries. Armozel is associated with Grace, Truth and Form; Oroiael with Afterthought, Perception and Memory; Daveithai with Understanding, Love and Idea; and Eleleth with Perfection, Peace and Sophia. Anamnesis Mundi represents this textual sequence as twelve positions for navigational clarity. The numbering is editorial and should not be understood as an ancient numbered system.",
       "structure": {
         "type": "four-triads",
@@ -171,7 +171,8 @@
       ],
       "primarySourceCitations": [
         "THE SECRET BOOK OF JOHN (THE APOCRYPHON OF JOHN), NHC II,1; III,1; IV,1; BG 8502,2"
-      ]
+      ],
+      "contextualNote": "The first eleven aeons are presented here primarily as members of the Pleromatic order; no separate narrative action is assigned to them in this passage. Sophia, the twelfth aeon, is the exception: her independent action becomes the threshold of the cosmological rupture that follows."
     },
     {
       "id": "group-twelve-authorities",
