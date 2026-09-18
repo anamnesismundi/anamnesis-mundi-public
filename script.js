@@ -32,7 +32,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260918-public-realm-color-axis-1";
+const DATA_VERSION = "20260918-public-realm-color-axis-2";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -4482,6 +4482,30 @@ async function renderTimeline() {
     ].forEach(propertyName =>
       timeline.style.removeProperty(propertyName)
     );
+
+    const demiurgicPosition =
+      realmAxisPosition(
+        "realm-demiurgic-order"
+      ) ??
+      eventAxisPosition(
+        "event-yaldabaoth-emergence"
+      );
+
+    const materialPosition =
+      realmAxisPosition(
+        "realm-material-cosmos"
+      ) ??
+      eventAxisPosition(
+        "event-ordering-material-cosmos"
+      );
+
+    const primordialHumanityPosition =
+      realmAxisPosition(
+        "realm-primordial-humanity"
+      ) ??
+      eventAxisPosition(
+        "event-adam-archontic-paradise"
+      );
 
     /*
       Axis colours belong to ontological realms, not to individual
