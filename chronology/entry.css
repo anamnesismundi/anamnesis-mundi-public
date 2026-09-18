@@ -70,7 +70,7 @@ a {
   color: rgba(203, 194, 177, 0.58);
   text-align: center;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.4;
   letter-spacing: 0.24em;
   pointer-events: none;
@@ -361,7 +361,7 @@ a {
 .entry-nav-label {
   display: block;
   color: var(--text-muted);
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .entry-nav-title {
@@ -375,7 +375,7 @@ a {
   padding: 26px 24px 42px;
   color: var(--text-muted);
   font-family: Arial, sans-serif;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0.18em;
   text-align: center;
   text-transform: uppercase;
@@ -476,7 +476,7 @@ body.entry-monad::after {
 @media (max-width: 700px) {
   .research-note {
     padding: 12px 18px 10px;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1.4;
     letter-spacing: 0.24em;
   }
@@ -544,7 +544,7 @@ body.entry-monad::after {
 
 .entry-monad .provenance {
   gap: 7px;
-  font-size: 9px;
+  font-size: 10.8px;
   letter-spacing: 0.28em;
 }
 
@@ -555,7 +555,7 @@ body.entry-monad::after {
 
 .entry-monad .period {
   margin-top: 22px;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0.38em;
 }
 
@@ -588,7 +588,7 @@ body.entry-monad::after {
 .entry-monad .section-label,
 .entry-monad .metadata-label,
 .entry-monad .textual-note-label {
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0.18em;
 }
 
@@ -652,7 +652,7 @@ body.entry-monad::after {
   margin-bottom: 5px;
   color: var(--gold-editorial);
   font-family: Arial, sans-serif;
-  font-size: 0.6875rem;
+  font-size: 0.825rem;
   line-height: 1.4;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -661,7 +661,7 @@ body.entry-monad::after {
 .editorial-value {
   color: #aaa49a;
   font-family: Arial, sans-serif;
-  font-size: 0.71875rem;
+  font-size: 0.8625rem;
   line-height: 1.6;
   letter-spacing: 0.045em;
   text-transform: uppercase;
@@ -747,7 +747,7 @@ body.entry-monad::after {
 }
 
 .entry-monad .comparison-category {
-  font-size: 8px;
+  font-size: 9.6px;
   letter-spacing: 0.2em;
 }
 
@@ -767,7 +767,7 @@ body.entry-monad::after {
 .entry-monad .comparison-sources {
   max-width: 720px;
   margin: 13px auto 0;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.6;
   letter-spacing: 0.055em;
 }
@@ -809,7 +809,7 @@ body.entry-monad::after {
 
 .entry-nav-label {
   color: var(--gold-editorial);
-  font-size: 9px;
+  font-size: 10.8px;
   letter-spacing: 0.17em;
 }
 
@@ -824,7 +824,7 @@ body.entry-monad::after {
 @media (max-width: 700px) {
   .research-note {
     padding: 10px 16px 9px;
-    font-size: 8px;
+    font-size: 9.6px;
     line-height: 1.5;
     letter-spacing: 0.16em;
   }
@@ -890,7 +890,7 @@ body.entry-monad::after {
   margin-top: 25px;
   color: var(--gold-editorial);
   font-family: Arial, sans-serif;
-  font-size: 0.6875rem;
+  font-size: 0.825rem;
   line-height: 1.5;
   letter-spacing: 0.14em;
   text-decoration: none;
@@ -934,7 +934,7 @@ body.entry-monad::after {
   margin-top: 10px;
   color: #aaa49a;
   font-family: Arial, sans-serif;
-  font-size: 0.71875rem;
+  font-size: 0.8625rem;
   line-height: 1.6;
   letter-spacing: 0.055em;
   text-transform: uppercase;
