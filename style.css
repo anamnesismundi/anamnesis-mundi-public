@@ -8712,3 +8712,65 @@ html body .timeline .event
   outline: 1px solid rgba(184, 169, 128, 0.58);
   outline-offset: 7px;
 }
+
+
+/* ==========================================================
+   PLEROMA — ATOMIC SEMANTIC-UNIT WRAPPING
+   Public transfer of the approved private Pleroma rule.
+   Names and compact labels stay intact; prose and citations reflow.
+   ========================================================== */
+
+.pleroma-atomic-card > h2,
+.pleroma-atomic-card .group-member h3,
+.pleroma-atomic-card .aeon-domain-title h3,
+.pleroma-atomic-card .aeon-member h4,
+.pleroma-atomic-card .pleromatic-process-member h3,
+.pleroma-atomic-card .pleromatic-process-note h3,
+.pleroma-atomic-card .comparative-tradition h3 {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.pleroma-atomic-card .alternative-names-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: inherit;
+  gap: 0 0.56em;
+}
+
+.pleroma-atomic-card .alternative-names-line {
+  display: contents;
+}
+
+.pleroma-atomic-card .alternative-name {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.pleroma-atomic-card .alternative-name:not(:last-child)::after {
+  content: " ·";
+  padding: 0 0.28em 0 0;
+}
+
+.pleroma-atomic-card .pleromatic-process-member h3,
+.pleroma-atomic-card .pleromatic-process-subtitle,
+.pleroma-atomic-card .aeon-domain-title h3,
+.pleroma-atomic-card .aeon-member h4,
+.pleroma-atomic-card .group-member h3 {
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+}
+
+.pleroma-atomic-card .pleroma-explorer-title {
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+  .pleroma-atomic-card .pleroma-explorer-title {
+    white-space: normal;
+    text-wrap: balance;
+  }
+}
