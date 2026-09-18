@@ -6,14 +6,12 @@
   background: linear-gradient(
     to bottom,
     var(--emanation) 0,
-    var(--emanation) var(--axis-rupture-fade, 58%),
-    var(--rupture) var(--axis-rupture, 66%),
-    var(--rupture) var(--axis-demiurgic-fade, 72%),
-    var(--demiurgic) var(--axis-demiurgic, 76%),
-    var(--demiurgic) var(--axis-material-fade, 84%),
-    var(--material) var(--axis-material, 88%),
-    var(--material) var(--axis-primordial-fade, 96%),
-    var(--primordial, var(--material)) var(--axis-primordial, 98%),
+    var(--emanation) var(--axis-demiurgic-fade, 100%),
+    var(--demiurgic) var(--axis-demiurgic, 100%),
+    var(--demiurgic) var(--axis-material-fade, 100%),
+    var(--material) var(--axis-material, 100%),
+    var(--material) var(--axis-primordial-fade, 100%),
+    var(--primordial, var(--material)) var(--axis-primordial, 100%),
     var(--primordial, var(--material)) 100%
   ) !important;
 }
