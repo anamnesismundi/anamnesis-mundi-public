@@ -16,6 +16,9 @@ body.entry-monad-research::after { height:900px;background:radial-gradient(circl
 .entry-monad-research .entry-hero h1 { margin:24px 0 25px;text-align:left;font-size:clamp(40px,5.7vw,68px);line-height:1.02; }
 .entry-monad-research .entry-deck { margin:0;text-align:left; }
 .entry-monad-research .hero-chronology-link { margin-top:25px;text-align:left; }
+/* Preserve a clear paragraph break inside the Monad introductory deck. */
+.entry-monad-research .entry-hero .entry-deck + .entry-deck { margin-top: 18px; }
+
 .entry-monad-research .entry-section,.entry-monad-research .entry-section h2,.entry-monad-research .entry-section>p,.entry-monad-research .section-followup,.entry-monad-research .editorial-lines,.entry-monad-research .editorial-line,.entry-monad-research .editorial-value,.entry-monad-research .source-designations-line,.entry-monad-research .source-term-list,.entry-monad-research .source-term,.entry-monad-research .witness-translation-panel,.entry-monad-research .recension-grid,.entry-monad-research .recension-block,.entry-monad-research .translations-consulted,.entry-monad-research .chronology-return { text-align:left; }
 .entry-monad-research .entry-section h2 { font-size:clamp(21px,2.6vw,28px);line-height:1.22; }
 .entry-monad-research .editorial-lines { max-width:760px;margin-left:0;margin-right:0; }
