@@ -23,7 +23,7 @@
           "notes": "Pleroma is represented by Anamnesis Mundi as the higher divine fullness or realm rather than as an individual entity in the chronological sequence."
         }
       ],
-      "summary": "The divine Fullness of aeons and luminous powers that unfolds through Barbelo and the self-generated Son, Autogenes. It is the ordered realm of divine multiplicity, perfection, and light proceeding from the ultimate Source.",
+      "summary": "The divine Fullness of aeons and luminous powers that unfolds through Barbelo and the self-generated Son, Autogenes. This realm follows the Sethian architecture of The Secret Book of John; the distinct Valentinian organization of the Pleroma, including its Ogdoad, Decad, and Duodecad, is presented only in a clearly marked comparative explorer.",
       "display": {
         "mode": "ambient-region",
         "label": "PLEROMA",
@@ -123,7 +123,7 @@
     },
     {
       "id": "realm-demiurgic-order",
-      "displayName": "Demiurgic Order",
+      "displayName": "The Archontic Heavens",
       "realmType": "lower-archontic-realm",
       "alternativeNames": [
         "The Archontic Order",
@@ -142,11 +142,11 @@
           "notes": "The ambient region visualizes the established lower archontic order beginning with Yaldabaoth and continuing through the formation and expansion of his hierarchy."
         }
       ],
-      "summary": "The lower archontic order established by Yaldabaoth and governed through subordinate authorities and powers. It is a derivative cosmic hierarchy fashioned in imitation of the higher aeonic order.",
+      "summary": "The archontic heavens established by Yaldabaoth and governed through subordinate authorities and powers. They form the ruling celestial hierarchy of the lower cosmic order. In Valentinian comparison, this deficient order lies outside the Pleroma and may be discussed in relation to the Kenoma, but The Secret Book of John does not itself name this realm Kenoma.",
       "display": {
         "mode": "ambient-region",
-        "label": "",
-        "subtitle": "THE LOWER ARCHONTIC REALM",
+        "label": "THE ARCHONTIC HEAVENS",
+        "subtitle": "THE LOWER COSMIC ORDER",
         "timelineBehavior": "background-realm",
         "topOffset": 0,
         "bottomOffset": 80
