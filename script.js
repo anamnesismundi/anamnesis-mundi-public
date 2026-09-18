@@ -32,7 +32,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260918-public-pleroma-parity-axis-3";
+const DATA_VERSION = "20260918-public-axis-state-machine-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -4324,7 +4324,7 @@ async function renderTimeline() {
         const firstVisibleEvent =
           Array.from(
             timeline.querySelectorAll(
-              ".event"
+              '.event:not([data-entity-id="entity-monad"])'
             )
           ).find(
             eventElement =>
