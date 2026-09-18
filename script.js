@@ -32,7 +32,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260918-public-the-monad-1";
+const DATA_VERSION = "20260918-public-sethian-gnostic-data-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -920,6 +920,50 @@ function createPleromaticProcessMarkup(entity) {
 }
 
 
+function createMonadProvenanceMarkup(
+  entity,
+  database
+) {
+  if (
+    entity?.id !== "entity-monad" ||
+    !Array.isArray(entity.traditionIds)
+  ) {
+    return "";
+  }
+
+  const tradition =
+    entity.traditionIds
+      .map(traditionId =>
+        database.traditions.find(
+          item => item.id === traditionId
+        ) || null
+      )
+      .find(Boolean);
+
+  const label =
+    tradition?.name || "";
+
+  if (!label) {
+    return "";
+  }
+
+  return `
+    <span
+      class="source-tradition-markers"
+      aria-label="Source tradition: ${escapeHtml(label)}"
+    >
+      <span class="source-tradition-marker">
+        <span
+          class="source-tradition-book"
+          aria-hidden="true"
+        ></span>
+        <span>${escapeHtml(label)}</span>
+      </span>
+    </span>
+  `;
+}
+
+
 /* ==========================================================
    ENTITY CARD
    ========================================================== */
@@ -967,6 +1011,12 @@ function createEntityCard(
       database
     );
 
+  const provenance =
+    createMonadProvenanceMarkup(
+      entity,
+      database
+    );
+
   return `
     <article
       class="event primary-entity"
@@ -981,6 +1031,8 @@ function createEntityCard(
         phase ? phase.colorKey : ""
       )}"
     >
+      ${provenance}
+
       <span class="period">
         ${escapeHtml(phaseLabel)}
       </span>
