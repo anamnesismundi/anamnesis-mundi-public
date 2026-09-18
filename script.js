@@ -32,7 +32,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260918-public-aeon-structural-note-1";
+const DATA_VERSION = "20260918-public-aeon-structural-paragraph-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -1538,6 +1538,10 @@ function createTwelveAeonsCard(
       </h2>
 
       ${summary}
+
+      ${group.contextualNote
+        ? `<p class="twelve-aeons-context-note">${escapeHtml(group.contextualNote)}</p>`
+        : ""}
 
       ${groupSources}
 
