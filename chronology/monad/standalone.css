@@ -21,6 +21,9 @@ body.entry-monad-research::after { height:900px;background:radial-gradient(circl
 
 .entry-monad-research .entry-section,.entry-monad-research .entry-section h2,.entry-monad-research .entry-section>p,.entry-monad-research .section-followup,.entry-monad-research .editorial-lines,.entry-monad-research .editorial-line,.entry-monad-research .editorial-value,.entry-monad-research .source-designations-line,.entry-monad-research .source-term-list,.entry-monad-research .source-term,.entry-monad-research .witness-translation-panel,.entry-monad-research .recension-grid,.entry-monad-research .recension-block,.entry-monad-research .translations-consulted,.entry-monad-research .chronology-return { text-align:left; }
 .entry-monad-research .entry-section h2 { font-size:clamp(21px,2.6vw,28px);line-height:1.22; }
+/* Keep translator entries visibly separated in Translation History. */
+.entry-monad-research .entry-section[aria-labelledby="translations-heading"] > p + p { margin-top: 18px; }
+
 .entry-monad-research .editorial-lines { max-width:760px;margin-left:0;margin-right:0; }
 .entry-monad-research .editorial-line { padding:10px 0;border:0; }
 .entry-monad-research .editorial-line+.editorial-line { margin-top:8px; }
