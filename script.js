@@ -32,7 +32,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260918-public-pleroma-sequences-1";
+const DATA_VERSION = "20260918-public-pleroma-sequences-realm-bg-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -2814,19 +2814,34 @@ function positionRealmOverlay(
       timelineRect.top;
 
     if (realmIsOpen) {
-      const visibleElementRects =
-        elements
-          .filter(
-            element =>
-              !element.hidden &&
-              window.getComputedStyle(
-                element
-              ).display !== "none"
+      const visibleSequenceCards =
+        Array.from(
+          timeline.querySelectorAll(
+            `[data-sequence-realm-id="${CSS.escape(
+              realm.id
+            )}"]`
           )
-          .map(
-            element =>
-              element.getBoundingClientRect()
-          );
+        ).filter(
+          card =>
+            !card.hidden &&
+            window.getComputedStyle(
+              card
+            ).display !== "none"
+        );
+
+      const visibleElementRects = [
+        ...elements.filter(
+          element =>
+            !element.hidden &&
+            window.getComputedStyle(
+              element
+            ).display !== "none"
+        ),
+        ...visibleSequenceCards
+      ].map(
+        element =>
+          element.getBoundingClientRect()
+      );
 
       if (visibleElementRects.length) {
         bottomPosition =
