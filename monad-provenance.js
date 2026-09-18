@@ -1,10 +1,10 @@
 /* Monad-only public transfer of the canonical source-tradition provenance component. */
 (() => {
   const markup = `
-    <span class="source-tradition-markers" aria-label="Source tradition: Sethian">
+    <span class="source-tradition-markers" aria-label="Source tradition: Sethian Gnostic">
       <span class="source-tradition-marker">
         <span class="source-tradition-book" aria-hidden="true"></span>
-        <span>Sethian</span>
+        <span>Sethian Gnostic</span>
       </span>
     </span>
   `;
