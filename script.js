@@ -32,7 +32,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260918-public-axis-state-machine-1";
+const DATA_VERSION = "20260918-public-realm-color-axis-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -4483,87 +4483,66 @@ async function renderTimeline() {
       timeline.style.removeProperty(propertyName)
     );
 
-    const rupturePosition =
-      eventAxisPosition(
-        "event-sophia-independent-generation"
-      );
-
-    const demiurgicPosition =
-      realmAxisPosition(
-        "realm-demiurgic-order"
-      ) ??
-      eventAxisPosition(
-        "event-yaldabaoth-emergence"
-      );
-
-    const materialPosition =
-      realmAxisPosition(
-        "realm-material-cosmos"
-      ) ??
-      eventAxisPosition(
-        "event-ordering-material-cosmos"
-      );
-
-    const primordialHumanityPosition =
-      realmAxisPosition(
-        "realm-primordial-humanity"
-      ) ??
-      eventAxisPosition(
-        "event-adam-archontic-paradise"
-      );
-
-    if (rupturePosition !== null) {
-      timeline.style.setProperty(
-        "--axis-rupture-fade",
-        `${Math.max(
-          0,
-          rupturePosition - 180
-        )}px`
-      );
-
-      timeline.style.setProperty(
-        "--axis-rupture",
-        `${rupturePosition + 20}px`
-      );
-    }
-
+    /*
+      Axis colours belong to ontological realms, not to individual
+      events. Sophia remains inside Pleroma; the axis changes colour
+      only when the next visible realm begins.
+    */
     const realmAxisFadeLength = 120;
 
-    if (demiurgicPosition !== null) {
+    const clampAxisBoundary =
+      position =>
+        Math.min(
+          axisLength,
+          Math.max(
+            0,
+            position ?? axisLength
+          )
+        );
+
+    const setRealmAxisBoundary = (
+      fadeProperty,
+      colorProperty,
+      position
+    ) => {
+      const fadePosition =
+        clampAxisBoundary(position);
+
+      const colorPosition =
+        Math.min(
+          axisLength,
+          fadePosition +
+            realmAxisFadeLength
+        );
+
       timeline.style.setProperty(
-        "--axis-demiurgic-fade",
-        `${demiurgicPosition}px`
+        fadeProperty,
+        `${fadePosition}px`
       );
 
       timeline.style.setProperty(
-        "--axis-demiurgic",
-        `${demiurgicPosition + realmAxisFadeLength}px`
+        colorProperty,
+        `${colorPosition}px`
       );
-    }
+    };
 
-    if (materialPosition !== null) {
-      timeline.style.setProperty(
-        "--axis-material-fade",
-        `${materialPosition}px`
-      );
+    setRealmAxisBoundary(
+      "--axis-demiurgic-fade",
+      "--axis-demiurgic",
+      demiurgicPosition
+    );
 
-      timeline.style.setProperty(
-        "--axis-material",
-        `${materialPosition + realmAxisFadeLength}px`
-      );
-    }
+    setRealmAxisBoundary(
+      "--axis-material-fade",
+      "--axis-material",
+      materialPosition
+    );
 
-    if (primordialHumanityPosition !== null) {
-      timeline.style.setProperty(
-        "--axis-primordial-fade",
-        `${primordialHumanityPosition}px`
-      );
-
-      timeline.style.setProperty(
-        "--axis-primordial",
-        `${primordialHumanityPosition + realmAxisFadeLength}px`
-      );
-    }
+    setRealmAxisBoundary(
+      "--axis-primordial-fade",
+      "--axis-primordial",
+      primordialHumanityPosition
+    );
   }
 
   /*
