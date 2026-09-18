@@ -9073,12 +9073,15 @@ html body .timeline
 }
 
 
-/* Realm descriptor readability: exact +20% from each original component value.
-   Realm subtitle: 7px -> 8.4px. Monad descriptor: 10px -> 12px. */
-.realm-region-subtitle {
+/* Folded realm navigation descriptor readability: exact +20% from rendered values.
+   Realm navigation subtitle: 7px -> 8.4px.
+   Monad navigation subtitle: 11px -> 13.2px. */
+.realm-navigation-card:not([data-realm-navigation-card="chapter-monad"])
+.realm-navigation-subtitle {
   font-size: 8.4px !important;
 }
 
-.event.primary-entity[data-entity-id="entity-monad"] .period {
-  font-size: 12px !important;
+.realm-navigation-card[data-realm-navigation-card="chapter-monad"]
+.realm-navigation-subtitle {
+  font-size: 13.2px !important;
 }
