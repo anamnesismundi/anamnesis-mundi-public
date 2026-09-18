@@ -1,11 +1,11 @@
 {
   "schemaVersion": "1.0",
-  "lastUpdated": "2026-08-14",
+  "lastUpdated": "2026-09-18",
 
   "traditions": [
     {
       "id": "tradition-sethian",
-      "name": "Sethian",
+      "name": "Sethian Gnostic",
 
       "alternativeNames": [
         "Sethian Gnostic Tradition",
