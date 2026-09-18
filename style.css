@@ -6754,8 +6754,8 @@ body.chronology-entered .timeline {
    ========================================================== */
 
 :root {
-  --type-micro: 0.825rem; /* 11px -> 13.2px, +20% */
-  --type-label: 0.9rem; /* 12px -> 14.4px, +20% */
+  --type-micro: 0.6875rem;
+  --type-label: 0.75rem;
   --type-source: 0.8125rem;
   --type-small: 0.875rem;
   --type-secondary: 0.9375rem;
@@ -9084,4 +9084,37 @@ html body .timeline
 .realm-navigation-card[data-realm-navigation-card="chapter-monad"]
 .realm-navigation-subtitle {
   font-size: 11px !important;
+}
+
+
+/* ==========================================================
+   MICRO LABEL READABILITY — EXACT +20% FROM ORIGINAL VALUES
+   Targets only genuinely tiny chronology labels/counters.
+   ========================================================== */
+.period { font-size: 12px !important; }
+.group-member-period,
+.group-member-aliases,
+.aeon-number,
+.aeon-aliases,
+.aeon-threshold,
+.seven-powers-label,
+.pleromatic-process-number,
+.psychic-component-number,
+.psychic-construction-section-label { font-size: 9.6px !important; }
+.aeon-domain-number { font-size: 10.8px !important; }
+.aeon-domain-label,
+.pleromatic-process-role,
+.pleromatic-process-subtitle,
+.psychic-components-label,
+.context-profile-label,
+.paradise-tree-label,
+.eve-epinoia-label,
+.archontic-son-label,
+.archontic-son-details dt { font-size: 8.4px !important; }
+.comparative-tradition-category { font-size: 10.8px !important; }
+.pleroma-threshold-label { font-size: 10.8px !important; }
+.anatomical-region > summary { font-size: 9.6px !important; }
+@media (max-width: 700px) {
+  .pleroma-threshold-label { font-size: 9.6px !important; }
+  .anatomical-region > summary { font-size: 8.4px !important; }
 }
