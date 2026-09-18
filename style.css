@@ -9056,3 +9056,13 @@ html body .timeline
     transform: translateX(-50%) !important;
   }
 }
+
+
+/* ==========================================================
+   SOURCE CITATIONS — ATOMIC MANUSCRIPT SIGLA
+   ========================================================== */
+
+.source-item .citation-unit {
+  display: inline-block;
+  white-space: nowrap;
+}
