@@ -23,7 +23,7 @@
         "entity-daveithai",
         "entity-eleleth"
       ],
-      "summary": "Supreme beings and divine realms. Emanated within the divine order of the Father (the Invisible Spirit), the Mother (Barbelo), and the Child (Autogenes/Christ), the Four Great Luminaries act as the essential pillars of the Pleroma, the divine fullness of light.\n\nEach Luminary rules over a specific spiritual realm and serves as a heavenly dwelling place for a foundational spiritual generation. Each Luminary is associated with three distinct sub-Aeons, creating a sacred structural total of 12 internal Aeons.",
+      "summary": "Through the gift of the Invisible Spirit, four lights come forth from the divine Autogenes to attend him: Armozel, Oroiael, Daveithai and Eleleth. The source associates three aeons with each light, forming the twelve aeons that attend Autogenes. All are established through the will of the Holy Spirit and through Autogenes.",
       "overview": "In the Apocryphon of John, four principal luminaries appear in association with Autogenes: Armozel, Oroiael, Daveithai and Eleleth. Each luminary is associated with a triad of aeons, producing a fourfold structure of twelve aeons within the higher divine realm. Related Sethian texts, including the Holy Book of the Great Invisible Spirit (Gospel of the Egyptians) and Zostrianos, preserve corresponding four-luminary structures, though their internal organization and associated beings should remain source-specific.",
       "primarySourceIds": [
         "source-apocryphon-of-john"
@@ -61,7 +61,7 @@
         "sourcePresentation": "The Apocryphon of John is the primary source for the reconstruction displayed by Anamnesis Mundi. The Holy Book of the Great Invisible Spirit (Gospel of the Egyptians) and Zostrianos should be displayed as parallel Sethian attestations rather than merged into the primary reconstruction."
       },
       "dateAdded": "2026-08-14",
-      "lastReviewed": "2026-09-12",
+      "lastReviewed": "2026-09-18",
       "primarySourceCitations": [
         "THE SECRET BOOK OF JOHN (THE APOCRYPHON OF JOHN), NHC II,1; III,1; IV,1; BG 8502,2"
       ],
@@ -99,7 +99,7 @@
         "entity-peace",
         "entity-sophia"
       ],
-      "summary": "Twelve aeons arranged in four triads beneath the Four Great Luminaries, culminating with Sophia in the fourth domain of Eleleth.",
+      "summary": "The source places three aeons with each of the four lights, forming twelve aeons that belong to and attend the divine Autogenes.",
       "overview": "The Apocryphon of John associates three aeons with each of the Four Great Luminaries. Armozel is associated with Grace, Truth and Form; Oroiael with Afterthought, Perception and Memory; Daveithai with Understanding, Love and Idea; and Eleleth with Perfection, Peace and Sophia. Anamnesis Mundi represents this textual sequence as twelve positions for navigational clarity. The numbering is editorial and should not be understood as an ancient numbered system.",
       "structure": {
         "type": "four-triads",
@@ -165,7 +165,7 @@
         "verificationStatus": "Names, translation choices and relationships should be checked against the surviving witnesses and relevant critical scholarship before the research layer is considered complete."
       },
       "dateAdded": "2026-08-14",
-      "lastReviewed": "2026-09-12",
+      "lastReviewed": "2026-09-18",
       "primarySourceIds": [
         "source-apocryphon-of-john"
       ],
