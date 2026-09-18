@@ -32,7 +32,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260918-public-pleroma-parity-axis-2";
+const DATA_VERSION = "20260918-public-pleroma-parity-axis-3";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -4516,7 +4516,7 @@ async function renderTimeline() {
       timeline.style.setProperty(
         "--axis-rupture-fade",
         `${Math.max(
-          340,
+          0,
           rupturePosition - 180
         )}px`
       );
