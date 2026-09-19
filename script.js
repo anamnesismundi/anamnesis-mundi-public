@@ -32,7 +32,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260918-public-realm-color-axis-2";
+const DATA_VERSION = "20260919-public-remove-also-known-as-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -647,10 +647,13 @@ function createSemanticSourcesMarkup(
 
 
 /* ==========================================================
-   ALTERNATIVE NAMES
+   TERMINOLOGY
+   Translation renderings and source designations remain visible.
+   Generic alternative names stay in research data but are not
+   repeated as a separate card category.
    ========================================================== */
 
-function createAlternativeNamesMarkup(
+function createTerminologyMarkup(
   item,
   className = "source"
 ) {
@@ -668,15 +671,6 @@ function createAlternativeNamesMarkup(
       item.sourceDesignations
     )
       ? item.sourceDesignations.filter(
-          Boolean
-        )
-      : [];
-
-  const alternativeNames =
-    Array.isArray(
-      item.alternativeNames
-    )
-      ? item.alternativeNames.filter(
           Boolean
         )
       : [];
@@ -754,10 +748,11 @@ function createAlternativeNamesMarkup(
     ].join("");
   }
 
-  return createNamesBlock(
-    "Also known as",
-    alternativeNames
-  );
+  /*
+    Alternative-name arrays remain available in the research data,
+    but are intentionally not repeated beneath chronology summaries.
+  */
+  return "";
 }
 
 
@@ -1043,8 +1038,8 @@ function createEntityCard(
     database
   );
 
-  const alternativeNames =
-    createAlternativeNamesMarkup(
+  const terminology =
+    createTerminologyMarkup(
       entity,
       "source"
     );
@@ -1112,7 +1107,7 @@ function createEntityCard(
 
       ${summary}
 
-      ${alternativeNames}
+      ${terminology}
       ${sources}
       ${pleromaticProcess}
       ${comparativeTraditions}
@@ -1135,8 +1130,8 @@ function createExpandedMember(
     database
   );
 
-  const alternativeNames =
-    createAlternativeNamesMarkup(
+  const terminology =
+    createTerminologyMarkup(
       member,
       "group-member-aliases"
     );
@@ -1173,7 +1168,7 @@ function createExpandedMember(
 
       ${summary}
 
-      ${alternativeNames}
+      ${terminology}
     </article>
   `;
 }
@@ -1598,8 +1593,8 @@ function createAuthorityMember(
       ? `${sequenceNumber}/${sequenceTotal}`
       : "Authority";
 
-  const alternativeNames =
-    createAlternativeNamesMarkup(
+  const terminology =
+    createTerminologyMarkup(
       member,
       "group-member-aliases"
     );
@@ -1631,7 +1626,7 @@ function createAuthorityMember(
 
       ${summary}
 
-      ${alternativeNames}
+      ${terminology}
     </article>
   `;
 }
@@ -2404,8 +2399,8 @@ function createEventCard(
       `
       : "";
 
-  const alternativeNames =
-    createAlternativeNamesMarkup(
+  const terminology =
+    createTerminologyMarkup(
       event,
       "event-aliases"
     );
@@ -2473,7 +2468,7 @@ const contextualNote =
       ${summary}
       ${contextualNote}
       
-      ${alternativeNames}
+      ${terminology}
       ${sources}
       ${groupExplorers}
       ${comparativeTraditions}
