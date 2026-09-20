@@ -32,7 +32,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260920-public-first-emanations-sequence-link-1";
+const DATA_VERSION = "20260921-public-aeonic-order-link-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -3134,11 +3134,15 @@ function createSequenceNavigationMarkup(
   const subtitle =
     sequence.subtitle || "";
 
+  const standalonePages = {
+    "sequence-pleroma-first-emanations":
+      "chronology/first-emanations/",
+    "sequence-pleroma-aeonic-order":
+      "chronology/aeonic-order/"
+  };
+
   const standaloneHref =
-    sequence.id ===
-    "sequence-pleroma-first-emanations"
-      ? "chronology/first-emanations/"
-      : "";
+    standalonePages[sequence.id] || "";
 
   const copyMarkup = `
     <span class="sequence-navigation-copy">
