@@ -56,3 +56,27 @@ body.entry-monad-research::after { height:900px;background:radial-gradient(circl
 .entry-monad-research .chronology-return a {
   font-size: 0.75rem;
 }
+
+/* Match Monad descriptive typography to The First Emanations. */
+.entry-monad-research .entry-deck {
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+.entry-monad-research .entry-section > p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.entry-monad-research .section-followup,
+.entry-monad-research .source-term p {
+  font-size: 15px;
+  line-height: 1.78;
+}
+
+@media (max-width: 700px) {
+  .entry-monad-research .entry-deck {
+    font-size: 16px;
+    line-height: 1.72;
+  }
+}
