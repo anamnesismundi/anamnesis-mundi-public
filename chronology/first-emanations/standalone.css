@@ -357,3 +357,11 @@ body.entry-sequence-research::after {
     padding-top: 24px;
   }
 }
+
+/* Standalone navigation and section-label readability alignment. */
+.entry-sequence-research .section-label,
+.entry-sequence-research .back-link,
+.entry-sequence-research .hero-chronology-link,
+.entry-sequence-research .chronology-return a {
+  font-size: 0.75rem;
+}
