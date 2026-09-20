@@ -48,3 +48,11 @@ body.entry-monad-research::after { height:900px;background:radial-gradient(circl
 @keyframes monad-chronology-invitation { 0%,100% { color:rgba(205,186,122,.72);text-shadow:0 0 12px rgba(205,186,122,.08); } 50% { color:rgba(221,208,168,.96);text-shadow:0 0 10px rgba(221,208,168,.22),0 0 22px rgba(205,186,122,.30); } }
 @media (prefers-reduced-motion:reduce) { .entry-monad-research .back-link,.entry-monad-research .hero-chronology-link,.entry-monad-research .chronology-return a { animation:none; } }
 @media (max-width:700px) { body.entry-monad-research::before,body.entry-monad-research::after { height:720px; }.entry-monad-research .provenance { font-size:.59375rem; }.entry-monad-research .entry-hero h1 { margin-top:22px;font-size:clamp(38px,12vw,52px); }.entry-monad-research .entry-section h2 { font-size:clamp(20px,6.6vw,26px); }.recension-grid { gap:12px; }.recension-block,.translations-consulted { padding:16px 17px; }.translations-consulted ul { font-size:13px; }.chronology-return { margin-top:58px;padding-top:24px; } }
+
+/* Standalone navigation and section-label readability alignment. */
+.entry-monad-research .section-label,
+.entry-monad-research .back-link,
+.entry-monad-research .hero-chronology-link,
+.entry-monad-research .chronology-return a {
+  font-size: 0.75rem;
+}
