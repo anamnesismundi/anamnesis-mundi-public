@@ -32,7 +32,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260920-public-sophia-unnamed-counterpart-1";
+const DATA_VERSION = "20260920-public-first-emanations-sequence-link-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -3134,6 +3134,58 @@ function createSequenceNavigationMarkup(
   const subtitle =
     sequence.subtitle || "";
 
+  const standaloneHref =
+    sequence.id ===
+    "sequence-pleroma-first-emanations"
+      ? "chronology/first-emanations/"
+      : "";
+
+  const copyMarkup = `
+    <span class="sequence-navigation-copy">
+      <span class="sequence-navigation-kicker">
+        ${escapeHtml(label)}
+      </span>
+
+      ${standaloneHref
+        ? `
+          <a
+            class="sequence-navigation-name sequence-navigation-name-link"
+            href="${escapeHtml(standaloneHref)}"
+          >
+            ${escapeHtml(title)}
+          </a>
+        `
+        : `
+          <span class="sequence-navigation-name">
+            ${escapeHtml(title)}
+          </span>
+        `
+      }
+
+      ${subtitle
+        ? `
+          <span class="sequence-navigation-subtitle">
+            ${createSequenceSubtitleMarkup(
+              subtitle,
+              realmId
+            )}
+          </span>
+        `
+        : ""
+      }
+    </span>
+  `;
+
+  const actionMarkup = `
+    <span class="sequence-navigation-action-label">
+      Explore Sequence
+    </span>
+    <span
+      class="sequence-navigation-symbol"
+      aria-hidden="true"
+    >↓</span>
+  `;
+
   return `
     <section
       class="sequence-navigation-card"
@@ -3145,50 +3197,47 @@ function createSequenceNavigationMarkup(
       )}"
       hidden
     >
-      <button
-        class="sequence-navigation-toggle"
-        type="button"
-        aria-expanded="false"
-        data-sequence-navigation-toggle="${escapeHtml(
-          sequence.id
-        )}"
-      >
-        <span class="sequence-navigation-copy">
-          <span class="sequence-navigation-kicker">
-            ${escapeHtml(label)}
-          </span>
+      ${standaloneHref
+        ? `
+          <div class="sequence-navigation-toggle sequence-navigation-toggle--split">
+            ${copyMarkup}
 
-          <span class="sequence-navigation-name">
-            ${escapeHtml(title)}
-          </span>
+            <button
+              class="sequence-navigation-action sequence-navigation-action--toggle"
+              type="button"
+              aria-expanded="false"
+              aria-label="Explore ${escapeHtml(title)} in the chronology"
+              data-sequence-navigation-toggle="${escapeHtml(
+                sequence.id
+              )}"
+            >
+              ${actionMarkup}
+            </button>
+          </div>
+        `
+        : `
+          <button
+            class="sequence-navigation-toggle"
+            type="button"
+            aria-expanded="false"
+            data-sequence-navigation-toggle="${escapeHtml(
+              sequence.id
+            )}"
+          >
+            ${copyMarkup}
 
-          ${subtitle
-            ? `
-              <span class="sequence-navigation-subtitle">
-                ${createSequenceSubtitleMarkup(
-                  subtitle,
-                  realmId
-                )}
-              </span>
-            `
-            : ""
-          }
-        </span>
-
-        <span
-          class="sequence-navigation-action"
-          aria-hidden="true"
-        >
-          <span class="sequence-navigation-action-label">
-            Explore Sequence
-          </span>
-          <span class="sequence-navigation-symbol">↓</span>
-        </span>
-      </button>
+            <span
+              class="sequence-navigation-action"
+              aria-hidden="true"
+            >
+              ${actionMarkup}
+            </span>
+          </button>
+        `
+      }
     </section>
   `;
 }
-
 
 function createRealmNavigationMarkup(
   chapter
@@ -3723,7 +3772,7 @@ function initializeRealmNavigation(
 
       const button =
         card.querySelector(
-          ".sequence-navigation-toggle"
+          "[data-sequence-navigation-toggle]"
         );
 
       const actionLabel =
@@ -3883,7 +3932,7 @@ function initializeRealmNavigation(
   sequenceCards
     .map(card =>
       card.querySelector(
-        ".sequence-navigation-toggle"
+        "[data-sequence-navigation-toggle]"
       )
     )
     .filter(Boolean)
