@@ -9328,3 +9328,32 @@ html body .timeline
 
 
 
+
+/* First Emanations: title opens the standalone page; action controls the fold. */
+.sequence-navigation-toggle--split {
+  cursor: default;
+}
+
+.sequence-navigation-name-link {
+  display: inline-block;
+  text-decoration: none;
+  transition: color 180ms ease;
+}
+
+.sequence-navigation-name-link:hover,
+.sequence-navigation-name-link:focus-visible {
+  color: color-mix(in srgb, var(--sequence-accent) 58%, #eee9df);
+}
+
+.sequence-navigation-name-link:focus-visible,
+.sequence-navigation-action--toggle:focus-visible {
+  outline: 1px solid color-mix(in srgb, var(--sequence-accent) 62%, transparent);
+  outline-offset: 5px;
+}
+
+.sequence-navigation-action--toggle {
+  padding: 8px 0 8px 12px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
