@@ -32,7 +32,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260919-public-twelve-authorities-alias-cleanup-1";
+const DATA_VERSION = "20260920-public-sophia-unnamed-counterpart-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
