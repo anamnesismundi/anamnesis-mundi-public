@@ -27,9 +27,14 @@
           "sourceId": "source-gospel-of-the-egyptians",
           "role": "comparative Sethian source for the transcendent divine principle",
           "status": "comparative-explicit"
+        },
+        {
+          "sourceId": "source-allogenes",
+          "role": "comparative Sethian source for apophatic description of the transcendent principle at NHC XI,3 62–64",
+          "status": "comparative-explicit"
         }
       ],
-      "summary": "The One is the Invisible Spirit, the pure light upon which no eye can gaze. It is not among the things that exist, but is far greater. It is the head of all realms and sustains them through its goodness. It is eternal because it needs nothing, for it is absolutely complete.",
+      "summary": "The Monad is sovereign, with nothing above it. It is God and Parent, the Father of the All. It is the Invisible Spirit, the pure light upon which no eye can gaze. It is not among the things that exist, but is far greater. It is the head of all realms and sustains them through its goodness. It is eternal because it needs nothing, for it is absolutely complete.",
       "overview": "In the Sethian cosmological framework represented here, the Monad stands beyond the ordered divine realms and beyond every lower cosmological structure. The Apocryphon of John describes the supreme source through apophatic language: invisible, immeasurable, incorruptible, ineffable and beyond comprehension. Rather than existing as one being among others, it is the ultimate transcendent source from which the higher divine order unfolds.",
       "terminology": {
         "editorialDisplayName": "The Monad",
@@ -66,7 +71,8 @@
         "apophaticCharacter": "The source relies heavily on negative or apophatic description: the supreme principle exceeds ordinary predicates, measurement, form and comprehension.",
         "terminologyCaution": "The Frederik Wisse translation explicitly begins this discourse with “The Monad is a monarchy with nothing above it,” while Invisible Spirit is the recurrent designation throughout the passage. The title is therefore source-grounded in this translation but not treated as terminology exclusive to Sethianism.",
         "bythosCaution": "Bythos is a Valentinian term for the primal Depth and is not displayed as a direct Sethian alternative name for the Monad.",
-        "crossSourceCaution": "The Gospel of the Egyptians provides closely related Sethian language concerning the Great Invisible Spirit, but terminology from that text should remain source-attributed when it is not independently explicit in the Apocryphon of John."
+        "crossSourceCaution": "The Gospel of the Egyptians provides closely related Sethian language concerning the Great Invisible Spirit, but terminology from that text should remain source-attributed when it is not independently explicit in the Apocryphon of John.",
+        "allogenesParallel": "Allogenes the Stranger, NHC XI,3 62–64, provides a distinct Sethian parallel for apophatic description of the transcendent principle. It is displayed as a parallel source, not as another witness to the wording of the Apocryphon of John."
       },
       "comparativeTraditions": [
         {
@@ -123,49 +129,24 @@
               "status": "modern-scholarly-comparison"
             }
           ]
-        },
-        {
-          "category": "MYTHIC PARALLEL",
-          "name": "Atum and Heliopolitan Cosmogony",
-          "description": "In the Heliopolitan Egyptian cosmogony, Atum stands at the beginning of the divine genealogy and generates differentiated divine beings from himself. The comparison lies in the movement from primordial unity toward divine multiplicity; Atum remains a cosmogonic deity within Egyptian mythology and is not an equivalent of the radically transcendent Sethian Monad.",
-          "relationType": "MYTHIC PARALLEL",
-          "traditionFamily": "Egyptian",
-          "sourceIds": [
-            "source-pyramid-texts",
-            "source-wilkinson-complete-gods"
-          ],
-          "sourceCitations": [
-            "THE PYRAMID TEXTS, UTTERANCE 527",
-            "RICHARD H. WILKINSON, THE COMPLETE GODS AND GODDESSES OF ANCIENT EGYPT — ATUM"
-          ],
-          "sourceAttestations": [
-            {
-              "sourceId": "source-pyramid-texts",
-              "role": "primary Egyptian attestation of Atum and the generation of Shu and Tefnut",
-              "status": "comparative-primary-text"
-            },
-            {
-              "sourceId": "source-wilkinson-complete-gods",
-              "role": "modern Egyptological context for Atum and Heliopolitan cosmogony",
-              "status": "modern-scholarly-reference"
-            }
-          ]
         }
       ],
       "notes": "Primary transcendent-source node for the Sethian Apocryphon of John branch. The public visualization intentionally places the Monad outside the Pleroma.",
       "dateAdded": "2026-08-11",
-      "lastReviewed": "2026-09-17",
+      "lastReviewed": "2026-09-22",
       "primarySourceIds": [
         "source-apocryphon-of-john"
       ],
       "parallelSourceIds": [
-        "source-gospel-of-the-egyptians"
+        "source-gospel-of-the-egyptians",
+        "source-allogenes"
       ],
       "primarySourceCitations": [
         "THE SECRET BOOK OF JOHN (THE APOCRYPHON OF JOHN), NHC II,1; III,1; IV,1; BG 8502,2"
       ],
       "parallelSourceCitations": [
-        "THE HOLY BOOK OF THE GREAT INVISIBLE SPIRIT (THE GOSPEL OF THE EGYPTIANS), NHC III,2; IV,2"
+        "THE HOLY BOOK OF THE GREAT INVISIBLE SPIRIT (THE GOSPEL OF THE EGYPTIANS), NHC III,2; IV,2",
+        "ALLOGENES THE STRANGER (ALLOGENES), NHC XI,3 62–64"
       ],
       "translationRenderings": [
         "The Monad",

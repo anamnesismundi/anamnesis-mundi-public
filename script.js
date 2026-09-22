@@ -32,7 +32,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260921-public-aeonic-order-link-1";
+const DATA_VERSION = "20260922-public-monad-approved-refinement-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -981,53 +981,64 @@ function createPleromaticProcessMarkup(entity) {
 }
 
 
-function createMonadProvenanceMarkup(
-  entity,
-  database
-) {
+function createProvenanceMarkup(item) {
+  const explicitTags =
+    Array.isArray(item?.provenanceTags)
+      ? item.provenanceTags
+      : [];
+
+  const inferredTags = [];
+
   if (
-    entity?.id !== "entity-monad" ||
-    !Array.isArray(entity.traditionIds)
+    Array.isArray(item?.traditionIds) &&
+    item.traditionIds.includes("tradition-sethian")
   ) {
-    return "";
+    inferredTags.push("SETHIAN GNOSTIC");
   }
 
-  const tradition =
-    entity.traditionIds
-      .map(traditionId =>
-        database.traditions.find(
-          item => item.id === traditionId
-        ) || null
-      )
-      .find(Boolean);
+  if (
+    Array.isArray(item?.traditionIds) &&
+    item.traditionIds.includes("tradition-jewish-apocalyptic")
+  ) {
+    inferredTags.push("ENOCHIC");
+  }
 
-  const label =
-    tradition?.name || "";
+  if (
+    Array.isArray(item?.traditionIds) &&
+    item.traditionIds.includes("tradition-hekhalot")
+  ) {
+    inferredTags.push("HEKHALOT");
+  }
 
-  if (!label) {
+  const tags = [
+    ...new Set([
+      ...explicitTags,
+      ...inferredTags
+    ])
+  ];
+
+  if (!tags.length) {
     return "";
   }
 
   return `
     <span
       class="source-tradition-markers"
-      aria-label="Source tradition: ${escapeHtml(label)}"
+      aria-label="Origins: ${escapeHtml(tags.join(", "))}"
     >
-      <span class="source-tradition-marker">
-        <span
-          class="source-tradition-book"
-          aria-hidden="true"
-        ></span>
-        <span>${escapeHtml(label)}</span>
-      </span>
+      ${tags
+        .map(tag => `
+          <span class="source-tradition-marker">
+            <span>ORIGIN</span>
+            <span aria-hidden="true">·</span>
+            <span>${escapeHtml(tag)}</span>
+          </span>
+        `)
+        .join("")}
     </span>
   `;
 }
 
-
-/* ==========================================================
-   ENTITY CARD
-   ========================================================== */
 
 function createEntityCard(
   entity,
@@ -1072,12 +1083,6 @@ function createEntityCard(
       database
     );
 
-  const provenance =
-    createMonadProvenanceMarkup(
-      entity,
-      database
-    );
-
   return `
     <article
       class="event primary-entity${["entity-barbelo", "entity-autogenes"].includes(entity.id) ? " pleroma-atomic-card" : ""}"
@@ -1092,7 +1097,7 @@ function createEntityCard(
         phase ? phase.colorKey : ""
       )}"
     >
-      ${provenance}
+      ${createProvenanceMarkup(entity)}
 
       <span class="period">
         ${escapeHtml(phaseLabel)}
@@ -1410,6 +1415,10 @@ function createSpiritualGenerationsCard() {
       data-phase-id="phase-divine-emanation"
       data-phase-color="emanation"
     >
+      ${createProvenanceMarkup({
+        traditionIds: ["tradition-sethian"]
+      })}
+
       <span class="period">
         Pleromatic Order
       </span>
@@ -1527,6 +1536,8 @@ function createTwelveAeonsCard(
         phase ? phase.colorKey : ""
       )}"
     >
+      ${createProvenanceMarkup(group)}
+
       <span class="period">
         ${escapeHtml(phaseLabel)}
       </span>
@@ -2325,6 +2336,8 @@ function createGroupCard(
         phase ? phase.colorKey : ""
       )}"
     >
+      ${createProvenanceMarkup(group)}
+
       <span class="period">
         ${escapeHtml(phaseLabel)}
       </span>
@@ -2453,6 +2466,8 @@ const contextualNote =
           ?.classification || ""
       )}"
     >
+      ${createProvenanceMarkup(event)}
+
       <span class="period">
         ${escapeHtml(phaseLabel)}
       </span>
@@ -3379,8 +3394,8 @@ function initializeRealmNavigation(
     displayName: monad.displayName,
     navigationKicker: "",
     summaryLines: [
-      "The Monad is sovereign, with nothing above it.",
-      "It is God and Parent, the Father of the All."
+      "The One beholds itself in the light surrounding it: the spring of living water,",
+      "pure and luminous, from which every realm is sustained."
     ],
     display: {
       label: monad.displayName,

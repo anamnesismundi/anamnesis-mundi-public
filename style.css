@@ -6844,7 +6844,7 @@ body.chronology-entered .timeline {
   font-size: var(--type-micro) !important;
   line-height: 1.5 !important;
   letter-spacing: 0.16em !important;
-  color: rgba(215, 207, 191, 0.76) !important;
+  color: rgba(205, 186, 122, 0.92) !important;
 }
 
 /* Preserve comfortable reading and reflow on narrow screens. */
@@ -8223,14 +8223,14 @@ html body .timeline .event
   background:
     radial-gradient(
       ellipse 52% 74% at 50% 42%,
-      rgba(239, 235, 225, 0.105) 0%,
-      rgba(223, 213, 185, 0.062) 24%,
-      rgba(184, 169, 128, 0.028) 48%,
+      rgba(239, 235, 225, 0.19) 0%,
+      rgba(223, 213, 185, 0.115) 24%,
+      rgba(184, 169, 128, 0.052) 48%,
       rgba(11, 11, 11, 0) 76%
     ),
     linear-gradient(
       to bottom,
-      rgba(18, 17, 14, 0.5),
+      rgba(28, 25, 18, 0.62),
       rgba(11, 11, 11, 0.96) 88%
     );
   box-shadow:
@@ -8248,8 +8248,8 @@ html body .timeline .event
   background:
     radial-gradient(
       circle at 50% 36%,
-      rgba(255, 251, 237, 0.055) 0,
-      rgba(222, 207, 162, 0.018) 31%,
+      rgba(255, 251, 237, 0.11) 0,
+      rgba(222, 207, 162, 0.042) 31%,
       transparent 62%
     );
 }
@@ -8298,6 +8298,16 @@ html body .timeline .event
   color: rgba(248, 245, 236, 0.97);
   text-shadow:
     0 0 28px rgba(239, 229, 198, 0.08);
+}
+
+/*
+  When Monad is expanded, the card title remains the single visible
+  heading and preserves its link to the standalone page.
+*/
+.realm-navigation-card[
+  data-realm-navigation-card="chapter-monad"
+].is-active .realm-navigation-name {
+  display: none;
 }
 
 .realm-navigation-card[
@@ -9356,4 +9366,159 @@ html body .timeline
   border: 0;
   background: transparent;
   cursor: pointer;
+}
+
+/* ==========================================================
+   SOURCE-TRADITION PROVENANCE MARKERS
+   ========================================================== */
+
+.source-tradition-markers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 12px;
+  align-items: center;
+  margin-bottom: 10px;
+  color: color-mix(
+    in srgb,
+    var(--phase-color, var(--gold-base)) 68%,
+    #aaa49a
+  );
+  font-family: Arial, sans-serif;
+  font-size: 0.625rem;
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.72;
+}
+
+.source-tradition-marker {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+  .source-tradition-markers {
+    gap: 6px 10px;
+    margin-bottom: 8px;
+    font-size: 0.59375rem;
+  }
+}
+
+
+/* ==========================================================
+   CARD-SIDE PROVENANCE ALIGNMENT
+   ========================================================== */
+
+html body .timeline
+.event.timeline-card-right
+.source-tradition-markers {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+html body .timeline
+.event.timeline-card-left
+.source-tradition-markers {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+html body .timeline
+.event[data-entity-id="entity-monad"]
+.source-tradition-markers {
+  justify-content: center;
+  text-align: center;
+}
+
+.event:nth-of-type(odd)
+.source-tradition-markers {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.event:nth-of-type(even)
+.source-tradition-markers {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+@media (max-width: 700px) {
+  html body .timeline
+  .event
+  .source-tradition-markers {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  html body .timeline
+  .event[data-entity-id="entity-monad"]
+  .source-tradition-markers {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* ============================================================
+   MONAD — THREE-LEVEL GOLD TEXT PALETTE — 2026-09-22
+   Exactly three rendered gold levels are permitted in this view:
+   luminous accent, structural label, quiet context.
+   ============================================================ */
+
+:root {
+  --monad-gold-luminous: rgba(205, 186, 122, 0.92);
+  --monad-gold-structural: rgba(184, 169, 128, 0.72);
+  --monad-gold-quiet: rgba(184, 169, 128, 0.56);
+}
+
+/* Level 1 — primary editorial/action accent. */
+html body .research-note,
+html body .timeline
+.event[data-entity-id="entity-monad"]
+.comparative-explorer > summary {
+  color: var(--monad-gold-luminous) !important;
+}
+
+/* Level 2 — controls and evidence headings. */
+html body .timeline
+.realm-navigation-card[data-realm-navigation-card="chapter-monad"]
+.realm-navigation-action,
+html body .timeline
+.event[data-entity-id="entity-monad"]
+.alternative-names-label,
+html body .timeline
+.event[data-entity-id="entity-monad"]
+.source-label {
+  color: var(--monad-gold-structural) !important;
+}
+
+/* Level 3 — contextual identity and semantic separators. */
+html body .timeline
+.realm-navigation-card[data-realm-navigation-card="chapter-monad"]
+.realm-navigation-subtitle,
+html body .timeline
+.event[data-entity-id="entity-monad"]
+.source-tradition-markers,
+html body .timeline
+.event[data-entity-id="entity-monad"]
+.alternative-name:not(:last-child)::after {
+  color: var(--monad-gold-quiet) !important;
+}
+
+html body .timeline
+.event[data-entity-id="entity-monad"]
+.source-tradition-markers {
+  opacity: 1;
+}
+
+/* Fine rules remain neutral so they do not create a fourth gold level. */
+html body .timeline
+.event[data-entity-id="entity-monad"]
+.comparative-tradition:not(:last-child),
+html body .timeline
+.event[data-entity-id="entity-monad"]
+.comparative-explorer {
+  border-color: rgba(232, 228, 220, 0.12) !important;
 }
