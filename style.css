@@ -11,7 +11,10 @@
   /* One gold family; hierarchy is expressed through opacity. */
   --gold-base: #b8a980;
   --gold-rgb: 184, 169, 128;
-  --gold-editorial: rgba(var(--gold-rgb), 0.72);
+  --gold-luminous: rgba(205, 186, 122, 0.92);
+  --gold-structural: rgba(184, 169, 128, 0.72);
+  --gold-quiet: rgba(184, 169, 128, 0.56);
+  --gold-editorial: var(--gold-structural);
 
   --origin: var(--gold-base);
   --emanation: #858aa8;
@@ -3997,7 +4000,7 @@ summary::after {
   align-items: center;
   gap: 12px;
   padding: 10px 18px 0;
-  color: rgba(184, 169, 128, 0.72);
+  color: var(--gold-structural);
   text-decoration: none;
   cursor: pointer;
   transition:
@@ -4050,7 +4053,7 @@ summary::after {
 
 .begin-arrow {
   margin-top: -2px;
-  color: rgba(184, 169, 128, 0.58);
+  color: var(--gold-quiet);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 13px;
   line-height: 1;
@@ -4062,7 +4065,7 @@ summary::after {
 
 .begin:hover,
 .begin:focus-visible {
-  color: rgba(221, 208, 168, 0.96);
+  color: var(--gold-luminous);
   transform: translateY(2px);
   outline: none;
 }
@@ -4082,7 +4085,7 @@ summary::after {
 
 .begin:hover .begin-arrow,
 .begin:focus-visible .begin-arrow {
-  color: rgba(221, 208, 168, 0.9);
+  color: var(--gold-luminous);
   transform: translateY(4px);
 }
 
@@ -4143,7 +4146,7 @@ body.chronology-entered .hero-content {
   margin: 14px 0 18px;
   padding: 0 14px;
   background: var(--background);
-  color: rgba(184, 169, 128, 0.62);
+  color: var(--gold-quiet);
   font-family: Arial, sans-serif;
   font-size: 9px;
   line-height: 1.4;
@@ -4227,7 +4230,7 @@ body.chronology-entered .hero-content {
   margin-top: 42px;
   gap: 15px;
   font-size: 12px;
-  color: rgba(205, 186, 122, 0.88);
+  color: var(--gold-luminous);
 }
 
 .begin-text {
@@ -4271,7 +4274,7 @@ body.chronology-entered .hero-content {
 }
 
 .begin-arrow {
-  color: rgba(221, 208, 168, 0.78);
+  color: var(--gold-luminous);
   font-size: 16px;
   animation:
     chronology-arrow-pulse 2.6s ease-in-out infinite;
@@ -4280,7 +4283,7 @@ body.chronology-entered .hero-content {
 @keyframes chronology-invitation {
   0%,
   100% {
-    color: rgba(205, 186, 122, 0.72);
+    color: var(--gold-structural);
     text-shadow:
       0 0 12px rgba(205, 186, 122, 0.08);
   }
@@ -6844,7 +6847,7 @@ body.chronology-entered .timeline {
   font-size: var(--type-micro) !important;
   line-height: 1.5 !important;
   letter-spacing: 0.16em !important;
-  color: rgba(205, 186, 122, 0.92) !important;
+  color: var(--gold-luminous) !important;
 }
 
 /* Preserve comfortable reading and reflow on narrow screens. */
@@ -7028,7 +7031,7 @@ body.chronology-entered .timeline {
 .alternative-names-label {
   display: block;
   margin-bottom: 4px;
-  color: var(--gold-editorial) !important;
+  color: var(--gold-structural) !important;
   font-family: Arial, sans-serif !important;
   font-size: 0.75rem !important;
   font-weight: 400;
@@ -7086,7 +7089,7 @@ body.chronology-entered .timeline {
 .alternative-name:not(:last-child)::after {
   content: " · ";
   padding: 0 0.28em;
-  color: rgba(var(--gold-rgb), 0.52);
+  color: var(--gold-quiet);
 }
 
 
@@ -7194,7 +7197,7 @@ body.chronology-entered .timeline {
 
 /* The threshold uses the structural gold hue at quiet intensity. */
 .pleroma-threshold-label {
-  color: rgba(var(--gold-rgb), 0.62);
+  color: var(--gold-quiet);
 }
 
 /* Narrative thematic profiles have horizontal boundaries only. */
@@ -7422,7 +7425,7 @@ html body .timeline .event
 .public-support-label {
   display: block;
   margin-bottom: 12px;
-  color: color-mix(in srgb, var(--gold-base, #b8a980) 72%, transparent);
+  color: var(--gold-structural);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.75rem;
   font-weight: 600;
@@ -8203,7 +8206,7 @@ html body .timeline .event
   line-height: 1;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(184, 169, 128, 0.72);
+  color: var(--gold-structural);
 }
 
 .realm-navigation-symbol {
@@ -8285,7 +8288,7 @@ html body .timeline .event
   line-height: 1.3;
   letter-spacing: 0.24em;
   text-transform: uppercase;
-  color: rgba(184, 169, 128, 0.72);
+  color: var(--gold-structural);
 }
 
 .realm-navigation-card[
@@ -8319,7 +8322,7 @@ html body .timeline .event
   line-height: 1.45;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: rgba(184, 169, 128, 0.6);
+  color: var(--gold-quiet);
 }
 
 .realm-navigation-card[
@@ -8568,7 +8571,7 @@ html body .timeline .event
   height: 84px;
   min-height: 0;
   margin-top: -3px;
-  color: rgba(221, 208, 168, 0.72);
+  color: var(--gold-structural);
   background:
     linear-gradient(
       to bottom,
@@ -8693,7 +8696,7 @@ html body .timeline .event
   font-weight: 400 !important;
   line-height: 1.5 !important;
   letter-spacing: 0.14em !important;
-  color: rgba(184, 169, 128, 0.78) !important;
+  color: var(--gold-structural) !important;
   opacity: 1 !important;
 }
 
@@ -9468,9 +9471,9 @@ html body .timeline
    ============================================================ */
 
 :root {
-  --monad-gold-luminous: rgba(205, 186, 122, 0.92);
-  --monad-gold-structural: rgba(184, 169, 128, 0.72);
-  --monad-gold-quiet: rgba(184, 169, 128, 0.56);
+  --monad-gold-luminous: var(--gold-luminous);
+  --monad-gold-structural: var(--gold-structural);
+  --monad-gold-quiet: var(--gold-quiet);
 }
 
 /* Level 1 — primary editorial/action accent. */
@@ -9478,7 +9481,7 @@ html body .research-note,
 html body .timeline
 .event[data-entity-id="entity-monad"]
 .comparative-explorer > summary {
-  color: var(--monad-gold-luminous) !important;
+  color: var(--gold-luminous) !important;
 }
 
 /* Level 2 — controls and evidence headings. */
@@ -9491,7 +9494,7 @@ html body .timeline
 html body .timeline
 .event[data-entity-id="entity-monad"]
 .source-label {
-  color: var(--monad-gold-structural) !important;
+  color: var(--gold-structural) !important;
 }
 
 /* Level 3 — contextual identity and semantic separators. */
@@ -9504,7 +9507,7 @@ html body .timeline
 html body .timeline
 .event[data-entity-id="entity-monad"]
 .alternative-name:not(:last-child)::after {
-  color: var(--monad-gold-quiet) !important;
+  color: var(--gold-quiet) !important;
 }
 
 html body .timeline

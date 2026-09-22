@@ -108,7 +108,7 @@ body.entry-sequence-research::after {
 
 .entry-sequence-research .sequence-subtitle {
   margin: 0;
-  color: rgba(184, 169, 128, 0.82);
+  color: var(--gold-structural);
   font-family: Arial, sans-serif;
   font-size: 0.75rem;
   line-height: 1.5;
@@ -262,7 +262,7 @@ body.entry-sequence-research::after {
 }
 
 .chronology-return a {
-  color: var(--gold-editorial);
+  color: var(--gold-structural);
   font-family: Arial, sans-serif;
   font-size: 0.75rem;
   line-height: 1.5;
@@ -273,7 +273,7 @@ body.entry-sequence-research::after {
 
 .chronology-return a:hover,
 .chronology-return a:focus-visible {
-  color: var(--gold);
+  color: var(--gold-luminous);
 }
 
 .entry-sequence-research .back-link,
@@ -286,12 +286,12 @@ body.entry-sequence-research::after {
 @keyframes sequence-chronology-invitation {
   0%,
   100% {
-    color: rgba(184, 169, 128, 0.72);
+    color: var(--gold-structural);
     text-shadow: 0 0 12px rgba(133, 138, 168, 0.08);
   }
 
   50% {
-    color: rgba(221, 208, 168, 0.96);
+    color: var(--gold-luminous);
     text-shadow:
       0 0 10px rgba(167, 171, 198, 0.22),
       0 0 22px rgba(133, 138, 168, 0.3);

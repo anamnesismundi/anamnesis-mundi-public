@@ -8,7 +8,10 @@
   --pleroma: #858aa8;
   --gold-rgb: 184, 169, 128;
   --gold: #b8a980;
-  --gold-editorial: rgba(var(--gold-rgb), 0.72);
+  --gold-luminous: rgba(205, 186, 122, 0.92);
+  --gold-structural: rgba(184, 169, 128, 0.72);
+  --gold-quiet: rgba(184, 169, 128, 0.56);
+  --gold-editorial: var(--gold-structural);
   --rule: rgba(184, 169, 128, 0.18);
 }
 
@@ -67,7 +70,7 @@ a {
   padding: 12px 24px 10px;
   box-sizing: border-box;
   background: rgba(11, 11, 11, 0.94);
-  color: rgba(203, 194, 177, 0.58);
+  color: var(--gold-luminous);
   text-align: center;
   text-transform: uppercase;
   font-size: 10px;
@@ -99,7 +102,7 @@ a {
 
 .back-link:hover,
 .back-link:focus-visible {
-  color: var(--gold);
+  color: var(--gold-luminous);
 }
 
 .entry-shell {
@@ -118,7 +121,7 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 9px;
-  color: rgba(184, 169, 128, 0.78);
+  color: var(--gold-quiet);
   font-family: Arial, sans-serif;
   font-size: 11px;
   letter-spacing: 0.3em;
@@ -185,7 +188,7 @@ a {
 .metadata-label,
 .aeon-number,
 .textual-note-label {
-  color: var(--gold-editorial);
+  color: var(--gold-structural);
   font-family: Arial, sans-serif;
   font-size: 12px;
   letter-spacing: 0.24em;
@@ -335,7 +338,7 @@ a {
 
 .entry-action:hover,
 .entry-action:focus-visible {
-  color: var(--gold);
+  color: var(--gold-luminous);
   border-color: var(--gold);
 }
 
@@ -401,7 +404,7 @@ body.entry-monad::after {
 }
 
 .entry-monad .period {
-  color: rgba(184, 169, 128, 0.82);
+  color: var(--gold-structural);
 }
 
 .entry-monad .origin-marker {
@@ -442,7 +445,7 @@ body.entry-monad::after {
 }
 
 .comparison-category {
-  color: var(--gold-editorial);
+  color: var(--gold-structural);
   font-family: Arial, sans-serif;
   font-size: 11px;
   letter-spacing: 0.22em;
@@ -629,7 +632,7 @@ body.entry-monad::after {
 .apophatic-list li:not(:last-child)::after {
   content: " · ";
   padding: 0 0.42em;
-  color: rgba(184, 169, 128, 0.52);
+  color: var(--gold-quiet);
 }
 
 .editorial-lines {
@@ -650,7 +653,7 @@ body.entry-monad::after {
 .editorial-line .metadata-label {
   display: block;
   margin-bottom: 5px;
-  color: var(--gold-editorial);
+  color: var(--gold-structural);
   font-family: Arial, sans-serif;
   font-size: 0.6875rem;
   line-height: 1.4;
@@ -711,7 +714,7 @@ body.entry-monad::after {
 .inline-term:not(:last-child)::after {
   content: " · ";
   padding: 0 0.28em;
-  color: rgba(184, 169, 128, 0.52);
+  color: var(--gold-quiet);
 }
 
 .entry-monad .textual-note {
@@ -798,7 +801,7 @@ body.entry-monad::after {
 .entry-nav-item + .entry-nav-item::before {
   content: "·";
   margin: 0 18px;
-  color: rgba(184, 169, 128, 0.48);
+  color: var(--gold-quiet);
 }
 
 .entry-nav-label,
@@ -808,7 +811,7 @@ body.entry-monad::after {
 }
 
 .entry-nav-label {
-  color: var(--gold-editorial);
+  color: var(--gold-structural);
   font-size: 9px;
   letter-spacing: 0.17em;
 }
@@ -888,7 +891,7 @@ body.entry-monad::after {
 .hero-chronology-link {
   display: inline-block;
   margin-top: 25px;
-  color: var(--gold-editorial);
+  color: var(--gold-structural);
   font-family: Arial, sans-serif;
   font-size: 0.6875rem;
   line-height: 1.5;
@@ -899,7 +902,7 @@ body.entry-monad::after {
 
 .hero-chronology-link:hover,
 .hero-chronology-link:focus-visible {
-  color: var(--gold);
+  color: var(--gold-luminous);
 }
 
 .entry-monad-research .entry-section > p,
@@ -947,7 +950,7 @@ body.entry-monad::after {
 .recension-witnesses span:not(:last-child)::after {
   content: " · ";
   padding: 0 0.36em;
-  color: rgba(184, 169, 128, 0.52);
+  color: var(--gold-quiet);
 }
 
 .source-term-list {

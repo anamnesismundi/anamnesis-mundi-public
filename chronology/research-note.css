@@ -5,7 +5,7 @@
 
 .research-note {
   padding: 12px 24px 10px;
-  color: rgba(215, 207, 191, 0.76);
+  color: var(--gold-luminous);
   font-size: 0.6875rem;
   line-height: 1.5;
   letter-spacing: 0.16em;
@@ -28,18 +28,14 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  color: color-mix(
-    in srgb,
-    var(--phase-color) 68%,
-    #aaa49a
-  );
+  color: var(--gold-quiet);
   font-family: Arial, sans-serif;
   font-size: 0.625rem;
   font-weight: 400;
   line-height: 1.35;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  opacity: 0.72;
+  opacity: 1;
 }
 
 .entry-monad .provenance-mark {
