@@ -172,7 +172,7 @@
         "order": 2
       },
       "alternativeNames": [
-        "Pronoia (Foreknowledge)",
+        "Pronoia (Forethought)",
         "Ennoia (Thought)",
         "The Mother-Father",
         "The Triple-Male",
@@ -228,39 +228,40 @@
       },
       "notes": "Barbelo is retained as a distinct primary entity because the Apocryphon of John gives this figure a central structural role in the unfolding of the transcendent divine realm.",
       "dateAdded": "2026-08-11",
-      "lastReviewed": "2026-09-18",
+      "lastReviewed": "2026-09-23",
       "pleromaticProcess": {
-        "explorerTitle": "Explore Barbelo’s Attendant Aeons",
+        "explorerTitle": "Explore Barbelo and the Four Aeons",
+        "introduction": "Barbelo is herself counted as the first aeon in this divine complex. At her request, Foreknowledge, Incorruptibility, Eternal Life and Truth come forth from the Invisible Spirit and stand with her. Barbelo together with these four powers forms the five aeons of the Father.",
         "entries": [
           {
             "number": "I",
             "role": "Aeonic Power",
             "name": "Foreknowledge",
-            "description": "At Barbelo’s request, Foreknowledge comes forth from the Invisible Spirit and stands beside Forethought."
+            "description": "At Barbelo’s request, Foreknowledge comes forth from the Invisible Spirit and stands with her. Foreknowledge is a distinct aeonic power and must not be confused with Forethought, which designates Barbelo herself."
           },
           {
             "number": "II",
             "role": "Aeonic Power",
             "name": "Incorruptibility",
-            "description": "Barbelo requests Incorruptibility, which comes forth as a distinct power and joins the unfolding divine fullness."
+            "description": "Incorruptibility comes forth at Barbelo’s request and stands with her within the first aeonic complex."
           },
           {
             "number": "III",
             "role": "Aeonic Power",
             "name": "Eternal Life",
-            "description": "Eternal Life comes forth at Barbelo’s request and takes its place within the initial aeonic complex surrounding her."
+            "description": "Eternal Life comes forth at Barbelo’s request and joins the divine powers gathered around her."
           },
           {
             "number": "IV",
             "role": "Aeonic Power",
             "name": "Truth",
-            "description": "Truth is the fourth power requested by Barbelo and completes this sequence of attendant aeonic realities."
+            "description": "Truth is the fourth power requested by Barbelo and completes the group that stands with her."
           }
         ],
         "note": {
           "role": "Textual Note",
-          "name": "The Aeonic Complex Around Barbelo",
-          "description": "The source presents these realities as distinct aeonic powers associated with Barbelo. Their enumeration contributes to the complex described as an androgynous pentad and, in its paired aspect, a decad. Truth here belongs to this initial complex and is not being merged with the later aeon named Truth in Armozel’s triad."
+          "name": "The Five Aeons and the Ten Aeons",
+          "description": "The text calls Barbelo and these four powers the five aeons of the Father. Because the five are described as androgynous, they are also counted as ten. The five aeons and the ten aeons therefore describe the same divine complex, not two successive groups."
         }
       },
       "primarySourceIds": [
