@@ -9549,3 +9549,13 @@ html body .timeline
 .comparative-explorer {
   border-color: rgba(232, 228, 220, 0.12) !important;
 }
+
+/* ==========================================================
+   PROSE WIDOW CONTROL
+   The final three words of narrative copy remain together.
+   ========================================================== */
+
+.event > p .prose-tail,
+.comparative-tradition p .prose-tail {
+  white-space: nowrap;
+}
