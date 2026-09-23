@@ -9559,3 +9559,18 @@ html body .timeline
 .comparative-tradition p .prose-tail {
   white-space: nowrap;
 }
+
+/* ==========================================================
+   MOBILE COMPARATIVE PROSE WIDOW CONTROL
+   Override the general mobile span reflow only for prose tails.
+   ========================================================== */
+
+@media (max-width: 700px) {
+  html body .timeline
+  .event .comparative-tradition p
+  .prose-tail {
+    white-space: nowrap !important;
+    overflow-wrap: normal !important;
+    word-break: keep-all !important;
+  }
+}
