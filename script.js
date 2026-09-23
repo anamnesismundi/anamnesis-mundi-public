@@ -32,7 +32,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260923-public-mobile-source-wrapping-3";
+const DATA_VERSION = "20260923-public-bm-ea-atomic-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -507,7 +507,7 @@ function createCitationGroupsFromSources(
 
 function createAtomicCitationMarkup(citation) {
   const manuscriptClusterPattern =
-    /NHC\s+[IVXLCDM]+,\d+(?:\s*;\s*(?:(?:NHC\s+)?[IVXLCDM]+,\d+|BG\s+8502,\d+))*|BG\s+8502,\d+|CODEX\s+TCHACOS/gi;
+    /NHC\s+[IVXLCDM]+,\d+(?:\s*;\s*(?:(?:NHC\s+)?[IVXLCDM]+,\d+|BG\s+8502,\d+))*|BG\s+8502,\d+|CODEX\s+TCHACOS|BM\s+EA\s+\d+/gi;
 
   let lastIndex = 0;
   let markup = "";
