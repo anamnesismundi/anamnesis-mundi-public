@@ -1628,6 +1628,118 @@
       "notes": "Modern scholarly source for Valentinian traditions and the Achamoth narrative.",
       "dateAdded": "2026-09-09",
       "lastReviewed": "2026-09-09"
+    },
+    {
+      "id": "source-memphite-theology-shabaka-stone",
+      "title": "The Memphite Theology",
+      "displayName": "The Memphite Theology (Shabaka Stone)",
+      "alternativeTitles": [
+        "Shabaka Stone",
+        "Memphite Creation Theology"
+      ],
+      "sourceType": "ancient-egyptian-theological-text",
+      "collection": {
+        "primaryDisplayName": "British Museum",
+        "additionalWitnessCollections": []
+      },
+      "timelineCitation": "The Memphite Theology (Shabaka Stone), BM EA 498",
+      "traditionIds": [],
+      "originalLanguage": "Egyptian",
+      "originalLanguageStatus": "surviving-monumental-copy-with-disputed-claims-of-earlier-exemplar",
+      "survivingLanguages": [
+        "Egyptian"
+      ],
+      "approximateDate": {
+        "from": 710,
+        "to": 690,
+        "era": "BCE",
+        "certainty": "approximate-copy-date"
+      },
+      "manuscriptWitnesses": [
+        {
+          "name": "Shabaka Stone",
+          "siglum": "BM EA 498",
+          "collection": "British Museum",
+          "language": "Egyptian",
+          "recension": "monumental witness"
+        }
+      ],
+      "sourcePriority": {
+        "tier": 2,
+        "role": "comparative-primary-egyptian-source"
+      },
+      "scope": [
+        "Ptah",
+        "Memphite cosmogony",
+        "creation through heart and tongue",
+        "thought",
+        "spoken word"
+      ],
+      "editorialUse": {
+        "timelineDisplay": true,
+        "preferredCitation": "The Memphite Theology (Shabaka Stone), BM EA 498",
+        "witnessLevelDetail": "research-layer",
+        "note": "Used as a bounded Egyptian cosmological parallel for creation through thought and speech. It is not evidence that Ptah is identical with Autogenes or the Invisible Spirit."
+      },
+      "researchNotes": {
+        "creationBySpeech": "The text associates Ptah's heart and tongue with conception and command, offering a comparison with creation through the Word.",
+        "datingCaution": "The surviving stone is a Twenty-fifth Dynasty monument that claims to copy an older damaged exemplar. The antiquity of the underlying composition remains debated.",
+        "boundary": "Ptah, Autogenes and the Invisible Spirit remain distinct figures from distinct cosmological traditions."
+      },
+      "notes": "Primary Egyptian comparative source for the Autogenes creation-through-the-Word explorer.",
+      "dateAdded": "2026-09-23",
+      "lastReviewed": "2026-09-23"
+    },
+    {
+      "id": "source-gospel-of-john",
+      "title": "The Gospel According to John",
+      "displayName": "The Gospel According to John",
+      "alternativeTitles": [
+        "Gospel of John",
+        "John"
+      ],
+      "sourceType": "ancient-scriptural-text",
+      "collection": {
+        "primaryDisplayName": "New Testament",
+        "additionalWitnessCollections": []
+      },
+      "timelineCitation": "John 1:1–3",
+      "traditionIds": [],
+      "originalLanguage": "Greek",
+      "originalLanguageStatus": "surviving-original-language",
+      "survivingLanguages": [
+        "Greek"
+      ],
+      "approximateDate": {
+        "from": 90,
+        "to": 110,
+        "era": "CE",
+        "certainty": "approximate"
+      },
+      "manuscriptWitnesses": [],
+      "sourcePriority": {
+        "tier": 2,
+        "role": "scriptural-intertext"
+      },
+      "scope": [
+        "Word",
+        "Logos",
+        "creation through the Word",
+        "divine mediation"
+      ],
+      "editorialUse": {
+        "timelineDisplay": true,
+        "preferredCitation": "John 1:1–3",
+        "witnessLevelDetail": "research-layer",
+        "note": "Used as a scriptural Logos intertext for creation through the Word, without identifying the Johannine Word with Autogenes."
+      },
+      "researchNotes": {
+        "logosIntertext": "John 1:1–3 places the Word in the beginning and states that all things came into being through it.",
+        "boundary": "The comparison is textual and structural. It does not establish theological identity with the Sethian Self-Generated."
+      },
+      "notes": "Scriptural intertext for the Autogenes creation-through-the-Word explorer.",
+      "dateAdded": "2026-09-23",
+      "lastReviewed": "2026-09-23"
     }
   ]
 }
