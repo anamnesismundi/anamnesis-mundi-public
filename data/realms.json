@@ -23,7 +23,7 @@
           "notes": "Pleroma is represented by Anamnesis Mundi as the higher divine fullness or realm rather than as an individual entity in the chronological sequence."
         }
       ],
-      "summary": "The divine Fullness of aeons and luminous powers that unfolds through Barbelo and the self-generated Son, Autogenes. This realm follows the Sethian architecture of The Secret Book of John; the distinct Valentinian organization of the Pleroma, including its Ogdoad, Decad, and Duodecad, is presented only in a clearly marked comparative explorer.",
+      "summary": "The divine Fullness of aeons and luminous powers that unfolds through Barbelo and the self-generated Son, Autogenes.",
       "display": {
         "mode": "ambient-region",
         "label": "PLEROMA",
@@ -66,7 +66,7 @@
         "sequenceRule": "Chronological sequences organize navigation within the realm without creating a new ontological region or changing card order."
       },
       "dateAdded": "2026-08-21",
-      "lastReviewed": "2026-09-09",
+      "lastReviewed": "2026-09-23",
       "navigationScope": {
         "entryIds": [
           "entity-barbelo",
@@ -142,7 +142,7 @@
           "notes": "The ambient region visualizes the established lower archontic order beginning with Yaldabaoth and continuing through the formation and expansion of his hierarchy."
         }
       ],
-      "summary": "The archontic heavens established by Yaldabaoth and governed through subordinate authorities and powers. They form the ruling celestial hierarchy of the lower cosmic order. In Valentinian comparison, this deficient order lies outside the Pleroma and may be discussed in relation to the Kenoma, but The Secret Book of John does not itself name this realm Kenoma.",
+      "summary": "The archontic heavens are established by Yaldabaoth and governed through subordinate authorities and powers. They form the ruling celestial hierarchy of the lower cosmic order. This deficient order lies outside the Pleroma.",
       "display": {
         "mode": "ambient-region",
         "label": "THE ARCHONTIC HEAVENS",
@@ -168,7 +168,7 @@
         "visualization": "The public interface should use layered rust, umber and muted copper depth with restrained concentric structures suggestive of nested authorities rather than a starfield."
       },
       "dateAdded": "2026-08-28",
-      "lastReviewed": "2026-09-09",
+      "lastReviewed": "2026-09-23",
       "navigationScope": {
         "entryIds": [
           "event-yaldabaoth-emergence",
@@ -206,7 +206,7 @@
           "notes": "The tractate supplies a related but distinct extended account of matter, heavens, firmaments and lower cosmic ordering."
         }
       ],
-      "summary": "The derivative lower cosmos organized by Yaldabaoth after the likeness of the higher aeons, including heavens, firmaments, and the material and elemental domain in which human embodiment will occur. The source does not provide a complete account of the physical Earth and its natural contents as we know them.",
+      "summary": "The derivative lower cosmos organized by Yaldabaoth after the likeness of the higher aeons, including heavens, firmaments, and the material and elemental domain in which human embodiment will occur.",
       "display": {
         "mode": "ambient-region",
         "label": "MATERIAL COSMOS",
@@ -232,7 +232,7 @@
         "visualization": "The public interface should move from demiurgic copper into mineral sage and blue-grey, with faint strata and firmament-like arcs rather than a modern starfield."
       },
       "dateAdded": "2026-08-28",
-      "lastReviewed": "2026-09-09",
+      "lastReviewed": "2026-09-23",
       "navigationScope": {
         "entryIds": [
           "event-ordering-material-cosmos",
