@@ -323,8 +323,8 @@
           "status": "comparative"
         }
       ],
-      "summary": "When the Invisible Spirit looks upon Barbelo in pure light, she conceives and brings forth a spark of light, the only-begotten child of the Mother-Father. The Spirit anoints this light with goodness until it becomes perfect and establishes it as the divine Autogenes, the Christ, over all things. From Autogenes, through the gift of the Spirit, the Four Great Luminaries come forth.",
-      "overview": "Autogenes occupies a major position within the higher divine structure described in the Apocryphon of John and stands in close structural relation to the four luminaries.",
+      "summary": "When the Father gazes upon Barbelo through the pure light surrounding the Invisible Spirit, she conceives and brings forth a spark of light, radiant like the blessed light, though not as great. This pure light is the only Child of the Mother-Father, her sole offspring. The Invisible Spirit rejoices in the Child, anoints him with his own goodness until he becomes perfect, lacking nothing, and establishes him over all things. Thus the divine Autogenes comes forth as the Anointed, the Christ. From Autogenes, through the gift of the Spirit, the Four Great Luminaries come forth, opening the next unfolding of the Pleroma.",
+      "overview": "Anointed with the goodness of the Invisible Spirit and established over all things, Autogenes becomes the divine source from whom the Four Great Luminaries come forth.",
       "terminology": {
         "editorialDisplayName": "Autogenes",
         "sourceTerms": [
@@ -343,7 +343,7 @@
       },
       "notes": "Autogenes is included in the primary view because it marks a major structural transition within the higher divine order.",
       "dateAdded": "2026-08-14",
-      "lastReviewed": "2026-09-18",
+      "lastReviewed": "2026-09-23",
       "pleromaticProcess": {
         "explorerTitle": "Explore The Powers Around Autogenes",
         "entries": [
@@ -396,6 +396,69 @@
         "ZOSTRIANOS, NHC VIII,1",
         "ALLOGENES THE STRANGER (ALLOGENES), NHC XI,3",
         "THE GOSPEL OF JUDAS, CODEX TCHACOS"
+      ],
+      "explorerTitle": "Explore Comparative Traditions",
+      "comparativeTraditions": [
+        {
+          "category": "EGYPTIAN COSMOLOGICAL PARALLEL",
+          "name": "Ptah and the Memphite Cosmogony",
+          "description": "In the Memphite Theology preserved on the Shabaka Stone, creation proceeds through Ptah’s heart and tongue: what is conceived in the heart is brought forth through speech. This offers a bounded comparison with the divine Self-Generated creating through the Word, without identifying Ptah with Autogenes or the Invisible Spirit.",
+          "relationType": "COSMOLOGICAL PARALLEL",
+          "traditionFamily": "Egyptian",
+          "sourceIds": [
+            "source-memphite-theology-shabaka-stone"
+          ],
+          "sourceCitations": [
+            "THE MEMPHITE THEOLOGY (SHABAKA STONE), BM EA 498"
+          ],
+          "sourceAttestations": [
+            {
+              "sourceId": "source-memphite-theology-shabaka-stone",
+              "role": "primary Egyptian evidence for creation articulated through heart and tongue",
+              "status": "comparative-primary-text"
+            }
+          ]
+        },
+        {
+          "category": "SCRIPTURAL INTERTEXT",
+          "name": "Creation Through Divine Speech in Genesis",
+          "description": "Genesis presents creation unfolding through divine speech: God speaks, and what is spoken comes to be. The comparison concerns the creative power of the spoken word; the biblical creator and the Sethian Autogenes remain distinct.",
+          "relationType": "SCRIPTURAL INTERTEXT",
+          "traditionFamily": "Biblical",
+          "sourceIds": [
+            "source-genesis"
+          ],
+          "sourceCitations": [
+            "GENESIS 1:3, 6, 9, 11, 14, 20, 24, 26"
+          ],
+          "sourceAttestations": [
+            {
+              "sourceId": "source-genesis",
+              "role": "scriptural intertext for creation unfolding through divine speech",
+              "status": "comparative-primary-text"
+            }
+          ]
+        },
+        {
+          "category": "SCRIPTURAL INTERTEXT",
+          "name": "The Word in John 1",
+          "description": "John 1 places the Word in the beginning and declares that all things came into being through it. This forms a close textual comparison with Autogenes creating through the Word, while the Johannine Word and the Sethian Self-Generated are not presented as the same figure.",
+          "relationType": "SCRIPTURAL INTERTEXT",
+          "traditionFamily": "Early Christian",
+          "sourceIds": [
+            "source-gospel-of-john"
+          ],
+          "sourceCitations": [
+            "JOHN 1:1–3"
+          ],
+          "sourceAttestations": [
+            {
+              "sourceId": "source-gospel-of-john",
+              "role": "scriptural Logos intertext for all things coming into being through the Word",
+              "status": "comparative-primary-text"
+            }
+          ]
+        }
       ]
     },
     {
