@@ -32,7 +32,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260923-public-realm-summary-refinement-1";
+const DATA_VERSION = "20260923-public-barbelo-aeonic-pentad-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -916,6 +916,10 @@ function createPleromaticProcessMarkup(entity) {
     return "";
   }
 
+  const introduction = process.introduction
+    ? `<p class="pleromatic-process-introduction">${escapeHtml(process.introduction)}</p>`
+    : "";
+
   const entries = process.entries
     .map(entry => {
       const subtitle = entry.subtitle
@@ -973,6 +977,7 @@ function createPleromaticProcessMarkup(entity) {
       </summary>
 
       <div class="pleromatic-process-members">
+        ${introduction}
         ${entries}
         ${note}
       </div>
