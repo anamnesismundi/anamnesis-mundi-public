@@ -9574,3 +9574,34 @@ html body .timeline
     word-break: keep-all !important;
   }
 }
+
+/* ==========================================================
+   MOBILE COMPARATIVE SOURCE WRAPPING
+   Restore source rows and atomic manuscript/codex units.
+   ========================================================== */
+
+@media (max-width: 700px) {
+  html body .timeline
+  .event .comparative-tradition
+  :is(
+    .source-row,
+    .source-list,
+    .source-item
+  ) {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  html body .timeline
+  .event .comparative-tradition
+  .source-item .citation-unit {
+    display: inline-block !important;
+    white-space: nowrap !important;
+    overflow-wrap: normal !important;
+    word-break: keep-all !important;
+  }
+}
