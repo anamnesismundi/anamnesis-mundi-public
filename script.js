@@ -32,7 +32,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260923-public-barbelo-aeonic-pentad-1";
+const DATA_VERSION = "20260923-public-prose-widow-control-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -47,6 +47,42 @@ function escapeHtml(value) {
     /[&<>"']/g,
     character => HTML_ENTITIES[character]
   );
+}
+
+/*
+  Prevent typographic widows in narrative copy. The final three
+  words stay together as one semantic tail on desktop and mobile,
+  so a paragraph cannot end with only one or two isolated words.
+*/
+function createWidowProtectedMarkup(
+  value,
+  minimumTailWords = 3
+) {
+  const words =
+    String(value ?? "")
+      .trim()
+      .split(/\s+/)
+      .filter(Boolean);
+
+  if (
+    words.length <= minimumTailWords
+  ) {
+    return escapeHtml(value);
+  }
+
+  const head =
+    words
+      .slice(0, -minimumTailWords)
+      .map(escapeHtml)
+      .join(" ");
+
+  const tail =
+    words
+      .slice(-minimumTailWords)
+      .map(escapeHtml)
+      .join(" ");
+
+  return `${head} <span class="prose-tail">${tail}</span>`;
 }
 
 async function fetchJson(fileName) {
@@ -779,7 +815,7 @@ function createSummaryMarkup(
 
   return `
     <p${classAttribute}>
-      ${escapeHtml(summary)}
+      ${createWidowProtectedMarkup(summary)}
     </p>
   `;
 }
@@ -874,7 +910,7 @@ function createComparativeTraditionsMarkup(
             </h3>
 
             <p>
-              ${escapeHtml(
+              ${createWidowProtectedMarkup(
                 tradition.description
               )}
             </p>
