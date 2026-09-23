@@ -8402,6 +8402,21 @@ html body .timeline .event
     font-size: 29px;
   }
 
+  .realm-navigation-card[
+    data-realm-navigation-card="chapter-monad"
+  ] .realm-navigation-summary {
+    max-width: 320px;
+    margin-right: auto;
+    margin-left: auto;
+    text-wrap: balance;
+  }
+
+  .realm-navigation-card[
+    data-realm-navigation-card="chapter-monad"
+  ] .realm-navigation-summary-line {
+    display: inline;
+  }
+
   /*
     The Pleroma threshold belongs to the same one-sided mobile
     chronology as Barbelo: its node centres on the 20px axis and
