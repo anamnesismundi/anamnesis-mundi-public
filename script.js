@@ -32,7 +32,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260922-public-monad-approved-refinement-1";
+const DATA_VERSION = "20260923-public-realm-summary-refinement-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
