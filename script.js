@@ -32,7 +32,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260923-public-mobile-prose-widow-control-2";
+const DATA_VERSION = "20260923-public-mobile-source-wrapping-3";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
