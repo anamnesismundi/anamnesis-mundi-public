@@ -6837,6 +6837,14 @@ body.chronology-entered .timeline {
 
 /* Small global interface and contextual text. */
 
+/* Keep Kafka’s attribution at the shared readable micro-label size. */
+.hero-quote cite {
+  font-size: var(--type-micro) !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0.14em !important;
+  opacity: 0.9 !important;
+}
+
 .begin {
   font-size: var(--type-source) !important;
   letter-spacing: 0.14em !important;
