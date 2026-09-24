@@ -4038,7 +4038,105 @@ function initializeRealmNavigation(
       );
     });
 
+  const directDestination =
+    new URLSearchParams(
+      window.location.search
+    );
+
+  const requestedSequenceId =
+    directDestination.get("sequence");
+
+  const requestedRealmId =
+    directDestination.get("realm");
+
+  const requestedSequence =
+    sequenceById.get(
+      requestedSequenceId || ""
+    );
+
+  const requestedChapterId =
+    requestedSequence?.realmId ||
+    requestedRealmId ||
+    "";
+
+  const requestedChapter =
+    chapters.find(
+      chapter =>
+        chapter.id ===
+        requestedChapterId
+    ) || null;
+
+  if (requestedChapter) {
+    openChapterIds.add(
+      requestedChapter.id
+    );
+  }
+
+  if (
+    requestedSequence &&
+    requestedSequence.realmId ===
+      requestedChapterId
+  ) {
+    openSequenceIds.add(
+      requestedSequence.id
+    );
+  }
+
   applyRealmSelection("");
+
+  if (requestedChapter) {
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        const destinationEntryId =
+          requestedSequence
+            ? getSequenceEntryIds(
+                requestedSequence
+              )[0] || ""
+            : getRealmNavigationEntryIds(
+                requestedChapter
+              )[0] || "";
+
+        const destinationEntry =
+          elementByEntryId.get(
+            destinationEntryId
+          );
+
+        const sequenceCard =
+          requestedSequence
+            ? sequenceCards.find(
+                card =>
+                  card.dataset
+                    .sequenceNavigationCard ===
+                  requestedSequence.id
+              )
+            : null;
+
+        const chapterCard =
+          chapterCards.find(
+            card =>
+              card.dataset
+                .realmNavigationCard ===
+              requestedChapter.id
+          );
+
+        const scrollTarget =
+          destinationEntry &&
+          !destinationEntry.hidden
+            ? destinationEntry
+            : sequenceCard || chapterCard;
+
+        if (scrollTarget) {
+          window.scrollTo({
+            top:
+              window.scrollY +
+              scrollTarget.getBoundingClientRect().top -
+              64,
+            behavior: "auto"
+          });
+        }
+      });
+    });
+  }
 
   window.addEventListener(
     "resize",
@@ -4793,6 +4891,38 @@ function initializeChronologyEntry() {
 
   if (!entry || !timeline) {
     return;
+  }
+
+  const directDestination =
+    new URLSearchParams(
+      window.location.search
+    );
+
+  const hasDirectDestination =
+    Boolean(
+      directDestination.get("sequence") ||
+      directDestination.get("realm")
+    );
+
+  if (hasDirectDestination) {
+    entry.setAttribute(
+      "aria-expanded",
+      "true"
+    );
+
+    timeline.removeAttribute(
+      "aria-hidden"
+    );
+    timeline.removeAttribute(
+      "inert"
+    );
+
+    document.body.classList.remove(
+      "chronology-locked"
+    );
+    document.body.classList.add(
+      "chronology-entered"
+    );
   }
 
   entry.addEventListener(
