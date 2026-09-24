@@ -365,3 +365,38 @@ body.entry-sequence-research::after {
 .entry-sequence-research .chronology-return a {
   font-size: 0.75rem;
 }
+
+/* Simplified standalone narrative: paragraph rhythm and translations only. */
+.entry-sequence-research .entry-hero .entry-deck + .entry-deck {
+  margin-top: 18px;
+}
+
+.entry-sequence-research .translations-consulted {
+  max-width: 760px;
+  margin-top: 26px;
+  padding: 20px 22px;
+  text-align: left;
+  background: rgba(184, 169, 128, 0.026);
+}
+
+.entry-sequence-research .translations-consulted ul {
+  margin: 11px 0 0;
+  padding-left: 20px;
+  color: #aaa59b;
+  font-size: 14px;
+  line-height: 1.72;
+}
+
+.entry-sequence-research .translations-consulted li + li {
+  margin-top: 7px;
+}
+
+@media (max-width: 700px) {
+  .entry-sequence-research .translations-consulted {
+    padding: 16px 17px;
+  }
+
+  .entry-sequence-research .translations-consulted ul {
+    font-size: 13px;
+  }
+}
