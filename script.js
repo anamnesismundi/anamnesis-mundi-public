@@ -22,6 +22,32 @@ if ("scrollRestoration" in window.history) {
 
 resetInitialPagePosition();
 
+const heroTitleLink =
+  document.querySelector(
+    ".hero-title-link"
+  );
+
+if (heroTitleLink) {
+  heroTitleLink.addEventListener(
+    "click",
+    event => {
+      const homeUrl =
+        new URL(
+          "./",
+          window.location.href
+        );
+
+      if (
+        homeUrl.href ===
+        window.location.href
+      ) {
+        event.preventDefault();
+        window.location.reload();
+      }
+    }
+  );
+}
+
 window.addEventListener(
   "pageshow",
   () => {
