@@ -4087,20 +4087,6 @@ function initializeRealmNavigation(
   if (requestedChapter) {
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
-        const destinationEntryId =
-          requestedSequence
-            ? getSequenceEntryIds(
-                requestedSequence
-              )[0] || ""
-            : getRealmNavigationEntryIds(
-                requestedChapter
-              )[0] || "";
-
-        const destinationEntry =
-          elementByEntryId.get(
-            destinationEntryId
-          );
-
         const sequenceCard =
           requestedSequence
             ? sequenceCards.find(
@@ -4119,11 +4105,13 @@ function initializeRealmNavigation(
               requestedChapter.id
           );
 
+        /*
+          Open at the start of the matching chapter or sequence.
+          The navigation panel is aligned below the fixed research
+          note so its context appears before the first timeline card.
+        */
         const scrollTarget =
-          destinationEntry &&
-          !destinationEntry.hidden
-            ? destinationEntry
-            : sequenceCard || chapterCard;
+          sequenceCard || chapterCard;
 
         if (scrollTarget) {
           window.scrollTo({
