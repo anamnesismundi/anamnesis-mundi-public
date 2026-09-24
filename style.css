@@ -9605,3 +9605,40 @@ html body .timeline
     word-break: keep-all !important;
   }
 }
+
+
+/* The homepage title returns to the clean opening state. */
+.hero-title-link {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 180ms ease;
+}
+
+.hero-title-link:hover,
+.hero-title-link:focus-visible {
+  color: #fff;
+}
+
+.hero-title-link:focus-visible {
+  outline: 1px solid rgba(255, 255, 255, 0.72);
+  outline-offset: 8px;
+}
+
+body.chronology-entered .hero-content {
+  opacity: 1;
+}
+
+body.chronology-entered .hero-content > * {
+  opacity: 0.42;
+  transition: opacity 0.65s ease;
+}
+
+body.chronology-entered .hero-content > h1 {
+  transition: opacity 180ms ease;
+}
+
+body.chronology-entered .hero-content > h1:hover,
+body.chronology-entered .hero-content > h1:focus-within {
+  opacity: 1;
+}
