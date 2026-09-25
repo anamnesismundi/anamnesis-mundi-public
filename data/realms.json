@@ -178,7 +178,35 @@
         ],
         "behavior": "independent-collapsible-chapter",
         "notes": "Navigation grouping only. It does not alter the realm's ontological scope or the chronological identity of transitional events."
-      }
+      },
+      "chronologicalSequences": [
+        {
+          "id": "sequence-demiurgic-chief-ruler",
+          "displayName": "The Emergence of the Chief Ruler",
+          "subtitle": "Yaldabaoth and the beginning of the lower order",
+          "display": {
+            "order": 1,
+            "label": "SEQUENCE 1/2"
+          },
+          "entryIds": [
+            "event-yaldabaoth-emergence",
+            "entity-yaldabaoth"
+          ]
+        },
+        {
+          "id": "sequence-demiurgic-archontic-hierarchy",
+          "displayName": "The Archontic Hierarchy",
+          "subtitle": "Subordinate rulers and the expansion of authority",
+          "display": {
+            "order": 2,
+            "label": "SEQUENCE 2/2"
+          },
+          "entryIds": [
+            "event-formation-subordinate-rulers",
+            "event-expansion-archontic-hierarchy"
+          ]
+        }
+      ]
     },
     {
       "id": "realm-material-cosmos",
