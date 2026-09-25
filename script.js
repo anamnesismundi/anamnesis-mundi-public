@@ -58,7 +58,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260924-public-sophia-sequence3-subtitle-1";
+const DATA_VERSION = "20260925-public-sophia-generation-published-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -3220,7 +3220,9 @@ function createSequenceNavigationMarkup(
     "sequence-pleroma-first-emanations":
       "chronology/first-emanations/",
     "sequence-pleroma-aeonic-order":
-      "chronology/aeonic-order/"
+      "chronology/aeonic-order/",
+    "sequence-pleroma-sophia-generation":
+      "chronology/sophias-independent-generation/"
   };
 
   const standaloneHref =
