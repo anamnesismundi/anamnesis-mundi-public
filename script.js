@@ -58,7 +58,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260925-public-yaldabaoth-card-3";
+const DATA_VERSION = "20260925-public-yaldabaoth-entity-copy-4";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
