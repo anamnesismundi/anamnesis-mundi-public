@@ -58,7 +58,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260925-public-yaldabaoth-note-1";
+const DATA_VERSION = "20260925-public-yaldabaoth-note-2";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
