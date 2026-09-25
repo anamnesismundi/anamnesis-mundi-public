@@ -3224,7 +3224,7 @@ function createSequenceNavigationMarkup(
     "sequence-pleroma-sophia-generation":
       "chronology/sophias-independent-generation/",
     "sequence-demiurgic-chief-ruler":
-      "chronology/emergence-of-the-chief-ruler/"
+      "chronology/demiurge/"
   };
 
   const standaloneHref =
