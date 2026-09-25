@@ -16,9 +16,9 @@
   <meta name="twitter:title" content="Four Great Luminaries | Twelve Aeons | Spiritual Generations | Anamnesis Mundi">
   <meta name="twitter:description" content="The luminaries, aeons and spiritual generations of the second Pleromatic sequence.">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Four Great Luminaries | Twelve Aeons | Spiritual Generations | Anamnesis Mundi","url":"https://anamnesismundi.github.io/anamnesis-mundi-public/chronology/aeonic-order/","description":"A source-based study of the four great luminaries, twelve aeons and spiritual generations in the Secret Book of John.","inLanguage":"en","isAccessibleForFree":true,"isPartOf":{"@type":"WebSite","name":"Anamnesis Mundi","url":"https://anamnesismundi.github.io/anamnesis-mundi-public/"},"about":["The Aeonic Order","Four Great Luminaries","Twelve Aeons","Spiritual Generations","Armozel","Oroiael","Daveithai","Eleleth","Geradamas","Seth","The Secret Book of John","Sethian Gnosticism"]}</script>
-  <link rel="stylesheet" href="../entry.css?v=20260922-public-sitewide-three-gold-1">
-  <link rel="stylesheet" href="../research-note.css?v=20260922-public-sitewide-three-gold-1">
-  <link rel="stylesheet" href="standalone.css?v=20260924-public-aeonic-order-translations-1">
+  <link rel="stylesheet" href="../entry.css?v=20260922-private-sitewide-three-gold-1">
+  <link rel="stylesheet" href="../research-note.css?v=20260922-private-sitewide-three-gold-1">
+  <link rel="stylesheet" href="standalone.css?v=20260924-private-aeonic-order-translations-1">
 </head>
 <body class="entry-aeonic-order entry-sequence-research">
 <div class="research-note">A MAP FOR INQUIRY - USE IT AS A STARTING POINT FOR YOUR OWN RESEARCH.</div>
@@ -57,5 +57,18 @@
   </article>
 </main>
 <footer class="entry-footer">Anamnesis Mundi · A source-based chronological map</footer>
+<script>
+  (() => {
+    if ("scrollRestoration" in history) {
+      history.scrollRestoration = "manual";
+    }
+    const resetScroll = () => {
+      if (window.location.hash) return;
+      window.scrollTo(0, 0);
+    };
+    window.addEventListener("pageshow", resetScroll);
+    window.addEventListener("load", resetScroll, { once: true });
+  })();
+</script>
 </body>
 </html>
