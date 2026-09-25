@@ -58,7 +58,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260925-public-demiurge-title-2";
+const DATA_VERSION = "20260925-public-yaldabaoth-note-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -1139,6 +1139,12 @@ function createEntityCard(
       entity.summary || ""
     );
 
+  const contextualNote =
+    createSummaryMarkup(
+      entity.contextualNote || "",
+      "event-contextual-note"
+    );
+
   const pleromaticProcess =
     createPleromaticProcessMarkup(
       entity
@@ -1183,6 +1189,7 @@ function createEntityCard(
       </h2>
 
       ${summary}
+      ${contextualNote}
 
       ${alternativeNames}
       ${sources}
