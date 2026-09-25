@@ -58,7 +58,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260925-public-sophia-rupture-subtitle-1";
+const DATA_VERSION = "20260925-public-chief-ruler-standalone-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -3222,7 +3222,9 @@ function createSequenceNavigationMarkup(
     "sequence-pleroma-aeonic-order":
       "chronology/aeonic-order/",
     "sequence-pleroma-sophia-generation":
-      "chronology/sophias-independent-generation/"
+      "chronology/sophias-independent-generation/",
+    "sequence-demiurgic-chief-ruler":
+      "chronology/emergence-of-the-chief-ruler/"
   };
 
   const standaloneHref =
