@@ -58,7 +58,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260925-public-sophia-generation-published-1";
+const DATA_VERSION = "20260925-public-sophia-rupture-subtitle-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
