@@ -58,7 +58,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260925-public-chief-ruler-standalone-1";
+const DATA_VERSION = "20260925-public-archontic-sections-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -3484,16 +3484,20 @@ function initializeRealmNavigation(
 
   const sequences =
     realms
-      .filter(realm => realm.id === "realm-pleroma")
+      .filter(
+        realm =>
+          realm.id === "realm-pleroma" ||
+          realm.id === "realm-demiurgic-order"
+      )
       .flatMap(
-      realm =>
-        getRealmChronologicalSequences(
-          realm
-        ).map(sequence => ({
-          ...sequence,
-          realmId: realm.id
-        }))
-    );
+        realm =>
+          getRealmChronologicalSequences(
+            realm
+          ).map(sequence => ({
+            ...sequence,
+            realmId: realm.id
+          }))
+      );
 
   const sequenceById =
     new Map(
