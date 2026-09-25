@@ -44,14 +44,14 @@ body.entry-chief-ruler-research::after {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: color-mix(in srgb, var(--demiurgic) 74%, #aaa49a);
+  color: rgba(176, 112, 81, 0.86);
   font-family: Arial, sans-serif;
   font-size: 0.625rem;
   font-weight: 400;
   line-height: 1.35;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  opacity: 0.78;
+  opacity: 1;
 }
 
 .entry-chief-ruler-research .provenance-mark {
