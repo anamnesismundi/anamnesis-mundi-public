@@ -58,7 +58,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260925-public-yaldabaoth-entity-copy-4";
+const DATA_VERSION = "20260926-public-pigeradamas-invincible-mind";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -1431,7 +1431,7 @@ function createSpiritualGenerationsCard() {
       luminary: "Armozel",
       name: "Geradamas / Pigera-Adamas",
       description:
-        "Geradamas (Pigera-Adamas) is the perfect, heavenly archetypal Human, placed in the first aeonic realm, the domain of Armozel.",
+        "Geradamas (Pigera-Adamas) is the perfect, heavenly archetypal Human, placed in the first aeonic realm, the domain of Armozel. The Invisible Spirit gave him an invincible power of mind.",
       note:
         "He is not the material Adam who appears later in the lower cosmos; the earthly Adam belongs to a subsequent stage of the narrative."
     },
