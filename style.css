@@ -1135,6 +1135,10 @@ p {
   margin-top: 28px;
 }
 
+.event[data-event-id="event-formation-subordinate-rulers"] > p + p {
+  margin-top: 22px;
+}
+
 /* ==========================================================
    ALTERNATIVE NAMES
    ========================================================== */
