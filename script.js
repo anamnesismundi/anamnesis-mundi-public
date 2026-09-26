@@ -58,7 +58,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260926-public-pigeradamas-invincible-mind";
+const DATA_VERSION = "20260926-public-subordinate-rulers-narrative";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -2510,9 +2510,13 @@ function createEventCard(
     );
 
   const summary =
-    createSummaryMarkup(
-      event.summary || ""
-    );
+    String(event.summary || "")
+      .split(/\n\s*\n/)
+      .filter(Boolean)
+      .map(paragraph =>
+        createSummaryMarkup(paragraph)
+      )
+      .join("");
   
 const contextualNote =
   event.id === "event-formation-subordinate-rulers"
