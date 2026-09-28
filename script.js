@@ -58,7 +58,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260928-public-emergence-of-archons-title";
+const DATA_VERSION = "20260928-public-remove-mated-it";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
