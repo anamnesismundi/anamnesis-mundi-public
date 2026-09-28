@@ -58,7 +58,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260928-public-archontic-hierarchy-faithful-copy";
+const DATA_VERSION = "20260928-public-subordinate-rulers-three-paragraphs";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
