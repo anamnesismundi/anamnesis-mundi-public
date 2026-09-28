@@ -58,7 +58,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260926-public-subordinate-rulers-narrative";
+const DATA_VERSION = "20260928-public-remove-authority-distribution-note";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
