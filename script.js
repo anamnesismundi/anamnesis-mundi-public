@@ -58,7 +58,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260928-public-remove-mated-it";
+const DATA_VERSION = "20260928-public-archontic-hierarchy-faithful-copy";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
