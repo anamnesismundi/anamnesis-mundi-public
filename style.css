@@ -1136,7 +1136,8 @@ p {
 }
 
 .event[data-event-id="event-formation-subordinate-rulers"] > p + p,
-.event[data-event-id="event-expansion-archontic-hierarchy"] > p + p {
+.event[data-event-id="event-expansion-archontic-hierarchy"] > p + p,
+.event[data-entity-id="entity-autogenes"] > p + p {
   margin-top: 22px;
 }
 
