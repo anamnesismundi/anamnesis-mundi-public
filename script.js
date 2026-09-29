@@ -1135,9 +1135,13 @@ function createEntityCard(
     );
 
   const summary =
-    createSummaryMarkup(
-      entity.summary || ""
-    );
+    String(entity.summary || "")
+      .split(/\n\s*\n/)
+      .filter(Boolean)
+      .map(paragraph =>
+        createSummaryMarkup(paragraph)
+      )
+      .join("");
 
   const contextualNote =
     createSummaryMarkup(
