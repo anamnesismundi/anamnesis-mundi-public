@@ -4089,10 +4089,14 @@ function initializeRealmNavigation(
     );
 
   const requestedSequenceId =
-    directDestination.get("sequence");
+    directDestination.get("sequence") ||
+    document.body.dataset.initialSequence ||
+    "";
 
   const requestedRealmId =
-    directDestination.get("realm");
+    directDestination.get("realm") ||
+    document.body.dataset.initialRealm ||
+    "";
 
   const requestedSequence =
     sequenceById.get(
@@ -4129,7 +4133,10 @@ function initializeRealmNavigation(
 
   applyRealmSelection("");
 
-  if (requestedChapter) {
+  if (
+    requestedChapter &&
+    document.body.dataset.sequenceEntryPage !== "true"
+  ) {
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
         const sequenceCard =
