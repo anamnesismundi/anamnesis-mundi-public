@@ -4355,10 +4355,51 @@ async function renderTimeline() {
     return;
   }
 
-  const timelineItems =
+  let timelineItems =
     getPrimaryTimelineItems(
       database
     );
+
+  /*
+    Sequence-entry pages reuse the public chronology renderer while
+    constructing only the entries owned by the requested sequence.
+    The homepage continues to render its complete public chronology.
+  */
+  if (
+    document.body.dataset
+      .sequenceEntryPage === "true"
+  ) {
+    const initialSequenceId =
+      document.body.dataset.initialSequence ||
+      "";
+
+    const initialSequence =
+      database.realms
+        .flatMap(realm =>
+          getRealmChronologicalSequences(
+            realm
+          )
+        )
+        .find(sequence =>
+          sequence.id === initialSequenceId
+        ) || null;
+
+    if (initialSequence) {
+      const sequenceEntryIds =
+        new Set(
+          getSequenceEntryIds(
+            initialSequence
+          )
+        );
+
+      timelineItems =
+        timelineItems.filter(entry =>
+          sequenceEntryIds.has(
+            getTimelineEntryId(entry)
+          )
+        );
+    }
+  }
 
   if (!timelineItems.length) {
     timeline.innerHTML = `
@@ -4370,7 +4411,44 @@ async function renderTimeline() {
     return;
   }
 
+  /*
+    The hidden parity article preserves the cards' canonical odd/even
+    positions from the complete chronology. It occupies no layout space
+    and is enabled only by an explicit sequence-page data attribute.
+  */
+  const requestedParityOffset =
+    Number.parseInt(
+      document.body.dataset
+        .timelineParityOffset || "0",
+      10
+    );
+
+  const timelineParityOffset =
+    document.body.dataset
+      .sequenceEntryPage === "true" &&
+    Number.isFinite(requestedParityOffset)
+      ? Math.abs(requestedParityOffset) % 2
+      : 0;
+
+  const paritySpacerMarkup =
+    timelineParityOffset
+      ? `
+        <article
+          class="timeline-parity-spacer"
+          aria-hidden="true"
+          hidden
+        ></article>
+      `
+      : "";
+
+  const continuationMarkup =
+    document.body.dataset
+      .sequenceEntryPage === "true"
+      ? ""
+      : createPublicContinuationMarkup();
+
   timeline.innerHTML =
+    paritySpacerMarkup +
     timelineItems
       .map(entry => {
         if (
@@ -4404,7 +4482,7 @@ async function renderTimeline() {
         );
       })
       .join("") +
-    createPublicContinuationMarkup();
+    continuationMarkup;
 
   const monad =
     timeline.querySelector(
@@ -4511,6 +4589,56 @@ async function renderTimeline() {
       );
 
     if (!monad) {
+      if (
+        document.body.dataset
+          .sequenceEntryPage === "true"
+      ) {
+        const renderedEvents =
+          Array.from(
+            timeline.querySelectorAll(
+              ".event"
+            )
+          ).filter(
+            eventElement =>
+              !eventElement.hidden &&
+              window.getComputedStyle(
+                eventElement
+              ).display !== "none"
+          );
+
+        const firstRenderedEvent =
+          renderedEvents[0];
+
+        const lastRenderedEvent =
+          renderedEvents[
+            renderedEvents.length - 1
+          ];
+
+        const axisStart =
+          firstRenderedEvent
+            ? firstRenderedEvent.offsetTop + 70
+            : 70;
+
+        const axisEnd =
+          lastRenderedEvent
+            ? lastRenderedEvent.offsetTop +
+              lastRenderedEvent.offsetHeight
+            : axisStart;
+
+        timeline.style.setProperty(
+          "--timeline-start",
+          `${axisStart}px`
+        );
+
+        timeline.style.setProperty(
+          "--timeline-length",
+          `${Math.max(
+            0,
+            axisEnd - axisStart
+          )}px`
+        );
+      }
+
       return;
     }
 
