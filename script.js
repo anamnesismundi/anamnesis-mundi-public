@@ -2517,22 +2517,50 @@ function createEventCard(
       database
     );
 
+  const renderEventParagraph = (
+    paragraph,
+    className = ""
+  ) => {
+    const markup =
+      createSummaryMarkup(
+        paragraph,
+        className
+      );
+
+    return event.id ===
+      "event-sophia-independent-generation"
+        ? markup.replace(
+            /\*([^*]+)\*/g,
+            "<em>$1</em>"
+          )
+        : markup;
+  };
+
   const summary =
     String(event.summary || "")
       .split(/\n\s*\n/)
       .filter(Boolean)
       .map(paragraph =>
-        createSummaryMarkup(paragraph)
+        renderEventParagraph(paragraph)
       )
       .join("");
-  
-const contextualNote =
-  event.id === "event-formation-subordinate-rulers"
-    ? ""
-    : createSummaryMarkup(
-        event.contextualNote || "",
-        "event-contextual-note"
-      );
+
+  const contextualNote =
+    event.id ===
+    "event-formation-subordinate-rulers"
+      ? ""
+      : String(
+          event.contextualNote || ""
+        )
+          .split(/\n\s*\n/)
+          .filter(Boolean)
+          .map(paragraph =>
+            renderEventParagraph(
+              paragraph,
+              "event-contextual-note"
+            )
+          )
+          .join("");
   
   return `
     <article
