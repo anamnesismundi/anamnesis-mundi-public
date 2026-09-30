@@ -58,7 +58,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260928-public-archontic-expansion-three-paragraphs";
+const DATA_VERSION = "20260930-archontic-comparisons";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -920,6 +920,47 @@ function createComparativeTraditionsMarkup(
             `
             : "";
 
+        const supportsParagraphDescriptions =
+          entity.id ===
+          "group-seven-powers-comparative-traditions";
+
+        const supportsInlineEmphasis =
+          entity.id === "entity-yaldabaoth" ||
+          supportsParagraphDescriptions;
+
+        const descriptionParagraphs =
+          supportsParagraphDescriptions
+            ? String(
+                tradition.description || ""
+              )
+                .split(/\n\s*\n/)
+                .filter(Boolean)
+            : [
+                String(
+                  tradition.description || ""
+                )
+              ];
+
+        const descriptionMarkup =
+          descriptionParagraphs
+            .map(paragraph => {
+              const markup =
+                createWidowProtectedMarkup(
+                  paragraph
+                );
+
+              const renderedMarkup =
+                supportsInlineEmphasis
+                  ? markup.replace(
+                      /\*([^*]+)\*/g,
+                      "<em>$1</em>"
+                    )
+                  : markup;
+
+              return `<p>${renderedMarkup}</p>`;
+            })
+            .join("");
+
         return `
           <article class="comparative-tradition">
             <span class="comparative-tradition-category">
@@ -935,18 +976,7 @@ function createComparativeTraditionsMarkup(
               )}
             </h3>
 
-            <p>
-              ${entity.id === "entity-yaldabaoth"
-                ? createWidowProtectedMarkup(
-                    tradition.description
-                  ).replace(
-                    /\*([^*]+)\*/g,
-                    "<em>$1</em>"
-                  )
-                : createWidowProtectedMarkup(
-                    tradition.description
-                  )}
-            </p>
+            ${descriptionMarkup}
 
             ${sourceMarkup}
           </article>
