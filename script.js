@@ -2527,8 +2527,10 @@ function createEventCard(
         className
       );
 
-    return event.id ===
-      "event-sophia-independent-generation"
+    return [
+      "event-sophia-independent-generation",
+      "event-yaldabaoth-emergence"
+    ].includes(event.id)
         ? markup.replace(
             /\*([^*]+)\*/g,
             "<em>$1</em>"
