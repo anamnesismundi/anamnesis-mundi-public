@@ -936,9 +936,16 @@ function createComparativeTraditionsMarkup(
             </h3>
 
             <p>
-              ${createWidowProtectedMarkup(
-                tradition.description
-              )}
+              ${entity.id === "entity-yaldabaoth"
+                ? createWidowProtectedMarkup(
+                    tradition.description
+                  ).replace(
+                    /\*([^*]+)\*/g,
+                    "<em>$1</em>"
+                  )
+                : createWidowProtectedMarkup(
+                    tradition.description
+                  )}
             </p>
 
             ${sourceMarkup}
