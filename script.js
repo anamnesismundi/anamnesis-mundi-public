@@ -1506,7 +1506,7 @@ function createSpiritualGenerationsCard() {
       </h2>
 
       <p>
-        From the foreknowledge of the perfect Mind, through the revelation of the will of the Invisible Spirit and Autogenes, the perfect heavenly Human comes forth as the first revelation and the truth. Named Pigera-Adamas and placed in the first aeon, he precedes the earthly Adam and functions within the narrative as the higher pattern of humanity from which the spiritual lineage unfolds.
+        From the foreknowledge of the perfect Mind, and through the will of the Invisible Spirit and Autogenes, the perfect heavenly Human comes forth as the first revelation and the truth. Named Pigera-Adamas and established in the first aeon, he precedes the earthly Adam and stands at the beginning of the spiritual lineage that unfolds from him.
       </p>
 
       <span class="group-sources source-block">
@@ -1547,7 +1547,11 @@ function createSpiritualGenerationsCard() {
             </h3>
 
             <p>
-              The placement of these spiritual generations precedes Sophia's independent generation and the emergence of Yaldabaoth in the narrative. This is significant: Geradamas arises from the foreknowledge of the perfect mind, while the text already assigns a place even to souls described as initially ignorant of the Fullness who later repent. The sequence therefore presents the spiritual lineage within the divine order before the lower cosmos comes into existence. This can be read as suggesting that the later drama of descent, ignorance, and return is already anticipated within the Pleromatic order, rather than the spiritual lineage being created afterward merely as a reaction to the Demiurge.
+              These spiritual generations take their place within the Pleroma before Sophia’s independent generation and the emergence of Yaldabaoth. Geradamas comes forth from the foreknowledge of the perfect Mind, while a place is already prepared even for souls who begin in ignorance of the Fullness and later repent.
+            </p>
+
+            <p>
+              The spiritual lineage is thus established within the divine order before the lower cosmos comes into being. In this sequence, the later movement through descent, ignorance and return appears already foreshadowed within the Pleroma, rather than arising only in response to the Demiurge.
             </p>
           </aside>
         </div>
