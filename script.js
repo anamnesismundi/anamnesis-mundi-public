@@ -58,7 +58,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260930-archontic-comparisons";
+const DATA_VERSION = "20260930-material-cosmos-description";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
