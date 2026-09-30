@@ -310,7 +310,7 @@
         {
           "category": "COSMOLOGICAL PARALLEL",
           "name": "The Seven Planetary Rulers of Hellenistic Cosmology",
-          "description": "The sevenfold hierarchy can be compared with the seven planetary rulers of Hellenistic cosmology and astrology. Scholarship reads the seven kings in the Apocryphon of John as planetary archons within an astral world model, a context that also helps explain the multiplication toward 365 archontic angels. This comparison does not establish a definitive one-to-one identification between each figure and a particular planet.",
+          "description": "The sevenfold hierarchy finds a possible parallel in the seven planetary rulers of Hellenistic cosmology and astrology. The seven kings of *The Apocryphon of John* have been interpreted within this wider astral context, which may also illuminate the expansion of the archontic order toward 365 angels. The parallel, however, does not establish a definitive correspondence between each ruler and a particular planet.",
           "relationType": "COSMOLOGICAL PARALLEL",
           "traditionFamily": "Hellenistic Astral",
           "sourceIds": [
@@ -339,7 +339,7 @@
         {
           "category": "MYTHIC PARALLEL",
           "name": "The Seven Animal-Form Archons of the Ophite Diagram",
-          "description": "Origen reports an Ophite diagram containing seven cosmic rulers represented through animal forms. The comparison lies in the sevenfold hierarchy and its animal-shaped rulers; the Ophite names, sequence and individual forms differ from those preserved in the Apocryphon of John and should not be treated as the same roster.",
+          "description": "Origen describes an Ophite diagram in which seven cosmic rulers appear in animal forms. Its sevenfold hierarchy and animal-shaped rulers offer a striking parallel with *The Apocryphon of John*, yet the names, sequence and individual forms differ between the two traditions and should not be understood as the same group.",
           "relationType": "MYTHIC PARALLEL",
           "traditionFamily": "Ophite / Gnostic",
           "sourceIds": [
@@ -371,7 +371,7 @@
           "alternativeNames": [
             "Abraxas and the 365 Heavens"
           ],
-          "description": "In the cosmological system attributed to Basilides by Irenaeus and Hippolytus, successive orders of powers and Basilidean angels produce 365 heavens, corresponding to the days of the solar year. Abrasax — whose name has the numerical value 365 when calculated from its Greek letters — is identified as the chief or Great Archon of this celestial totality. This creates a significant numerical and cosmological parallel with the 365 archontic angels named in the Apocryphon of John. The two structures should nevertheless remain distinct: the Basilidean account enumerates heavens, whereas the Sethian text gives a total of archontic angels. Abrasax should therefore not be identified with Yaldabaoth, placed above the seven figures, or treated as their ruler. Since the Basilidean system survives largely through reports written by its opponents, its precise reconstruction remains necessarily cautious.",
+          "description": "In the cosmological system attributed to Basilides by Irenaeus and Hippolytus, successive orders of powers and angels give rise to 365 heavens, corresponding to the days of the solar year. Abrasax, whose name carries the numerical value 365 in Greek, stands as the chief or Great Archon of this celestial order.\n\nThe number 365 creates a striking parallel with the 365 archontic angels of *The Apocryphon of John*, yet the two cosmologies remain distinct. The Basilidean account speaks of 365 heavens, while the Sethian account numbers 365 archontic angels. Abrasax therefore should not be identified with Yaldabaoth or placed above the seven rulers as their chief.\n\nThe Basilidean system is known largely through accounts preserved by its opponents, so the precise form of its cosmology remains difficult to reconstruct with certainty.",
           "sourceIds": [
             "source-irenaeus-against-heresies",
             "source-hippolytus-refutation-all-heresies"
