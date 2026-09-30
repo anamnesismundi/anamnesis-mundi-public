@@ -58,7 +58,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260930-material-cosmos-description";
+const DATA_VERSION = "20260930-ordering-material-cosmos";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
