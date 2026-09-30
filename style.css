@@ -3379,6 +3379,11 @@ summary::after {
 }
 
 
+.event[data-event-id="event-expansion-archontic-hierarchy"]
+.comparative-tradition p + p {
+  margin-top: 22px !important;
+}
+
 .comparative-tradition p {
   max-width:
     720px !important;
