@@ -58,7 +58,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20260930-ordering-material-cosmos";
+const DATA_VERSION = "20261001-sophia-repentance";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -922,7 +922,9 @@ function createComparativeTraditionsMarkup(
 
         const supportsParagraphDescriptions =
           entity.id ===
-          "group-seven-powers-comparative-traditions";
+            "group-seven-powers-comparative-traditions" ||
+          entity.id ===
+            "event-sophia-repentance-intermediate-restoration";
 
         const supportsInlineEmphasis =
           entity.id === "entity-yaldabaoth" ||
