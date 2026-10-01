@@ -58,7 +58,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20261001-sophia-repentance";
+const DATA_VERSION = "20261001-primordial-human-revelation";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
