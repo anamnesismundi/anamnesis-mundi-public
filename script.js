@@ -58,7 +58,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20261001-subordinate-rulers-distribution";
+const DATA_VERSION = "20261009-yaldabaoth-summary";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
