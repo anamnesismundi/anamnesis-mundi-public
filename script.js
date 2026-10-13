@@ -58,7 +58,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20261009-yaldabaoth-summary";
+const DATA_VERSION = "20261013-twelve-authorities-descriptions";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
