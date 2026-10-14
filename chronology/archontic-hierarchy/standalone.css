@@ -1,0 +1,308 @@
+/* ==========================================================
+   THE EMERGENCE OF THE ARCHONS — PUBLIC HYBRID SEQUENCE PAGE
+   Standalone URL with the live chronology sequence embedded.
+   ========================================================== */
+
+html {
+  background: #0b0b0b;
+}
+
+body.sequence-entry-archontic {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 38.5px;
+  overflow-x: hidden;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(112, 62, 43, 0.145) 0%,
+      rgba(111, 57, 39, 0.235) 32%,
+      rgba(94, 47, 36, 0.265) 66%,
+      rgba(72, 40, 36, 0.215) 100%
+    ),
+    #0b0b0b;
+  background-attachment: scroll;
+}
+
+.sequence-entry-header {
+  width: min(1120px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 24px 0 12px;
+}
+
+.sequence-entry-header a,
+.sequence-entry-return a {
+  color: rgba(188, 143, 117, 0.78);
+  font-family: Arial, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  letter-spacing: 0.14em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.sequence-entry-header a:hover,
+.sequence-entry-header a:focus-visible,
+.sequence-entry-return a:hover,
+.sequence-entry-return a:focus-visible {
+  color: rgba(232, 190, 161, 0.98);
+}
+
+.sequence-entry-shell {
+  width: min(820px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 32px 0 34px;
+}
+
+.sequence-entry-intro {
+  max-width: 760px;
+}
+
+.sequence-entry-provenance {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: rgba(176, 112, 81, 0.86);
+  font-family: Arial, sans-serif;
+  font-size: 0.625rem;
+  line-height: 1.35;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.sequence-entry-position {
+  display: block;
+  margin-top: 22px;
+  color: rgba(176, 112, 81, 0.86);
+  font-family: Arial, sans-serif;
+  font-size: 0.6875rem;
+  line-height: 1.4;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.sequence-entry-intro h1 {
+  margin: 24px 0 10px;
+  color: #eee9df;
+  font-size: clamp(40px, 5.7vw, 68px);
+  font-weight: normal;
+  line-height: 1.04;
+  letter-spacing: 0.015em;
+  text-wrap: balance;
+}
+
+.sequence-entry-subtitle {
+  margin: 0;
+  color: var(--gold-structural);
+  font-family: Arial, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.sequence-entry-deck {
+  max-width: 760px;
+  margin: 25px 0 0;
+  color: #aaa59b;
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.sequence-entry-deck + .sequence-entry-deck {
+  margin-top: 18px;
+}
+
+.sequence-entry-chronology {
+  position: relative;
+  margin-top: 12px;
+  padding-top: 0;
+}
+
+/*
+  The page heading already identifies the realm and sequence.
+  The live chronology therefore begins with the first real card.
+*/
+.sequence-entry-page .realm-navigation-card,
+.sequence-entry-page .sequence-navigation-card,
+.sequence-entry-page .monad-region,
+.sequence-entry-page .pleroma-threshold {
+  display: none !important;
+}
+
+/*
+  The standalone introduction and the chronology share one Archontic
+  Heavens field. Suppress the main-page realm overlay so it cannot
+  introduce a second horizontal color layer beneath the introduction.
+*/
+.sequence-entry-page .realm-region {
+  display: none !important;
+}
+
+.sequence-entry-page
+.event[data-phase-color="demiurgic"]::before {
+  display: none !important;
+  content: none !important;
+}
+
+.sequence-entry-page
+.event.realm-start-entry {
+  padding-top: 52px !important;
+}
+
+.sequence-entry-page
+.event.realm-start-entry::after {
+  top: 64px !important;
+}
+
+.sequence-entry-page .timeline::before {
+  top: 70px !important;
+  bottom: 86px !important;
+  height: auto !important;
+  background: var(--demiurgic) !important;
+}
+
+.sequence-entry-page .timeline {
+  width: min(1120px, 94%);
+  padding-bottom: 86px;
+}
+
+.sequence-entry-page .timeline::before {
+  bottom: auto;
+  height: var(--timeline-length, 0);
+}
+
+.sequence-entry-translations,
+.sequence-entry-return {
+  width: min(760px, calc(100% - 48px));
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.sequence-entry-translations {
+  padding: 22px;
+  background: rgba(184, 169, 128, 0.026);
+}
+
+.sequence-entry-metadata-label {
+  color: var(--gold-structural);
+  font-family: Arial, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.sequence-entry-translations ul {
+  margin: 11px 0 0;
+  padding-left: 20px;
+  color: #aaa59b;
+  font-size: 14px;
+  line-height: 1.72;
+}
+
+.sequence-entry-translations li + li {
+  margin-top: 7px;
+}
+
+.sequence-entry-return {
+  margin-top: 54px;
+  padding-top: 26px;
+  border-top: 1px solid rgba(157, 84, 51, 0.18);
+}
+
+.sequence-entry-footer {
+  padding: 54px 24px 42px;
+  color: var(--text-muted);
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  body.sequence-entry-archontic {
+    padding-top: 35.5px;
+  }
+
+  .sequence-entry-header {
+    width: calc(100% - 40px);
+    padding: 22px 0 10px;
+  }
+
+  .sequence-entry-shell {
+    width: calc(100% - 40px);
+    padding-top: 28px;
+  }
+
+  .sequence-entry-provenance {
+    font-size: 0.59375rem;
+  }
+
+  .sequence-entry-intro h1 {
+    margin-top: 22px;
+    font-size: clamp(38px, 11.5vw, 52px);
+  }
+
+  .sequence-entry-deck {
+    font-size: 16px;
+    line-height: 1.72;
+  }
+
+  .sequence-entry-chronology {
+    margin-top: 8px;
+    padding-top: 0;
+  }
+
+  .sequence-entry-page .timeline {
+    width: 100%;
+    padding-bottom: 64px;
+  }
+
+  .sequence-entry-page
+  .event.realm-start-entry {
+    padding-top: 45px !important;
+  }
+
+  .sequence-entry-page
+  .event.realm-start-entry::after {
+    top: 64px !important;
+  }
+
+  .sequence-entry-page .timeline::before {
+    top: 70px !important;
+    bottom: 64px !important;
+    height: auto !important;
+  }
+
+  .sequence-entry-translations,
+  .sequence-entry-return {
+    width: calc(100% - 40px);
+  }
+
+  .sequence-entry-translations {
+    padding: 17px;
+  }
+
+  .sequence-entry-translations ul {
+    font-size: 13px;
+  }
+
+  .sequence-entry-return {
+    margin-top: 46px;
+  }
+}
+
+
+
+/* Hidden parity ownership is structural only and never occupies layout space. */
+.sequence-entry-page .timeline-parity-spacer {
+  display: none !important;
+}
+
+@media (min-width: 701px) {
+  .sequence-entry-return {
+    text-align: left;
+  }
+}
