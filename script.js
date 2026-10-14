@@ -58,7 +58,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20261013-twelve-authorities-descriptions";
+const DATA_VERSION = "20261014-public-yaldabaoth-description-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
@@ -1183,10 +1183,16 @@ function createEntityCard(
       .join("");
 
   const contextualNote =
-    createSummaryMarkup(
-      entity.contextualNote || "",
-      "event-contextual-note"
-    );
+    String(entity.contextualNote || "")
+      .split(/\n\s*\n/)
+      .filter(Boolean)
+      .map(paragraph =>
+        createSummaryMarkup(
+          paragraph,
+          "event-contextual-note"
+        )
+      )
+      .join("");
 
   const pleromaticProcess =
     createPleromaticProcessMarkup(

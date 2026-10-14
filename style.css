@@ -1135,6 +1135,10 @@ p {
   margin-top: 28px;
 }
 
+.event[data-entity-id="entity-yaldabaoth"] > p.event-contextual-note + p.event-contextual-note {
+  margin-top: 22px;
+}
+
 .event[data-event-id="event-yaldabaoth-emergence"] > p + p,
 .event[data-event-id="event-ordering-material-cosmos"] > p + p,
 .event[data-event-id="event-sophia-repentance-intermediate-restoration"] > p + p,
