@@ -3318,7 +3318,9 @@ function createSequenceNavigationMarkup(
     "sequence-pleroma-sophia-generation":
       "chronology/sophias-independent-generation/",
     "sequence-demiurgic-chief-ruler":
-      "chronology/demiurge/"
+      "chronology/demiurge/",
+    "sequence-demiurgic-archontic-hierarchy":
+      "chronology/archontic-hierarchy/"
   };
 
   const standaloneHref =
