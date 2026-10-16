@@ -58,7 +58,7 @@ window.addEventListener(
 );
 
 const DATA_PATH = "data/";
-const DATA_VERSION = "20261014-public-yaldabaoth-description-1";
+const DATA_VERSION = "20261016-public-sophia-restoration-1";
 
 const HTML_ENTITIES = {
   "&": "&amp;",
